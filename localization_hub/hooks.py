@@ -28,6 +28,9 @@ app_license = "mit"
 # app_include_css = "/assets/localization_hub/css/localization_hub.css"
 # app_include_js = "/assets/localization_hub/js/localization_hub.js"
 
+app_include_css = "/assets/localization_hub/css/language_toggle.css"
+app_include_js = "/assets/localization_hub/js/language_toggle.js"
+
 # include js, css files in header of web template
 # web_include_css = "/assets/localization_hub/css/localization_hub.css"
 # web_include_js = "/assets/localization_hub/js/localization_hub.js"

@@ -1,0 +1,256 @@
+/**
+ * Language Toggle Styles - V3
+ * Styling for navbar language switcher
+ */
+
+/* Language Toggle Container */
+.dropdown-language {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.language-toggle-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 10px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.dropdown-language .nav-link:hover .language-toggle-container {
+    background-color: var(--bg-light-gray);
+}
+
+/* Language Flag */
+.language-flag {
+    font-size: 20px;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Language Short Code */
+.language-short {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: var(--text-color);
+}
+
+/* Dropdown Menu */
+.language-menu {
+    min-width: 220px;
+    padding: 0;
+    border-radius: 8px;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--border-color);
+    margin-top: 8px;
+}
+
+/* Dropdown Header */
+.language-menu .dropdown-header {
+    padding: 12px 16px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    border-bottom: 1px solid var(--border-color);
+    background-color: var(--control-bg);
+}
+
+/* Language Options */
+.language-option {
+    display: flex !important;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 16px !important;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    text-decoration: none !important;
+    color: var(--text-color) !important;
+    border: none;
+    position: relative;
+}
+
+.language-option:hover {
+    background-color: var(--bg-light-gray) !important;
+    color: var(--text-color) !important;
+}
+
+.language-option:focus {
+    outline: none;
+    background-color: var(--bg-light-gray);
+}
+
+.language-option.active {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+    font-weight: 600;
+}
+
+.language-option.active:hover {
+    background-color: var(--primary-color) !important;
+}
+
+/* Flag in dropdown */
+.language-option .lang-flag {
+    font-size: 22px;
+    flex-shrink: 0;
+}
+
+/* Language name in dropdown */
+.language-option .lang-name {
+    flex: 1;
+    font-size: 14px;
+}
+
+/* Checkmark for active language */
+.language-option .checkmark {
+    margin-left: auto;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Remove dropdown caret */
+.dropdown-language .dropdown-toggle::after {
+    display: none;
+}
+
+/* Hover effect on toggle */
+.dropdown-language .nav-link {
+    padding: 4px 8px !important;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.dropdown-language .nav-link:hover {
+    background-color: var(--bg-light-gray);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .language-short {
+        display: none;
+    }
+    
+    .language-toggle-container {
+        padding: 5px;
+    }
+    
+    .dropdown-language {
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    .language-menu {
+        min-width: 180px;
+    }
+    
+    .language-option {
+        padding: 8px 12px !important;
+    }
+    
+    .language-option .lang-name {
+        font-size: 13px;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    .language-toggle-container {
+        color: var(--text-light);
+    }
+    
+    .dropdown-language .nav-link:hover .language-toggle-container {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    
+    .language-menu {
+        background-color: var(--bg-dark);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    }
+    
+    .language-option:hover {
+        background-color: rgba(255, 255, 255, 0.1) !important;
+    }
+}
+
+/* Animation */
+.language-menu {
+    animation: slideDown 0.2s ease;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Accessibility */
+.language-option:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: -2px;
+}
+
+/* Separator (optional) */
+.dropdown-language::before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 24px;
+    background-color: var(--border-color);
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .dropdown-language::before {
+        display: none;
+    }
+}
+
+/* Loading state */
+.language-option.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+/* Ensure dropdown shows properly */
+.dropdown-language.show .language-menu {
+    display: block;
+}
+
+/* Fix z-index if needed */
+.dropdown-language .dropdown-menu {
+    z-index: 1050;
+}
+
+/* Scrollbar for many languages */
+.language-menu {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.language-menu::-webkit-scrollbar {
+    width: 6px;
+}
+
+.language-menu::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.language-menu::-webkit-scrollbar-thumb {
+    background: var(--text-muted);
+    border-radius: 3px;
+}
+
+.language-menu::-webkit-scrollbar-thumb:hover {
+    background: var(--text-color);
+}

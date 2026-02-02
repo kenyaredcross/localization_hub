@@ -8,6 +8,7 @@
   "section_break_rxgf",
   "reporting_national_society",
   "reporting_peroid_in_the_year",
+  "column_break_tibk",
   "focal_point_name_and_role",
   "report_overview_section",
   "purpose_of_this_report",
@@ -44,8 +45,9 @@
   },
   {
    "fieldname": "reporting_national_society",
-   "fieldtype": "Data",
-   "label": "Reporting National Society"
+   "fieldtype": "Link",
+   "label": "Reporting National Society",
+   "options": "Country"
   },
   {
    "fieldname": "reporting_peroid_in_the_year",
@@ -53,6 +55,7 @@
    "label": "Reporting Peroid in the Year"
   },
   {
+   "default": "__user",
    "fieldname": "focal_point_name_and_role",
    "fieldtype": "Data",
    "label": "Focal Point (Name and Role)"
@@ -82,8 +85,9 @@
   {
    "description": "(List key peer learning activities participated in or hosted)",
    "fieldname": "212_peer_to_peer_exchange_activities",
-   "fieldtype": "Data",
-   "label": "2.1.2 Peer to Peer Exchange Activities"
+   "fieldtype": "Table",
+   "label": "2.1.2 Peer to Peer Exchange Activities",
+   "options": "peer to peer"
   },
   {
    "description": "(Brief highlight on what motivated participation?, what worked well in peer engagement?, what barriers to engagement were encountered?)",
@@ -99,8 +103,9 @@
   {
    "description": "(Where possible, align with platform analytics)",
    "fieldname": "221_platform_access_and_use",
-   "fieldtype": "Data",
-   "label": "2.2.1 Platform Access and Use"
+   "fieldtype": "Table",
+   "label": "2.2.1 Platform Access and Use",
+   "options": "platform util"
   },
   {
    "description": "Brief description of key content accessed or shared (Best practices, Tools / Templates, Governance documents, Training materials, Case studies / Innovation playbooks)",
@@ -111,8 +116,9 @@
   {
    "description": "Indicate any new or improved digital tools, systems or processes adopted during the reporting period",
    "fieldname": "223_operational_digitization_process",
-   "fieldtype": "Data",
-   "label": "2.2.3 Operational Digitization Process "
+   "fieldtype": "Table",
+   "label": "2.2.3 Operational Digitization Process ",
+   "options": "operations"
   },
   {
    "fieldname": "23_learning_innovation_and_capacity_development_section",
@@ -186,7 +192,8 @@
   {
    "description": "Indicate issues/challenges that you could not address that need to be taken up by/with support of other parties",
    "fieldname": "small_text_nuji",
-   "fieldtype": "Data"
+   "fieldtype": "Table",
+   "options": "recommend"
   },
   {
    "fieldname": "8_annex_section",
@@ -207,13 +214,17 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "fieldname": "column_break_tibk",
+   "fieldtype": "Column Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-02-02 13:36:36.576988",
+ "modified": "2026-02-02 18:42:52.041445",
  "modified_by": "Administrator",
  "module": "Localization Hub",
  "name": "Localization Report",
