@@ -1,0 +1,240 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-02-02 11:35:10.401925",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_rxgf",
+  "reporting_national_society",
+  "reporting_peroid_in_the_year",
+  "focal_point_name_and_role",
+  "report_overview_section",
+  "purpose_of_this_report",
+  "21_participation_and_engagement_section",
+  "211_participation_in_the_network",
+  "212_peer_to_peer_exchange_activities",
+  "213_qualitative_reflection_on_engagement",
+  "22_platform_utilisation_and_digital_adoption_section",
+  "221_platform_access_and_use",
+  "222_types_of_content_used_or_shared",
+  "223_operational_digitization_process",
+  "23_learning_innovation_and_capacity_development_section",
+  "231_capacity_building_activities",
+  "232_innovation_and_digital_transformation_progress",
+  "3_accountability_inclusion_and_governance_section",
+  "31_inclusion",
+  "governance_and_ownership",
+  "4_risk_management_section",
+  "small_text_kckz",
+  "5_lessons_learnt_and_good_practices_section",
+  "small_text_vzym",
+  "6_update_on_data_driven_decisions_made_section",
+  "small_text_sxbg",
+  "7_recommendations_section",
+  "small_text_nuji",
+  "8_annex_section",
+  "small_text_ausa",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_rxgf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "reporting_national_society",
+   "fieldtype": "Data",
+   "label": "Reporting National Society"
+  },
+  {
+   "fieldname": "reporting_peroid_in_the_year",
+   "fieldtype": "Int",
+   "label": "Reporting Peroid in the Year"
+  },
+  {
+   "fieldname": "focal_point_name_and_role",
+   "fieldtype": "Data",
+   "label": "Focal Point (Name and Role)"
+  },
+  {
+   "fieldname": "report_overview_section",
+   "fieldtype": "Section Break",
+   "label": "Report Overview"
+  },
+  {
+   "description": "This report captures progress, learning nad challenhes related to Outcome 3, focusing on peer to peer exchange, digital transformation and innovation capacity development within and across National Societies. The report supports accountability, learning and adaptive management",
+   "fieldname": "purpose_of_this_report",
+   "fieldtype": "Small Text",
+   "label": "Purpose of this Report"
+  },
+  {
+   "fieldname": "21_participation_and_engagement_section",
+   "fieldtype": "Section Break",
+   "label": "2.1 Participation and Engagement"
+  },
+  {
+   "description": "Provide a summary of how your National Society engaged i the Digital Transformation & Innovation Network during the reporting period. (Types of engagement (e.g., forums, workshops, webinars, co-creation sessions), frequency of participation, internal teams involved(GQ, branches, youth, volunteers))",
+   "fieldname": "211_participation_in_the_network",
+   "fieldtype": "Small Text",
+   "label": "2.1.1 Participation in the Network"
+  },
+  {
+   "description": "(List key peer learning activities participated in or hosted)",
+   "fieldname": "212_peer_to_peer_exchange_activities",
+   "fieldtype": "Data",
+   "label": "2.1.2 Peer to Peer Exchange Activities"
+  },
+  {
+   "description": "(Brief highlight on what motivated participation?, what worked well in peer engagement?, what barriers to engagement were encountered?)",
+   "fieldname": "213_qualitative_reflection_on_engagement",
+   "fieldtype": "Small Text",
+   "label": "2.1.3 Qualitative Reflection on Engagement"
+  },
+  {
+   "fieldname": "22_platform_utilisation_and_digital_adoption_section",
+   "fieldtype": "Section Break",
+   "label": "2.2 Platform Utilisation and Digital Adoption"
+  },
+  {
+   "description": "(Where possible, align with platform analytics)",
+   "fieldname": "221_platform_access_and_use",
+   "fieldtype": "Data",
+   "label": "2.2.1 Platform Access and Use"
+  },
+  {
+   "description": "Brief description of key content accessed or shared (Best practices, Tools / Templates, Governance documents, Training materials, Case studies / Innovation playbooks)",
+   "fieldname": "222_types_of_content_used_or_shared",
+   "fieldtype": "Small Text",
+   "label": "2.2.2 Types of Content Used or Shared"
+  },
+  {
+   "description": "Indicate any new or improved digital tools, systems or processes adopted during the reporting period",
+   "fieldname": "223_operational_digitization_process",
+   "fieldtype": "Data",
+   "label": "2.2.3 Operational Digitization Process "
+  },
+  {
+   "fieldname": "23_learning_innovation_and_capacity_development_section",
+   "fieldtype": "Section Break",
+   "label": "2.3 Learning, Innovation and Capacity Development"
+  },
+  {
+   "description": "Highlight trainings, mentorships, bootcamps or twinning activities undertaken (mention outcomes and participants (staff/youth/volunteers))",
+   "fieldname": "231_capacity_building_activities",
+   "fieldtype": "Small Text",
+   "label": "2.3.1 Capacity Building Activities"
+  },
+  {
+   "description": "Describe changes observed (e.g in Digital skills and confidence, Innovation culture and experimentation, Data-informed decision-making, Intergenerational collaboration)",
+   "fieldname": "232_innovation_and_digital_transformation_progress",
+   "fieldtype": "Small Text",
+   "label": "2.3.2 Innovation and Digital Transformation Progress"
+  },
+  {
+   "fieldname": "3_accountability_inclusion_and_governance_section",
+   "fieldtype": "Section Break",
+   "label": "3. Accountability, Inclusion and Governance"
+  },
+  {
+   "description": "Describe how youth, volunteers and gender balance were meaningfully included in activities and decision making",
+   "fieldname": "31_inclusion",
+   "fieldtype": "Small Text",
+   "label": "3.1 Inclusion"
+  },
+  {
+   "description": "(Progress toward NS-led governancce structures and participation in digital governance or steering committees)",
+   "fieldname": "governance_and_ownership",
+   "fieldtype": "Small Text",
+   "label": "Governance and Ownership"
+  },
+  {
+   "fieldname": "4_risk_management_section",
+   "fieldtype": "Section Break",
+   "label": "4. RISK MANAGEMENT"
+  },
+  {
+   "description": "(Progress on mitigation/plans, any security concerns that should be noted /  managed)",
+   "fieldname": "small_text_kckz",
+   "fieldtype": "Small Text"
+  },
+  {
+   "fieldname": "5_lessons_learnt_and_good_practices_section",
+   "fieldtype": "Section Break",
+   "label": "5. LESSONS LEARNT AND GOOD PRACTICES"
+  },
+  {
+   "description": "(Write any NEW lessons learnt from the project implementation, both positive and nagative, for sharing and program improvement. Lessons learnt is a documentation of an experience, example or observation that imparts beneficial new knowledge or wisdom)",
+   "fieldname": "small_text_vzym",
+   "fieldtype": "Small Text"
+  },
+  {
+   "fieldname": "6_update_on_data_driven_decisions_made_section",
+   "fieldtype": "Section Break",
+   "label": "6. UPDATE ON DATA DRIVEN DECISIONS MADE"
+  },
+  {
+   "description": "(Describe any adaptions made to activities, tools or approaches based on learning or feedback)",
+   "fieldname": "small_text_sxbg",
+   "fieldtype": "Small Text"
+  },
+  {
+   "fieldname": "7_recommendations_section",
+   "fieldtype": "Section Break",
+   "label": "7. RECOMMENDATIONS"
+  },
+  {
+   "description": "Indicate issues/challenges that you could not address that need to be taken up by/with support of other parties",
+   "fieldname": "small_text_nuji",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "8_annex_section",
+   "fieldtype": "Section Break",
+   "label": "8. Annex"
+  },
+  {
+   "description": "Source Documents (Training reports (structured trainings), Activity/Casestudy reports,  Platform analytics screenshots)",
+   "fieldname": "small_text_ausa",
+   "fieldtype": "Small Text"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Localization Report",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-02-02 13:36:36.576988",
+ "modified_by": "Administrator",
+ "module": "Localization Hub",
+ "name": "Localization Report",
+ "owner": "matolojr@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
