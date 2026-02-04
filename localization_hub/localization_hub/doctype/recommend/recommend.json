@@ -1,36 +1,43 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2026-02-02 18:07:27.494719",
+ "creation": "2026-02-02 18:40:58.140086",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "indicator",
-  "this_period"
+  "challenges_or_issues",
+  "action_required_or_recommendations",
+  "responsibility"
  ],
  "fields": [
   {
-   "fieldname": "indicator",
+   "fieldname": "challenges_or_issues",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Indicator"
+   "label": "CHALLENGES OR ISSUES"
   },
   {
-   "fieldname": "this_period",
+   "fieldname": "action_required_or_recommendations",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "This period"
+   "label": "ACTION REQUIRED OR RECOMMENDATIONS"
+  },
+  {
+   "fieldname": "responsibility",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "RESPONSIBILITY"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-02-03 09:53:01.827398",
+ "modified": "2026-02-04 09:46:53.193448",
  "modified_by": "Administrator",
  "module": "Localization Hub",
- "name": "platform util",
+ "name": "recommend",
  "owner": "Administrator",
  "permissions": [],
  "row_format": "Dynamic",
