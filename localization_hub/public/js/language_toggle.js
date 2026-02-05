@@ -6,6 +6,7 @@
 
 frappe.provide('frappe.ui.toolbar');
 
+
 // Store the original Toolbar class
 const OriginalToolbar = frappe.ui.toolbar.Toolbar;
 
