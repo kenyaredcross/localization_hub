@@ -7676,17 +7676,9 @@
         return iconMap[category] || '📊';
       },
 
-      // Get category color based on category
+      // Get category color - using same muted professional color for all
       getCategoryColor(category) {
-        const colorMap = {
-          'Documentation': '#f97316',
-          'Statistics': '#06b6d4',
-          'Research Data': '#8b5cf6',
-          'Reference': '#10b981',
-          'Reports': '#ef4444',
-          'Other': '#6366f1'
-        };
-        return colorMap[category] || '#6366f1';
+        return '#64748b'; // Muted slate gray - professional and consistent
       },
 
       // Format date
@@ -7763,7 +7755,7 @@
         _cache[10] || (_cache[10] = createBaseVNode("div", { class: "page-header" }, [
           createBaseVNode("div", { class: "header-content" }, [
             createBaseVNode("h1", { class: "page-title" }, "Data Resources"),
-            createBaseVNode("p", { class: "page-subtitle" }, "Download datasets, documentation, and reference materials")
+            createBaseVNode("p", { class: "page-subtitle" }, "Quality data is the foundation of meaningful research")
           ])
         ], -1 /* CACHED */)),
         createCommentVNode(" Stats Overview (Optional) "),
@@ -7879,7 +7871,7 @@
     ]))
   }
 
-  var css_248z$4 = "\r\n/* ============================================\r\n   TYPOGRAPHY - Modern Data Dashboard\r\n   ============================================ */\n@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap');\r\n\r\n/* CSS Variables */\n[data-v-1f39e5c1]:root {\r\n  --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);\r\n  --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);\r\n  --success-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);\n}\r\n\r\n/* ============================================\r\n   LAYOUT CONTAINER\r\n   ============================================ */\n.data-page-container[data-v-1f39e5c1] {\r\n  min-height: 100vh;\r\n  background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);\r\n  padding: 0;\n}\n.data-page-content[data-v-1f39e5c1] {\r\n  max-width: 1400px;\r\n  margin: 0 auto;\r\n  padding: 48px 24px;\n}\r\n\r\n/* ============================================\r\n   PAGE HEADER\r\n   ============================================ */\n.page-header[data-v-1f39e5c1] {\r\n  margin-bottom: 48px;\r\n  animation: slideDown-1f39e5c1 0.6s cubic-bezier(0.4, 0, 0.2, 1);\n}\n@keyframes slideDown-1f39e5c1 {\nfrom {\r\n    opacity: 0;\r\n    transform: translateY(-20px);\n}\nto {\r\n    opacity: 1;\r\n    transform: translateY(0);\n}\n}\n.header-content[data-v-1f39e5c1] {\r\n  text-align: center;\n}\n.page-title[data-v-1f39e5c1] {\r\n  font-family: 'Outfit', sans-serif;\r\n  font-size: 48px;\r\n  font-weight: 800;\r\n  background: linear-gradient(135deg, #1a3353 0%, #4a5f8a 100%);\r\n  -webkit-background-clip: text;\r\n  -webkit-text-fill-color: transparent;\r\n  background-clip: text;\r\n  margin: 0 0 12px 0;\r\n  letter-spacing: -0.03em;\n}\n.page-subtitle[data-v-1f39e5c1] {\r\n  font-family: 'Manrope', sans-serif;\r\n  font-size: 18px;\r\n  color: #64748b;\r\n  margin: 0;\r\n  font-weight: 500;\n}\r\n\r\n/* ============================================\r\n   STATS OVERVIEW\r\n   ============================================ */\n.stats-overview[data-v-1f39e5c1] {\r\n  display: grid;\r\n  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));\r\n  gap: 20px;\r\n  margin-bottom: 40px;\r\n  animation: fadeInUp-1f39e5c1 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.1s both;\n}\n@keyframes fadeInUp-1f39e5c1 {\nfrom {\r\n    opacity: 0;\r\n    transform: translateY(30px);\n}\nto {\r\n    opacity: 1;\r\n    transform: translateY(0);\n}\n}\n.stat-card[data-v-1f39e5c1] {\r\n  background: white;\r\n  padding: 24px;\r\n  border-radius: 16px;\r\n  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.08);\r\n  border: 1px solid rgba(226, 232, 240, 0.8);\r\n  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);\n}\n.stat-card[data-v-1f39e5c1]:hover {\r\n  transform: translateY(-4px);\r\n  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);\n}\n.stat-value[data-v-1f39e5c1] {\r\n  font-family: 'Outfit', sans-serif;\r\n  font-size: 36px;\r\n  font-weight: 700;\r\n  color: #1a3353;\r\n  margin-bottom: 8px;\n}\n.stat-label[data-v-1f39e5c1] {\r\n  font-family: 'Manrope', sans-serif;\r\n  font-size: 14px;\r\n  color: #64748b;\r\n  font-weight: 500;\r\n  margin-bottom: 8px;\n}\n.stat-trend[data-v-1f39e5c1] {\r\n  font-family: 'Manrope', sans-serif;\r\n  font-size: 13px;\r\n  font-weight: 600;\r\n  display: inline-flex;\r\n  align-items: center;\r\n  gap: 4px;\n}\n.stat-trend.positive[data-v-1f39e5c1] {\r\n  color: #10b981;\n}\n.stat-trend.negative[data-v-1f39e5c1] {\r\n  color: #ef4444;\n}\n.stat-trend.positive[data-v-1f39e5c1]::before {\r\n  content: '↗';\n}\n.stat-trend.negative[data-v-1f39e5c1]::before {\r\n  content: '↘';\n}\r\n\r\n/* ============================================\r\n   CATEGORY FILTERS\r\n   ============================================ */\n.category-filters[data-v-1f39e5c1] {\r\n  display: flex;\r\n  gap: 12px;\r\n  margin-bottom: 40px;\r\n  padding: 16px;\r\n  background: white;\r\n  border-radius: 16px;\r\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);\r\n  overflow-x: auto;\r\n  -webkit-overflow-scrolling: touch;\r\n  animation: fadeInUp-1f39e5c1 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.2s both;\n}\n.filter-btn[data-v-1f39e5c1] {\r\n  font-family: 'Manrope', sans-serif;\r\n  background: transparent;\r\n  border: 2px solid #e2e8f0;\r\n  padding: 12px 24px;\r\n  border-radius: 12px;\r\n  font-size: 14px;\r\n  font-weight: 600;\r\n  color: #475569;\r\n  cursor: pointer;\r\n  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 8px;\r\n  white-space: nowrap;\n}\n.filter-btn[data-v-1f39e5c1]:hover {\r\n  background: #f8fafc;\r\n  border-color: #cbd5e1;\r\n  transform: translateY(-2px);\n}\n.filter-btn.active[data-v-1f39e5c1] {\r\n  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);\r\n  border-color: transparent;\r\n  color: white;\r\n  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);\n}\n.filter-icon[data-v-1f39e5c1] {\r\n  font-size: 18px;\n}\n.filter-label[data-v-1f39e5c1] {\r\n  font-weight: 600;\n}\r\n\r\n/* ============================================\r\n   DATA GRID\r\n   ============================================ */\n.data-grid[data-v-1f39e5c1] {\r\n  display: grid;\r\n  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));\r\n  gap: 24px;\r\n  animation: fadeInUp-1f39e5c1 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.3s both;\n}\r\n\r\n/* ============================================\r\n   DATA CARDS - Modern Style\r\n   ============================================ */\n.data-card[data-v-1f39e5c1] {\r\n  background: white;\r\n  border-radius: 20px;\r\n  overflow: hidden;\r\n  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);\r\n  border: 1px solid rgba(226, 232, 240, 0.8);\r\n  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.08);\r\n  display: flex;\r\n  flex-direction: column;\r\n  position: relative;\r\n  overflow: visible;\n}\n.data-card[data-v-1f39e5c1]::before {\r\n  content: '';\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  right: 0;\r\n  height: 4px;\r\n  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);\r\n  transform: scaleX(0);\r\n  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);\n}\n.data-card[data-v-1f39e5c1]:hover {\r\n  transform: translateY(-8px);\r\n  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);\n}\n.data-card[data-v-1f39e5c1]:hover::before {\r\n  transform: scaleX(1);\n}\r\n\r\n/* Card Header */\n.card-header[data-v-1f39e5c1] {\r\n  padding: 24px 24px 16px;\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: flex-start;\n}\n.card-icon[data-v-1f39e5c1] {\r\n  width: 56px;\r\n  height: 56px;\r\n  border-radius: 14px;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  font-size: 28px;\r\n  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);\r\n  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);\n}\n.data-card:hover .card-icon[data-v-1f39e5c1] {\r\n  transform: scale(1.1) rotate(5deg);\n}\n.card-meta[data-v-1f39e5c1] {\r\n  text-align: right;\n}\n.category-badge[data-v-1f39e5c1] {\r\n  font-family: 'Manrope', sans-serif;\r\n  font-size: 11px;\r\n  font-weight: 700;\r\n  text-transform: uppercase;\r\n  letter-spacing: 0.5px;\r\n  color: #64748b;\r\n  background: #f1f5f9;\r\n  padding: 6px 12px;\r\n  border-radius: 8px;\n}\r\n\r\n/* Card Body */\n.card-body[data-v-1f39e5c1] {\r\n  padding: 0 24px 20px;\r\n  flex: 1;\n}\n.card-title[data-v-1f39e5c1] {\r\n  font-family: 'Outfit', sans-serif;\r\n  font-size: 20px;\r\n  font-weight: 700;\r\n  color: #1a3353;\r\n  margin: 0 0 12px 0;\r\n  line-height: 1.3;\n}\n.card-description[data-v-1f39e5c1] {\r\n  font-family: 'Manrope', sans-serif;\r\n  font-size: 14px;\r\n  line-height: 1.6;\r\n  color: #64748b;\r\n  margin: 0 0 16px 0;\r\n  display: -webkit-box;\r\n  -webkit-line-clamp: 3;\r\n  -webkit-box-orient: vertical;\r\n  overflow: hidden;\n}\n.card-metadata[data-v-1f39e5c1] {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 8px;\n}\n.metadata-item[data-v-1f39e5c1] {\r\n  font-family: 'Manrope', sans-serif;\r\n  font-size: 12px;\r\n  color: #94a3b8;\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 8px;\n}\n.metadata-icon[data-v-1f39e5c1] {\r\n  font-size: 14px;\n}\n.metadata-text[data-v-1f39e5c1] {\r\n  font-weight: 500;\n}\r\n\r\n/* Card Footer */\n.card-footer[data-v-1f39e5c1] {\r\n  padding: 16px 24px 24px;\r\n  display: flex;\r\n  gap: 12px;\r\n  border-top: 1px solid #f1f5f9;\n}\n.download-btn[data-v-1f39e5c1] {\r\n  font-family: 'Manrope', sans-serif;\r\n  flex: 1;\r\n  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);\r\n  color: white;\r\n  border: none;\r\n  padding: 12px 20px;\r\n  border-radius: 12px;\r\n  font-size: 14px;\r\n  font-weight: 700;\r\n  cursor: pointer;\r\n  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  gap: 8px;\r\n  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);\n}\n.download-btn[data-v-1f39e5c1]:hover {\r\n  transform: translateY(-2px);\r\n  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);\n}\n.download-btn[data-v-1f39e5c1]:active {\r\n  transform: translateY(0);\n}\n.preview-btn[data-v-1f39e5c1] {\r\n  font-family: 'Manrope', sans-serif;\r\n  background: white;\r\n  color: #667eea;\r\n  border: 2px solid #667eea;\r\n  padding: 12px 20px;\r\n  border-radius: 12px;\r\n  font-size: 14px;\r\n  font-weight: 700;\r\n  cursor: pointer;\r\n  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 8px;\n}\n.preview-btn[data-v-1f39e5c1]:hover {\r\n  background: #667eea;\r\n  color: white;\r\n  transform: translateY(-2px);\n}\n.btn-icon[data-v-1f39e5c1] {\r\n  font-size: 16px;\n}\n.btn-text[data-v-1f39e5c1] {\r\n  font-weight: 700;\n}\r\n\r\n/* ============================================\r\n   LOADING STATE\r\n   ============================================ */\n.loading-container[data-v-1f39e5c1] {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: center;\r\n  padding: 100px 20px;\r\n  gap: 24px;\n}\n.spinner[data-v-1f39e5c1] {\r\n  width: 56px;\r\n  height: 56px;\r\n  border: 5px solid #f1f5f9;\r\n  border-top-color: #667eea;\r\n  border-radius: 50%;\r\n  animation: spin-1f39e5c1 0.8s linear infinite;\n}\n@keyframes spin-1f39e5c1 {\nto {\r\n    transform: rotate(360deg);\n}\n}\n.loading-text[data-v-1f39e5c1] {\r\n  font-family: 'Manrope', sans-serif;\r\n  font-size: 16px;\r\n  color: #64748b;\r\n  margin: 0;\r\n  font-weight: 600;\n}\r\n\r\n/* ============================================\r\n   EMPTY STATE\r\n   ============================================ */\n.empty-state[data-v-1f39e5c1] {\r\n  text-align: center;\r\n  padding: 100px 20px;\r\n  background: white;\r\n  border-radius: 20px;\r\n  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);\n}\n.empty-icon[data-v-1f39e5c1] {\r\n  font-size: 80px;\r\n  margin-bottom: 24px;\r\n  opacity: 0.3;\n}\n.empty-text[data-v-1f39e5c1] {\r\n  font-family: 'Outfit', sans-serif;\r\n  font-size: 24px;\r\n  font-weight: 700;\r\n  color: #1a3353;\r\n  margin: 0 0 12px 0;\n}\n.empty-subtext[data-v-1f39e5c1] {\r\n  font-family: 'Manrope', sans-serif;\r\n  font-size: 16px;\r\n  color: #94a3b8;\r\n  margin: 0;\n}\r\n\r\n/* ============================================\r\n   RESPONSIVE DESIGN\r\n   ============================================ */\n@media (max-width: 1024px) {\n.data-grid[data-v-1f39e5c1] {\r\n    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));\r\n    gap: 20px;\n}\n.stats-overview[data-v-1f39e5c1] {\r\n    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));\n}\n}\n@media (max-width: 768px) {\n.data-page-content[data-v-1f39e5c1] {\r\n    padding: 32px 16px;\n}\n.page-title[data-v-1f39e5c1] {\r\n    font-size: 36px;\n}\n.page-subtitle[data-v-1f39e5c1] {\r\n    font-size: 16px;\n}\n.page-header[data-v-1f39e5c1] {\r\n    margin-bottom: 32px;\n}\n.category-filters[data-v-1f39e5c1] {\r\n    padding: 12px;\n}\n.filter-btn[data-v-1f39e5c1] {\r\n    padding: 10px 20px;\r\n    font-size: 13px;\n}\n.data-grid[data-v-1f39e5c1] {\r\n    grid-template-columns: 1fr;\r\n    gap: 16px;\n}\n.stats-overview[data-v-1f39e5c1] {\r\n    grid-template-columns: 1fr;\r\n    gap: 16px;\n}\n.card-footer[data-v-1f39e5c1] {\r\n    flex-direction: column;\n}\n.preview-btn[data-v-1f39e5c1] {\r\n    width: 100%;\n}\n}\n@media (max-width: 480px) {\n.page-title[data-v-1f39e5c1] {\r\n    font-size: 28px;\n}\n.page-subtitle[data-v-1f39e5c1] {\r\n    font-size: 14px;\n}\n.stat-value[data-v-1f39e5c1] {\r\n    font-size: 28px;\n}\n.card-title[data-v-1f39e5c1] {\r\n    font-size: 18px;\n}\n.card-description[data-v-1f39e5c1] {\r\n    font-size: 13px;\n}\n}\r\n";
+  var css_248z$4 = "\r\n/* ============================================\r\n   TYPOGRAPHY - Modern Data Dashboard\r\n   ============================================ */\n@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap');\r\n\r\n/* CSS Variables */\n[data-v-1f39e5c1]:root {\r\n  --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);\r\n  --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);\r\n  --success-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);\n}\r\n\r\n/* ============================================\r\n   LAYOUT CONTAINER\r\n   ============================================ */\n.data-page-container[data-v-1f39e5c1] {\r\n  min-height: 100vh;\r\n  background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);\r\n  padding: 0;\n}\n.data-page-content[data-v-1f39e5c1] {\r\n  max-width: 1400px;\r\n  margin: 0 auto;\r\n  padding: 48px 24px;\n}\r\n\r\n/* ============================================\r\n   PAGE HEADER\r\n   ============================================ */\n.page-header[data-v-1f39e5c1] {\r\n  margin-bottom: 48px;\r\n  animation: slideDown-1f39e5c1 0.6s cubic-bezier(0.4, 0, 0.2, 1);\n}\n@keyframes slideDown-1f39e5c1 {\nfrom {\r\n    opacity: 0;\r\n    transform: translateY(-20px);\n}\nto {\r\n    opacity: 1;\r\n    transform: translateY(0);\n}\n}\n.header-content[data-v-1f39e5c1] {\r\n  text-align: center;\n}\n.page-title[data-v-1f39e5c1] {\r\n  font-family: 'Outfit', sans-serif;\r\n  font-size: 48px;\r\n  font-weight: 800;\r\n  background: linear-gradient(135deg, #1a3353 0%, #4a5f8a 100%);\r\n  -webkit-background-clip: text;\r\n  -webkit-text-fill-color: transparent;\r\n  background-clip: text;\r\n  margin: 0 0 12px 0;\r\n  letter-spacing: -0.03em;\n}\n.page-subtitle[data-v-1f39e5c1] {\r\n  font-family: 'Manrope', sans-serif;\r\n  font-size: 18px;\r\n  color: #64748b;\r\n  margin: 0;\r\n  font-weight: 500;\n}\r\n\r\n/* ============================================\r\n   STATS OVERVIEW\r\n   ============================================ */\n.stats-overview[data-v-1f39e5c1] {\r\n  display: grid;\r\n  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));\r\n  gap: 20px;\r\n  margin-bottom: 40px;\r\n  animation: fadeInUp-1f39e5c1 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.1s both;\n}\n@keyframes fadeInUp-1f39e5c1 {\nfrom {\r\n    opacity: 0;\r\n    transform: translateY(30px);\n}\nto {\r\n    opacity: 1;\r\n    transform: translateY(0);\n}\n}\n.stat-card[data-v-1f39e5c1] {\r\n  background: white;\r\n  padding: 24px;\r\n  border-radius: 16px;\r\n  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.08);\r\n  border: 1px solid rgba(226, 232, 240, 0.8);\r\n  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);\n}\n.stat-card[data-v-1f39e5c1]:hover {\r\n  transform: translateY(-4px);\r\n  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);\n}\n.stat-value[data-v-1f39e5c1] {\r\n  font-family: 'Outfit', sans-serif;\r\n  font-size: 36px;\r\n  font-weight: 700;\r\n  color: #1a3353;\r\n  margin-bottom: 8px;\n}\n.stat-label[data-v-1f39e5c1] {\r\n  font-family: 'Manrope', sans-serif;\r\n  font-size: 14px;\r\n  color: #64748b;\r\n  font-weight: 500;\r\n  margin-bottom: 8px;\n}\n.stat-trend[data-v-1f39e5c1] {\r\n  font-family: 'Manrope', sans-serif;\r\n  font-size: 13px;\r\n  font-weight: 600;\r\n  display: inline-flex;\r\n  align-items: center;\r\n  gap: 4px;\n}\n.stat-trend.positive[data-v-1f39e5c1] {\r\n  color: #10b981;\n}\n.stat-trend.negative[data-v-1f39e5c1] {\r\n  color: #ef4444;\n}\n.stat-trend.positive[data-v-1f39e5c1]::before {\r\n  content: '↗';\n}\n.stat-trend.negative[data-v-1f39e5c1]::before {\r\n  content: '↘';\n}\r\n\r\n/* ============================================\r\n   CATEGORY FILTERS\r\n   ============================================ */\n.category-filters[data-v-1f39e5c1] {\r\n  display: flex;\r\n  gap: 12px;\r\n  margin-bottom: 40px;\r\n  padding: 16px;\r\n  background: white;\r\n  border-radius: 16px;\r\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);\r\n  overflow-x: auto;\r\n  -webkit-overflow-scrolling: touch;\r\n  animation: fadeInUp-1f39e5c1 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.2s both;\n}\n.filter-btn[data-v-1f39e5c1] {\r\n  font-family: 'Manrope', sans-serif;\r\n  background: transparent;\r\n  border: 2px solid #e2e8f0;\r\n  padding: 12px 24px;\r\n  border-radius: 12px;\r\n  font-size: 14px;\r\n  font-weight: 600;\r\n  color: #475569;\r\n  cursor: pointer;\r\n  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 8px;\r\n  white-space: nowrap;\n}\n.filter-btn[data-v-1f39e5c1]:hover {\r\n  background: #f8fafc;\r\n  border-color: #cbd5e1;\r\n  transform: translateY(-2px);\n}\n.filter-btn.active[data-v-1f39e5c1] {\r\n  background: #64748b;\r\n  border-color: transparent;\r\n  color: white;\r\n  box-shadow: 0 2px 8px rgba(100, 116, 139, 0.3);\n}\n.filter-icon[data-v-1f39e5c1] {\r\n  font-size: 18px;\n}\n.filter-label[data-v-1f39e5c1] {\r\n  font-weight: 600;\n}\r\n\r\n/* ============================================\r\n   DATA GRID\r\n   ============================================ */\n.data-grid[data-v-1f39e5c1] {\r\n  display: grid;\r\n  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));\r\n  gap: 20px;\r\n  animation: fadeInUp-1f39e5c1 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.3s both;\n}\r\n\r\n/* ============================================\r\n   DATA CARDS - Modern Style\r\n   ============================================ */\n.data-card[data-v-1f39e5c1] {\r\n  background: white;\r\n  border-radius: 20px;\r\n  overflow: hidden;\r\n  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);\r\n  border: 1px solid rgba(226, 232, 240, 0.8);\r\n  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.08);\r\n  display: flex;\r\n  flex-direction: column;\r\n  position: relative;\r\n  overflow: visible;\n}\n.data-card[data-v-1f39e5c1]::before {\r\n  content: '';\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  right: 0;\r\n  height: 3px;\r\n  background: #64748b;\r\n  transform: scaleX(0);\r\n  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);\n}\n.data-card[data-v-1f39e5c1]:hover {\r\n  transform: translateY(-4px);\r\n  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);\n}\n.data-card[data-v-1f39e5c1]:hover::before {\r\n  transform: scaleX(1);\n}\r\n\r\n/* Card Header */\n.card-header[data-v-1f39e5c1] {\r\n  padding: 16px 16px 12px;\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: flex-start;\n}\n.card-icon[data-v-1f39e5c1] {\r\n  width: 40px;\r\n  height: 40px;\r\n  border-radius: 10px;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  font-size: 20px;\r\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);\r\n  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);\n}\n.data-card:hover .card-icon[data-v-1f39e5c1] {\r\n  transform: scale(1.05);\n}\n.card-meta[data-v-1f39e5c1] {\r\n  text-align: right;\n}\n.category-badge[data-v-1f39e5c1] {\r\n  font-family: 'Manrope', sans-serif;\r\n  font-size: 10px;\r\n  font-weight: 600;\r\n  text-transform: uppercase;\r\n  letter-spacing: 0.5px;\r\n  color: #64748b;\r\n  background: #f1f5f9;\r\n  padding: 4px 10px;\r\n  border-radius: 6px;\n}\r\n\r\n/* Card Body */\n.card-body[data-v-1f39e5c1] {\r\n  padding: 0 16px 16px;\r\n  flex: 1;\n}\n.card-title[data-v-1f39e5c1] {\r\n  font-family: 'Outfit', sans-serif;\r\n  font-size: 16px;\r\n  font-weight: 700;\r\n  color: #1a3353;\r\n  margin: 0 0 8px 0;\r\n  line-height: 1.3;\n}\n.card-description[data-v-1f39e5c1] {\r\n  font-family: 'Manrope', sans-serif;\r\n  font-size: 13px;\r\n  line-height: 1.5;\r\n  color: #64748b;\r\n  margin: 0 0 12px 0;\r\n  display: -webkit-box;\r\n  -webkit-line-clamp: 2;\r\n  -webkit-box-orient: vertical;\r\n  overflow: hidden;\n}\n.card-metadata[data-v-1f39e5c1] {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 6px;\n}\n.metadata-item[data-v-1f39e5c1] {\r\n  font-family: 'Manrope', sans-serif;\r\n  font-size: 11px;\r\n  color: #94a3b8;\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 6px;\n}\n.metadata-icon[data-v-1f39e5c1] {\r\n  font-size: 12px;\n}\n.metadata-text[data-v-1f39e5c1] {\r\n  font-weight: 500;\n}\r\n\r\n/* Card Footer */\n.card-footer[data-v-1f39e5c1] {\r\n  padding: 12px 16px 16px;\r\n  display: flex;\r\n  gap: 8px;\r\n  border-top: 1px solid #f1f5f9;\n}\n.download-btn[data-v-1f39e5c1] {\r\n  font-family: 'Manrope', sans-serif;\r\n  flex: 1;\r\n  background: #64748b;\r\n  color: white;\r\n  border: none;\r\n  padding: 10px 16px;\r\n  border-radius: 8px;\r\n  font-size: 12px;\r\n  font-weight: 600;\r\n  cursor: pointer;\r\n  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  gap: 6px;\r\n  box-shadow: 0 2px 4px rgba(100, 116, 139, 0.2);\n}\n.download-btn[data-v-1f39e5c1]:hover {\r\n  background: #475569;\r\n  transform: translateY(-1px);\r\n  box-shadow: 0 4px 8px rgba(100, 116, 139, 0.3);\n}\n.download-btn[data-v-1f39e5c1]:active {\r\n  transform: translateY(0);\n}\n.preview-btn[data-v-1f39e5c1] {\r\n  font-family: 'Manrope', sans-serif;\r\n  background: white;\r\n  color: #64748b;\r\n  border: 1.5px solid #cbd5e1;\r\n  padding: 10px 16px;\r\n  border-radius: 8px;\r\n  font-size: 12px;\r\n  font-weight: 600;\r\n  cursor: pointer;\r\n  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 6px;\n}\n.preview-btn[data-v-1f39e5c1]:hover {\r\n  background: #f8fafc;\r\n  border-color: #64748b;\r\n  transform: translateY(-1px);\n}\n.btn-icon[data-v-1f39e5c1] {\r\n  font-size: 14px;\n}\n.btn-text[data-v-1f39e5c1] {\r\n  font-weight: 600;\n}\r\n\r\n/* ============================================\r\n   LOADING STATE\r\n   ============================================ */\n.loading-container[data-v-1f39e5c1] {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: center;\r\n  padding: 100px 20px;\r\n  gap: 24px;\n}\n.spinner[data-v-1f39e5c1] {\r\n  width: 56px;\r\n  height: 56px;\r\n  border: 5px solid #f1f5f9;\r\n  border-top-color: #64748b;\r\n  border-radius: 50%;\r\n  animation: spin-1f39e5c1 0.8s linear infinite;\n}\n@keyframes spin-1f39e5c1 {\nto {\r\n    transform: rotate(360deg);\n}\n}\n.loading-text[data-v-1f39e5c1] {\r\n  font-family: 'Manrope', sans-serif;\r\n  font-size: 16px;\r\n  color: #64748b;\r\n  margin: 0;\r\n  font-weight: 600;\n}\r\n\r\n/* ============================================\r\n   EMPTY STATE\r\n   ============================================ */\n.empty-state[data-v-1f39e5c1] {\r\n  text-align: center;\r\n  padding: 100px 20px;\r\n  background: white;\r\n  border-radius: 20px;\r\n  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);\n}\n.empty-icon[data-v-1f39e5c1] {\r\n  font-size: 80px;\r\n  margin-bottom: 24px;\r\n  opacity: 0.3;\n}\n.empty-text[data-v-1f39e5c1] {\r\n  font-family: 'Outfit', sans-serif;\r\n  font-size: 24px;\r\n  font-weight: 700;\r\n  color: #1a3353;\r\n  margin: 0 0 12px 0;\n}\n.empty-subtext[data-v-1f39e5c1] {\r\n  font-family: 'Manrope', sans-serif;\r\n  font-size: 16px;\r\n  color: #94a3b8;\r\n  margin: 0;\n}\r\n\r\n/* ============================================\r\n   RESPONSIVE DESIGN\r\n   ============================================ */\n@media (max-width: 1024px) {\n.data-grid[data-v-1f39e5c1] {\r\n    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));\r\n    gap: 20px;\n}\n.stats-overview[data-v-1f39e5c1] {\r\n    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));\n}\n}\n@media (max-width: 768px) {\n.data-page-content[data-v-1f39e5c1] {\r\n    padding: 32px 16px;\n}\n.page-title[data-v-1f39e5c1] {\r\n    font-size: 36px;\n}\n.page-subtitle[data-v-1f39e5c1] {\r\n    font-size: 16px;\n}\n.page-header[data-v-1f39e5c1] {\r\n    margin-bottom: 32px;\n}\n.category-filters[data-v-1f39e5c1] {\r\n    padding: 12px;\n}\n.filter-btn[data-v-1f39e5c1] {\r\n    padding: 10px 20px;\r\n    font-size: 13px;\n}\n.data-grid[data-v-1f39e5c1] {\r\n    grid-template-columns: 1fr;\r\n    gap: 16px;\n}\n.stats-overview[data-v-1f39e5c1] {\r\n    grid-template-columns: 1fr;\r\n    gap: 16px;\n}\n.card-footer[data-v-1f39e5c1] {\r\n    flex-direction: column;\n}\n.preview-btn[data-v-1f39e5c1] {\r\n    width: 100%;\n}\n}\n@media (max-width: 480px) {\n.page-title[data-v-1f39e5c1] {\r\n    font-size: 28px;\n}\n.page-subtitle[data-v-1f39e5c1] {\r\n    font-size: 14px;\n}\n.stat-value[data-v-1f39e5c1] {\r\n    font-size: 28px;\n}\n.card-title[data-v-1f39e5c1] {\r\n    font-size: 18px;\n}\n.card-description[data-v-1f39e5c1] {\r\n    font-size: 13px;\n}\n}\r\n";
   styleInject(css_248z$4);
 
   script$4.render = render$4;
@@ -8155,120 +8147,16 @@
           { code: 'sw', name: 'Kiswahili', flag: '🇰🇪', shortName: 'SW' },
           { code: 'pt', name: 'Português', flag: '🇵🇹', shortName: 'PT' }
         ],
-        currentLanguage: { code: 'en', name: 'English', flag: '🇬🇧', shortName: 'EN' },
-        
-        // Built-in translations
-        translations: {
-          en: {
-            'Welcome back': 'Welcome back',
-            'Dashboard': 'Dashboard',
-            'Data': 'Data',
-            'Publication': 'Publication',
-            'Events': 'Events',
-            'Emergency': 'Emergency',
-            'Raven': 'Raven',
-            'Learning': 'Learning',
-            'Desk': 'Desk',
-            'Help Desk': 'Help Desk',
-            'Profile': 'Profile',
-            'Log out': 'Log out',
-            'Select Language': 'Select Language',
-            'Switching language...': 'Switching language...',
-            'Language changed successfully': 'Language changed successfully',
-            'Failed to change language': 'Failed to change language'
-          },
-          fr: {
-            'Welcome back': 'Bon retour',
-            'Dashboard': 'Tableau de bord',
-            'Opportunities': 'Opportunités',
-            'Deployments': 'Déploiements',
-            'Events': 'Événements',
-            'Membership': 'Adhésion',
-            'Raven': 'Raven',
-            'Learning': 'Apprentissage',
-            'Desk': 'Bureau',
-            'Help Desk': "Centre d'aide",
-            'Profile': 'Profil',
-            'Log out': 'Se déconnecter',
-            'Select Language': 'Choisir la langue',
-            'Switching language...': 'Changement de langue...',
-            'Language changed successfully': 'Langue changée avec succès',
-            'Failed to change language': 'Échec du changement de langue'
-          },
-          ar: {
-            'Welcome back': 'مرحبا بك',
-            'Dashboard': 'لوحة القيادة',
-            'Opportunities': 'الفرص',
-            'Deployments': 'عمليات النشر',
-            'Events': 'الأحداث',
-            'Membership': 'العضوية',
-            'Raven': 'الغراب',
-            'Learning': 'التعلم',
-            'Desk': 'المكتب',
-            'Help Desk': 'مكتب المساعدة',
-            'Profile': 'الملف الشخصي',
-            'Log out': 'تسجيل الخروج',
-            'Select Language': 'اختر اللغة',
-            'Switching language...': 'جاري تبديل اللغة...',
-            'Language changed successfully': 'تم تغيير اللغة بنجاح',
-            'Failed to change language': 'فشل تغيير اللغة'
-          },
-          sw: {
-            'Welcome back': 'Karibu tena',
-            'Dashboard': 'Dashibodi',
-            'Opportunities': 'Fursa',
-            'Deployments': 'Utumiaji',
-            'Events': 'Matukio',
-            'Membership': 'Uanachama',
-            'Raven': 'Raven',
-            'Learning': 'Kujifunza',
-            'Desk': 'Dawati',
-            'Help Desk': 'Dawati la Msaada',
-            'Profile': 'Wasifu',
-            'Log out': 'Toka',
-            'Select Language': 'Chagua Lugha',
-            'Switching language...': 'Inabadilisha lugha...',
-            'Language changed successfully': 'Lugha imebadilishwa',
-            'Failed to change language': 'Imeshindwa kubadilisha lugha'
-          },
-          pt: {
-            'Welcome back': 'Bem-vindo de volta',
-            'Dashboard': 'Painel',
-            'Opportunities': 'Oportunidades',
-            'Deployments': 'Implantações',
-            'Events': 'Eventos',
-            'Membership': 'Associação',
-            'Raven': 'Raven',
-            'Learning': 'Aprendizagem',
-            'Desk': 'Secretária',
-            'Help Desk': 'Central de Ajuda',
-            'Profile': 'Perfil',
-            'Log out': 'Sair',
-            'Select Language': 'Selecionar Idioma',
-            'Switching language...': 'Mudando idioma...',
-            'Language changed successfully': 'Idioma alterado com sucesso',
-            'Failed to change language': 'Falha ao alterar idioma'
-          }
-        }
+        currentLanguage: { code: 'en', name: 'English', flag: '🇬🇧', shortName: 'EN' }
       }
     },
     
     methods: {
-      // Translation helper - uses built-in translations first, falls back to Frappe
-      t(text) {
-        const lang = this.currentLanguage.code;
-        
-        // Try built-in translations first
-        if (this.translations[lang] && this.translations[lang][text]) {
-          return this.translations[lang][text];
-        }
-        
-        // Fall back to Frappe translation if available
-        if (window.frappe && window.__) {
+      // Frappe translation helper
+      __(text) {
+        if (window.__ && typeof window.__ === 'function') {
           return window.__(text);
         }
-        
-        // Return original text if no translation found
         return text;
       },
 
@@ -8301,7 +8189,7 @@
       },
 
       getPageTitle() {
-        const pageTitles = {
+        const titles = {
           'dashboard': 'Dashboard',
           'data': 'Data',
           'publication': 'Publication',
@@ -8309,7 +8197,7 @@
           'emergency': 'Emergency',
           'profile': 'Profile'
         };
-        return pageTitles[this.currentPage] || 'Dashboard';
+        return titles[this.currentPage] || 'Dashboard';
       },
 
       changeLanguage(lang) {
@@ -8323,7 +8211,7 @@
 
         if (window.frappe) {
           frappe.show_alert({
-            message: this.t('Switching language...'),
+            message: this.__('Switching language...'),
             indicator: 'blue'
           });
 
@@ -8338,7 +8226,7 @@
             callback: (response) => {
               if (response.message) {
                 frappe.show_alert({
-                  message: this.t('Language changed successfully'),
+                  message: this.__('Language changed successfully'),
                   indicator: 'green'
                 });
                 setTimeout(() => {
@@ -8348,7 +8236,7 @@
             },
             error: () => {
               frappe.show_alert({
-                message: this.t('Failed to change language'),
+                message: this.__('Failed to change language'),
                 indicator: 'red'
               });
             }
@@ -8362,7 +8250,7 @@
         this.userName = frappe.session.user_fullname || frappe.session.user;
         this.userEmail = frappe.session.user;
         
-        const userLang = frappe.boot.user.language || 'en';
+        const userLang = frappe.boot?.user?.language || 'en';
         const foundLang = this.languages.find(l => l.code === userLang);
         if (foundLang) {
           this.currentLanguage = foundLang;
@@ -8378,47 +8266,53 @@
   };
 
   const _hoisted_1 = { class: "dashboard-container" };
-  const _hoisted_2 = { class: "sidebar" };
-  const _hoisted_3 = { class: "sidebar-header-container" };
-  const _hoisted_4 = { class: "header-content" };
-  const _hoisted_5 = { class: "header-text" };
-  const _hoisted_6 = { class: "user-info" };
-  const _hoisted_7 = { class: "dropdown-icon" };
-  const _hoisted_8 = {
+  const _hoisted_2 = {
+    style: {"display":"none"},
+    xmlns: "http://www.w3.org/2000/svg"
+  };
+  const _hoisted_3 = { class: "sidebar" };
+  const _hoisted_4 = { class: "sidebar-header-container" };
+  const _hoisted_5 = { class: "header-content" };
+  const _hoisted_6 = { class: "header-text" };
+  const _hoisted_7 = { class: "app-name" };
+  const _hoisted_8 = { class: "user-info" };
+  const _hoisted_9 = { class: "dropdown-icon" };
+  const _hoisted_10 = {
     key: 0,
     class: "dropdown-menu"
   };
-  const _hoisted_9 = { class: "sidebar-menu" };
-  const _hoisted_10 = { class: "sidebar-label" };
-  const _hoisted_11 = { class: "sidebar-label" };
+  const _hoisted_11 = { class: "sidebar-menu" };
   const _hoisted_12 = { class: "sidebar-label" };
   const _hoisted_13 = { class: "sidebar-label" };
   const _hoisted_14 = { class: "sidebar-label" };
-  const _hoisted_15 = {
-    href: "/raven",
-    class: "sidebar-item"
-  };
+  const _hoisted_15 = { class: "sidebar-label" };
   const _hoisted_16 = { class: "sidebar-label" };
   const _hoisted_17 = {
-    href: "/lms",
+    href: "/raven",
     class: "sidebar-item"
   };
   const _hoisted_18 = { class: "sidebar-label" };
   const _hoisted_19 = {
-    href: "/app",
+    href: "/lms",
     class: "sidebar-item"
   };
   const _hoisted_20 = { class: "sidebar-label" };
   const _hoisted_21 = {
-    href: "#",
+    href: "/app",
     class: "sidebar-item"
   };
   const _hoisted_22 = { class: "sidebar-label" };
-  const _hoisted_23 = { class: "main-content" };
-  const _hoisted_24 = { class: "top-bar" };
-  const _hoisted_25 = { key: 0 };
-  const _hoisted_26 = { class: "user-name" };
-  const _hoisted_27 = { class: "page-title" };
+  const _hoisted_23 = {
+    href: "#",
+    class: "sidebar-item"
+  };
+  const _hoisted_24 = { class: "sidebar-label" };
+  const _hoisted_25 = { class: "main-content" };
+  const _hoisted_26 = {
+    key: 0,
+    class: "welcome-banner"
+  };
+  const _hoisted_27 = { class: "user-name" };
   const _hoisted_28 = { class: "language-toggle-wrapper" };
   const _hoisted_29 = { class: "lang-text" };
   const _hoisted_30 = {
@@ -8433,7 +8327,23 @@
     key: 0,
     class: "checkmark"
   };
-  const _hoisted_36 = { class: "content-area" };
+  const _hoisted_36 = { class: "page-title-bar" };
+  const _hoisted_37 = { class: "page-title" };
+  const _hoisted_38 = { class: "language-toggle-wrapper" };
+  const _hoisted_39 = { class: "lang-text" };
+  const _hoisted_40 = {
+    key: 0,
+    class: "language-dropdown"
+  };
+  const _hoisted_41 = { class: "language-dropdown-header" };
+  const _hoisted_42 = ["onClick"];
+  const _hoisted_43 = { class: "lang-flag" };
+  const _hoisted_44 = { class: "lang-name" };
+  const _hoisted_45 = {
+    key: 0,
+    class: "checkmark"
+  };
+  const _hoisted_46 = { class: "content-area" };
 
   function render(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_DashboardPage = resolveComponent("DashboardPage");
@@ -8444,22 +8354,26 @@
     const _component_EmergencyPage = resolveComponent("EmergencyPage");
 
     return (openBlock(), createElementBlock("div", _hoisted_1, [
-      createCommentVNode(" Sidebar - Fixed, Always Visible "),
-      createBaseVNode("div", _hoisted_2, [
+      createCommentVNode(" SVG Icon Definitions "),
+      (openBlock(), createElementBlock("svg", _hoisted_2, [...(_cache[10] || (_cache[10] = [
+        createStaticVNode("<symbol id=\"icon-grid\" viewBox=\"0 0 24 24\" data-v-11a43918><rect x=\"3\" y=\"3\" width=\"7\" height=\"7\" data-v-11a43918></rect><rect x=\"14\" y=\"3\" width=\"7\" height=\"7\" data-v-11a43918></rect><rect x=\"14\" y=\"14\" width=\"7\" height=\"7\" data-v-11a43918></rect><rect x=\"3\" y=\"14\" width=\"7\" height=\"7\" data-v-11a43918></rect></symbol><symbol id=\"icon-database\" viewBox=\"0 0 24 24\" data-v-11a43918><ellipse cx=\"12\" cy=\"5\" rx=\"9\" ry=\"3\" data-v-11a43918></ellipse><path d=\"M21 12c0 1.66-4 3-9 3s-9-1.34-9-3\" data-v-11a43918></path><path d=\"M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5\" data-v-11a43918></path></symbol><symbol id=\"icon-file-text\" viewBox=\"0 0 24 24\" data-v-11a43918><path d=\"M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z\" data-v-11a43918></path><polyline points=\"14 2 14 8 20 8\" data-v-11a43918></polyline><line x1=\"16\" y1=\"13\" x2=\"8\" y2=\"13\" data-v-11a43918></line><line x1=\"16\" y1=\"17\" x2=\"8\" y2=\"17\" data-v-11a43918></line><polyline points=\"10 9 9 9 8 9\" data-v-11a43918></polyline></symbol><symbol id=\"icon-calendar\" viewBox=\"0 0 24 24\" data-v-11a43918><rect x=\"3\" y=\"4\" width=\"18\" height=\"18\" rx=\"2\" ry=\"2\" data-v-11a43918></rect><line x1=\"16\" y1=\"2\" x2=\"16\" y2=\"6\" data-v-11a43918></line><line x1=\"8\" y1=\"2\" x2=\"8\" y2=\"6\" data-v-11a43918></line><line x1=\"3\" y1=\"10\" x2=\"21\" y2=\"10\" data-v-11a43918></line></symbol><symbol id=\"icon-alert-circle\" viewBox=\"0 0 24 24\" data-v-11a43918><circle cx=\"12\" cy=\"12\" r=\"10\" data-v-11a43918></circle><line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"12\" data-v-11a43918></line><line x1=\"12\" y1=\"16\" x2=\"12.01\" y2=\"16\" data-v-11a43918></line></symbol><symbol id=\"icon-message-square\" viewBox=\"0 0 24 24\" data-v-11a43918><path d=\"M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z\" data-v-11a43918></path></symbol><symbol id=\"icon-book-open\" viewBox=\"0 0 24 24\" data-v-11a43918><path d=\"M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z\" data-v-11a43918></path><path d=\"M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z\" data-v-11a43918></path></symbol><symbol id=\"icon-home\" viewBox=\"0 0 24 24\" data-v-11a43918><path d=\"M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z\" data-v-11a43918></path><polyline points=\"9 22 9 12 15 12 15 22\" data-v-11a43918></polyline></symbol><symbol id=\"icon-help-circle\" viewBox=\"0 0 24 24\" data-v-11a43918><circle cx=\"12\" cy=\"12\" r=\"10\" data-v-11a43918></circle><path d=\"M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3\" data-v-11a43918></path><line x1=\"12\" y1=\"17\" x2=\"12.01\" y2=\"17\" data-v-11a43918></line></symbol><symbol id=\"icon-user\" viewBox=\"0 0 24 24\" data-v-11a43918><path d=\"M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2\" data-v-11a43918></path><circle cx=\"12\" cy=\"7\" r=\"4\" data-v-11a43918></circle></symbol><symbol id=\"icon-log-out\" viewBox=\"0 0 24 24\" data-v-11a43918><path d=\"M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4\" data-v-11a43918></path><polyline points=\"16 17 21 12 16 7\" data-v-11a43918></polyline><line x1=\"21\" y1=\"12\" x2=\"9\" y2=\"12\" data-v-11a43918></line></symbol><symbol id=\"icon-globe\" viewBox=\"0 0 24 24\" data-v-11a43918><circle cx=\"12\" cy=\"12\" r=\"10\" data-v-11a43918></circle><line x1=\"2\" y1=\"12\" x2=\"22\" y2=\"12\" data-v-11a43918></line><path d=\"M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z\" data-v-11a43918></path></symbol>", 12)
+      ]))])),
+      createCommentVNode(" Sidebar "),
+      createBaseVNode("div", _hoisted_3, [
         createCommentVNode(" Sidebar Header with Dropdown "),
-        createBaseVNode("div", _hoisted_3, [
+        createBaseVNode("div", _hoisted_4, [
           createBaseVNode("div", {
             class: "sidebar-header",
             onClick: _cache[0] || (_cache[0] = (...args) => ($options.toggleDropdown && $options.toggleDropdown(...args)))
           }, [
-            createBaseVNode("div", _hoisted_4, [
-              _cache[10] || (_cache[10] = createBaseVNode("div", { class: "app-logo" }, "🌍", -1 /* CACHED */)),
-              createBaseVNode("div", _hoisted_5, [
-                _cache[9] || (_cache[9] = createBaseVNode("div", { class: "app-name" }, "LocalizationHub", -1 /* CACHED */)),
-                createBaseVNode("div", _hoisted_6, toDisplayString($data.userName), 1 /* TEXT */)
+            createBaseVNode("div", _hoisted_5, [
+              _cache[11] || (_cache[11] = createBaseVNode("div", { class: "app-logo" }, "🌍", -1 /* CACHED */)),
+              createBaseVNode("div", _hoisted_6, [
+                createBaseVNode("div", _hoisted_7, toDisplayString($options.__("LocalizationHub")), 1 /* TEXT */),
+                createBaseVNode("div", _hoisted_8, toDisplayString($data.userName), 1 /* TEXT */)
               ])
             ]),
-            createBaseVNode("div", _hoisted_7, [
+            createBaseVNode("div", _hoisted_9, [
               createBaseVNode("span", {
                 class: normalizeClass(["chevron", { open: $data.showDropdown }])
               }, "▼", 2 /* CLASS */)
@@ -8469,23 +8383,27 @@
           createVNode(Transition, { name: "dropdown" }, {
             default: withCtx(() => [
               ($data.showDropdown)
-                ? (openBlock(), createElementBlock("div", _hoisted_8, [
+                ? (openBlock(), createElementBlock("div", _hoisted_10, [
                     createBaseVNode("a", {
                       href: "#",
                       onClick: _cache[1] || (_cache[1] = withModifiers((...args) => ($options.navigateToProfile && $options.navigateToProfile(...args)), ["prevent"])),
                       class: "dropdown-item"
                     }, [
-                      _cache[11] || (_cache[11] = createBaseVNode("span", { class: "dropdown-icon-item" }, "👤", -1 /* CACHED */)),
-                      createBaseVNode("span", null, toDisplayString($options.t('Profile')), 1 /* TEXT */)
+                      _cache[12] || (_cache[12] = createBaseVNode("svg", { class: "dropdown-icon-item" }, [
+                        createBaseVNode("use", { href: "#icon-user" })
+                      ], -1 /* CACHED */)),
+                      createBaseVNode("span", null, toDisplayString($options.__("Profile")), 1 /* TEXT */)
                     ]),
-                    _cache[13] || (_cache[13] = createBaseVNode("div", { class: "dropdown-divider" }, null, -1 /* CACHED */)),
+                    _cache[14] || (_cache[14] = createBaseVNode("div", { class: "dropdown-divider" }, null, -1 /* CACHED */)),
                     createBaseVNode("a", {
                       href: "#",
                       onClick: _cache[2] || (_cache[2] = withModifiers((...args) => ($options.logout && $options.logout(...args)), ["prevent"])),
                       class: "dropdown-item"
                     }, [
-                      _cache[12] || (_cache[12] = createBaseVNode("span", { class: "dropdown-icon-item" }, "🚪", -1 /* CACHED */)),
-                      createBaseVNode("span", null, toDisplayString($options.t('Log out')), 1 /* TEXT */)
+                      _cache[13] || (_cache[13] = createBaseVNode("svg", { class: "dropdown-icon-item" }, [
+                        createBaseVNode("use", { href: "#icon-log-out" })
+                      ], -1 /* CACHED */)),
+                      createBaseVNode("span", null, toDisplayString($options.__("Log out")), 1 /* TEXT */)
                     ])
                   ]))
                 : createCommentVNode("v-if", true)
@@ -8494,15 +8412,17 @@
           })
         ]),
         createCommentVNode(" Sidebar Menu "),
-        createBaseVNode("div", _hoisted_9, [
-          createCommentVNode(" Dashboard Home "),
+        createBaseVNode("div", _hoisted_11, [
+          createCommentVNode(" Dashboard "),
           createBaseVNode("a", {
             href: "#",
             onClick: _cache[3] || (_cache[3] = withModifiers($event => ($data.currentPage = 'dashboard'), ["prevent"])),
             class: normalizeClass(["sidebar-item", { active: $data.currentPage === 'dashboard' }])
           }, [
-            _cache[14] || (_cache[14] = createBaseVNode("span", { class: "sidebar-icon" }, "📊", -1 /* CACHED */)),
-            createBaseVNode("span", _hoisted_10, toDisplayString($options.t('Dashboard')), 1 /* TEXT */)
+            _cache[15] || (_cache[15] = createBaseVNode("svg", { class: "sidebar-icon" }, [
+              createBaseVNode("use", { href: "#icon-grid" })
+            ], -1 /* CACHED */)),
+            createBaseVNode("span", _hoisted_12, toDisplayString($options.__("Dashboard")), 1 /* TEXT */)
           ], 2 /* CLASS */),
           createCommentVNode(" Data "),
           createBaseVNode("a", {
@@ -8510,8 +8430,10 @@
             onClick: _cache[4] || (_cache[4] = withModifiers($event => ($data.currentPage = 'data'), ["prevent"])),
             class: normalizeClass(["sidebar-item", { active: $data.currentPage === 'data' }])
           }, [
-            _cache[15] || (_cache[15] = createBaseVNode("span", { class: "sidebar-icon" }, "💼", -1 /* CACHED */)),
-            createBaseVNode("span", _hoisted_11, toDisplayString($options.t('Data')), 1 /* TEXT */)
+            _cache[16] || (_cache[16] = createBaseVNode("svg", { class: "sidebar-icon" }, [
+              createBaseVNode("use", { href: "#icon-database" })
+            ], -1 /* CACHED */)),
+            createBaseVNode("span", _hoisted_13, toDisplayString($options.__("Data")), 1 /* TEXT */)
           ], 2 /* CLASS */),
           createCommentVNode(" Publication "),
           createBaseVNode("a", {
@@ -8519,8 +8441,10 @@
             onClick: _cache[5] || (_cache[5] = withModifiers($event => ($data.currentPage = 'publication'), ["prevent"])),
             class: normalizeClass(["sidebar-item", { active: $data.currentPage === 'publication' }])
           }, [
-            _cache[16] || (_cache[16] = createBaseVNode("span", { class: "sidebar-icon" }, "📦", -1 /* CACHED */)),
-            createBaseVNode("span", _hoisted_12, toDisplayString($options.t('Publication')), 1 /* TEXT */)
+            _cache[17] || (_cache[17] = createBaseVNode("svg", { class: "sidebar-icon" }, [
+              createBaseVNode("use", { href: "#icon-file-text" })
+            ], -1 /* CACHED */)),
+            createBaseVNode("span", _hoisted_14, toDisplayString($options.__("Publication")), 1 /* TEXT */)
           ], 2 /* CLASS */),
           createCommentVNode(" Events "),
           createBaseVNode("a", {
@@ -8528,8 +8452,10 @@
             onClick: _cache[6] || (_cache[6] = withModifiers($event => ($data.currentPage = 'events'), ["prevent"])),
             class: normalizeClass(["sidebar-item", { active: $data.currentPage === 'events' }])
           }, [
-            _cache[17] || (_cache[17] = createBaseVNode("span", { class: "sidebar-icon" }, "📅", -1 /* CACHED */)),
-            createBaseVNode("span", _hoisted_13, toDisplayString($options.t('Events')), 1 /* TEXT */)
+            _cache[18] || (_cache[18] = createBaseVNode("svg", { class: "sidebar-icon" }, [
+              createBaseVNode("use", { href: "#icon-calendar" })
+            ], -1 /* CACHED */)),
+            createBaseVNode("span", _hoisted_15, toDisplayString($options.__("Events")), 1 /* TEXT */)
           ], 2 /* CLASS */),
           createCommentVNode(" Emergency "),
           createBaseVNode("a", {
@@ -8537,97 +8463,160 @@
             onClick: _cache[7] || (_cache[7] = withModifiers($event => ($data.currentPage = 'emergency'), ["prevent"])),
             class: normalizeClass(["sidebar-item", { active: $data.currentPage === 'emergency' }])
           }, [
-            _cache[18] || (_cache[18] = createBaseVNode("span", { class: "sidebar-icon" }, "🎫", -1 /* CACHED */)),
-            createBaseVNode("span", _hoisted_14, toDisplayString($options.t('Emergency')), 1 /* TEXT */)
+            _cache[19] || (_cache[19] = createBaseVNode("svg", { class: "sidebar-icon" }, [
+              createBaseVNode("use", { href: "#icon-alert-circle" })
+            ], -1 /* CACHED */)),
+            createBaseVNode("span", _hoisted_16, toDisplayString($options.__("Emergency")), 1 /* TEXT */)
           ], 2 /* CLASS */),
-          _cache[23] || (_cache[23] = createBaseVNode("div", { class: "sidebar-divider" }, null, -1 /* CACHED */)),
+          _cache[24] || (_cache[24] = createBaseVNode("div", { class: "sidebar-divider" }, null, -1 /* CACHED */)),
           createCommentVNode(" External Links "),
-          createBaseVNode("a", _hoisted_15, [
-            _cache[19] || (_cache[19] = createBaseVNode("span", { class: "sidebar-icon" }, "💬", -1 /* CACHED */)),
-            createBaseVNode("span", _hoisted_16, toDisplayString($options.t('Raven')), 1 /* TEXT */)
-          ]),
           createBaseVNode("a", _hoisted_17, [
-            _cache[20] || (_cache[20] = createBaseVNode("span", { class: "sidebar-icon" }, "📚", -1 /* CACHED */)),
-            createBaseVNode("span", _hoisted_18, toDisplayString($options.t('Learning')), 1 /* TEXT */)
+            _cache[20] || (_cache[20] = createBaseVNode("svg", { class: "sidebar-icon" }, [
+              createBaseVNode("use", { href: "#icon-message-square" })
+            ], -1 /* CACHED */)),
+            createBaseVNode("span", _hoisted_18, toDisplayString($options.__("Raven")), 1 /* TEXT */)
           ]),
           createBaseVNode("a", _hoisted_19, [
-            _cache[21] || (_cache[21] = createBaseVNode("span", { class: "sidebar-icon" }, "🏠", -1 /* CACHED */)),
-            createBaseVNode("span", _hoisted_20, toDisplayString($options.t('Desk')), 1 /* TEXT */)
+            _cache[21] || (_cache[21] = createBaseVNode("svg", { class: "sidebar-icon" }, [
+              createBaseVNode("use", { href: "#icon-book-open" })
+            ], -1 /* CACHED */)),
+            createBaseVNode("span", _hoisted_20, toDisplayString($options.__("Learning")), 1 /* TEXT */)
           ]),
           createBaseVNode("a", _hoisted_21, [
-            _cache[22] || (_cache[22] = createBaseVNode("span", { class: "sidebar-icon" }, "❓", -1 /* CACHED */)),
-            createBaseVNode("span", _hoisted_22, toDisplayString($options.t('Help Desk')), 1 /* TEXT */)
+            _cache[22] || (_cache[22] = createBaseVNode("svg", { class: "sidebar-icon" }, [
+              createBaseVNode("use", { href: "#icon-home" })
+            ], -1 /* CACHED */)),
+            createBaseVNode("span", _hoisted_22, toDisplayString($options.__("Desk")), 1 /* TEXT */)
+          ]),
+          createBaseVNode("a", _hoisted_23, [
+            _cache[23] || (_cache[23] = createBaseVNode("svg", { class: "sidebar-icon" }, [
+              createBaseVNode("use", { href: "#icon-help-circle" })
+            ], -1 /* CACHED */)),
+            createBaseVNode("span", _hoisted_24, toDisplayString($options.__("Help Desk")), 1 /* TEXT */)
           ])
         ])
       ]),
       createCommentVNode(" Main Content Area "),
-      createBaseVNode("div", _hoisted_23, [
-        createCommentVNode(" Top Bar with Language Toggle - Always Visible "),
-        createBaseVNode("div", _hoisted_24, [
-          createCommentVNode(" Welcome message - only on dashboard "),
-          ($data.currentPage === 'dashboard')
-            ? (openBlock(), createElementBlock("h1", _hoisted_25, [
-                createTextVNode(toDisplayString($options.t('Welcome back')) + ", ", 1 /* TEXT */),
-                createBaseVNode("span", _hoisted_26, toDisplayString($data.userName), 1 /* TEXT */),
-                _cache[24] || (_cache[24] = createTextVNode("! ", -1 /* CACHED */))
-              ]))
-            : (openBlock(), createElementBlock(Fragment, { key: 1 }, [
-                createCommentVNode(" Page title - on other pages "),
-                createBaseVNode("h1", _hoisted_27, toDisplayString($options.t($options.getPageTitle())), 1 /* TEXT */)
-              ], 2112 /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */)),
-          createCommentVNode(" Language Toggle - Always visible "),
-          createBaseVNode("div", _hoisted_28, [
-            createBaseVNode("div", {
-              class: "language-toggle",
-              onClick: _cache[8] || (_cache[8] = (...args) => ($options.toggleLanguageDropdown && $options.toggleLanguageDropdown(...args)))
-            }, [
-              _cache[26] || (_cache[26] = createBaseVNode("span", { class: "lang-icon" }, "🌐", -1 /* CACHED */)),
-              createBaseVNode("span", _hoisted_29, toDisplayString($data.currentLanguage.shortName), 1 /* TEXT */),
-              (openBlock(), createElementBlock("svg", {
-                class: normalizeClass(["lang-chevron", { open: $data.showLanguageDropdown }]),
-                width: "12",
-                height: "12",
-                viewBox: "0 0 16 16",
-                fill: "none"
-              }, [...(_cache[25] || (_cache[25] = [
-                createBaseVNode("path", {
-                  d: "M4 6L8 10L12 6",
-                  stroke: "currentColor",
-                  "stroke-width": "2",
-                  "stroke-linecap": "round"
-                }, null, -1 /* CACHED */)
-              ]))], 2 /* CLASS */))
-            ]),
-            createCommentVNode(" Language Dropdown "),
-            createVNode(Transition, { name: "lang-dropdown" }, {
-              default: withCtx(() => [
-                ($data.showLanguageDropdown)
-                  ? (openBlock(), createElementBlock("div", _hoisted_30, [
-                      createBaseVNode("div", _hoisted_31, toDisplayString($options.t('Select Language')), 1 /* TEXT */),
-                      (openBlock(true), createElementBlock(Fragment, null, renderList($data.languages, (lang) => {
-                        return (openBlock(), createElementBlock("a", {
-                          key: lang.code,
-                          href: "#",
-                          onClick: withModifiers($event => ($options.changeLanguage(lang)), ["prevent"]),
-                          class: normalizeClass(["language-option", { active: lang.code === $data.currentLanguage.code }])
-                        }, [
-                          createBaseVNode("span", _hoisted_33, toDisplayString(lang.flag), 1 /* TEXT */),
-                          createBaseVNode("span", _hoisted_34, toDisplayString(lang.name), 1 /* TEXT */),
-                          (lang.code === $data.currentLanguage.code)
-                            ? (openBlock(), createElementBlock("span", _hoisted_35, "✓"))
-                            : createCommentVNode("v-if", true)
-                        ], 10 /* CLASS, PROPS */, _hoisted_32))
-                      }), 128 /* KEYED_FRAGMENT */))
-                    ]))
-                  : createCommentVNode("v-if", true)
+      createBaseVNode("div", _hoisted_25, [
+        createCommentVNode(" Welcome Banner - ONLY on dashboard page "),
+        ($data.currentPage === 'dashboard')
+          ? (openBlock(), createElementBlock("div", _hoisted_26, [
+              createBaseVNode("h1", null, [
+                createTextVNode(toDisplayString($options.__("Welcome back")) + ", ", 1 /* TEXT */),
+                createBaseVNode("span", _hoisted_27, toDisplayString($data.userName), 1 /* TEXT */),
+                _cache[25] || (_cache[25] = createTextVNode("!", -1 /* CACHED */))
               ]),
-              _: 1 /* STABLE */
-            })
-          ])
-        ]),
-        createCommentVNode(" Scrollable Content Area - Different components load here "),
-        createBaseVNode("div", _hoisted_36, [
-          createCommentVNode(" Load different page components based on currentPage "),
+              createCommentVNode(" Language Toggle "),
+              createBaseVNode("div", _hoisted_28, [
+                createBaseVNode("div", {
+                  class: "language-toggle",
+                  onClick: _cache[8] || (_cache[8] = (...args) => ($options.toggleLanguageDropdown && $options.toggleLanguageDropdown(...args)))
+                }, [
+                  _cache[27] || (_cache[27] = createBaseVNode("svg", { class: "lang-icon-svg" }, [
+                    createBaseVNode("use", { href: "#icon-globe" })
+                  ], -1 /* CACHED */)),
+                  createBaseVNode("span", _hoisted_29, toDisplayString($data.currentLanguage.shortName), 1 /* TEXT */),
+                  (openBlock(), createElementBlock("svg", {
+                    class: normalizeClass(["lang-chevron", { open: $data.showLanguageDropdown }]),
+                    width: "12",
+                    height: "12",
+                    viewBox: "0 0 16 16",
+                    fill: "none"
+                  }, [...(_cache[26] || (_cache[26] = [
+                    createBaseVNode("path", {
+                      d: "M4 6L8 10L12 6",
+                      stroke: "currentColor",
+                      "stroke-width": "2",
+                      "stroke-linecap": "round"
+                    }, null, -1 /* CACHED */)
+                  ]))], 2 /* CLASS */))
+                ]),
+                createCommentVNode(" Language Dropdown "),
+                createVNode(Transition, { name: "lang-dropdown" }, {
+                  default: withCtx(() => [
+                    ($data.showLanguageDropdown)
+                      ? (openBlock(), createElementBlock("div", _hoisted_30, [
+                          createBaseVNode("div", _hoisted_31, toDisplayString($options.__("Select Language")), 1 /* TEXT */),
+                          (openBlock(true), createElementBlock(Fragment, null, renderList($data.languages, (lang) => {
+                            return (openBlock(), createElementBlock("a", {
+                              key: lang.code,
+                              href: "#",
+                              onClick: withModifiers($event => ($options.changeLanguage(lang)), ["prevent"]),
+                              class: normalizeClass(["language-option", { active: lang.code === $data.currentLanguage.code }])
+                            }, [
+                              createBaseVNode("span", _hoisted_33, toDisplayString(lang.flag), 1 /* TEXT */),
+                              createBaseVNode("span", _hoisted_34, toDisplayString(lang.name), 1 /* TEXT */),
+                              (lang.code === $data.currentLanguage.code)
+                                ? (openBlock(), createElementBlock("span", _hoisted_35, "✓"))
+                                : createCommentVNode("v-if", true)
+                            ], 10 /* CLASS, PROPS */, _hoisted_32))
+                          }), 128 /* KEYED_FRAGMENT */))
+                        ]))
+                      : createCommentVNode("v-if", true)
+                  ]),
+                  _: 1 /* STABLE */
+                })
+              ])
+            ]))
+          : (openBlock(), createElementBlock(Fragment, { key: 1 }, [
+              createCommentVNode(" Page Title Bar - For OTHER pages (not dashboard) "),
+              createBaseVNode("div", _hoisted_36, [
+                createBaseVNode("h1", _hoisted_37, toDisplayString($options.__($options.getPageTitle())), 1 /* TEXT */),
+                createCommentVNode(" Language Toggle "),
+                createBaseVNode("div", _hoisted_38, [
+                  createBaseVNode("div", {
+                    class: "language-toggle",
+                    onClick: _cache[9] || (_cache[9] = (...args) => ($options.toggleLanguageDropdown && $options.toggleLanguageDropdown(...args)))
+                  }, [
+                    _cache[29] || (_cache[29] = createBaseVNode("svg", { class: "lang-icon-svg" }, [
+                      createBaseVNode("use", { href: "#icon-globe" })
+                    ], -1 /* CACHED */)),
+                    createBaseVNode("span", _hoisted_39, toDisplayString($data.currentLanguage.shortName), 1 /* TEXT */),
+                    (openBlock(), createElementBlock("svg", {
+                      class: normalizeClass(["lang-chevron", { open: $data.showLanguageDropdown }]),
+                      width: "12",
+                      height: "12",
+                      viewBox: "0 0 16 16",
+                      fill: "none"
+                    }, [...(_cache[28] || (_cache[28] = [
+                      createBaseVNode("path", {
+                        d: "M4 6L8 10L12 6",
+                        stroke: "currentColor",
+                        "stroke-width": "2",
+                        "stroke-linecap": "round"
+                      }, null, -1 /* CACHED */)
+                    ]))], 2 /* CLASS */))
+                  ]),
+                  createCommentVNode(" Language Dropdown "),
+                  createVNode(Transition, { name: "lang-dropdown" }, {
+                    default: withCtx(() => [
+                      ($data.showLanguageDropdown)
+                        ? (openBlock(), createElementBlock("div", _hoisted_40, [
+                            createBaseVNode("div", _hoisted_41, toDisplayString($options.__("Select Language")), 1 /* TEXT */),
+                            (openBlock(true), createElementBlock(Fragment, null, renderList($data.languages, (lang) => {
+                              return (openBlock(), createElementBlock("a", {
+                                key: lang.code,
+                                href: "#",
+                                onClick: withModifiers($event => ($options.changeLanguage(lang)), ["prevent"]),
+                                class: normalizeClass(["language-option", { active: lang.code === $data.currentLanguage.code }])
+                              }, [
+                                createBaseVNode("span", _hoisted_43, toDisplayString(lang.flag), 1 /* TEXT */),
+                                createBaseVNode("span", _hoisted_44, toDisplayString(lang.name), 1 /* TEXT */),
+                                (lang.code === $data.currentLanguage.code)
+                                  ? (openBlock(), createElementBlock("span", _hoisted_45, "✓"))
+                                  : createCommentVNode("v-if", true)
+                              ], 10 /* CLASS, PROPS */, _hoisted_42))
+                            }), 128 /* KEYED_FRAGMENT */))
+                          ]))
+                        : createCommentVNode("v-if", true)
+                    ]),
+                    _: 1 /* STABLE */
+                  })
+                ])
+              ])
+            ], 2112 /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */)),
+        createCommentVNode(" Scrollable Content Area "),
+        createBaseVNode("div", _hoisted_46, [
           ($data.currentPage === 'dashboard')
             ? (openBlock(), createBlock(_component_DashboardPage, { key: 0 }))
             : createCommentVNode("v-if", true),
@@ -8655,7 +8644,7 @@
     ]))
   }
 
-  var css_248z = "\r\n/* Main Container - FIXED 100vw x 100vh */\n.dashboard-container[data-v-11a43918] {\r\n  display: flex;\r\n  height: 100vh;\r\n  width: 100vw;\r\n  background: #f5f7fa;\r\n  overflow: hidden;\r\n  margin: 0;\r\n  padding: 0;\r\n  position: fixed;\r\n  top: 0;\r\n  left: 0;\n}\r\n\r\n/* ============================================\r\n   SIDEBAR - Professional & Compact\r\n   ============================================ */\n.sidebar[data-v-11a43918] {\r\n  width: 200px;\r\n  background: #fafbfc;\r\n  border-right: 1px solid #f0f1f3;\r\n  padding: 16px 0;\r\n  display: flex;\r\n  flex-direction: column;\r\n  height: 100vh;\r\n  overflow-y: auto;\r\n  flex-shrink: 0;\r\n  position: relative;\r\n  z-index: 10;\n}\n.sidebar-header-container[data-v-11a43918] {\r\n  position: relative;\r\n  margin-bottom: 16px;\n}\n.sidebar-header[data-v-11a43918] {\r\n  padding: 12px 16px 16px 16px;\r\n  border-bottom: 1px solid #f0f1f3;\r\n  cursor: pointer;\r\n  transition: background 0.15s ease;\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n  margin: 0 8px 16px 8px;\r\n  border-radius: 8px;\n}\n.sidebar-header[data-v-11a43918]:hover {\r\n  background: #f5f6f7;\n}\n.header-content[data-v-11a43918] {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 12px;\r\n  flex: 1;\n}\n.header-text[data-v-11a43918] {\r\n  flex: 1;\n}\n.app-logo[data-v-11a43918] {\r\n  font-size: 24px;\n}\n.app-name[data-v-11a43918] {\r\n  font-size: 14px;\r\n  font-weight: 600;\r\n  color: #1a1d1f;\r\n  letter-spacing: -0.01em;\n}\n.user-info[data-v-11a43918] {\r\n  font-size: 11px;\r\n  color: #6f767e;\r\n  margin-top: 2px;\r\n  font-weight: 500;\n}\n.dropdown-icon[data-v-11a43918] {\r\n  display: flex;\r\n  align-items: center;\r\n  color: #6f767e;\r\n  margin-left: 8px;\n}\n.chevron[data-v-11a43918] {\r\n  transition: transform 0.2s;\r\n  color: #6f767e;\r\n  font-size: 10px;\r\n  display: inline-block;\n}\n.chevron.open[data-v-11a43918] {\r\n  transform: rotate(180deg);\n}\r\n\r\n/* Dropdown Menu */\n.dropdown-menu[data-v-11a43918] {\r\n  position: absolute;\r\n  top: 100%;\r\n  left: 8px;\r\n  right: 8px;\r\n  background: white;\r\n  border: 1px solid #f0f1f3;\r\n  border-radius: 10px;\r\n  margin-top: 8px;\r\n  padding: 6px;\r\n  box-shadow: 0 4px 12px rgba(0,0,0,0.08), 0 2px 4px rgba(0,0,0,0.04);\r\n  z-index: 1000;\n}\n.dropdown-enter-active[data-v-11a43918],\r\n.dropdown-leave-active[data-v-11a43918] {\r\n  transition: all 0.2s ease;\n}\n.dropdown-enter-from[data-v-11a43918] {\r\n  opacity: 0;\r\n  transform: translateY(-10px);\n}\n.dropdown-leave-to[data-v-11a43918] {\r\n  opacity: 0;\r\n  transform: translateY(-5px);\n}\n.dropdown-item[data-v-11a43918] {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 10px;\r\n  padding: 10px 12px;\r\n  color: #33383f;\r\n  text-decoration: none;\r\n  transition: background 0.15s ease;\r\n  cursor: pointer;\r\n  font-size: 13px;\r\n  border-radius: 6px;\r\n  font-weight: 500;\n}\n.dropdown-item[data-v-11a43918]:hover {\r\n  background: #f5f6f7;\n}\n.dropdown-icon-item[data-v-11a43918] {\r\n  font-size: 16px;\r\n  width: 18px;\r\n  text-align: center;\n}\n.dropdown-divider[data-v-11a43918] {\r\n  height: 1px;\r\n  background: #f0f1f3;\r\n  margin: 4px 0;\n}\r\n\r\n/* Sidebar Menu */\n.sidebar-menu[data-v-11a43918] {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 2px;\r\n  padding: 0 8px;\n}\n.sidebar-item[data-v-11a43918] {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 10px;\r\n  padding: 10px 12px;\r\n  margin: 0 0;\r\n  border-radius: 6px;\r\n  text-decoration: none;\r\n  color: #33383f;\r\n  transition: all 0.15s ease;\r\n  cursor: pointer;\r\n  font-size: 13px;\n}\n.sidebar-item[data-v-11a43918]:hover {\r\n  background: #f0f1f3;\r\n  transform: translateX(2px);\n}\n.sidebar-item.active[data-v-11a43918] {\r\n  background: #fff0f0;\r\n  color: #d63939;\r\n  font-weight: 600;\r\n  box-shadow: 0 1px 3px rgba(214, 57, 57, 0.1);\n}\n.sidebar-icon[data-v-11a43918] {\r\n  font-size: 18px;\r\n  width: 20px;\r\n  text-align: center;\r\n  opacity: 0.9;\n}\n.sidebar-label[data-v-11a43918] {\r\n  font-size: 13px;\r\n  font-weight: 500;\r\n  letter-spacing: -0.01em;\n}\n.sidebar-divider[data-v-11a43918] {\r\n  height: 1px;\r\n  background: #f0f1f3;\r\n  margin: 10px 8px;\n}\r\n\r\n/* ============================================\r\n   MAIN CONTENT AREA\r\n   ============================================ */\n.main-content[data-v-11a43918] {\r\n  flex: 1;\r\n  display: flex;\r\n  flex-direction: column;\r\n  height: 100vh;\r\n  overflow: hidden;\n}\r\n\r\n/* Top Bar - Floating Professional Card */\n.top-bar[data-v-11a43918] {\r\n  background: white;\r\n  padding: 20px 28px;\r\n  margin: 16px 24px 0 24px;\r\n  border-radius: 12px;\r\n  box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);\r\n  border: 1px solid #f0f1f3;\r\n  flex-shrink: 0;\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n  direction: ltr;\n}\n.top-bar h1[data-v-11a43918] {\r\n  font-size: 24px;\r\n  font-weight: 600;\r\n  color: #1a1d1f;\r\n  margin: 0;\r\n  letter-spacing: -0.02em;\n}\n.top-bar .page-title[data-v-11a43918] {\r\n  font-size: 20px;\r\n  color: #1a1d1f;\r\n  font-weight: 600;\r\n  letter-spacing: -0.01em;\n}\n.user-name[data-v-11a43918] {\r\n  color: #d63939;\r\n  font-weight: 600;\n}\r\n\r\n/* Language Toggle Wrapper */\n.language-toggle-wrapper[data-v-11a43918] {\r\n  position: relative;\n}\n.language-toggle[data-v-11a43918] {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 6px;\r\n  padding: 8px 14px;\r\n  background: #d63939;\r\n  color: white;\r\n  border-radius: 8px;\r\n  cursor: pointer;\r\n  transition: all 0.2s ease;\r\n  font-size: 13px;\r\n  font-weight: 600;\r\n  user-select: none;\r\n  box-shadow: 0 1px 2px rgba(214, 57, 57, 0.15);\n}\n.language-toggle[data-v-11a43918]:hover {\r\n  background: #c02d2d;\r\n  box-shadow: 0 2px 4px rgba(214, 57, 57, 0.25);\r\n  transform: translateY(-1px);\n}\n.lang-icon[data-v-11a43918] {\r\n  font-size: 16px;\n}\n.lang-text[data-v-11a43918] {\r\n  font-weight: 600;\r\n  letter-spacing: 0.02em;\n}\n.lang-chevron[data-v-11a43918] {\r\n  transition: transform 0.2s;\r\n  opacity: 0.8;\n}\n.lang-chevron.open[data-v-11a43918] {\r\n  transform: rotate(180deg);\n}\r\n\r\n/* Language Dropdown */\n.language-dropdown[data-v-11a43918] {\r\n  position: absolute;\r\n  top: calc(100% + 6px);\r\n  right: 0;\r\n  background: white;\r\n  border: 1px solid #f0f1f3;\r\n  border-radius: 10px;\r\n  box-shadow: 0 4px 16px rgba(0,0,0,0.1), 0 2px 4px rgba(0,0,0,0.06);\r\n  min-width: 200px;\r\n  z-index: 1000;\r\n  overflow: hidden;\n}\n.language-dropdown-header[data-v-11a43918] {\r\n  padding: 10px 14px;\r\n  font-size: 11px;\r\n  font-weight: 600;\r\n  color: #6f767e;\r\n  text-transform: uppercase;\r\n  letter-spacing: 0.05em;\r\n  border-bottom: 1px solid #f0f1f3;\r\n  background: #fafbfc;\n}\n.language-option[data-v-11a43918] {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 10px;\r\n  padding: 10px 14px;\r\n  color: #33383f;\r\n  text-decoration: none;\r\n  transition: all 0.15s;\r\n  cursor: pointer;\r\n  position: relative;\r\n  font-size: 13px;\r\n  font-weight: 500;\n}\n.language-option[data-v-11a43918]:hover {\r\n  background: #f5f6f7;\n}\n.language-option.active[data-v-11a43918] {\r\n  background: #fff5f5;\r\n  color: #d63939;\r\n  font-weight: 600;\n}\n.lang-flag[data-v-11a43918] {\r\n  font-size: 18px;\r\n  width: 22px;\r\n  text-align: center;\n}\n.lang-name[data-v-11a43918] {\r\n  flex: 1;\r\n  font-size: 13px;\n}\n.checkmark[data-v-11a43918] {\r\n  color: #d63939;\r\n  font-weight: bold;\r\n  font-size: 14px;\n}\n.lang-dropdown-enter-active[data-v-11a43918],\r\n.lang-dropdown-leave-active[data-v-11a43918] {\r\n  transition: all 0.2s ease;\n}\n.lang-dropdown-enter-from[data-v-11a43918] {\r\n  opacity: 0;\r\n  transform: translateY(-10px);\n}\n.lang-dropdown-leave-to[data-v-11a43918] {\r\n  opacity: 0;\r\n  transform: translateY(-5px);\n}\r\n\r\n/* Content Area - Scrollable */\n.content-area[data-v-11a43918] {\r\n  flex: 1;\r\n  background: #f5f7fa;\r\n  overflow-y: auto;\r\n  overflow-x: hidden;\r\n  padding: 24px 24px 40px 24px;\n}\r\n\r\n/* ============================================\r\n   RESPONSIVE\r\n   ============================================ */\n@media (max-width: 768px) {\n.sidebar[data-v-11a43918] {\r\n    width: 70px;\n}\n.sidebar-label[data-v-11a43918],\r\n  .app-name[data-v-11a43918],\r\n  .user-info[data-v-11a43918] {\r\n    display: none;\n}\n.header-text[data-v-11a43918] {\r\n    display: none;\n}\n.sidebar-header[data-v-11a43918] {\r\n    justify-content: center;\n}\n.content-area[data-v-11a43918] {\r\n    padding: 20px;\n}\n.top-bar[data-v-11a43918] {\r\n    flex-direction: column;\r\n    align-items: flex-start;\r\n    gap: 16px;\r\n    padding: 16px 20px;\r\n    margin: 12px 16px 0 16px;\n}\n.top-bar h1[data-v-11a43918] {\r\n    font-size: 20px;\n}\n.top-bar .page-title[data-v-11a43918] {\r\n    font-size: 18px;\n}\n}\r\n";
+  var css_248z = "\n.dashboard-container[data-v-11a43918] {\r\n  display: flex;\r\n  height: 100vh;\r\n  width: 100vw;\r\n  background: #f5f7fa;\r\n  overflow: hidden;\r\n  margin: 0;\r\n  padding: 0;\r\n  position: fixed;\r\n  top: 0;\r\n  left: 0;\n}\r\n\r\n/* SIDEBAR */\n.sidebar[data-v-11a43918] {\r\n  width: 200px;\r\n  background: #fafbfc;\r\n  border-right: 1px solid #f0f1f3;\r\n  padding: 16px 0;\r\n  display: flex;\r\n  flex-direction: column;\r\n  height: 100vh;\r\n  overflow-y: auto;\r\n  flex-shrink: 0;\r\n  position: relative;\r\n  z-index: 100;\n}\n.sidebar-header-container[data-v-11a43918] {\r\n  position: relative;\r\n  margin-bottom: 16px;\r\n  z-index: 1002;\n}\n.sidebar-header[data-v-11a43918] {\r\n  padding: 12px 16px 16px 16px;\r\n  border-bottom: 1px solid #f0f1f3;\r\n  cursor: pointer;\r\n  transition: background 0.15s ease;\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n  margin: 0 8px 16px 8px;\r\n  border-radius: 8px;\n}\n.sidebar-header[data-v-11a43918]:hover {\r\n  background: #f5f6f7;\n}\n.header-content[data-v-11a43918] {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 12px;\r\n  flex: 1;\n}\n.header-text[data-v-11a43918] {\r\n  flex: 1;\n}\n.app-logo[data-v-11a43918] {\r\n  font-size: 24px;\n}\n.app-name[data-v-11a43918] {\r\n  font-size: 14px;\r\n  font-weight: 600;\r\n  color: #1a1d1f;\r\n  letter-spacing: -0.01em;\n}\n.user-info[data-v-11a43918] {\r\n  font-size: 11px;\r\n  color: #6f767e;\r\n  margin-top: 2px;\r\n  font-weight: 500;\n}\n.dropdown-icon[data-v-11a43918] {\r\n  display: flex;\r\n  align-items: center;\r\n  color: #6f767e;\r\n  margin-left: 8px;\n}\n.chevron[data-v-11a43918] {\r\n  transition: transform 0.2s;\r\n  color: #6f767e;\r\n  font-size: 10px;\r\n  display: inline-block;\n}\n.chevron.open[data-v-11a43918] {\r\n  transform: rotate(180deg);\n}\r\n\r\n/* Dropdown Menu - Fixed positioning */\n.dropdown-menu[data-v-11a43918] {\r\n  position: absolute;\r\n  top: 100%;\r\n  left: 8px;\r\n  right: 8px;\r\n  background: white;\r\n  border: 1px solid #f0f1f3;\r\n  border-radius: 10px;\r\n  margin-top: 8px;\r\n  padding: 6px;\r\n  box-shadow: 0 8px 16px rgba(0,0,0,0.12), 0 4px 8px rgba(0,0,0,0.08);\r\n  z-index: 2000;\n}\n.dropdown-enter-active[data-v-11a43918],\r\n.dropdown-leave-active[data-v-11a43918] {\r\n  transition: all 0.2s ease;\n}\n.dropdown-enter-from[data-v-11a43918] {\r\n  opacity: 0;\r\n  transform: translateY(-10px);\n}\n.dropdown-leave-to[data-v-11a43918] {\r\n  opacity: 0;\r\n  transform: translateY(-5px);\n}\n.dropdown-item[data-v-11a43918] {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 10px;\r\n  padding: 10px 12px;\r\n  color: #33383f;\r\n  text-decoration: none;\r\n  transition: background 0.15s ease;\r\n  cursor: pointer;\r\n  font-size: 13px;\r\n  border-radius: 6px;\r\n  font-weight: 500;\n}\n.dropdown-item[data-v-11a43918]:hover {\r\n  background: #f5f6f7;\n}\n.dropdown-icon-item[data-v-11a43918] {\r\n  width: 16px;\r\n  height: 16px;\r\n  stroke-width: 2;\r\n  stroke: currentColor;\r\n  fill: none;\r\n  flex-shrink: 0;\n}\n.dropdown-divider[data-v-11a43918] {\r\n  height: 1px;\r\n  background: #f0f1f3;\r\n  margin: 4px 0;\n}\r\n\r\n/* Sidebar Menu */\n.sidebar-menu[data-v-11a43918] {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 2px;\r\n  padding: 0 8px;\n}\n.sidebar-item[data-v-11a43918] {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 10px;\r\n  padding: 10px 12px;\r\n  border-radius: 6px;\r\n  text-decoration: none;\r\n  color: #33383f;\r\n  transition: all 0.15s ease;\r\n  cursor: pointer;\r\n  font-size: 13px;\n}\n.sidebar-item[data-v-11a43918]:hover {\r\n  background: #f0f1f3;\r\n  transform: translateX(2px);\n}\n.sidebar-item.active[data-v-11a43918] {\r\n  background: #fff0f0;\r\n  color: #d63939;\r\n  font-weight: 600;\r\n  box-shadow: 0 1px 3px rgba(214, 57, 57, 0.1);\n}\n.sidebar-icon[data-v-11a43918] {\r\n  width: 18px;\r\n  height: 18px;\r\n  stroke-width: 2;\r\n  stroke: currentColor;\r\n  fill: none;\r\n  flex-shrink: 0;\n}\n.sidebar-label[data-v-11a43918] {\r\n  font-size: 13px;\r\n  font-weight: 500;\r\n  letter-spacing: -0.01em;\n}\n.sidebar-divider[data-v-11a43918] {\r\n  height: 1px;\r\n  background: #f0f1f3;\r\n  margin: 10px 8px;\n}\r\n\r\n/* MAIN CONTENT */\n.main-content[data-v-11a43918] {\r\n  flex: 1;\r\n  display: flex;\r\n  flex-direction: column;\r\n  height: 100vh;\r\n  overflow: hidden;\n}\r\n\r\n/* Welcome Banner - Only dashboard */\n.welcome-banner[data-v-11a43918] {\r\n  background: white;\r\n  padding: 20px 28px;\r\n  margin: 16px 24px 0 24px;\r\n  border-radius: 12px;\r\n  box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);\r\n  border: 1px solid #f0f1f3;\r\n  flex-shrink: 0;\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\n}\n.welcome-banner h1[data-v-11a43918] {\r\n  font-size: 24px;\r\n  font-weight: 600;\r\n  color: #1a1d1f;\r\n  margin: 0;\r\n  letter-spacing: -0.02em;\n}\r\n\r\n/* Page Title Bar - Other pages */\n.page-title-bar[data-v-11a43918] {\r\n  background: white;\r\n  padding: 20px 28px;\r\n  margin: 16px 24px 0 24px;\r\n  border-radius: 12px;\r\n  box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);\r\n  border: 1px solid #f0f1f3;\r\n  flex-shrink: 0;\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\n}\n.page-title[data-v-11a43918] {\r\n  font-size: 20px;\r\n  color: #1a1d1f;\r\n  font-weight: 600;\r\n  letter-spacing: -0.01em;\r\n  margin: 0;\n}\n.user-name[data-v-11a43918] {\r\n  color: #d63939;\r\n  font-weight: 600;\n}\r\n\r\n/* Language Toggle */\n.language-toggle-wrapper[data-v-11a43918] {\r\n  position: relative;\r\n  z-index: 1001;\n}\n.language-toggle[data-v-11a43918] {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 6px;\r\n  padding: 8px 14px;\r\n  background: #d63939;\r\n  color: white;\r\n  border-radius: 8px;\r\n  cursor: pointer;\r\n  transition: all 0.2s ease;\r\n  font-size: 13px;\r\n  font-weight: 600;\r\n  user-select: none;\r\n  box-shadow: 0 1px 2px rgba(214, 57, 57, 0.15);\n}\n.language-toggle[data-v-11a43918]:hover {\r\n  background: #c02d2d;\r\n  box-shadow: 0 2px 4px rgba(214, 57, 57, 0.25);\r\n  transform: translateY(-1px);\n}\n.lang-icon-svg[data-v-11a43918] {\r\n  width: 16px;\r\n  height: 16px;\r\n  stroke-width: 2;\r\n  stroke: currentColor;\r\n  fill: none;\n}\n.lang-text[data-v-11a43918] {\r\n  font-weight: 600;\r\n  letter-spacing: 0.02em;\n}\n.lang-chevron[data-v-11a43918] {\r\n  transition: transform 0.2s;\r\n  opacity: 0.8;\n}\n.lang-chevron.open[data-v-11a43918] {\r\n  transform: rotate(180deg);\n}\r\n\r\n/* Language Dropdown */\n.language-dropdown[data-v-11a43918] {\r\n  position: absolute;\r\n  top: calc(100% + 6px);\r\n  right: 0;\r\n  background: white;\r\n  border: 1px solid #f0f1f3;\r\n  border-radius: 10px;\r\n  box-shadow: 0 8px 16px rgba(0,0,0,0.12), 0 4px 8px rgba(0,0,0,0.08);\r\n  min-width: 200px;\r\n  z-index: 2000;\r\n  overflow: hidden;\n}\n.language-dropdown-header[data-v-11a43918] {\r\n  padding: 10px 14px;\r\n  font-size: 11px;\r\n  font-weight: 600;\r\n  color: #6f767e;\r\n  text-transform: uppercase;\r\n  letter-spacing: 0.05em;\r\n  border-bottom: 1px solid #f0f1f3;\r\n  background: #fafbfc;\n}\n.language-option[data-v-11a43918] {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 10px;\r\n  padding: 10px 14px;\r\n  color: #33383f;\r\n  text-decoration: none;\r\n  transition: all 0.15s;\r\n  cursor: pointer;\r\n  font-size: 13px;\r\n  font-weight: 500;\n}\n.language-option[data-v-11a43918]:hover {\r\n  background: #f5f6f7;\n}\n.language-option.active[data-v-11a43918] {\r\n  background: #fff5f5;\r\n  color: #d63939;\r\n  font-weight: 600;\n}\n.lang-flag[data-v-11a43918] {\r\n  font-size: 18px;\r\n  width: 22px;\r\n  text-align: center;\n}\n.lang-name[data-v-11a43918] {\r\n  flex: 1;\r\n  font-size: 13px;\n}\n.checkmark[data-v-11a43918] {\r\n  color: #d63939;\r\n  font-weight: bold;\r\n  font-size: 14px;\n}\n.lang-dropdown-enter-active[data-v-11a43918],\r\n.lang-dropdown-leave-active[data-v-11a43918] {\r\n  transition: all 0.2s ease;\n}\n.lang-dropdown-enter-from[data-v-11a43918] {\r\n  opacity: 0;\r\n  transform: translateY(-10px);\n}\n.lang-dropdown-leave-to[data-v-11a43918] {\r\n  opacity: 0;\r\n  transform: translateY(-5px);\n}\r\n\r\n/* Content Area */\n.content-area[data-v-11a43918] {\r\n  flex: 1;\r\n  background: #f5f7fa;\r\n  overflow-y: auto;\r\n  overflow-x: hidden;\r\n  padding: 24px 24px 40px 24px;\n}\r\n\r\n/* Responsive */\n@media (max-width: 768px) {\n.sidebar[data-v-11a43918] {\r\n    width: 70px;\n}\n.sidebar-label[data-v-11a43918],\r\n  .app-name[data-v-11a43918],\r\n  .user-info[data-v-11a43918] {\r\n    display: none;\n}\n.header-text[data-v-11a43918] {\r\n    display: none;\n}\n.sidebar-header[data-v-11a43918] {\r\n    justify-content: center;\n}\n.content-area[data-v-11a43918] {\r\n    padding: 20px;\n}\n.welcome-banner[data-v-11a43918],\r\n  .page-title-bar[data-v-11a43918] {\r\n    flex-direction: column;\r\n    align-items: flex-start;\r\n    gap: 16px;\r\n    padding: 16px 20px;\r\n    margin: 12px 16px 0 16px;\n}\n.welcome-banner h1[data-v-11a43918],\r\n  .page-title[data-v-11a43918] {\r\n    font-size: 20px;\n}\n}\r\n";
   styleInject(css_248z);
 
   script.render = render;

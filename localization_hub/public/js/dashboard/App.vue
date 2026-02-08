@@ -1,6 +1,69 @@
 <template>
   <div class="dashboard-container">
-    <!-- Sidebar - Fixed, Always Visible -->
+    <!-- SVG Icon Definitions -->
+    <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
+      <symbol id="icon-grid" viewBox="0 0 24 24">
+        <rect x="3" y="3" width="7" height="7" />
+        <rect x="14" y="3" width="7" height="7" />
+        <rect x="14" y="14" width="7" height="7" />
+        <rect x="3" y="14" width="7" height="7" />
+      </symbol>
+      <symbol id="icon-database" viewBox="0 0 24 24">
+        <ellipse cx="12" cy="5" rx="9" ry="3" />
+        <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+      </symbol>
+      <symbol id="icon-file-text" viewBox="0 0 24 24">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+        <polyline points="14 2 14 8 20 8" />
+        <line x1="16" y1="13" x2="8" y2="13" />
+        <line x1="16" y1="17" x2="8" y2="17" />
+        <polyline points="10 9 9 9 8 9" />
+      </symbol>
+      <symbol id="icon-calendar" viewBox="0 0 24 24">
+        <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+        <line x1="16" y1="2" x2="16" y2="6" />
+        <line x1="8" y1="2" x2="8" y2="6" />
+        <line x1="3" y1="10" x2="21" y2="10" />
+      </symbol>
+      <symbol id="icon-alert-circle" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10" />
+        <line x1="12" y1="8" x2="12" y2="12" />
+        <line x1="12" y1="16" x2="12.01" y2="16" />
+      </symbol>
+      <symbol id="icon-message-square" viewBox="0 0 24 24">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+      </symbol>
+      <symbol id="icon-book-open" viewBox="0 0 24 24">
+        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+      </symbol>
+      <symbol id="icon-home" viewBox="0 0 24 24">
+        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+        <polyline points="9 22 9 12 15 12 15 22" />
+      </symbol>
+      <symbol id="icon-help-circle" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10" />
+        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+        <line x1="12" y1="17" x2="12.01" y2="17" />
+      </symbol>
+      <symbol id="icon-user" viewBox="0 0 24 24">
+        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+        <circle cx="12" cy="7" r="4" />
+      </symbol>
+      <symbol id="icon-log-out" viewBox="0 0 24 24">
+        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+        <polyline points="16 17 21 12 16 7" />
+        <line x1="21" y1="12" x2="9" y2="12" />
+      </symbol>
+      <symbol id="icon-globe" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+      </symbol>
+    </svg>
+
+    <!-- Sidebar -->
     <div class="sidebar">
       <!-- Sidebar Header with Dropdown -->
       <div class="sidebar-header-container">
@@ -8,7 +71,7 @@
           <div class="header-content">
             <div class="app-logo">🌍</div>
             <div class="header-text">
-              <div class="app-name">LocalizationHub</div>
+              <div class="app-name">{{ __("LocalizationHub") }}</div>
               <div class="user-info">{{ userName }}</div>
             </div>
           </div>
@@ -25,8 +88,10 @@
               @click.prevent="navigateToProfile"
               class="dropdown-item"
             >
-              <span class="dropdown-icon-item">👤</span>
-              <span>{{ t('Profile') }}</span>
+              <svg class="dropdown-icon-item">
+                <use href="#icon-user"></use>
+              </svg>
+              <span>{{ __("Profile") }}</span>
             </a>
             
             <div class="dropdown-divider"></div>
@@ -36,8 +101,10 @@
               @click.prevent="logout"
               class="dropdown-item"
             >
-              <span class="dropdown-icon-item">🚪</span>
-              <span>{{ t('Log out') }}</span>
+              <svg class="dropdown-icon-item">
+                <use href="#icon-log-out"></use>
+              </svg>
+              <span>{{ __("Log out") }}</span>
             </a>
           </div>
         </transition>
@@ -45,15 +112,17 @@
       
       <!-- Sidebar Menu -->
       <div class="sidebar-menu">
-        <!-- Dashboard Home -->
+        <!-- Dashboard -->
         <a 
           href="#"
           @click.prevent="currentPage = 'dashboard'"
           class="sidebar-item"
           :class="{ active: currentPage === 'dashboard' }"
         >
-          <span class="sidebar-icon">📊</span>
-          <span class="sidebar-label">{{ t('Dashboard') }}</span>
+          <svg class="sidebar-icon">
+            <use href="#icon-grid"></use>
+          </svg>
+          <span class="sidebar-label">{{ __("Dashboard") }}</span>
         </a>
 
         <!-- Data -->
@@ -63,8 +132,10 @@
           class="sidebar-item"
           :class="{ active: currentPage === 'data' }"
         >
-          <span class="sidebar-icon">💼</span>
-          <span class="sidebar-label">{{ t('Data') }}</span>
+          <svg class="sidebar-icon">
+            <use href="#icon-database"></use>
+          </svg>
+          <span class="sidebar-label">{{ __("Data") }}</span>
         </a>
 
         <!-- Publication -->
@@ -74,8 +145,10 @@
           class="sidebar-item"
           :class="{ active: currentPage === 'publication' }"
         >
-          <span class="sidebar-icon">📦</span>
-          <span class="sidebar-label">{{ t('Publication') }}</span>
+          <svg class="sidebar-icon">
+            <use href="#icon-file-text"></use>
+          </svg>
+          <span class="sidebar-label">{{ __("Publication") }}</span>
         </a>
 
         <!-- Events -->
@@ -85,8 +158,10 @@
           class="sidebar-item"
           :class="{ active: currentPage === 'events' }"
         >
-          <span class="sidebar-icon">📅</span>
-          <span class="sidebar-label">{{ t('Events') }}</span>
+          <svg class="sidebar-icon">
+            <use href="#icon-calendar"></use>
+          </svg>
+          <span class="sidebar-label">{{ __("Events") }}</span>
         </a>
 
         <!-- Emergency -->
@@ -96,50 +171,57 @@
           class="sidebar-item"
           :class="{ active: currentPage === 'emergency' }"
         >
-          <span class="sidebar-icon">🎫</span>
-          <span class="sidebar-label">{{ t('Emergency') }}</span>
+          <svg class="sidebar-icon">
+            <use href="#icon-alert-circle"></use>
+          </svg>
+          <span class="sidebar-label">{{ __("Emergency") }}</span>
         </a>
 
         <div class="sidebar-divider"></div>
 
         <!-- External Links -->
         <a href="/raven" class="sidebar-item">
-          <span class="sidebar-icon">💬</span>
-          <span class="sidebar-label">{{ t('Raven') }}</span>
+          <svg class="sidebar-icon">
+            <use href="#icon-message-square"></use>
+          </svg>
+          <span class="sidebar-label">{{ __("Raven") }}</span>
         </a>
         
         <a href="/lms" class="sidebar-item">
-          <span class="sidebar-icon">📚</span>
-          <span class="sidebar-label">{{ t('Learning') }}</span>
+          <svg class="sidebar-icon">
+            <use href="#icon-book-open"></use>
+          </svg>
+          <span class="sidebar-label">{{ __("Learning") }}</span>
         </a>
         
         <a href="/app" class="sidebar-item">
-          <span class="sidebar-icon">🏠</span>
-          <span class="sidebar-label">{{ t('Desk') }}</span>
+          <svg class="sidebar-icon">
+            <use href="#icon-home"></use>
+          </svg>
+          <span class="sidebar-label">{{ __("Desk") }}</span>
         </a>
 
         <a href="#" class="sidebar-item">
-          <span class="sidebar-icon">❓</span>
-          <span class="sidebar-label">{{ t('Help Desk') }}</span>
+          <svg class="sidebar-icon">
+            <use href="#icon-help-circle"></use>
+          </svg>
+          <span class="sidebar-label">{{ __("Help Desk") }}</span>
         </a>
       </div>
     </div>
     
     <!-- Main Content Area -->
     <div class="main-content">
-      <!-- Top Bar with Language Toggle - Always Visible -->
-      <div class="top-bar">
-        <!-- Welcome message - only on dashboard -->
-        <h1 v-if="currentPage === 'dashboard'">
-          {{ t('Welcome back') }}, <span class="user-name">{{ userName }}</span>!
-        </h1>
-        <!-- Page title - on other pages -->
-        <h1 v-else class="page-title">{{ t(getPageTitle()) }}</h1>
+      <!-- Welcome Banner - ONLY on dashboard page -->
+      <div v-if="currentPage === 'dashboard'" class="welcome-banner">
+        <h1>{{ __("Welcome back") }}, <span class="user-name">{{ userName }}</span>!</h1>
         
-        <!-- Language Toggle - Always visible -->
+        <!-- Language Toggle -->
         <div class="language-toggle-wrapper">
           <div class="language-toggle" @click="toggleLanguageDropdown">
-            <span class="lang-icon">🌐</span>
+            <svg class="lang-icon-svg">
+              <use href="#icon-globe"></use>
+            </svg>
             <span class="lang-text">{{ currentLanguage.shortName }}</span>
             <svg 
               class="lang-chevron" 
@@ -156,7 +238,8 @@
           <!-- Language Dropdown -->
           <transition name="lang-dropdown">
             <div v-if="showLanguageDropdown" class="language-dropdown">
-              <div class="language-dropdown-header">{{ t('Select Language') }}</div>
+              <div class="language-dropdown-header">{{ __("Select Language") }}</div>
+
               <a
                 v-for="lang in languages"
                 :key="lang.code"
@@ -167,16 +250,66 @@
               >
                 <span class="lang-flag">{{ lang.flag }}</span>
                 <span class="lang-name">{{ lang.name }}</span>
-                <span v-if="lang.code === currentLanguage.code" class="checkmark">✓</span>
+                <span
+                  v-if="lang.code === currentLanguage.code"
+                  class="checkmark"
+                >✓</span>
+              </a>
+            </div>
+          </transition>
+        </div>
+      </div>
+
+      <!-- Page Title Bar - For OTHER pages (not dashboard) -->
+      <div v-else class="page-title-bar">
+        <h1 class="page-title">{{ __(getPageTitle()) }}</h1>
+        
+        <!-- Language Toggle -->
+        <div class="language-toggle-wrapper">
+          <div class="language-toggle" @click="toggleLanguageDropdown">
+            <svg class="lang-icon-svg">
+              <use href="#icon-globe"></use>
+            </svg>
+            <span class="lang-text">{{ currentLanguage.shortName }}</span>
+            <svg 
+              class="lang-chevron" 
+              :class="{ open: showLanguageDropdown }"
+              width="12" 
+              height="12" 
+              viewBox="0 0 16 16" 
+              fill="none"
+            >
+              <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+
+          <!-- Language Dropdown -->
+          <transition name="lang-dropdown">
+            <div v-if="showLanguageDropdown" class="language-dropdown">
+              <div class="language-dropdown-header">{{ __("Select Language") }}</div>
+
+              <a
+                v-for="lang in languages"
+                :key="lang.code"
+                href="#"
+                @click.prevent="changeLanguage(lang)"
+                class="language-option"
+                :class="{ active: lang.code === currentLanguage.code }"
+              >
+                <span class="lang-flag">{{ lang.flag }}</span>
+                <span class="lang-name">{{ lang.name }}</span>
+                <span
+                  v-if="lang.code === currentLanguage.code"
+                  class="checkmark"
+                >✓</span>
               </a>
             </div>
           </transition>
         </div>
       </div>
       
-      <!-- Scrollable Content Area - Different components load here -->
+      <!-- Scrollable Content Area -->
       <div class="content-area">
-        <!-- Load different page components based on currentPage -->
         <DashboardPage v-if="currentPage === 'dashboard'" />
         <ProfilePage v-if="currentPage === 'profile'" :user-name="userName" :user-email="userEmail" />
         <DataPage v-if="currentPage === 'data'" />
@@ -189,7 +322,6 @@
 </template>
 
 <script>
-// Import all page components
 import DashboardPage from './pages/DashboardPage.vue';
 import ProfilePage from './pages/ProfilePage.vue';
 import DataPage from './pages/DataPage.vue';
@@ -223,120 +355,16 @@ export default {
         { code: 'sw', name: 'Kiswahili', flag: '🇰🇪', shortName: 'SW' },
         { code: 'pt', name: 'Português', flag: '🇵🇹', shortName: 'PT' }
       ],
-      currentLanguage: { code: 'en', name: 'English', flag: '🇬🇧', shortName: 'EN' },
-      
-      // Built-in translations
-      translations: {
-        en: {
-          'Welcome back': 'Welcome back',
-          'Dashboard': 'Dashboard',
-          'Data': 'Data',
-          'Publication': 'Publication',
-          'Events': 'Events',
-          'Emergency': 'Emergency',
-          'Raven': 'Raven',
-          'Learning': 'Learning',
-          'Desk': 'Desk',
-          'Help Desk': 'Help Desk',
-          'Profile': 'Profile',
-          'Log out': 'Log out',
-          'Select Language': 'Select Language',
-          'Switching language...': 'Switching language...',
-          'Language changed successfully': 'Language changed successfully',
-          'Failed to change language': 'Failed to change language'
-        },
-        fr: {
-          'Welcome back': 'Bon retour',
-          'Dashboard': 'Tableau de bord',
-          'Opportunities': 'Opportunités',
-          'Deployments': 'Déploiements',
-          'Events': 'Événements',
-          'Membership': 'Adhésion',
-          'Raven': 'Raven',
-          'Learning': 'Apprentissage',
-          'Desk': 'Bureau',
-          'Help Desk': "Centre d'aide",
-          'Profile': 'Profil',
-          'Log out': 'Se déconnecter',
-          'Select Language': 'Choisir la langue',
-          'Switching language...': 'Changement de langue...',
-          'Language changed successfully': 'Langue changée avec succès',
-          'Failed to change language': 'Échec du changement de langue'
-        },
-        ar: {
-          'Welcome back': 'مرحبا بك',
-          'Dashboard': 'لوحة القيادة',
-          'Opportunities': 'الفرص',
-          'Deployments': 'عمليات النشر',
-          'Events': 'الأحداث',
-          'Membership': 'العضوية',
-          'Raven': 'الغراب',
-          'Learning': 'التعلم',
-          'Desk': 'المكتب',
-          'Help Desk': 'مكتب المساعدة',
-          'Profile': 'الملف الشخصي',
-          'Log out': 'تسجيل الخروج',
-          'Select Language': 'اختر اللغة',
-          'Switching language...': 'جاري تبديل اللغة...',
-          'Language changed successfully': 'تم تغيير اللغة بنجاح',
-          'Failed to change language': 'فشل تغيير اللغة'
-        },
-        sw: {
-          'Welcome back': 'Karibu tena',
-          'Dashboard': 'Dashibodi',
-          'Opportunities': 'Fursa',
-          'Deployments': 'Utumiaji',
-          'Events': 'Matukio',
-          'Membership': 'Uanachama',
-          'Raven': 'Raven',
-          'Learning': 'Kujifunza',
-          'Desk': 'Dawati',
-          'Help Desk': 'Dawati la Msaada',
-          'Profile': 'Wasifu',
-          'Log out': 'Toka',
-          'Select Language': 'Chagua Lugha',
-          'Switching language...': 'Inabadilisha lugha...',
-          'Language changed successfully': 'Lugha imebadilishwa',
-          'Failed to change language': 'Imeshindwa kubadilisha lugha'
-        },
-        pt: {
-          'Welcome back': 'Bem-vindo de volta',
-          'Dashboard': 'Painel',
-          'Opportunities': 'Oportunidades',
-          'Deployments': 'Implantações',
-          'Events': 'Eventos',
-          'Membership': 'Associação',
-          'Raven': 'Raven',
-          'Learning': 'Aprendizagem',
-          'Desk': 'Secretária',
-          'Help Desk': 'Central de Ajuda',
-          'Profile': 'Perfil',
-          'Log out': 'Sair',
-          'Select Language': 'Selecionar Idioma',
-          'Switching language...': 'Mudando idioma...',
-          'Language changed successfully': 'Idioma alterado com sucesso',
-          'Failed to change language': 'Falha ao alterar idioma'
-        }
-      }
+      currentLanguage: { code: 'en', name: 'English', flag: '🇬🇧', shortName: 'EN' }
     }
   },
   
   methods: {
-    // Translation helper - uses built-in translations first, falls back to Frappe
-    t(text) {
-      const lang = this.currentLanguage.code;
-      
-      // Try built-in translations first
-      if (this.translations[lang] && this.translations[lang][text]) {
-        return this.translations[lang][text];
-      }
-      
-      // Fall back to Frappe translation if available
-      if (window.frappe && window.__) {
+    // Frappe translation helper
+    __(text) {
+      if (window.__ && typeof window.__ === 'function') {
         return window.__(text);
       }
-      
-      // Return original text if no translation found
       return text;
     },
 
@@ -369,7 +397,7 @@ export default {
     },
 
     getPageTitle() {
-      const pageTitles = {
+      const titles = {
         'dashboard': 'Dashboard',
         'data': 'Data',
         'publication': 'Publication',
@@ -377,7 +405,7 @@ export default {
         'emergency': 'Emergency',
         'profile': 'Profile'
       };
-      return pageTitles[this.currentPage] || 'Dashboard';
+      return titles[this.currentPage] || 'Dashboard';
     },
 
     changeLanguage(lang) {
@@ -391,7 +419,7 @@ export default {
 
       if (window.frappe) {
         frappe.show_alert({
-          message: this.t('Switching language...'),
+          message: this.__('Switching language...'),
           indicator: 'blue'
         });
 
@@ -406,7 +434,7 @@ export default {
           callback: (response) => {
             if (response.message) {
               frappe.show_alert({
-                message: this.t('Language changed successfully'),
+                message: this.__('Language changed successfully'),
                 indicator: 'green'
               });
               setTimeout(() => {
@@ -416,7 +444,7 @@ export default {
           },
           error: () => {
             frappe.show_alert({
-              message: this.t('Failed to change language'),
+              message: this.__('Failed to change language'),
               indicator: 'red'
             });
           }
@@ -430,7 +458,7 @@ export default {
       this.userName = frappe.session.user_fullname || frappe.session.user;
       this.userEmail = frappe.session.user;
       
-      const userLang = frappe.boot.user.language || 'en';
+      const userLang = frappe.boot?.user?.language || 'en';
       const foundLang = this.languages.find(l => l.code === userLang);
       if (foundLang) {
         this.currentLanguage = foundLang;
@@ -447,7 +475,6 @@ export default {
 </script>
 
 <style scoped>
-/* Main Container - FIXED 100vw x 100vh */
 .dashboard-container {
   display: flex;
   height: 100vh;
@@ -461,9 +488,7 @@ export default {
   left: 0;
 }
 
-/* ============================================
-   SIDEBAR - Professional & Compact
-   ============================================ */
+/* SIDEBAR */
 .sidebar {
   width: 200px;
   background: #fafbfc;
@@ -475,12 +500,13 @@ export default {
   overflow-y: auto;
   flex-shrink: 0;
   position: relative;
-  z-index: 10;
+  z-index: 100;
 }
 
 .sidebar-header-container {
   position: relative;
   margin-bottom: 16px;
+  z-index: 1002;
 }
 
 .sidebar-header {
@@ -546,7 +572,7 @@ export default {
   transform: rotate(180deg);
 }
 
-/* Dropdown Menu */
+/* Dropdown Menu - Fixed positioning */
 .dropdown-menu {
   position: absolute;
   top: 100%;
@@ -557,8 +583,8 @@ export default {
   border-radius: 10px;
   margin-top: 8px;
   padding: 6px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08), 0 2px 4px rgba(0,0,0,0.04);
-  z-index: 1000;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.12), 0 4px 8px rgba(0,0,0,0.08);
+  z-index: 2000;
 }
 
 .dropdown-enter-active,
@@ -595,9 +621,12 @@ export default {
 }
 
 .dropdown-icon-item {
-  font-size: 16px;
-  width: 18px;
-  text-align: center;
+  width: 16px;
+  height: 16px;
+  stroke-width: 2;
+  stroke: currentColor;
+  fill: none;
+  flex-shrink: 0;
 }
 
 .dropdown-divider {
@@ -619,7 +648,6 @@ export default {
   align-items: center;
   gap: 10px;
   padding: 10px 12px;
-  margin: 0 0;
   border-radius: 6px;
   text-decoration: none;
   color: #33383f;
@@ -641,10 +669,12 @@ export default {
 }
 
 .sidebar-icon {
-  font-size: 18px;
-  width: 20px;
-  text-align: center;
-  opacity: 0.9;
+  width: 18px;
+  height: 18px;
+  stroke-width: 2;
+  stroke: currentColor;
+  fill: none;
+  flex-shrink: 0;
 }
 
 .sidebar-label {
@@ -659,9 +689,7 @@ export default {
   margin: 10px 8px;
 }
 
-/* ============================================
-   MAIN CONTENT AREA
-   ============================================ */
+/* MAIN CONTENT */
 .main-content {
   flex: 1;
   display: flex;
@@ -670,8 +698,8 @@ export default {
   overflow: hidden;
 }
 
-/* Top Bar - Floating Professional Card */
-.top-bar {
+/* Welcome Banner - Only dashboard */
+.welcome-banner {
   background: white;
   padding: 20px 28px;
   margin: 16px 24px 0 24px;
@@ -682,10 +710,9 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  direction: ltr;
 }
 
-.top-bar h1 {
+.welcome-banner h1 {
   font-size: 24px;
   font-weight: 600;
   color: #1a1d1f;
@@ -693,11 +720,26 @@ export default {
   letter-spacing: -0.02em;
 }
 
-.top-bar .page-title {
+/* Page Title Bar - Other pages */
+.page-title-bar {
+  background: white;
+  padding: 20px 28px;
+  margin: 16px 24px 0 24px;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+  border: 1px solid #f0f1f3;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-title {
   font-size: 20px;
   color: #1a1d1f;
   font-weight: 600;
   letter-spacing: -0.01em;
+  margin: 0;
 }
 
 .user-name {
@@ -705,9 +747,10 @@ export default {
   font-weight: 600;
 }
 
-/* Language Toggle Wrapper */
+/* Language Toggle */
 .language-toggle-wrapper {
   position: relative;
+  z-index: 1001;
 }
 
 .language-toggle {
@@ -732,8 +775,12 @@ export default {
   transform: translateY(-1px);
 }
 
-.lang-icon {
-  font-size: 16px;
+.lang-icon-svg {
+  width: 16px;
+  height: 16px;
+  stroke-width: 2;
+  stroke: currentColor;
+  fill: none;
 }
 
 .lang-text {
@@ -758,9 +805,9 @@ export default {
   background: white;
   border: 1px solid #f0f1f3;
   border-radius: 10px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.1), 0 2px 4px rgba(0,0,0,0.06);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.12), 0 4px 8px rgba(0,0,0,0.08);
   min-width: 200px;
-  z-index: 1000;
+  z-index: 2000;
   overflow: hidden;
 }
 
@@ -784,7 +831,6 @@ export default {
   text-decoration: none;
   transition: all 0.15s;
   cursor: pointer;
-  position: relative;
   font-size: 13px;
   font-weight: 500;
 }
@@ -831,7 +877,7 @@ export default {
   transform: translateY(-5px);
 }
 
-/* Content Area - Scrollable */
+/* Content Area */
 .content-area {
   flex: 1;
   background: #f5f7fa;
@@ -840,9 +886,7 @@ export default {
   padding: 24px 24px 40px 24px;
 }
 
-/* ============================================
-   RESPONSIVE
-   ============================================ */
+/* Responsive */
 @media (max-width: 768px) {
   .sidebar {
     width: 70px;
@@ -866,7 +910,8 @@ export default {
     padding: 20px;
   }
 
-  .top-bar {
+  .welcome-banner,
+  .page-title-bar {
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
@@ -874,12 +919,9 @@ export default {
     margin: 12px 16px 0 16px;
   }
 
-  .top-bar h1 {
+  .welcome-banner h1,
+  .page-title {
     font-size: 20px;
-  }
-
-  .top-bar .page-title {
-    font-size: 18px;
   }
 }
 </style>

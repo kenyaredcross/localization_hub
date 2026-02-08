@@ -5,7 +5,7 @@
       <div class="page-header">
         <div class="header-content">
           <h1 class="page-title">Data Resources</h1>
-          <p class="page-subtitle">Download datasets, documentation, and reference materials</p>
+          <p class="page-subtitle">Quality data is the foundation of meaningful research</p>
         </div>
       </div>
 
@@ -258,17 +258,9 @@ export default {
       return iconMap[category] || '📊';
     },
 
-    // Get category color based on category
+    // Get category color - using same muted professional color for all
     getCategoryColor(category) {
-      const colorMap = {
-        'Documentation': '#f97316',
-        'Statistics': '#06b6d4',
-        'Research Data': '#8b5cf6',
-        'Reference': '#10b981',
-        'Reports': '#ef4444',
-        'Other': '#6366f1'
-      };
-      return colorMap[category] || '#6366f1';
+      return '#64748b'; // Muted slate gray - professional and consistent
     },
 
     // Format date
@@ -485,10 +477,10 @@ export default {
 }
 
 .filter-btn.active {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #64748b;
   border-color: transparent;
   color: white;
-  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 2px 8px rgba(100, 116, 139, 0.3);
 }
 
 .filter-icon {
@@ -504,8 +496,8 @@ export default {
    ============================================ */
 .data-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
   animation: fadeInUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.3s both;
 }
 
@@ -531,15 +523,15 @@ export default {
   top: 0;
   left: 0;
   right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  height: 3px;
+  background: #64748b;
   transform: scaleX(0);
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .data-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
 }
 
 .data-card:hover::before {
@@ -548,26 +540,26 @@ export default {
 
 /* Card Header */
 .card-header {
-  padding: 24px 24px 16px;
+  padding: 16px 16px 12px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
 
 .card-icon {
-  width: 56px;
-  height: 56px;
-  border-radius: 14px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 28px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  font-size: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .data-card:hover .card-icon {
-  transform: scale(1.1) rotate(5deg);
+  transform: scale(1.05);
 }
 
 .card-meta {
@@ -576,39 +568,39 @@ export default {
 
 .category-badge {
   font-family: 'Manrope', sans-serif;
-  font-size: 11px;
-  font-weight: 700;
+  font-size: 10px;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   color: #64748b;
   background: #f1f5f9;
-  padding: 6px 12px;
-  border-radius: 8px;
+  padding: 4px 10px;
+  border-radius: 6px;
 }
 
 /* Card Body */
 .card-body {
-  padding: 0 24px 20px;
+  padding: 0 16px 16px;
   flex: 1;
 }
 
 .card-title {
   font-family: 'Outfit', sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 700;
   color: #1a3353;
-  margin: 0 0 12px 0;
+  margin: 0 0 8px 0;
   line-height: 1.3;
 }
 
 .card-description {
   font-family: 'Manrope', sans-serif;
-  font-size: 14px;
-  line-height: 1.6;
+  font-size: 13px;
+  line-height: 1.5;
   color: #64748b;
-  margin: 0 0 16px 0;
+  margin: 0 0 12px 0;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -616,20 +608,20 @@ export default {
 .card-metadata {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 6px;
 }
 
 .metadata-item {
   font-family: 'Manrope', sans-serif;
-  font-size: 12px;
+  font-size: 11px;
   color: #94a3b8;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
 }
 
 .metadata-icon {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .metadata-text {
@@ -638,34 +630,35 @@ export default {
 
 /* Card Footer */
 .card-footer {
-  padding: 16px 24px 24px;
+  padding: 12px 16px 16px;
   display: flex;
-  gap: 12px;
+  gap: 8px;
   border-top: 1px solid #f1f5f9;
 }
 
 .download-btn {
   font-family: 'Manrope', sans-serif;
   flex: 1;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #64748b;
   color: white;
   border: none;
-  padding: 12px 20px;
-  border-radius: 12px;
-  font-size: 14px;
-  font-weight: 700;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+  gap: 6px;
+  box-shadow: 0 2px 4px rgba(100, 116, 139, 0.2);
 }
 
 .download-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+  background: #475569;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(100, 116, 139, 0.3);
 }
 
 .download-btn:active {
@@ -675,31 +668,31 @@ export default {
 .preview-btn {
   font-family: 'Manrope', sans-serif;
   background: white;
-  color: #667eea;
-  border: 2px solid #667eea;
-  padding: 12px 20px;
-  border-radius: 12px;
-  font-size: 14px;
-  font-weight: 700;
+  color: #64748b;
+  border: 1.5px solid #cbd5e1;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
 }
 
 .preview-btn:hover {
-  background: #667eea;
-  color: white;
-  transform: translateY(-2px);
+  background: #f8fafc;
+  border-color: #64748b;
+  transform: translateY(-1px);
 }
 
 .btn-icon {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .btn-text {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 /* ============================================
@@ -718,7 +711,7 @@ export default {
   width: 56px;
   height: 56px;
   border: 5px solid #f1f5f9;
-  border-top-color: #667eea;
+  border-top-color: #64748b;
   border-radius: 50%;
   animation: spin 0.8s linear infinite;
 }
