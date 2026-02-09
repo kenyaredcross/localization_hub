@@ -7120,7 +7120,7 @@
     return container;
   }
 
-  var script$6 = {
+  var script$7 = {
     name: 'DashboardPage',
     
     data() {
@@ -7267,54 +7267,54 @@
     }
   };
 
-  const _hoisted_1$6 = { class: "page-container" };
-  const _hoisted_2$4 = { class: "page-content" };
-  const _hoisted_3$4 = { class: "news-section" };
-  const _hoisted_4$4 = { class: "section-header" };
-  const _hoisted_5$4 = { class: "news-grid" };
-  const _hoisted_6$4 = ["onClick"];
-  const _hoisted_7$4 = { class: "news-image" };
-  const _hoisted_8$4 = ["src", "alt"];
-  const _hoisted_9$4 = {
+  const _hoisted_1$7 = { class: "page-container" };
+  const _hoisted_2$6 = { class: "page-content" };
+  const _hoisted_3$6 = { class: "news-section" };
+  const _hoisted_4$6 = { class: "section-header" };
+  const _hoisted_5$6 = { class: "news-grid" };
+  const _hoisted_6$6 = ["onClick"];
+  const _hoisted_7$6 = { class: "news-image" };
+  const _hoisted_8$6 = ["src", "alt"];
+  const _hoisted_9$6 = {
     key: 0,
     class: "news-badge"
   };
-  const _hoisted_10$4 = { class: "badge-text" };
-  const _hoisted_11$4 = { class: "news-content" };
-  const _hoisted_12$4 = { class: "news-meta" };
-  const _hoisted_13$4 = { class: "news-date" };
-  const _hoisted_14$3 = { class: "news-title" };
-  const _hoisted_15$3 = {
+  const _hoisted_10$6 = { class: "badge-text" };
+  const _hoisted_11$6 = { class: "news-content" };
+  const _hoisted_12$6 = { class: "news-meta" };
+  const _hoisted_13$6 = { class: "news-date" };
+  const _hoisted_14$5 = { class: "news-title" };
+  const _hoisted_15$4 = {
     key: 0,
     class: "news-summary"
   };
-  const _hoisted_16$3 = {
+  const _hoisted_16$4 = {
     key: 0,
     class: "empty-state"
   };
-  const _hoisted_17$3 = {
+  const _hoisted_17$4 = {
     key: 1,
     class: "loading-state"
   };
-  const _hoisted_18$3 = { class: "highlights-section" };
-  const _hoisted_19$2 = { class: "highlights-grid" };
-  const _hoisted_20$2 = ["onClick"];
-  const _hoisted_21$2 = { class: "highlight-image" };
-  const _hoisted_22$2 = ["src", "alt"];
-  const _hoisted_23$2 = { class: "highlight-content" };
-  const _hoisted_24$2 = { class: "highlight-category" };
-  const _hoisted_25$2 = ["onClick"];
-  const _hoisted_26$2 = {
+  const _hoisted_18$4 = { class: "highlights-section" };
+  const _hoisted_19$3 = { class: "highlights-grid" };
+  const _hoisted_20$3 = ["onClick"];
+  const _hoisted_21$3 = { class: "highlight-image" };
+  const _hoisted_22$3 = ["src", "alt"];
+  const _hoisted_23$3 = { class: "highlight-content" };
+  const _hoisted_24$3 = { class: "highlight-category" };
+  const _hoisted_25$3 = ["onClick"];
+  const _hoisted_26$3 = {
     key: 0,
     class: "empty-state"
   };
 
-  function render$6(_ctx, _cache, $props, $setup, $data, $options) {
-    return (openBlock(), createElementBlock("div", _hoisted_1$6, [
-      createBaseVNode("div", _hoisted_2$4, [
+  function render$7(_ctx, _cache, $props, $setup, $data, $options) {
+    return (openBlock(), createElementBlock("div", _hoisted_1$7, [
+      createBaseVNode("div", _hoisted_2$6, [
         createCommentVNode(" Latest News Section "),
-        createBaseVNode("section", _hoisted_3$4, [
-          createBaseVNode("div", _hoisted_4$4, [
+        createBaseVNode("section", _hoisted_3$6, [
+          createBaseVNode("div", _hoisted_4$6, [
             _cache[3] || (_cache[3] = createBaseVNode("h2", { class: "section-title" }, "Latest news", -1 /* CACHED */)),
             createBaseVNode("a", {
               href: "#",
@@ -7322,40 +7322,40 @@
               class: "view-all-link"
             }, " See all → ")
           ]),
-          createBaseVNode("div", _hoisted_5$4, [
+          createBaseVNode("div", _hoisted_5$6, [
             (openBlock(true), createElementBlock(Fragment, null, renderList($data.newsArticles, (article) => {
               return (openBlock(), createElementBlock("div", {
                 key: article.name,
                 class: "news-card",
                 onClick: $event => ($options.openArticle(article))
               }, [
-                createBaseVNode("div", _hoisted_7$4, [
+                createBaseVNode("div", _hoisted_7$6, [
                   createBaseVNode("img", {
                     src: $options.getImageUrl(article.image),
                     alt: article.title,
                     onError: _cache[1] || (_cache[1] = (...args) => ($options.handleImageError && $options.handleImageError(...args)))
-                  }, null, 40 /* PROPS, NEED_HYDRATION */, _hoisted_8$4),
+                  }, null, 40 /* PROPS, NEED_HYDRATION */, _hoisted_8$6),
                   (article.category)
-                    ? (openBlock(), createElementBlock("div", _hoisted_9$4, [
+                    ? (openBlock(), createElementBlock("div", _hoisted_9$6, [
                         _cache[4] || (_cache[4] = createBaseVNode("span", { class: "badge-icon" }, "📰", -1 /* CACHED */)),
-                        createBaseVNode("span", _hoisted_10$4, toDisplayString(article.category), 1 /* TEXT */)
+                        createBaseVNode("span", _hoisted_10$6, toDisplayString(article.category), 1 /* TEXT */)
                       ]))
                     : createCommentVNode("v-if", true)
                 ]),
-                createBaseVNode("div", _hoisted_11$4, [
-                  createBaseVNode("div", _hoisted_12$4, [
-                    createBaseVNode("span", _hoisted_13$4, toDisplayString($options.formatDate(article.date)), 1 /* TEXT */)
+                createBaseVNode("div", _hoisted_11$6, [
+                  createBaseVNode("div", _hoisted_12$6, [
+                    createBaseVNode("span", _hoisted_13$6, toDisplayString($options.formatDate(article.date)), 1 /* TEXT */)
                   ]),
-                  createBaseVNode("h3", _hoisted_14$3, toDisplayString(article.title), 1 /* TEXT */),
+                  createBaseVNode("h3", _hoisted_14$5, toDisplayString(article.title), 1 /* TEXT */),
                   (article.summary)
-                    ? (openBlock(), createElementBlock("p", _hoisted_15$3, toDisplayString(article.summary), 1 /* TEXT */))
+                    ? (openBlock(), createElementBlock("p", _hoisted_15$4, toDisplayString(article.summary), 1 /* TEXT */))
                     : createCommentVNode("v-if", true)
                 ])
-              ], 8 /* PROPS */, _hoisted_6$4))
+              ], 8 /* PROPS */, _hoisted_6$6))
             }), 128 /* KEYED_FRAGMENT */)),
             createCommentVNode(" Empty state "),
             ($data.newsArticles.length === 0 && !$data.loading)
-              ? (openBlock(), createElementBlock("div", _hoisted_16$3, [...(_cache[5] || (_cache[5] = [
+              ? (openBlock(), createElementBlock("div", _hoisted_16$4, [...(_cache[5] || (_cache[5] = [
                   createBaseVNode("div", { class: "empty-icon" }, "📰", -1 /* CACHED */),
                   createBaseVNode("p", { class: "empty-text" }, "No news articles yet", -1 /* CACHED */),
                   createBaseVNode("p", { class: "empty-subtext" }, "Create some in the News Article doctype!", -1 /* CACHED */)
@@ -7363,7 +7363,7 @@
               : createCommentVNode("v-if", true),
             createCommentVNode(" Loading state "),
             ($data.loading)
-              ? (openBlock(), createElementBlock("div", _hoisted_17$3, [...(_cache[6] || (_cache[6] = [
+              ? (openBlock(), createElementBlock("div", _hoisted_17$4, [...(_cache[6] || (_cache[6] = [
                   createBaseVNode("div", { class: "spinner" }, null, -1 /* CACHED */),
                   createBaseVNode("p", null, "Loading news...", -1 /* CACHED */)
                 ]))]))
@@ -7371,37 +7371,37 @@
           ])
         ]),
         createCommentVNode(" Highlights Section "),
-        createBaseVNode("section", _hoisted_18$3, [
+        createBaseVNode("section", _hoisted_18$4, [
           _cache[8] || (_cache[8] = createBaseVNode("div", { class: "section-header" }, [
             createBaseVNode("h2", { class: "section-title" }, "Highlights")
           ], -1 /* CACHED */)),
-          createBaseVNode("div", _hoisted_19$2, [
+          createBaseVNode("div", _hoisted_19$3, [
             (openBlock(true), createElementBlock(Fragment, null, renderList($data.highlights, (highlight) => {
               return (openBlock(), createElementBlock("div", {
                 key: highlight.name,
                 class: "highlight-card",
                 onClick: $event => ($options.openHighlight(highlight))
               }, [
-                createBaseVNode("div", _hoisted_21$2, [
+                createBaseVNode("div", _hoisted_21$3, [
                   createBaseVNode("img", {
                     src: $options.getImageUrl(highlight.image),
                     alt: highlight.title,
                     onError: _cache[2] || (_cache[2] = (...args) => ($options.handleImageError && $options.handleImageError(...args)))
-                  }, null, 40 /* PROPS, NEED_HYDRATION */, _hoisted_22$2)
+                  }, null, 40 /* PROPS, NEED_HYDRATION */, _hoisted_22$3)
                 ]),
-                createBaseVNode("div", _hoisted_23$2, [
-                  createBaseVNode("h3", _hoisted_24$2, toDisplayString(highlight.category), 1 /* TEXT */),
+                createBaseVNode("div", _hoisted_23$3, [
+                  createBaseVNode("h3", _hoisted_24$3, toDisplayString(highlight.category), 1 /* TEXT */),
                   createBaseVNode("a", {
                     href: "#",
                     onClick: withModifiers($event => ($options.openHighlight(highlight)), ["prevent"]),
                     class: "highlight-link"
-                  }, toDisplayString(highlight.link_text) + " → ", 9 /* TEXT, PROPS */, _hoisted_25$2)
+                  }, toDisplayString(highlight.link_text) + " → ", 9 /* TEXT, PROPS */, _hoisted_25$3)
                 ])
-              ], 8 /* PROPS */, _hoisted_20$2))
+              ], 8 /* PROPS */, _hoisted_20$3))
             }), 128 /* KEYED_FRAGMENT */)),
             createCommentVNode(" Empty state "),
             ($data.highlights.length === 0 && !$data.loading)
-              ? (openBlock(), createElementBlock("div", _hoisted_26$2, [...(_cache[7] || (_cache[7] = [
+              ? (openBlock(), createElementBlock("div", _hoisted_26$3, [...(_cache[7] || (_cache[7] = [
                   createBaseVNode("div", { class: "empty-icon" }, "✨", -1 /* CACHED */),
                   createBaseVNode("p", { class: "empty-text" }, "No highlights yet", -1 /* CACHED */),
                   createBaseVNode("p", { class: "empty-subtext" }, "Create some in the Highlight doctype!", -1 /* CACHED */)
@@ -7440,14 +7440,14 @@
     }
   }
 
-  var css_248z$6 = "\n.page-container[data-v-3c1b7c0b] {\r\n  animation: fadeIn-3c1b7c0b 0.3s ease;\n}\n@keyframes fadeIn-3c1b7c0b {\nfrom { opacity: 0; transform: translateY(10px);\n}\nto { opacity: 1; transform: translateY(0);\n}\n}\r\n\r\n/* Rounded white container like image 3 */\n.page-content[data-v-3c1b7c0b] {\r\n  background: white;\r\n  border-radius: 12px;\r\n  padding: 32px;\r\n  box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);\r\n  border: 1px solid #f0f1f3;\r\n  max-width: 100%;\n}\r\n\r\n/* Section Headers */\n.section-header[data-v-3c1b7c0b] {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n  margin-bottom: 24px;\n}\n.section-title[data-v-3c1b7c0b] {\r\n  font-size: 24px;\r\n  font-weight: 700;\r\n  color: #1a3353;\r\n  margin: 0;\r\n  letter-spacing: -0.02em;\n}\n.view-all-link[data-v-3c1b7c0b] {\r\n  font-size: 14px;\r\n  color: #d63939;\r\n  text-decoration: none;\r\n  font-weight: 600;\r\n  transition: all 0.2s;\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 4px;\n}\n.view-all-link[data-v-3c1b7c0b]:hover {\r\n  color: #c02d2d;\r\n  transform: translateX(2px);\n}\r\n\r\n/* News Section */\n.news-section[data-v-3c1b7c0b] {\r\n  margin-bottom: 48px;\n}\n.news-grid[data-v-3c1b7c0b] {\r\n  display: grid;\r\n  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));\r\n  gap: 20px;\n}\r\n\r\n/* News Cards - BBC Style */\n.news-card[data-v-3c1b7c0b] {\r\n  background: white;\r\n  border-radius: 8px;\r\n  overflow: hidden;\r\n  border: 1px solid #e8ebed;\r\n  transition: all 0.2s ease;\r\n  cursor: pointer;\r\n  display: flex;\r\n  flex-direction: column;\n}\n.news-card[data-v-3c1b7c0b]:hover {\r\n  transform: translateY(-2px);\r\n  box-shadow: 0 4px 12px rgba(0,0,0,0.1);\r\n  border-color: #d0d0d0;\n}\n.news-image[data-v-3c1b7c0b] {\r\n  width: 100%;\r\n  height: 180px;\r\n  overflow: hidden;\r\n  background: #1a3353;\r\n  position: relative;\n}\n.news-image img[data-v-3c1b7c0b] {\r\n  width: 100%;\r\n  height: 100%;\r\n  object-fit: cover;\r\n  transition: transform 0.3s ease;\n}\n.news-card:hover .news-image img[data-v-3c1b7c0b] {\r\n  transform: scale(1.03);\n}\r\n\r\n/* News badge on image */\n.news-badge[data-v-3c1b7c0b] {\r\n  position: absolute;\r\n  top: 12px;\r\n  left: 12px;\r\n  background: rgba(26, 51, 83, 0.9);\r\n  backdrop-filter: blur(8px);\r\n  color: white;\r\n  padding: 6px 12px;\r\n  border-radius: 4px;\r\n  font-size: 11px;\r\n  font-weight: 600;\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 6px;\n}\n.badge-icon[data-v-3c1b7c0b] {\r\n  font-size: 14px;\n}\n.badge-text[data-v-3c1b7c0b] {\r\n  text-transform: uppercase;\r\n  letter-spacing: 0.5px;\n}\n.news-content[data-v-3c1b7c0b] {\r\n  padding: 16px;\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 10px;\r\n  flex: 1;\n}\n.news-meta[data-v-3c1b7c0b] {\r\n  display: flex;\r\n  align-items: center;\n}\n.news-date[data-v-3c1b7c0b] {\r\n  font-size: 12px;\r\n  color: #6f767e;\r\n  font-weight: 500;\n}\n.news-title[data-v-3c1b7c0b] {\r\n  font-size: 16px;\r\n  font-weight: 600;\r\n  color: #1a3353;\r\n  line-height: 1.4;\r\n  margin: 0;\r\n  display: -webkit-box;\r\n  -webkit-line-clamp: 2;\r\n  -webkit-box-orient: vertical;\r\n  overflow: hidden;\n}\n.news-summary[data-v-3c1b7c0b] {\r\n  font-size: 13px;\r\n  color: #6f767e;\r\n  line-height: 1.5;\r\n  margin: 0;\r\n  display: -webkit-box;\r\n  -webkit-line-clamp: 2;\r\n  -webkit-box-orient: vertical;\r\n  overflow: hidden;\n}\n.news-footer[data-v-3c1b7c0b] {\r\n  margin-top: auto;\r\n  padding-top: 8px;\n}\r\n\r\n/* Highlights Section */\n.highlights-section[data-v-3c1b7c0b] {\r\n  margin-top: 48px;\n}\n.highlights-grid[data-v-3c1b7c0b] {\r\n  display: grid;\r\n  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));\r\n  gap: 20px;\n}\n.highlight-card[data-v-3c1b7c0b] {\r\n  background: white;\r\n  border-radius: 8px;\r\n  overflow: hidden;\r\n  border: 1px solid #e8ebed;\r\n  transition: all 0.2s ease;\r\n  cursor: pointer;\n}\n.highlight-card[data-v-3c1b7c0b]:hover {\r\n  transform: translateY(-2px);\r\n  box-shadow: 0 4px 12px rgba(0,0,0,0.1);\r\n  border-color: #d0d0d0;\n}\n.highlight-image[data-v-3c1b7c0b] {\r\n  width: 100%;\r\n  height: 160px;\r\n  overflow: hidden;\r\n  background: #1a3353;\n}\n.highlight-image img[data-v-3c1b7c0b] {\r\n  width: 100%;\r\n  height: 100%;\r\n  object-fit: cover;\r\n  transition: transform 0.3s ease;\n}\n.highlight-card:hover .highlight-image img[data-v-3c1b7c0b] {\r\n  transform: scale(1.03);\n}\n.highlight-content[data-v-3c1b7c0b] {\r\n  padding: 20px;\r\n  background: #f8f9fa;\n}\n.highlight-category[data-v-3c1b7c0b] {\r\n  font-size: 15px;\r\n  font-weight: 700;\r\n  color: #1a3353;\r\n  margin: 0 0 10px 0;\r\n  line-height: 1.3;\n}\n.highlight-link[data-v-3c1b7c0b] {\r\n  font-size: 13px;\r\n  color: #0066cc;\r\n  text-decoration: none;\r\n  font-weight: 600;\r\n  transition: color 0.2s;\r\n  display: inline-flex;\r\n  align-items: center;\r\n  gap: 4px;\n}\n.highlight-link[data-v-3c1b7c0b]:hover {\r\n  color: #004499;\n}\r\n\r\n/* Empty & Loading States */\n.empty-state[data-v-3c1b7c0b],\r\n.loading-state[data-v-3c1b7c0b] {\r\n  grid-column: 1 / -1;\r\n  text-align: center;\r\n  padding: 60px 20px;\n}\n.empty-icon[data-v-3c1b7c0b] {\r\n  font-size: 48px;\r\n  margin-bottom: 16px;\r\n  opacity: 0.3;\n}\n.empty-text[data-v-3c1b7c0b] {\r\n  font-size: 16px;\r\n  font-weight: 600;\r\n  color: #6f767e;\r\n  margin: 0 0 8px 0;\n}\n.empty-subtext[data-v-3c1b7c0b] {\r\n  font-size: 14px;\r\n  color: #9ca3af;\r\n  margin: 0;\n}\n.loading-state[data-v-3c1b7c0b] {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  gap: 16px;\n}\r\n\r\n/* Spinner */\n.spinner[data-v-3c1b7c0b] {\r\n  width: 40px;\r\n  height: 40px;\r\n  border: 3px solid #f0f1f3;\r\n  border-top-color: #d63939;\r\n  border-radius: 50%;\r\n  animation: spin-3c1b7c0b 0.8s linear infinite;\n}\n@keyframes spin-3c1b7c0b {\nto { transform: rotate(360deg);\n}\n}\n.loading-state p[data-v-3c1b7c0b] {\r\n  color: #6f767e;\r\n  font-size: 14px;\r\n  margin: 0;\n}\r\n\r\n/* Responsive */\n@media (max-width: 768px) {\n.page-content[data-v-3c1b7c0b] {\r\n    padding: 20px;\r\n    border-radius: 8px;\n}\n.news-grid[data-v-3c1b7c0b],\r\n  .highlights-grid[data-v-3c1b7c0b] {\r\n    grid-template-columns: 1fr;\n}\n.section-title[data-v-3c1b7c0b] {\r\n    font-size: 20px;\n}\n.view-all-link[data-v-3c1b7c0b] {\r\n    font-size: 13px;\n}\n.news-section[data-v-3c1b7c0b] {\r\n    margin-bottom: 32px;\n}\n.highlights-section[data-v-3c1b7c0b] {\r\n    margin-top: 32px;\n}\n}\r\n";
-  styleInject(css_248z$6);
+  var css_248z$7 = "\n.page-container[data-v-3c1b7c0b] {\r\n  animation: fadeIn-3c1b7c0b 0.3s ease;\n}\n@keyframes fadeIn-3c1b7c0b {\nfrom { opacity: 0; transform: translateY(10px);\n}\nto { opacity: 1; transform: translateY(0);\n}\n}\r\n\r\n/* Rounded white container like image 3 */\n.page-content[data-v-3c1b7c0b] {\r\n  background: white;\r\n  border-radius: 12px;\r\n  padding: 32px;\r\n  box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);\r\n  border: 1px solid #f0f1f3;\r\n  max-width: 100%;\n}\r\n\r\n/* Section Headers */\n.section-header[data-v-3c1b7c0b] {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n  margin-bottom: 24px;\n}\n.section-title[data-v-3c1b7c0b] {\r\n  font-size: 24px;\r\n  font-weight: 700;\r\n  color: #1a3353;\r\n  margin: 0;\r\n  letter-spacing: -0.02em;\n}\n.view-all-link[data-v-3c1b7c0b] {\r\n  font-size: 14px;\r\n  color: #d63939;\r\n  text-decoration: none;\r\n  font-weight: 600;\r\n  transition: all 0.2s;\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 4px;\n}\n.view-all-link[data-v-3c1b7c0b]:hover {\r\n  color: #c02d2d;\r\n  transform: translateX(2px);\n}\r\n\r\n/* News Section */\n.news-section[data-v-3c1b7c0b] {\r\n  margin-bottom: 48px;\n}\n.news-grid[data-v-3c1b7c0b] {\r\n  display: grid;\r\n  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));\r\n  gap: 20px;\n}\r\n\r\n/* News Cards - BBC Style */\n.news-card[data-v-3c1b7c0b] {\r\n  background: white;\r\n  border-radius: 8px;\r\n  overflow: hidden;\r\n  border: 1px solid #e8ebed;\r\n  transition: all 0.2s ease;\r\n  cursor: pointer;\r\n  display: flex;\r\n  flex-direction: column;\n}\n.news-card[data-v-3c1b7c0b]:hover {\r\n  transform: translateY(-2px);\r\n  box-shadow: 0 4px 12px rgba(0,0,0,0.1);\r\n  border-color: #d0d0d0;\n}\n.news-image[data-v-3c1b7c0b] {\r\n  width: 100%;\r\n  height: 180px;\r\n  overflow: hidden;\r\n  background: #1a3353;\r\n  position: relative;\n}\n.news-image img[data-v-3c1b7c0b] {\r\n  width: 100%;\r\n  height: 100%;\r\n  object-fit: cover;\r\n  transition: transform 0.3s ease;\n}\n.news-card:hover .news-image img[data-v-3c1b7c0b] {\r\n  transform: scale(1.03);\n}\r\n\r\n/* News badge on image */\n.news-badge[data-v-3c1b7c0b] {\r\n  position: absolute;\r\n  top: 12px;\r\n  left: 12px;\r\n  background: rgba(26, 51, 83, 0.9);\r\n  backdrop-filter: blur(8px);\r\n  color: white;\r\n  padding: 6px 12px;\r\n  border-radius: 4px;\r\n  font-size: 11px;\r\n  font-weight: 600;\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 6px;\n}\n.badge-icon[data-v-3c1b7c0b] {\r\n  font-size: 14px;\n}\n.badge-text[data-v-3c1b7c0b] {\r\n  text-transform: uppercase;\r\n  letter-spacing: 0.5px;\n}\n.news-content[data-v-3c1b7c0b] {\r\n  padding: 16px;\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 10px;\r\n  flex: 1;\n}\n.news-meta[data-v-3c1b7c0b] {\r\n  display: flex;\r\n  align-items: center;\n}\n.news-date[data-v-3c1b7c0b] {\r\n  font-size: 12px;\r\n  color: #6f767e;\r\n  font-weight: 500;\n}\n.news-title[data-v-3c1b7c0b] {\r\n  font-size: 16px;\r\n  font-weight: 600;\r\n  color: #1a3353;\r\n  line-height: 1.4;\r\n  margin: 0;\r\n  display: -webkit-box;\r\n  -webkit-line-clamp: 2;\r\n  -webkit-box-orient: vertical;\r\n  overflow: hidden;\n}\n.news-summary[data-v-3c1b7c0b] {\r\n  font-size: 13px;\r\n  color: #6f767e;\r\n  line-height: 1.5;\r\n  margin: 0;\r\n  display: -webkit-box;\r\n  -webkit-line-clamp: 2;\r\n  -webkit-box-orient: vertical;\r\n  overflow: hidden;\n}\n.news-footer[data-v-3c1b7c0b] {\r\n  margin-top: auto;\r\n  padding-top: 8px;\n}\r\n\r\n/* Highlights Section */\n.highlights-section[data-v-3c1b7c0b] {\r\n  margin-top: 48px;\n}\n.highlights-grid[data-v-3c1b7c0b] {\r\n  display: grid;\r\n  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));\r\n  gap: 20px;\n}\n.highlight-card[data-v-3c1b7c0b] {\r\n  background: white;\r\n  border-radius: 8px;\r\n  overflow: hidden;\r\n  border: 1px solid #e8ebed;\r\n  transition: all 0.2s ease;\r\n  cursor: pointer;\n}\n.highlight-card[data-v-3c1b7c0b]:hover {\r\n  transform: translateY(-2px);\r\n  box-shadow: 0 4px 12px rgba(0,0,0,0.1);\r\n  border-color: #d0d0d0;\n}\n.highlight-image[data-v-3c1b7c0b] {\r\n  width: 100%;\r\n  height: 160px;\r\n  overflow: hidden;\r\n  background: #1a3353;\n}\n.highlight-image img[data-v-3c1b7c0b] {\r\n  width: 100%;\r\n  height: 100%;\r\n  object-fit: cover;\r\n  transition: transform 0.3s ease;\n}\n.highlight-card:hover .highlight-image img[data-v-3c1b7c0b] {\r\n  transform: scale(1.03);\n}\n.highlight-content[data-v-3c1b7c0b] {\r\n  padding: 20px;\r\n  background: #f8f9fa;\n}\n.highlight-category[data-v-3c1b7c0b] {\r\n  font-size: 15px;\r\n  font-weight: 700;\r\n  color: #1a3353;\r\n  margin: 0 0 10px 0;\r\n  line-height: 1.3;\n}\n.highlight-link[data-v-3c1b7c0b] {\r\n  font-size: 13px;\r\n  color: #0066cc;\r\n  text-decoration: none;\r\n  font-weight: 600;\r\n  transition: color 0.2s;\r\n  display: inline-flex;\r\n  align-items: center;\r\n  gap: 4px;\n}\n.highlight-link[data-v-3c1b7c0b]:hover {\r\n  color: #004499;\n}\r\n\r\n/* Empty & Loading States */\n.empty-state[data-v-3c1b7c0b],\r\n.loading-state[data-v-3c1b7c0b] {\r\n  grid-column: 1 / -1;\r\n  text-align: center;\r\n  padding: 60px 20px;\n}\n.empty-icon[data-v-3c1b7c0b] {\r\n  font-size: 48px;\r\n  margin-bottom: 16px;\r\n  opacity: 0.3;\n}\n.empty-text[data-v-3c1b7c0b] {\r\n  font-size: 16px;\r\n  font-weight: 600;\r\n  color: #6f767e;\r\n  margin: 0 0 8px 0;\n}\n.empty-subtext[data-v-3c1b7c0b] {\r\n  font-size: 14px;\r\n  color: #9ca3af;\r\n  margin: 0;\n}\n.loading-state[data-v-3c1b7c0b] {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  gap: 16px;\n}\r\n\r\n/* Spinner */\n.spinner[data-v-3c1b7c0b] {\r\n  width: 40px;\r\n  height: 40px;\r\n  border: 3px solid #f0f1f3;\r\n  border-top-color: #d63939;\r\n  border-radius: 50%;\r\n  animation: spin-3c1b7c0b 0.8s linear infinite;\n}\n@keyframes spin-3c1b7c0b {\nto { transform: rotate(360deg);\n}\n}\n.loading-state p[data-v-3c1b7c0b] {\r\n  color: #6f767e;\r\n  font-size: 14px;\r\n  margin: 0;\n}\r\n\r\n/* Responsive */\n@media (max-width: 768px) {\n.page-content[data-v-3c1b7c0b] {\r\n    padding: 20px;\r\n    border-radius: 8px;\n}\n.news-grid[data-v-3c1b7c0b],\r\n  .highlights-grid[data-v-3c1b7c0b] {\r\n    grid-template-columns: 1fr;\n}\n.section-title[data-v-3c1b7c0b] {\r\n    font-size: 20px;\n}\n.view-all-link[data-v-3c1b7c0b] {\r\n    font-size: 13px;\n}\n.news-section[data-v-3c1b7c0b] {\r\n    margin-bottom: 32px;\n}\n.highlights-section[data-v-3c1b7c0b] {\r\n    margin-top: 32px;\n}\n}\r\n";
+  styleInject(css_248z$7);
 
-  script$6.render = render$6;
-  script$6.__scopeId = "data-v-3c1b7c0b";
-  script$6.__file = "localization_hub/public/js/dashboard/pages/DashboardPage.vue";
+  script$7.render = render$7;
+  script$7.__scopeId = "data-v-3c1b7c0b";
+  script$7.__file = "localization_hub/public/js/dashboard/pages/DashboardPage.vue";
 
-  var script$5 = {
+  var script$6 = {
     name: 'ProfilePage',
     
     props: {
@@ -7476,48 +7476,48 @@
     }
   };
 
-  const _hoisted_1$5 = { class: "page-container" };
-  const _hoisted_2$3 = { class: "page-content" };
-  const _hoisted_3$3 = { class: "profile-section" };
-  const _hoisted_4$3 = { class: "profile-header" };
-  const _hoisted_5$3 = { class: "profile-avatar" };
-  const _hoisted_6$3 = { class: "profile-info" };
-  const _hoisted_7$3 = { class: "info-grid" };
-  const _hoisted_8$3 = { class: "info-item" };
-  const _hoisted_9$3 = { class: "info-value" };
-  const _hoisted_10$3 = { class: "info-item" };
-  const _hoisted_11$3 = { class: "info-value" };
-  const _hoisted_12$3 = { class: "info-item" };
-  const _hoisted_13$3 = { class: "info-value" };
+  const _hoisted_1$6 = { class: "page-container" };
+  const _hoisted_2$5 = { class: "page-content" };
+  const _hoisted_3$5 = { class: "profile-section" };
+  const _hoisted_4$5 = { class: "profile-header" };
+  const _hoisted_5$5 = { class: "profile-avatar" };
+  const _hoisted_6$5 = { class: "profile-info" };
+  const _hoisted_7$5 = { class: "info-grid" };
+  const _hoisted_8$5 = { class: "info-item" };
+  const _hoisted_9$5 = { class: "info-value" };
+  const _hoisted_10$5 = { class: "info-item" };
+  const _hoisted_11$5 = { class: "info-value" };
+  const _hoisted_12$5 = { class: "info-item" };
+  const _hoisted_13$5 = { class: "info-value" };
 
-  function render$5(_ctx, _cache, $props, $setup, $data, $options) {
-    return (openBlock(), createElementBlock("div", _hoisted_1$5, [
-      createBaseVNode("div", _hoisted_2$3, [
+  function render$6(_ctx, _cache, $props, $setup, $data, $options) {
+    return (openBlock(), createElementBlock("div", _hoisted_1$6, [
+      createBaseVNode("div", _hoisted_2$5, [
         _cache[5] || (_cache[5] = createBaseVNode("h2", { class: "page-title" }, "Profile", -1 /* CACHED */)),
-        createBaseVNode("div", _hoisted_3$3, [
-          createBaseVNode("div", _hoisted_4$3, [
-            createBaseVNode("div", _hoisted_5$3, toDisplayString($options.userInitials), 1 /* TEXT */),
-            createBaseVNode("div", _hoisted_6$3, [
+        createBaseVNode("div", _hoisted_3$5, [
+          createBaseVNode("div", _hoisted_4$5, [
+            createBaseVNode("div", _hoisted_5$5, toDisplayString($options.userInitials), 1 /* TEXT */),
+            createBaseVNode("div", _hoisted_6$5, [
               createBaseVNode("h3", null, toDisplayString($props.userName), 1 /* TEXT */),
               createBaseVNode("p", null, toDisplayString($props.userEmail), 1 /* TEXT */)
             ])
           ]),
-          createBaseVNode("div", _hoisted_7$3, [
-            createBaseVNode("div", _hoisted_8$3, [
+          createBaseVNode("div", _hoisted_7$5, [
+            createBaseVNode("div", _hoisted_8$5, [
               _cache[0] || (_cache[0] = createBaseVNode("span", { class: "info-label" }, "Full Name", -1 /* CACHED */)),
-              createBaseVNode("span", _hoisted_9$3, toDisplayString($props.userName), 1 /* TEXT */)
+              createBaseVNode("span", _hoisted_9$5, toDisplayString($props.userName), 1 /* TEXT */)
             ]),
-            createBaseVNode("div", _hoisted_10$3, [
+            createBaseVNode("div", _hoisted_10$5, [
               _cache[1] || (_cache[1] = createBaseVNode("span", { class: "info-label" }, "Email", -1 /* CACHED */)),
-              createBaseVNode("span", _hoisted_11$3, toDisplayString($props.userEmail), 1 /* TEXT */)
+              createBaseVNode("span", _hoisted_11$5, toDisplayString($props.userEmail), 1 /* TEXT */)
             ]),
             _cache[3] || (_cache[3] = createBaseVNode("div", { class: "info-item" }, [
               createBaseVNode("span", { class: "info-label" }, "Role"),
               createBaseVNode("span", { class: "info-value" }, "User")
             ], -1 /* CACHED */)),
-            createBaseVNode("div", _hoisted_12$3, [
+            createBaseVNode("div", _hoisted_12$5, [
               _cache[2] || (_cache[2] = createBaseVNode("span", { class: "info-label" }, "Member Since", -1 /* CACHED */)),
-              createBaseVNode("span", _hoisted_13$3, toDisplayString($options.currentDate), 1 /* TEXT */)
+              createBaseVNode("span", _hoisted_13$5, toDisplayString($options.currentDate), 1 /* TEXT */)
             ])
           ]),
           _cache[4] || (_cache[4] = createBaseVNode("button", { class: "edit-button" }, "Edit Profile", -1 /* CACHED */))
@@ -7526,14 +7526,14 @@
     ]))
   }
 
-  var css_248z$5 = "\n.page-container[data-v-514c6220] {\r\n  animation: fadeIn-514c6220 0.3s ease;\n}\n@keyframes fadeIn-514c6220 {\nfrom { opacity: 0; transform: translateY(10px);\n}\nto { opacity: 1; transform: translateY(0);\n}\n}\n.page-content[data-v-514c6220] {\r\n  background: white;\r\n  border-radius: 8px;\r\n  padding: 40px;\r\n  box-shadow: 0 1px 3px rgba(0,0,0,0.05);\n}\n.page-title[data-v-514c6220] {\r\n  font-size: 24px;\r\n  font-weight: 700;\r\n  color: #2e3338;\r\n  margin-bottom: 30px;\n}\n.profile-section[data-v-514c6220] {\r\n  max-width: 600px;\n}\n.profile-header[data-v-514c6220] {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 20px;\r\n  margin-bottom: 30px;\r\n  padding-bottom: 30px;\r\n  border-bottom: 1px solid #e8ebed;\n}\n.profile-avatar[data-v-514c6220] {\r\n  width: 80px;\r\n  height: 80px;\r\n  border-radius: 50%;\r\n  background: #d63939;\r\n  color: white;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  font-size: 32px;\r\n  font-weight: 600;\n}\n.profile-info h3[data-v-514c6220] {\r\n  font-size: 20px;\r\n  font-weight: 600;\r\n  color: #2e3338;\r\n  margin-bottom: 4px;\n}\n.profile-info p[data-v-514c6220] {\r\n  color: #6c757d;\r\n  font-size: 14px;\r\n  margin: 0;\n}\n.info-grid[data-v-514c6220] {\r\n  display: grid;\r\n  gap: 20px;\r\n  margin-bottom: 30px;\n}\n.info-item[data-v-514c6220] {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 4px;\n}\n.info-label[data-v-514c6220] {\r\n  font-size: 12px;\r\n  color: #6c757d;\r\n  text-transform: uppercase;\r\n  font-weight: 500;\n}\n.info-value[data-v-514c6220] {\r\n  font-size: 16px;\r\n  color: #2e3338;\r\n  font-weight: 500;\n}\n.edit-button[data-v-514c6220] {\r\n  padding: 12px 24px;\r\n  background: #d63939;\r\n  color: white;\r\n  border: none;\r\n  border-radius: 6px;\r\n  font-weight: 600;\r\n  cursor: pointer;\r\n  transition: all 0.2s;\n}\n.edit-button[data-v-514c6220]:hover {\r\n  background: #c02929;\r\n  transform: translateY(-2px);\r\n  box-shadow: 0 4px 8px rgba(214, 57, 57, 0.3);\n}\r\n";
-  styleInject(css_248z$5);
+  var css_248z$6 = "\n.page-container[data-v-514c6220] {\r\n  animation: fadeIn-514c6220 0.3s ease;\n}\n@keyframes fadeIn-514c6220 {\nfrom { opacity: 0; transform: translateY(10px);\n}\nto { opacity: 1; transform: translateY(0);\n}\n}\n.page-content[data-v-514c6220] {\r\n  background: white;\r\n  border-radius: 8px;\r\n  padding: 40px;\r\n  box-shadow: 0 1px 3px rgba(0,0,0,0.05);\n}\n.page-title[data-v-514c6220] {\r\n  font-size: 24px;\r\n  font-weight: 700;\r\n  color: #2e3338;\r\n  margin-bottom: 30px;\n}\n.profile-section[data-v-514c6220] {\r\n  max-width: 600px;\n}\n.profile-header[data-v-514c6220] {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 20px;\r\n  margin-bottom: 30px;\r\n  padding-bottom: 30px;\r\n  border-bottom: 1px solid #e8ebed;\n}\n.profile-avatar[data-v-514c6220] {\r\n  width: 80px;\r\n  height: 80px;\r\n  border-radius: 50%;\r\n  background: #d63939;\r\n  color: white;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  font-size: 32px;\r\n  font-weight: 600;\n}\n.profile-info h3[data-v-514c6220] {\r\n  font-size: 20px;\r\n  font-weight: 600;\r\n  color: #2e3338;\r\n  margin-bottom: 4px;\n}\n.profile-info p[data-v-514c6220] {\r\n  color: #6c757d;\r\n  font-size: 14px;\r\n  margin: 0;\n}\n.info-grid[data-v-514c6220] {\r\n  display: grid;\r\n  gap: 20px;\r\n  margin-bottom: 30px;\n}\n.info-item[data-v-514c6220] {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 4px;\n}\n.info-label[data-v-514c6220] {\r\n  font-size: 12px;\r\n  color: #6c757d;\r\n  text-transform: uppercase;\r\n  font-weight: 500;\n}\n.info-value[data-v-514c6220] {\r\n  font-size: 16px;\r\n  color: #2e3338;\r\n  font-weight: 500;\n}\n.edit-button[data-v-514c6220] {\r\n  padding: 12px 24px;\r\n  background: #d63939;\r\n  color: white;\r\n  border: none;\r\n  border-radius: 6px;\r\n  font-weight: 600;\r\n  cursor: pointer;\r\n  transition: all 0.2s;\n}\n.edit-button[data-v-514c6220]:hover {\r\n  background: #c02929;\r\n  transform: translateY(-2px);\r\n  box-shadow: 0 4px 8px rgba(214, 57, 57, 0.3);\n}\r\n";
+  styleInject(css_248z$6);
 
-  script$5.render = render$5;
-  script$5.__scopeId = "data-v-514c6220";
-  script$5.__file = "localization_hub/public/js/dashboard/pages/ProfilePage.vue";
+  script$6.render = render$6;
+  script$6.__scopeId = "data-v-514c6220";
+  script$6.__file = "localization_hub/public/js/dashboard/pages/ProfilePage.vue";
 
-  var script$4 = {
+  var script$5 = {
     name: 'DataPage',
 
     data() {
@@ -7706,51 +7706,51 @@
     }
   };
 
-  const _hoisted_1$4 = { class: "data-page-container" };
-  const _hoisted_2$2 = { class: "data-page-content" };
-  const _hoisted_3$2 = {
+  const _hoisted_1$5 = { class: "data-page-container" };
+  const _hoisted_2$4 = { class: "data-page-content" };
+  const _hoisted_3$4 = {
     key: 0,
     class: "stats-overview"
   };
-  const _hoisted_4$2 = { class: "stat-card" };
-  const _hoisted_5$2 = { class: "stat-value" };
-  const _hoisted_6$2 = { class: "stat-card" };
-  const _hoisted_7$2 = { class: "stat-value" };
-  const _hoisted_8$2 = { class: "stat-card" };
-  const _hoisted_9$2 = { class: "stat-value" };
-  const _hoisted_10$2 = { class: "category-filters" };
-  const _hoisted_11$2 = ["onClick"];
-  const _hoisted_12$2 = { class: "filter-icon" };
-  const _hoisted_13$2 = { class: "filter-label" };
-  const _hoisted_14$2 = {
+  const _hoisted_4$4 = { class: "stat-card" };
+  const _hoisted_5$4 = { class: "stat-value" };
+  const _hoisted_6$4 = { class: "stat-card" };
+  const _hoisted_7$4 = { class: "stat-value" };
+  const _hoisted_8$4 = { class: "stat-card" };
+  const _hoisted_9$4 = { class: "stat-value" };
+  const _hoisted_10$4 = { class: "category-filters" };
+  const _hoisted_11$4 = ["onClick"];
+  const _hoisted_12$4 = { class: "filter-icon" };
+  const _hoisted_13$4 = { class: "filter-label" };
+  const _hoisted_14$4 = {
     key: 1,
     class: "loading-container"
   };
-  const _hoisted_15$2 = { class: "data-grid" };
-  const _hoisted_16$2 = { class: "card-header" };
-  const _hoisted_17$2 = { class: "card-meta" };
-  const _hoisted_18$2 = { class: "category-badge" };
-  const _hoisted_19$1 = { class: "card-body" };
-  const _hoisted_20$1 = { class: "card-title" };
-  const _hoisted_21$1 = { class: "card-description" };
-  const _hoisted_22$1 = { class: "card-metadata" };
-  const _hoisted_23$1 = { class: "metadata-item" };
-  const _hoisted_24$1 = { class: "metadata-text" };
-  const _hoisted_25$1 = {
+  const _hoisted_15$3 = { class: "data-grid" };
+  const _hoisted_16$3 = { class: "card-header" };
+  const _hoisted_17$3 = { class: "card-meta" };
+  const _hoisted_18$3 = { class: "category-badge" };
+  const _hoisted_19$2 = { class: "card-body" };
+  const _hoisted_20$2 = { class: "card-title" };
+  const _hoisted_21$2 = { class: "card-description" };
+  const _hoisted_22$2 = { class: "card-metadata" };
+  const _hoisted_23$2 = { class: "metadata-item" };
+  const _hoisted_24$2 = { class: "metadata-text" };
+  const _hoisted_25$2 = {
     key: 0,
     class: "metadata-item"
   };
-  const _hoisted_26$1 = { class: "metadata-text" };
-  const _hoisted_27$1 = { class: "card-footer" };
+  const _hoisted_26$2 = { class: "metadata-text" };
+  const _hoisted_27$2 = { class: "card-footer" };
   const _hoisted_28$1 = ["onClick"];
   const _hoisted_29$1 = { class: "btn-text" };
   const _hoisted_30$1 = ["onClick"];
   const _hoisted_31$1 = { class: "empty-state" };
   const _hoisted_32$1 = { class: "empty-subtext" };
 
-  function render$4(_ctx, _cache, $props, $setup, $data, $options) {
-    return (openBlock(), createElementBlock("div", _hoisted_1$4, [
-      createBaseVNode("div", _hoisted_2$2, [
+  function render$5(_ctx, _cache, $props, $setup, $data, $options) {
+    return (openBlock(), createElementBlock("div", _hoisted_1$5, [
+      createBaseVNode("div", _hoisted_2$4, [
         createCommentVNode(" Page Header "),
         _cache[10] || (_cache[10] = createBaseVNode("div", { class: "page-header" }, [
           createBaseVNode("div", { class: "header-content" }, [
@@ -7760,81 +7760,81 @@
         ], -1 /* CACHED */)),
         createCommentVNode(" Stats Overview (Optional) "),
         ($data.statsEnabled)
-          ? (openBlock(), createElementBlock("div", _hoisted_3$2, [
-              createBaseVNode("div", _hoisted_4$2, [
-                createBaseVNode("div", _hoisted_5$2, toDisplayString($options.totalDatasets), 1 /* TEXT */),
+          ? (openBlock(), createElementBlock("div", _hoisted_3$4, [
+              createBaseVNode("div", _hoisted_4$4, [
+                createBaseVNode("div", _hoisted_5$4, toDisplayString($options.totalDatasets), 1 /* TEXT */),
                 _cache[0] || (_cache[0] = createBaseVNode("div", { class: "stat-label" }, "Total Datasets", -1 /* CACHED */))
               ]),
-              createBaseVNode("div", _hoisted_6$2, [
-                createBaseVNode("div", _hoisted_7$2, toDisplayString($options.formatFileSize($options.totalSize)), 1 /* TEXT */),
+              createBaseVNode("div", _hoisted_6$4, [
+                createBaseVNode("div", _hoisted_7$4, toDisplayString($options.formatFileSize($options.totalSize)), 1 /* TEXT */),
                 _cache[1] || (_cache[1] = createBaseVNode("div", { class: "stat-label" }, "Total Data Size", -1 /* CACHED */))
               ]),
-              createBaseVNode("div", _hoisted_8$2, [
-                createBaseVNode("div", _hoisted_9$2, toDisplayString($data.categories.length - 1), 1 /* TEXT */),
+              createBaseVNode("div", _hoisted_8$4, [
+                createBaseVNode("div", _hoisted_9$4, toDisplayString($data.categories.length - 1), 1 /* TEXT */),
                 _cache[2] || (_cache[2] = createBaseVNode("div", { class: "stat-label" }, "Categories", -1 /* CACHED */))
               ])
             ]))
           : createCommentVNode("v-if", true),
         createCommentVNode(" Category Filters "),
-        createBaseVNode("div", _hoisted_10$2, [
+        createBaseVNode("div", _hoisted_10$4, [
           (openBlock(true), createElementBlock(Fragment, null, renderList($data.categories, (category) => {
             return (openBlock(), createElementBlock("button", {
               key: category.value,
               class: normalizeClass(['filter-btn', { active: $data.selectedCategory === category.value }]),
               onClick: $event => ($options.selectCategory(category.value))
             }, [
-              createBaseVNode("span", _hoisted_12$2, toDisplayString(category.icon), 1 /* TEXT */),
-              createBaseVNode("span", _hoisted_13$2, toDisplayString(category.label), 1 /* TEXT */)
-            ], 10 /* CLASS, PROPS */, _hoisted_11$2))
+              createBaseVNode("span", _hoisted_12$4, toDisplayString(category.icon), 1 /* TEXT */),
+              createBaseVNode("span", _hoisted_13$4, toDisplayString(category.label), 1 /* TEXT */)
+            ], 10 /* CLASS, PROPS */, _hoisted_11$4))
           }), 128 /* KEYED_FRAGMENT */))
         ]),
         createCommentVNode(" Loading State "),
         ($data.loading)
-          ? (openBlock(), createElementBlock("div", _hoisted_14$2, [...(_cache[3] || (_cache[3] = [
+          ? (openBlock(), createElementBlock("div", _hoisted_14$4, [...(_cache[3] || (_cache[3] = [
               createBaseVNode("div", { class: "spinner" }, null, -1 /* CACHED */),
               createBaseVNode("p", { class: "loading-text" }, "Loading data resources...", -1 /* CACHED */)
             ]))]))
           : ($options.filteredDatasets.length > 0)
             ? (openBlock(), createElementBlock(Fragment, { key: 2 }, [
                 createCommentVNode(" Data Cards Grid "),
-                createBaseVNode("div", _hoisted_15$2, [
+                createBaseVNode("div", _hoisted_15$3, [
                   (openBlock(true), createElementBlock(Fragment, null, renderList($options.filteredDatasets, (dataset) => {
                     return (openBlock(), createElementBlock("div", {
                       key: dataset.name,
                       class: "data-card"
                     }, [
                       createCommentVNode(" Card Header "),
-                      createBaseVNode("div", _hoisted_16$2, [
+                      createBaseVNode("div", _hoisted_16$3, [
                         createBaseVNode("div", {
                           class: "card-icon",
                           style: normalizeStyle({ background: $options.getCategoryColor(dataset.category) })
                         }, [
                           createBaseVNode("span", null, toDisplayString($options.getCategoryIcon(dataset.category)), 1 /* TEXT */)
                         ], 4 /* STYLE */),
-                        createBaseVNode("div", _hoisted_17$2, [
-                          createBaseVNode("span", _hoisted_18$2, toDisplayString(dataset.category), 1 /* TEXT */)
+                        createBaseVNode("div", _hoisted_17$3, [
+                          createBaseVNode("span", _hoisted_18$3, toDisplayString(dataset.category), 1 /* TEXT */)
                         ])
                       ]),
                       createCommentVNode(" Card Body "),
-                      createBaseVNode("div", _hoisted_19$1, [
-                        createBaseVNode("h3", _hoisted_20$1, toDisplayString(dataset.title), 1 /* TEXT */),
-                        createBaseVNode("p", _hoisted_21$1, toDisplayString(dataset.description), 1 /* TEXT */),
+                      createBaseVNode("div", _hoisted_19$2, [
+                        createBaseVNode("h3", _hoisted_20$2, toDisplayString(dataset.title), 1 /* TEXT */),
+                        createBaseVNode("p", _hoisted_21$2, toDisplayString(dataset.description), 1 /* TEXT */),
                         createCommentVNode(" Metadata "),
-                        createBaseVNode("div", _hoisted_22$1, [
-                          createBaseVNode("div", _hoisted_23$1, [
+                        createBaseVNode("div", _hoisted_22$2, [
+                          createBaseVNode("div", _hoisted_23$2, [
                             _cache[4] || (_cache[4] = createBaseVNode("span", { class: "metadata-icon" }, "📅", -1 /* CACHED */)),
-                            createBaseVNode("span", _hoisted_24$1, toDisplayString($options.formatDate(dataset.last_updated)), 1 /* TEXT */)
+                            createBaseVNode("span", _hoisted_24$2, toDisplayString($options.formatDate(dataset.last_updated)), 1 /* TEXT */)
                           ]),
                           (dataset.file_size)
-                            ? (openBlock(), createElementBlock("div", _hoisted_25$1, [
+                            ? (openBlock(), createElementBlock("div", _hoisted_25$2, [
                                 _cache[5] || (_cache[5] = createBaseVNode("span", { class: "metadata-icon" }, "💾", -1 /* CACHED */)),
-                                createBaseVNode("span", _hoisted_26$1, toDisplayString($options.formatFileSize(dataset.file_size)), 1 /* TEXT */)
+                                createBaseVNode("span", _hoisted_26$2, toDisplayString($options.formatFileSize(dataset.file_size)), 1 /* TEXT */)
                               ]))
                             : createCommentVNode("v-if", true)
                         ])
                       ]),
                       createCommentVNode(" Card Footer with Download Button "),
-                      createBaseVNode("div", _hoisted_27$1, [
+                      createBaseVNode("div", _hoisted_27$2, [
                         createBaseVNode("button", {
                           class: "download-btn",
                           onClick: $event => ($options.downloadFile(dataset))
@@ -7871,14 +7871,14 @@
     ]))
   }
 
-  var css_248z$4 = "\r\n/* ============================================\r\n   TYPOGRAPHY - Modern Data Dashboard\r\n   ============================================ */\n@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap');\r\n\r\n/* CSS Variables */\n[data-v-1f39e5c1]:root {\r\n  --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);\r\n  --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);\r\n  --success-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);\n}\r\n\r\n/* ============================================\r\n   LAYOUT CONTAINER\r\n   ============================================ */\n.data-page-container[data-v-1f39e5c1] {\r\n  min-height: 100vh;\r\n  background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);\r\n  padding: 0;\n}\n.data-page-content[data-v-1f39e5c1] {\r\n  max-width: 1400px;\r\n  margin: 0 auto;\r\n  padding: 48px 24px;\n}\r\n\r\n/* ============================================\r\n   PAGE HEADER\r\n   ============================================ */\n.page-header[data-v-1f39e5c1] {\r\n  margin-bottom: 48px;\r\n  animation: slideDown-1f39e5c1 0.6s cubic-bezier(0.4, 0, 0.2, 1);\n}\n@keyframes slideDown-1f39e5c1 {\nfrom {\r\n    opacity: 0;\r\n    transform: translateY(-20px);\n}\nto {\r\n    opacity: 1;\r\n    transform: translateY(0);\n}\n}\n.header-content[data-v-1f39e5c1] {\r\n  text-align: center;\n}\n.page-title[data-v-1f39e5c1] {\r\n  font-family: 'Outfit', sans-serif;\r\n  font-size: 48px;\r\n  font-weight: 800;\r\n  background: linear-gradient(135deg, #1a3353 0%, #4a5f8a 100%);\r\n  -webkit-background-clip: text;\r\n  -webkit-text-fill-color: transparent;\r\n  background-clip: text;\r\n  margin: 0 0 12px 0;\r\n  letter-spacing: -0.03em;\n}\n.page-subtitle[data-v-1f39e5c1] {\r\n  font-family: 'Manrope', sans-serif;\r\n  font-size: 18px;\r\n  color: #64748b;\r\n  margin: 0;\r\n  font-weight: 500;\n}\r\n\r\n/* ============================================\r\n   STATS OVERVIEW\r\n   ============================================ */\n.stats-overview[data-v-1f39e5c1] {\r\n  display: grid;\r\n  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));\r\n  gap: 20px;\r\n  margin-bottom: 40px;\r\n  animation: fadeInUp-1f39e5c1 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.1s both;\n}\n@keyframes fadeInUp-1f39e5c1 {\nfrom {\r\n    opacity: 0;\r\n    transform: translateY(30px);\n}\nto {\r\n    opacity: 1;\r\n    transform: translateY(0);\n}\n}\n.stat-card[data-v-1f39e5c1] {\r\n  background: white;\r\n  padding: 24px;\r\n  border-radius: 16px;\r\n  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.08);\r\n  border: 1px solid rgba(226, 232, 240, 0.8);\r\n  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);\n}\n.stat-card[data-v-1f39e5c1]:hover {\r\n  transform: translateY(-4px);\r\n  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);\n}\n.stat-value[data-v-1f39e5c1] {\r\n  font-family: 'Outfit', sans-serif;\r\n  font-size: 36px;\r\n  font-weight: 700;\r\n  color: #1a3353;\r\n  margin-bottom: 8px;\n}\n.stat-label[data-v-1f39e5c1] {\r\n  font-family: 'Manrope', sans-serif;\r\n  font-size: 14px;\r\n  color: #64748b;\r\n  font-weight: 500;\r\n  margin-bottom: 8px;\n}\n.stat-trend[data-v-1f39e5c1] {\r\n  font-family: 'Manrope', sans-serif;\r\n  font-size: 13px;\r\n  font-weight: 600;\r\n  display: inline-flex;\r\n  align-items: center;\r\n  gap: 4px;\n}\n.stat-trend.positive[data-v-1f39e5c1] {\r\n  color: #10b981;\n}\n.stat-trend.negative[data-v-1f39e5c1] {\r\n  color: #ef4444;\n}\n.stat-trend.positive[data-v-1f39e5c1]::before {\r\n  content: '↗';\n}\n.stat-trend.negative[data-v-1f39e5c1]::before {\r\n  content: '↘';\n}\r\n\r\n/* ============================================\r\n   CATEGORY FILTERS\r\n   ============================================ */\n.category-filters[data-v-1f39e5c1] {\r\n  display: flex;\r\n  gap: 12px;\r\n  margin-bottom: 40px;\r\n  padding: 16px;\r\n  background: white;\r\n  border-radius: 16px;\r\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);\r\n  overflow-x: auto;\r\n  -webkit-overflow-scrolling: touch;\r\n  animation: fadeInUp-1f39e5c1 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.2s both;\n}\n.filter-btn[data-v-1f39e5c1] {\r\n  font-family: 'Manrope', sans-serif;\r\n  background: transparent;\r\n  border: 2px solid #e2e8f0;\r\n  padding: 12px 24px;\r\n  border-radius: 12px;\r\n  font-size: 14px;\r\n  font-weight: 600;\r\n  color: #475569;\r\n  cursor: pointer;\r\n  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 8px;\r\n  white-space: nowrap;\n}\n.filter-btn[data-v-1f39e5c1]:hover {\r\n  background: #f8fafc;\r\n  border-color: #cbd5e1;\r\n  transform: translateY(-2px);\n}\n.filter-btn.active[data-v-1f39e5c1] {\r\n  background: #64748b;\r\n  border-color: transparent;\r\n  color: white;\r\n  box-shadow: 0 2px 8px rgba(100, 116, 139, 0.3);\n}\n.filter-icon[data-v-1f39e5c1] {\r\n  font-size: 18px;\n}\n.filter-label[data-v-1f39e5c1] {\r\n  font-weight: 600;\n}\r\n\r\n/* ============================================\r\n   DATA GRID\r\n   ============================================ */\n.data-grid[data-v-1f39e5c1] {\r\n  display: grid;\r\n  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));\r\n  gap: 20px;\r\n  animation: fadeInUp-1f39e5c1 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.3s both;\n}\r\n\r\n/* ============================================\r\n   DATA CARDS - Modern Style\r\n   ============================================ */\n.data-card[data-v-1f39e5c1] {\r\n  background: white;\r\n  border-radius: 20px;\r\n  overflow: hidden;\r\n  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);\r\n  border: 1px solid rgba(226, 232, 240, 0.8);\r\n  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.08);\r\n  display: flex;\r\n  flex-direction: column;\r\n  position: relative;\r\n  overflow: visible;\n}\n.data-card[data-v-1f39e5c1]::before {\r\n  content: '';\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  right: 0;\r\n  height: 3px;\r\n  background: #64748b;\r\n  transform: scaleX(0);\r\n  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);\n}\n.data-card[data-v-1f39e5c1]:hover {\r\n  transform: translateY(-4px);\r\n  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);\n}\n.data-card[data-v-1f39e5c1]:hover::before {\r\n  transform: scaleX(1);\n}\r\n\r\n/* Card Header */\n.card-header[data-v-1f39e5c1] {\r\n  padding: 16px 16px 12px;\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: flex-start;\n}\n.card-icon[data-v-1f39e5c1] {\r\n  width: 40px;\r\n  height: 40px;\r\n  border-radius: 10px;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  font-size: 20px;\r\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);\r\n  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);\n}\n.data-card:hover .card-icon[data-v-1f39e5c1] {\r\n  transform: scale(1.05);\n}\n.card-meta[data-v-1f39e5c1] {\r\n  text-align: right;\n}\n.category-badge[data-v-1f39e5c1] {\r\n  font-family: 'Manrope', sans-serif;\r\n  font-size: 10px;\r\n  font-weight: 600;\r\n  text-transform: uppercase;\r\n  letter-spacing: 0.5px;\r\n  color: #64748b;\r\n  background: #f1f5f9;\r\n  padding: 4px 10px;\r\n  border-radius: 6px;\n}\r\n\r\n/* Card Body */\n.card-body[data-v-1f39e5c1] {\r\n  padding: 0 16px 16px;\r\n  flex: 1;\n}\n.card-title[data-v-1f39e5c1] {\r\n  font-family: 'Outfit', sans-serif;\r\n  font-size: 16px;\r\n  font-weight: 700;\r\n  color: #1a3353;\r\n  margin: 0 0 8px 0;\r\n  line-height: 1.3;\n}\n.card-description[data-v-1f39e5c1] {\r\n  font-family: 'Manrope', sans-serif;\r\n  font-size: 13px;\r\n  line-height: 1.5;\r\n  color: #64748b;\r\n  margin: 0 0 12px 0;\r\n  display: -webkit-box;\r\n  -webkit-line-clamp: 2;\r\n  -webkit-box-orient: vertical;\r\n  overflow: hidden;\n}\n.card-metadata[data-v-1f39e5c1] {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 6px;\n}\n.metadata-item[data-v-1f39e5c1] {\r\n  font-family: 'Manrope', sans-serif;\r\n  font-size: 11px;\r\n  color: #94a3b8;\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 6px;\n}\n.metadata-icon[data-v-1f39e5c1] {\r\n  font-size: 12px;\n}\n.metadata-text[data-v-1f39e5c1] {\r\n  font-weight: 500;\n}\r\n\r\n/* Card Footer */\n.card-footer[data-v-1f39e5c1] {\r\n  padding: 12px 16px 16px;\r\n  display: flex;\r\n  gap: 8px;\r\n  border-top: 1px solid #f1f5f9;\n}\n.download-btn[data-v-1f39e5c1] {\r\n  font-family: 'Manrope', sans-serif;\r\n  flex: 1;\r\n  background: #64748b;\r\n  color: white;\r\n  border: none;\r\n  padding: 10px 16px;\r\n  border-radius: 8px;\r\n  font-size: 12px;\r\n  font-weight: 600;\r\n  cursor: pointer;\r\n  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  gap: 6px;\r\n  box-shadow: 0 2px 4px rgba(100, 116, 139, 0.2);\n}\n.download-btn[data-v-1f39e5c1]:hover {\r\n  background: #475569;\r\n  transform: translateY(-1px);\r\n  box-shadow: 0 4px 8px rgba(100, 116, 139, 0.3);\n}\n.download-btn[data-v-1f39e5c1]:active {\r\n  transform: translateY(0);\n}\n.preview-btn[data-v-1f39e5c1] {\r\n  font-family: 'Manrope', sans-serif;\r\n  background: white;\r\n  color: #64748b;\r\n  border: 1.5px solid #cbd5e1;\r\n  padding: 10px 16px;\r\n  border-radius: 8px;\r\n  font-size: 12px;\r\n  font-weight: 600;\r\n  cursor: pointer;\r\n  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 6px;\n}\n.preview-btn[data-v-1f39e5c1]:hover {\r\n  background: #f8fafc;\r\n  border-color: #64748b;\r\n  transform: translateY(-1px);\n}\n.btn-icon[data-v-1f39e5c1] {\r\n  font-size: 14px;\n}\n.btn-text[data-v-1f39e5c1] {\r\n  font-weight: 600;\n}\r\n\r\n/* ============================================\r\n   LOADING STATE\r\n   ============================================ */\n.loading-container[data-v-1f39e5c1] {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: center;\r\n  padding: 100px 20px;\r\n  gap: 24px;\n}\n.spinner[data-v-1f39e5c1] {\r\n  width: 56px;\r\n  height: 56px;\r\n  border: 5px solid #f1f5f9;\r\n  border-top-color: #64748b;\r\n  border-radius: 50%;\r\n  animation: spin-1f39e5c1 0.8s linear infinite;\n}\n@keyframes spin-1f39e5c1 {\nto {\r\n    transform: rotate(360deg);\n}\n}\n.loading-text[data-v-1f39e5c1] {\r\n  font-family: 'Manrope', sans-serif;\r\n  font-size: 16px;\r\n  color: #64748b;\r\n  margin: 0;\r\n  font-weight: 600;\n}\r\n\r\n/* ============================================\r\n   EMPTY STATE\r\n   ============================================ */\n.empty-state[data-v-1f39e5c1] {\r\n  text-align: center;\r\n  padding: 100px 20px;\r\n  background: white;\r\n  border-radius: 20px;\r\n  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);\n}\n.empty-icon[data-v-1f39e5c1] {\r\n  font-size: 80px;\r\n  margin-bottom: 24px;\r\n  opacity: 0.3;\n}\n.empty-text[data-v-1f39e5c1] {\r\n  font-family: 'Outfit', sans-serif;\r\n  font-size: 24px;\r\n  font-weight: 700;\r\n  color: #1a3353;\r\n  margin: 0 0 12px 0;\n}\n.empty-subtext[data-v-1f39e5c1] {\r\n  font-family: 'Manrope', sans-serif;\r\n  font-size: 16px;\r\n  color: #94a3b8;\r\n  margin: 0;\n}\r\n\r\n/* ============================================\r\n   RESPONSIVE DESIGN\r\n   ============================================ */\n@media (max-width: 1024px) {\n.data-grid[data-v-1f39e5c1] {\r\n    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));\r\n    gap: 20px;\n}\n.stats-overview[data-v-1f39e5c1] {\r\n    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));\n}\n}\n@media (max-width: 768px) {\n.data-page-content[data-v-1f39e5c1] {\r\n    padding: 32px 16px;\n}\n.page-title[data-v-1f39e5c1] {\r\n    font-size: 36px;\n}\n.page-subtitle[data-v-1f39e5c1] {\r\n    font-size: 16px;\n}\n.page-header[data-v-1f39e5c1] {\r\n    margin-bottom: 32px;\n}\n.category-filters[data-v-1f39e5c1] {\r\n    padding: 12px;\n}\n.filter-btn[data-v-1f39e5c1] {\r\n    padding: 10px 20px;\r\n    font-size: 13px;\n}\n.data-grid[data-v-1f39e5c1] {\r\n    grid-template-columns: 1fr;\r\n    gap: 16px;\n}\n.stats-overview[data-v-1f39e5c1] {\r\n    grid-template-columns: 1fr;\r\n    gap: 16px;\n}\n.card-footer[data-v-1f39e5c1] {\r\n    flex-direction: column;\n}\n.preview-btn[data-v-1f39e5c1] {\r\n    width: 100%;\n}\n}\n@media (max-width: 480px) {\n.page-title[data-v-1f39e5c1] {\r\n    font-size: 28px;\n}\n.page-subtitle[data-v-1f39e5c1] {\r\n    font-size: 14px;\n}\n.stat-value[data-v-1f39e5c1] {\r\n    font-size: 28px;\n}\n.card-title[data-v-1f39e5c1] {\r\n    font-size: 18px;\n}\n.card-description[data-v-1f39e5c1] {\r\n    font-size: 13px;\n}\n}\r\n";
-  styleInject(css_248z$4);
+  var css_248z$5 = "\r\n/* ============================================\r\n   TYPOGRAPHY - Modern Data Dashboard\r\n   ============================================ */\n@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap');\r\n\r\n/* CSS Variables */\n[data-v-1f39e5c1]:root {\r\n  --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);\r\n  --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);\r\n  --success-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);\n}\r\n\r\n/* ============================================\r\n   LAYOUT CONTAINER\r\n   ============================================ */\n.data-page-container[data-v-1f39e5c1] {\r\n  min-height: 100vh;\r\n  background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);\r\n  padding: 0;\n}\n.data-page-content[data-v-1f39e5c1] {\r\n  max-width: 1400px;\r\n  margin: 0 auto;\r\n  padding: 48px 24px;\n}\r\n\r\n/* ============================================\r\n   PAGE HEADER\r\n   ============================================ */\n.page-header[data-v-1f39e5c1] {\r\n  margin-bottom: 48px;\r\n  animation: slideDown-1f39e5c1 0.6s cubic-bezier(0.4, 0, 0.2, 1);\n}\n@keyframes slideDown-1f39e5c1 {\nfrom {\r\n    opacity: 0;\r\n    transform: translateY(-20px);\n}\nto {\r\n    opacity: 1;\r\n    transform: translateY(0);\n}\n}\n.header-content[data-v-1f39e5c1] {\r\n  text-align: center;\n}\n.page-title[data-v-1f39e5c1] {\r\n  font-family: 'Outfit', sans-serif;\r\n  font-size: 48px;\r\n  font-weight: 800;\r\n  background: linear-gradient(135deg, #1a3353 0%, #4a5f8a 100%);\r\n  -webkit-background-clip: text;\r\n  -webkit-text-fill-color: transparent;\r\n  background-clip: text;\r\n  margin: 0 0 12px 0;\r\n  letter-spacing: -0.03em;\n}\n.page-subtitle[data-v-1f39e5c1] {\r\n  font-family: 'Manrope', sans-serif;\r\n  font-size: 18px;\r\n  color: #64748b;\r\n  margin: 0;\r\n  font-weight: 500;\n}\r\n\r\n/* ============================================\r\n   STATS OVERVIEW\r\n   ============================================ */\n.stats-overview[data-v-1f39e5c1] {\r\n  display: grid;\r\n  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));\r\n  gap: 20px;\r\n  margin-bottom: 40px;\r\n  animation: fadeInUp-1f39e5c1 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.1s both;\n}\n@keyframes fadeInUp-1f39e5c1 {\nfrom {\r\n    opacity: 0;\r\n    transform: translateY(30px);\n}\nto {\r\n    opacity: 1;\r\n    transform: translateY(0);\n}\n}\n.stat-card[data-v-1f39e5c1] {\r\n  background: white;\r\n  padding: 24px;\r\n  border-radius: 16px;\r\n  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.08);\r\n  border: 1px solid rgba(226, 232, 240, 0.8);\r\n  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);\n}\n.stat-card[data-v-1f39e5c1]:hover {\r\n  transform: translateY(-4px);\r\n  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);\n}\n.stat-value[data-v-1f39e5c1] {\r\n  font-family: 'Outfit', sans-serif;\r\n  font-size: 36px;\r\n  font-weight: 700;\r\n  color: #1a3353;\r\n  margin-bottom: 8px;\n}\n.stat-label[data-v-1f39e5c1] {\r\n  font-family: 'Manrope', sans-serif;\r\n  font-size: 14px;\r\n  color: #64748b;\r\n  font-weight: 500;\r\n  margin-bottom: 8px;\n}\n.stat-trend[data-v-1f39e5c1] {\r\n  font-family: 'Manrope', sans-serif;\r\n  font-size: 13px;\r\n  font-weight: 600;\r\n  display: inline-flex;\r\n  align-items: center;\r\n  gap: 4px;\n}\n.stat-trend.positive[data-v-1f39e5c1] {\r\n  color: #10b981;\n}\n.stat-trend.negative[data-v-1f39e5c1] {\r\n  color: #ef4444;\n}\n.stat-trend.positive[data-v-1f39e5c1]::before {\r\n  content: '↗';\n}\n.stat-trend.negative[data-v-1f39e5c1]::before {\r\n  content: '↘';\n}\r\n\r\n/* ============================================\r\n   CATEGORY FILTERS\r\n   ============================================ */\n.category-filters[data-v-1f39e5c1] {\r\n  display: flex;\r\n  gap: 12px;\r\n  margin-bottom: 40px;\r\n  padding: 16px;\r\n  background: white;\r\n  border-radius: 16px;\r\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);\r\n  overflow-x: auto;\r\n  -webkit-overflow-scrolling: touch;\r\n  animation: fadeInUp-1f39e5c1 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.2s both;\n}\n.filter-btn[data-v-1f39e5c1] {\r\n  font-family: 'Manrope', sans-serif;\r\n  background: transparent;\r\n  border: 2px solid #e2e8f0;\r\n  padding: 12px 24px;\r\n  border-radius: 12px;\r\n  font-size: 14px;\r\n  font-weight: 600;\r\n  color: #475569;\r\n  cursor: pointer;\r\n  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 8px;\r\n  white-space: nowrap;\n}\n.filter-btn[data-v-1f39e5c1]:hover {\r\n  background: #f8fafc;\r\n  border-color: #cbd5e1;\r\n  transform: translateY(-2px);\n}\n.filter-btn.active[data-v-1f39e5c1] {\r\n  background: #64748b;\r\n  border-color: transparent;\r\n  color: white;\r\n  box-shadow: 0 2px 8px rgba(100, 116, 139, 0.3);\n}\n.filter-icon[data-v-1f39e5c1] {\r\n  font-size: 18px;\n}\n.filter-label[data-v-1f39e5c1] {\r\n  font-weight: 600;\n}\r\n\r\n/* ============================================\r\n   DATA GRID\r\n   ============================================ */\n.data-grid[data-v-1f39e5c1] {\r\n  display: grid;\r\n  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));\r\n  gap: 20px;\r\n  animation: fadeInUp-1f39e5c1 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.3s both;\n}\r\n\r\n/* ============================================\r\n   DATA CARDS - Modern Style\r\n   ============================================ */\n.data-card[data-v-1f39e5c1] {\r\n  background: white;\r\n  border-radius: 20px;\r\n  overflow: hidden;\r\n  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);\r\n  border: 1px solid rgba(226, 232, 240, 0.8);\r\n  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.08);\r\n  display: flex;\r\n  flex-direction: column;\r\n  position: relative;\r\n  overflow: visible;\n}\n.data-card[data-v-1f39e5c1]::before {\r\n  content: '';\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  right: 0;\r\n  height: 3px;\r\n  background: #64748b;\r\n  transform: scaleX(0);\r\n  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);\n}\n.data-card[data-v-1f39e5c1]:hover {\r\n  transform: translateY(-4px);\r\n  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);\n}\n.data-card[data-v-1f39e5c1]:hover::before {\r\n  transform: scaleX(1);\n}\r\n\r\n/* Card Header */\n.card-header[data-v-1f39e5c1] {\r\n  padding: 16px 16px 12px;\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: flex-start;\n}\n.card-icon[data-v-1f39e5c1] {\r\n  width: 40px;\r\n  height: 40px;\r\n  border-radius: 10px;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  font-size: 20px;\r\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);\r\n  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);\n}\n.data-card:hover .card-icon[data-v-1f39e5c1] {\r\n  transform: scale(1.05);\n}\n.card-meta[data-v-1f39e5c1] {\r\n  text-align: right;\n}\n.category-badge[data-v-1f39e5c1] {\r\n  font-family: 'Manrope', sans-serif;\r\n  font-size: 10px;\r\n  font-weight: 600;\r\n  text-transform: uppercase;\r\n  letter-spacing: 0.5px;\r\n  color: #64748b;\r\n  background: #f1f5f9;\r\n  padding: 4px 10px;\r\n  border-radius: 6px;\n}\r\n\r\n/* Card Body */\n.card-body[data-v-1f39e5c1] {\r\n  padding: 0 16px 16px;\r\n  flex: 1;\n}\n.card-title[data-v-1f39e5c1] {\r\n  font-family: 'Outfit', sans-serif;\r\n  font-size: 16px;\r\n  font-weight: 700;\r\n  color: #1a3353;\r\n  margin: 0 0 8px 0;\r\n  line-height: 1.3;\n}\n.card-description[data-v-1f39e5c1] {\r\n  font-family: 'Manrope', sans-serif;\r\n  font-size: 13px;\r\n  line-height: 1.5;\r\n  color: #64748b;\r\n  margin: 0 0 12px 0;\r\n  display: -webkit-box;\r\n  -webkit-line-clamp: 2;\r\n  -webkit-box-orient: vertical;\r\n  overflow: hidden;\n}\n.card-metadata[data-v-1f39e5c1] {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 6px;\n}\n.metadata-item[data-v-1f39e5c1] {\r\n  font-family: 'Manrope', sans-serif;\r\n  font-size: 11px;\r\n  color: #94a3b8;\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 6px;\n}\n.metadata-icon[data-v-1f39e5c1] {\r\n  font-size: 12px;\n}\n.metadata-text[data-v-1f39e5c1] {\r\n  font-weight: 500;\n}\r\n\r\n/* Card Footer */\n.card-footer[data-v-1f39e5c1] {\r\n  padding: 12px 16px 16px;\r\n  display: flex;\r\n  gap: 8px;\r\n  border-top: 1px solid #f1f5f9;\n}\n.download-btn[data-v-1f39e5c1] {\r\n  font-family: 'Manrope', sans-serif;\r\n  flex: 1;\r\n  background: #64748b;\r\n  color: white;\r\n  border: none;\r\n  padding: 10px 16px;\r\n  border-radius: 8px;\r\n  font-size: 12px;\r\n  font-weight: 600;\r\n  cursor: pointer;\r\n  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  gap: 6px;\r\n  box-shadow: 0 2px 4px rgba(100, 116, 139, 0.2);\n}\n.download-btn[data-v-1f39e5c1]:hover {\r\n  background: #475569;\r\n  transform: translateY(-1px);\r\n  box-shadow: 0 4px 8px rgba(100, 116, 139, 0.3);\n}\n.download-btn[data-v-1f39e5c1]:active {\r\n  transform: translateY(0);\n}\n.preview-btn[data-v-1f39e5c1] {\r\n  font-family: 'Manrope', sans-serif;\r\n  background: white;\r\n  color: #64748b;\r\n  border: 1.5px solid #cbd5e1;\r\n  padding: 10px 16px;\r\n  border-radius: 8px;\r\n  font-size: 12px;\r\n  font-weight: 600;\r\n  cursor: pointer;\r\n  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 6px;\n}\n.preview-btn[data-v-1f39e5c1]:hover {\r\n  background: #f8fafc;\r\n  border-color: #64748b;\r\n  transform: translateY(-1px);\n}\n.btn-icon[data-v-1f39e5c1] {\r\n  font-size: 14px;\n}\n.btn-text[data-v-1f39e5c1] {\r\n  font-weight: 600;\n}\r\n\r\n/* ============================================\r\n   LOADING STATE\r\n   ============================================ */\n.loading-container[data-v-1f39e5c1] {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: center;\r\n  padding: 100px 20px;\r\n  gap: 24px;\n}\n.spinner[data-v-1f39e5c1] {\r\n  width: 56px;\r\n  height: 56px;\r\n  border: 5px solid #f1f5f9;\r\n  border-top-color: #64748b;\r\n  border-radius: 50%;\r\n  animation: spin-1f39e5c1 0.8s linear infinite;\n}\n@keyframes spin-1f39e5c1 {\nto {\r\n    transform: rotate(360deg);\n}\n}\n.loading-text[data-v-1f39e5c1] {\r\n  font-family: 'Manrope', sans-serif;\r\n  font-size: 16px;\r\n  color: #64748b;\r\n  margin: 0;\r\n  font-weight: 600;\n}\r\n\r\n/* ============================================\r\n   EMPTY STATE\r\n   ============================================ */\n.empty-state[data-v-1f39e5c1] {\r\n  text-align: center;\r\n  padding: 100px 20px;\r\n  background: white;\r\n  border-radius: 20px;\r\n  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);\n}\n.empty-icon[data-v-1f39e5c1] {\r\n  font-size: 80px;\r\n  margin-bottom: 24px;\r\n  opacity: 0.3;\n}\n.empty-text[data-v-1f39e5c1] {\r\n  font-family: 'Outfit', sans-serif;\r\n  font-size: 24px;\r\n  font-weight: 700;\r\n  color: #1a3353;\r\n  margin: 0 0 12px 0;\n}\n.empty-subtext[data-v-1f39e5c1] {\r\n  font-family: 'Manrope', sans-serif;\r\n  font-size: 16px;\r\n  color: #94a3b8;\r\n  margin: 0;\n}\r\n\r\n/* ============================================\r\n   RESPONSIVE DESIGN\r\n   ============================================ */\n@media (max-width: 1024px) {\n.data-grid[data-v-1f39e5c1] {\r\n    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));\r\n    gap: 20px;\n}\n.stats-overview[data-v-1f39e5c1] {\r\n    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));\n}\n}\n@media (max-width: 768px) {\n.data-page-content[data-v-1f39e5c1] {\r\n    padding: 32px 16px;\n}\n.page-title[data-v-1f39e5c1] {\r\n    font-size: 36px;\n}\n.page-subtitle[data-v-1f39e5c1] {\r\n    font-size: 16px;\n}\n.page-header[data-v-1f39e5c1] {\r\n    margin-bottom: 32px;\n}\n.category-filters[data-v-1f39e5c1] {\r\n    padding: 12px;\n}\n.filter-btn[data-v-1f39e5c1] {\r\n    padding: 10px 20px;\r\n    font-size: 13px;\n}\n.data-grid[data-v-1f39e5c1] {\r\n    grid-template-columns: 1fr;\r\n    gap: 16px;\n}\n.stats-overview[data-v-1f39e5c1] {\r\n    grid-template-columns: 1fr;\r\n    gap: 16px;\n}\n.card-footer[data-v-1f39e5c1] {\r\n    flex-direction: column;\n}\n.preview-btn[data-v-1f39e5c1] {\r\n    width: 100%;\n}\n}\n@media (max-width: 480px) {\n.page-title[data-v-1f39e5c1] {\r\n    font-size: 28px;\n}\n.page-subtitle[data-v-1f39e5c1] {\r\n    font-size: 14px;\n}\n.stat-value[data-v-1f39e5c1] {\r\n    font-size: 28px;\n}\n.card-title[data-v-1f39e5c1] {\r\n    font-size: 18px;\n}\n.card-description[data-v-1f39e5c1] {\r\n    font-size: 13px;\n}\n}\r\n";
+  styleInject(css_248z$5);
 
-  script$4.render = render$4;
-  script$4.__scopeId = "data-v-1f39e5c1";
-  script$4.__file = "localization_hub/public/js/dashboard/pages/DataPage.vue";
+  script$5.render = render$5;
+  script$5.__scopeId = "data-v-1f39e5c1";
+  script$5.__file = "localization_hub/public/js/dashboard/pages/DataPage.vue";
 
-  var script$3 = {
+  var script$4 = {
     name: 'PublicationsPage',
 
     data() {
@@ -7978,61 +7978,61 @@
     }
   };
 
-  const _hoisted_1$3 = { class: "publications-container" };
-  const _hoisted_2$1 = { class: "publications-content" };
-  const _hoisted_3$1 = { class: "publications-layout" };
-  const _hoisted_4$1 = { class: "categories-sidebar" };
-  const _hoisted_5$1 = { class: "categories-list" };
-  const _hoisted_6$1 = ["onClick"];
-  const _hoisted_7$1 = { class: "articles-section" };
-  const _hoisted_8$1 = {
+  const _hoisted_1$4 = { class: "publications-container" };
+  const _hoisted_2$3 = { class: "publications-content" };
+  const _hoisted_3$3 = { class: "publications-layout" };
+  const _hoisted_4$3 = { class: "categories-sidebar" };
+  const _hoisted_5$3 = { class: "categories-list" };
+  const _hoisted_6$3 = ["onClick"];
+  const _hoisted_7$3 = { class: "articles-section" };
+  const _hoisted_8$3 = {
     key: 0,
     class: "loading-container"
   };
-  const _hoisted_9$1 = { class: "articles-grid" };
-  const _hoisted_10$1 = ["onClick"];
-  const _hoisted_11$1 = { class: "article-image" };
-  const _hoisted_12$1 = ["src", "alt"];
-  const _hoisted_13$1 = { class: "article-content" };
-  const _hoisted_14$1 = { class: "article-category" };
-  const _hoisted_15$1 = { class: "article-title" };
-  const _hoisted_16$1 = { class: "article-description" };
-  const _hoisted_17$1 = { class: "empty-state" };
-  const _hoisted_18$1 = { class: "empty-subtext" };
+  const _hoisted_9$3 = { class: "articles-grid" };
+  const _hoisted_10$3 = ["onClick"];
+  const _hoisted_11$3 = { class: "article-image" };
+  const _hoisted_12$3 = ["src", "alt"];
+  const _hoisted_13$3 = { class: "article-content" };
+  const _hoisted_14$3 = { class: "article-category" };
+  const _hoisted_15$2 = { class: "article-title" };
+  const _hoisted_16$2 = { class: "article-description" };
+  const _hoisted_17$2 = { class: "empty-state" };
+  const _hoisted_18$2 = { class: "empty-subtext" };
 
-  function render$3(_ctx, _cache, $props, $setup, $data, $options) {
-    return (openBlock(), createElementBlock("div", _hoisted_1$3, [
-      createBaseVNode("div", _hoisted_2$1, [
+  function render$4(_ctx, _cache, $props, $setup, $data, $options) {
+    return (openBlock(), createElementBlock("div", _hoisted_1$4, [
+      createBaseVNode("div", _hoisted_2$3, [
         createCommentVNode(" Header "),
         _cache[4] || (_cache[4] = createBaseVNode("div", { class: "page-header" }, [
           createBaseVNode("h1", { class: "page-title" }, "Latest Articles")
         ], -1 /* CACHED */)),
         createCommentVNode(" Main Layout: Sidebar + Articles "),
-        createBaseVNode("div", _hoisted_3$1, [
+        createBaseVNode("div", _hoisted_3$3, [
           createCommentVNode(" Left Sidebar: Categories "),
-          createBaseVNode("aside", _hoisted_4$1, [
-            createBaseVNode("div", _hoisted_5$1, [
+          createBaseVNode("aside", _hoisted_4$3, [
+            createBaseVNode("div", _hoisted_5$3, [
               (openBlock(true), createElementBlock(Fragment, null, renderList($data.categories, (category) => {
                 return (openBlock(), createElementBlock("button", {
                   key: category.value,
                   class: normalizeClass(['category-btn', { active: $data.selectedCategory === category.value }]),
                   onClick: $event => ($options.selectCategory(category.value))
-                }, toDisplayString(category.label), 11 /* TEXT, CLASS, PROPS */, _hoisted_6$1))
+                }, toDisplayString(category.label), 11 /* TEXT, CLASS, PROPS */, _hoisted_6$3))
               }), 128 /* KEYED_FRAGMENT */))
             ])
           ]),
           createCommentVNode(" Right Side: Articles Grid "),
-          createBaseVNode("main", _hoisted_7$1, [
+          createBaseVNode("main", _hoisted_7$3, [
             createCommentVNode(" Loading State "),
             ($data.loading)
-              ? (openBlock(), createElementBlock("div", _hoisted_8$1, [...(_cache[1] || (_cache[1] = [
+              ? (openBlock(), createElementBlock("div", _hoisted_8$3, [...(_cache[1] || (_cache[1] = [
                   createBaseVNode("div", { class: "spinner" }, null, -1 /* CACHED */),
                   createBaseVNode("p", { class: "loading-text" }, "Loading publications...", -1 /* CACHED */)
                 ]))]))
               : ($options.filteredArticles.length > 0)
                 ? (openBlock(), createElementBlock(Fragment, { key: 1 }, [
                     createCommentVNode(" Articles Grid "),
-                    createBaseVNode("div", _hoisted_9$1, [
+                    createBaseVNode("div", _hoisted_9$3, [
                       (openBlock(true), createElementBlock(Fragment, null, renderList($options.filteredArticles, (article) => {
                         return (openBlock(), createElementBlock("article", {
                           key: article.name,
@@ -8040,32 +8040,32 @@
                           onClick: $event => ($options.openArticle(article))
                         }, [
                           createCommentVNode(" Article Image "),
-                          createBaseVNode("div", _hoisted_11$1, [
+                          createBaseVNode("div", _hoisted_11$3, [
                             createBaseVNode("img", {
                               src: $options.getImageUrl(article.image),
                               alt: article.title,
                               onError: _cache[0] || (_cache[0] = (...args) => ($options.handleImageError && $options.handleImageError(...args)))
-                            }, null, 40 /* PROPS, NEED_HYDRATION */, _hoisted_12$1)
+                            }, null, 40 /* PROPS, NEED_HYDRATION */, _hoisted_12$3)
                           ]),
                           createCommentVNode(" Article Content "),
-                          createBaseVNode("div", _hoisted_13$1, [
+                          createBaseVNode("div", _hoisted_13$3, [
                             createCommentVNode(" Category Badge "),
-                            createBaseVNode("div", _hoisted_14$1, toDisplayString(article.category), 1 /* TEXT */),
+                            createBaseVNode("div", _hoisted_14$3, toDisplayString(article.category), 1 /* TEXT */),
                             createCommentVNode(" Title "),
-                            createBaseVNode("h2", _hoisted_15$1, toDisplayString(article.title), 1 /* TEXT */),
+                            createBaseVNode("h2", _hoisted_15$2, toDisplayString(article.title), 1 /* TEXT */),
                             createCommentVNode(" Description/Summary "),
-                            createBaseVNode("p", _hoisted_16$1, toDisplayString(article.description), 1 /* TEXT */)
+                            createBaseVNode("p", _hoisted_16$2, toDisplayString(article.description), 1 /* TEXT */)
                           ])
-                        ], 8 /* PROPS */, _hoisted_10$1))
+                        ], 8 /* PROPS */, _hoisted_10$3))
                       }), 128 /* KEYED_FRAGMENT */))
                     ])
                   ], 2112 /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */))
                 : (openBlock(), createElementBlock(Fragment, { key: 2 }, [
                     createCommentVNode(" Empty State "),
-                    createBaseVNode("div", _hoisted_17$1, [
+                    createBaseVNode("div", _hoisted_17$2, [
                       _cache[2] || (_cache[2] = createBaseVNode("div", { class: "empty-icon" }, "📚", -1 /* CACHED */)),
                       _cache[3] || (_cache[3] = createBaseVNode("p", { class: "empty-text" }, "No publications found", -1 /* CACHED */)),
-                      createBaseVNode("p", _hoisted_18$1, toDisplayString($data.selectedCategory === 'all' 
+                      createBaseVNode("p", _hoisted_18$2, toDisplayString($data.selectedCategory === 'all' 
                   ? 'Create some in the Publications doctype!' 
                   : 'Try selecting a different category'), 1 /* TEXT */)
                     ])
@@ -8076,66 +8076,533 @@
     ]))
   }
 
-  var css_248z$3 = "\r\n/* ============================================\r\n   TYPOGRAPHY - Editorial Magazine Style\r\n   ============================================ */\n@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap');\r\n\r\n/* ============================================\r\n   LAYOUT CONTAINER\r\n   ============================================ */\n.publications-container[data-v-107a20ba] {\r\n  min-height: 100vh;\r\n  background: #f8f9fa;\r\n  padding: 0;\n}\n.publications-content[data-v-107a20ba] {\r\n  max-width: 1400px;\r\n  margin: 0 auto;\r\n  padding: 40px 24px;\n}\r\n\r\n/* ============================================\r\n   PAGE HEADER\r\n   ============================================ */\n.page-header[data-v-107a20ba] {\r\n  margin-bottom: 40px;\r\n  border-bottom: 3px solid #1a3353;\r\n  padding-bottom: 16px;\n}\n.page-title[data-v-107a20ba] {\r\n  font-family: 'Lora', serif;\r\n  font-size: 36px;\r\n  font-weight: 700;\r\n  color: #1a3353;\r\n  margin: 0;\r\n  letter-spacing: -0.02em;\n}\r\n\r\n/* ============================================\r\n   MAIN LAYOUT: Sidebar + Content\r\n   ============================================ */\n.publications-layout[data-v-107a20ba] {\r\n  display: grid;\r\n  grid-template-columns: 220px 1fr;\r\n  gap: 48px;\r\n  align-items: start;\n}\r\n\r\n/* ============================================\r\n   LEFT SIDEBAR: Categories\r\n   ============================================ */\n.categories-sidebar[data-v-107a20ba] {\r\n  position: sticky;\r\n  top: 24px;\r\n  background: white;\r\n  border-radius: 8px;\r\n  padding: 24px 0;\r\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);\r\n  border: 1px solid #e8ebed;\n}\n.categories-list[data-v-107a20ba] {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 4px;\n}\n.category-btn[data-v-107a20ba] {\r\n  font-family: 'DM Sans', sans-serif;\r\n  background: transparent;\r\n  border: none;\r\n  padding: 12px 24px;\r\n  text-align: left;\r\n  font-size: 14px;\r\n  font-weight: 500;\r\n  color: #1a3353;\r\n  cursor: pointer;\r\n  transition: all 0.2s ease;\r\n  position: relative;\r\n  border-left: 3px solid transparent;\n}\n.category-btn[data-v-107a20ba]:hover {\r\n  background: #f8f9fa;\r\n  color: #0052cc;\n}\n.category-btn.active[data-v-107a20ba] {\r\n  background: #f0f4f8;\r\n  color: #0052cc;\r\n  font-weight: 600;\r\n  border-left-color: #0052cc;\n}\r\n\r\n/* ============================================\r\n   ARTICLES SECTION\r\n   ============================================ */\n.articles-section[data-v-107a20ba] {\r\n  min-height: 400px;\n}\n.articles-grid[data-v-107a20ba] {\r\n  display: grid;\r\n  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));\r\n  gap: 32px;\r\n  animation: fadeIn-107a20ba 0.4s ease;\n}\n@keyframes fadeIn-107a20ba {\nfrom {\r\n    opacity: 0;\r\n    transform: translateY(20px);\n}\nto {\r\n    opacity: 1;\r\n    transform: translateY(0);\n}\n}\r\n\r\n/* ============================================\r\n   ARTICLE CARDS - Editorial Style\r\n   ============================================ */\n.article-card[data-v-107a20ba] {\r\n  background: white;\r\n  border-radius: 8px;\r\n  overflow: hidden;\r\n  cursor: pointer;\r\n  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);\r\n  border: 1px solid #e8ebed;\r\n  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);\r\n  display: flex;\r\n  flex-direction: column;\n}\n.article-card[data-v-107a20ba]:hover {\r\n  transform: translateY(-4px);\r\n  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);\r\n  border-color: #d0d0d0;\n}\r\n\r\n/* Article Image */\n.article-image[data-v-107a20ba] {\r\n  width: 100%;\r\n  height: 240px;\r\n  overflow: hidden;\r\n  background: linear-gradient(135deg, #1a3353 0%, #2d5079 100%);\r\n  position: relative;\n}\n.article-image img[data-v-107a20ba] {\r\n  width: 100%;\r\n  height: 100%;\r\n  object-fit: cover;\r\n  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);\n}\n.article-card:hover .article-image img[data-v-107a20ba] {\r\n  transform: scale(1.05);\n}\r\n\r\n/* Article Content */\n.article-content[data-v-107a20ba] {\r\n  padding: 24px;\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 12px;\r\n  flex: 1;\n}\n.article-category[data-v-107a20ba] {\r\n  font-family: 'DM Sans', sans-serif;\r\n  font-size: 11px;\r\n  font-weight: 700;\r\n  text-transform: uppercase;\r\n  letter-spacing: 1px;\r\n  color: #0052cc;\r\n  margin: 0;\n}\n.article-title[data-v-107a20ba] {\r\n  font-family: 'Lora', serif;\r\n  font-size: 20px;\r\n  font-weight: 700;\r\n  line-height: 1.4;\r\n  color: #1a3353;\r\n  margin: 0;\r\n  display: -webkit-box;\r\n  -webkit-line-clamp: 2;\r\n  -webkit-box-orient: vertical;\r\n  overflow: hidden;\r\n  transition: color 0.2s;\n}\n.article-card:hover .article-title[data-v-107a20ba] {\r\n  color: #0052cc;\n}\n.article-description[data-v-107a20ba] {\r\n  font-family: 'DM Sans', sans-serif;\r\n  font-size: 14px;\r\n  line-height: 1.6;\r\n  color: #6f767e;\r\n  margin: 0;\r\n  display: -webkit-box;\r\n  -webkit-line-clamp: 3;\r\n  -webkit-box-orient: vertical;\r\n  overflow: hidden;\n}\r\n\r\n/* ============================================\r\n   LOADING STATE\r\n   ============================================ */\n.loading-container[data-v-107a20ba] {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: center;\r\n  padding: 80px 20px;\r\n  gap: 20px;\n}\n.spinner[data-v-107a20ba] {\r\n  width: 48px;\r\n  height: 48px;\r\n  border: 4px solid #f0f1f3;\r\n  border-top-color: #0052cc;\r\n  border-radius: 50%;\r\n  animation: spin-107a20ba 0.8s linear infinite;\n}\n@keyframes spin-107a20ba {\nto {\r\n    transform: rotate(360deg);\n}\n}\n.loading-text[data-v-107a20ba] {\r\n  font-family: 'DM Sans', sans-serif;\r\n  font-size: 15px;\r\n  color: #6f767e;\r\n  margin: 0;\r\n  font-weight: 500;\n}\r\n\r\n/* ============================================\r\n   EMPTY STATE\r\n   ============================================ */\n.empty-state[data-v-107a20ba] {\r\n  text-align: center;\r\n  padding: 80px 20px;\n}\n.empty-icon[data-v-107a20ba] {\r\n  font-size: 64px;\r\n  margin-bottom: 20px;\r\n  opacity: 0.3;\n}\n.empty-text[data-v-107a20ba] {\r\n  font-family: 'Lora', serif;\r\n  font-size: 20px;\r\n  font-weight: 600;\r\n  color: #1a3353;\r\n  margin: 0 0 8px 0;\n}\n.empty-subtext[data-v-107a20ba] {\r\n  font-family: 'DM Sans', sans-serif;\r\n  font-size: 14px;\r\n  color: #9ca3af;\r\n  margin: 0;\n}\r\n\r\n/* ============================================\r\n   RESPONSIVE DESIGN\r\n   ============================================ */\n@media (max-width: 1024px) {\n.publications-layout[data-v-107a20ba] {\r\n    grid-template-columns: 180px 1fr;\r\n    gap: 32px;\n}\n.articles-grid[data-v-107a20ba] {\r\n    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));\r\n    gap: 24px;\n}\n.category-btn[data-v-107a20ba] {\r\n    font-size: 13px;\r\n    padding: 10px 16px;\n}\n}\n@media (max-width: 768px) {\n.publications-content[data-v-107a20ba] {\r\n    padding: 24px 16px;\n}\n.page-title[data-v-107a20ba] {\r\n    font-size: 28px;\n}\n.page-header[data-v-107a20ba] {\r\n    margin-bottom: 32px;\n}\n.publications-layout[data-v-107a20ba] {\r\n    grid-template-columns: 1fr;\r\n    gap: 24px;\n}\n.categories-sidebar[data-v-107a20ba] {\r\n    position: relative;\r\n    top: 0;\r\n    padding: 16px 0;\n}\n.categories-list[data-v-107a20ba] {\r\n    flex-direction: row;\r\n    overflow-x: auto;\r\n    gap: 8px;\r\n    padding: 0 8px;\r\n    -webkit-overflow-scrolling: touch;\n}\n.category-btn[data-v-107a20ba] {\r\n    white-space: nowrap;\r\n    border-left: none;\r\n    border-bottom: 3px solid transparent;\r\n    padding: 10px 16px;\n}\n.category-btn.active[data-v-107a20ba] {\r\n    border-left-color: transparent;\r\n    border-bottom-color: #0052cc;\n}\n.articles-grid[data-v-107a20ba] {\r\n    grid-template-columns: 1fr;\r\n    gap: 20px;\n}\n.article-image[data-v-107a20ba] {\r\n    height: 200px;\n}\n.article-content[data-v-107a20ba] {\r\n    padding: 20px;\n}\n.article-title[data-v-107a20ba] {\r\n    font-size: 18px;\n}\n}\n@media (max-width: 480px) {\n.page-title[data-v-107a20ba] {\r\n    font-size: 24px;\n}\n.article-image[data-v-107a20ba] {\r\n    height: 180px;\n}\n.article-content[data-v-107a20ba] {\r\n    padding: 16px;\r\n    gap: 10px;\n}\n.article-title[data-v-107a20ba] {\r\n    font-size: 16px;\n}\n.article-description[data-v-107a20ba] {\r\n    font-size: 13px;\n}\n}\r\n";
-  styleInject(css_248z$3);
+  var css_248z$4 = "\r\n/* ============================================\r\n   TYPOGRAPHY - Editorial Magazine Style\r\n   ============================================ */\n@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap');\r\n\r\n/* ============================================\r\n   LAYOUT CONTAINER\r\n   ============================================ */\n.publications-container[data-v-107a20ba] {\r\n  min-height: 100vh;\r\n  background: #f8f9fa;\r\n  padding: 0;\n}\n.publications-content[data-v-107a20ba] {\r\n  max-width: 1400px;\r\n  margin: 0 auto;\r\n  padding: 40px 24px;\n}\r\n\r\n/* ============================================\r\n   PAGE HEADER\r\n   ============================================ */\n.page-header[data-v-107a20ba] {\r\n  margin-bottom: 40px;\r\n  border-bottom: 3px solid #1a3353;\r\n  padding-bottom: 16px;\n}\n.page-title[data-v-107a20ba] {\r\n  font-family: 'Lora', serif;\r\n  font-size: 36px;\r\n  font-weight: 700;\r\n  color: #1a3353;\r\n  margin: 0;\r\n  letter-spacing: -0.02em;\n}\r\n\r\n/* ============================================\r\n   MAIN LAYOUT: Sidebar + Content\r\n   ============================================ */\n.publications-layout[data-v-107a20ba] {\r\n  display: grid;\r\n  grid-template-columns: 220px 1fr;\r\n  gap: 48px;\r\n  align-items: start;\n}\r\n\r\n/* ============================================\r\n   LEFT SIDEBAR: Categories\r\n   ============================================ */\n.categories-sidebar[data-v-107a20ba] {\r\n  position: sticky;\r\n  top: 24px;\r\n  background: white;\r\n  border-radius: 8px;\r\n  padding: 24px 0;\r\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);\r\n  border: 1px solid #e8ebed;\n}\n.categories-list[data-v-107a20ba] {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 4px;\n}\n.category-btn[data-v-107a20ba] {\r\n  font-family: 'DM Sans', sans-serif;\r\n  background: transparent;\r\n  border: none;\r\n  padding: 12px 24px;\r\n  text-align: left;\r\n  font-size: 14px;\r\n  font-weight: 500;\r\n  color: #1a3353;\r\n  cursor: pointer;\r\n  transition: all 0.2s ease;\r\n  position: relative;\r\n  border-left: 3px solid transparent;\n}\n.category-btn[data-v-107a20ba]:hover {\r\n  background: #f8f9fa;\r\n  color: #0052cc;\n}\n.category-btn.active[data-v-107a20ba] {\r\n  background: #f0f4f8;\r\n  color: #0052cc;\r\n  font-weight: 600;\r\n  border-left-color: #0052cc;\n}\r\n\r\n/* ============================================\r\n   ARTICLES SECTION\r\n   ============================================ */\n.articles-section[data-v-107a20ba] {\r\n  min-height: 400px;\n}\n.articles-grid[data-v-107a20ba] {\r\n  display: grid;\r\n  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));\r\n  gap: 32px;\r\n  animation: fadeIn-107a20ba 0.4s ease;\n}\n@keyframes fadeIn-107a20ba {\nfrom {\r\n    opacity: 0;\r\n    transform: translateY(20px);\n}\nto {\r\n    opacity: 1;\r\n    transform: translateY(0);\n}\n}\r\n\r\n/* ============================================\r\n   ARTICLE CARDS - Editorial Style\r\n   ============================================ */\n.article-card[data-v-107a20ba] {\r\n  background: white;\r\n  border-radius: 8px;\r\n  overflow: hidden;\r\n  cursor: pointer;\r\n  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);\r\n  border: 1px solid #e8ebed;\r\n  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);\r\n  display: flex;\r\n  flex-direction: column;\n}\n.article-card[data-v-107a20ba]:hover {\r\n  transform: translateY(-4px);\r\n  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);\r\n  border-color: #d0d0d0;\n}\r\n\r\n/* Article Image */\n.article-image[data-v-107a20ba] {\r\n  width: 100%;\r\n  height: 240px;\r\n  overflow: hidden;\r\n  background: linear-gradient(135deg, #1a3353 0%, #2d5079 100%);\r\n  position: relative;\n}\n.article-image img[data-v-107a20ba] {\r\n  width: 100%;\r\n  height: 100%;\r\n  object-fit: cover;\r\n  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);\n}\n.article-card:hover .article-image img[data-v-107a20ba] {\r\n  transform: scale(1.05);\n}\r\n\r\n/* Article Content */\n.article-content[data-v-107a20ba] {\r\n  padding: 24px;\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 12px;\r\n  flex: 1;\n}\n.article-category[data-v-107a20ba] {\r\n  font-family: 'DM Sans', sans-serif;\r\n  font-size: 11px;\r\n  font-weight: 700;\r\n  text-transform: uppercase;\r\n  letter-spacing: 1px;\r\n  color: #0052cc;\r\n  margin: 0;\n}\n.article-title[data-v-107a20ba] {\r\n  font-family: 'Lora', serif;\r\n  font-size: 20px;\r\n  font-weight: 700;\r\n  line-height: 1.4;\r\n  color: #1a3353;\r\n  margin: 0;\r\n  display: -webkit-box;\r\n  -webkit-line-clamp: 2;\r\n  -webkit-box-orient: vertical;\r\n  overflow: hidden;\r\n  transition: color 0.2s;\n}\n.article-card:hover .article-title[data-v-107a20ba] {\r\n  color: #0052cc;\n}\n.article-description[data-v-107a20ba] {\r\n  font-family: 'DM Sans', sans-serif;\r\n  font-size: 14px;\r\n  line-height: 1.6;\r\n  color: #6f767e;\r\n  margin: 0;\r\n  display: -webkit-box;\r\n  -webkit-line-clamp: 3;\r\n  -webkit-box-orient: vertical;\r\n  overflow: hidden;\n}\r\n\r\n/* ============================================\r\n   LOADING STATE\r\n   ============================================ */\n.loading-container[data-v-107a20ba] {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: center;\r\n  padding: 80px 20px;\r\n  gap: 20px;\n}\n.spinner[data-v-107a20ba] {\r\n  width: 48px;\r\n  height: 48px;\r\n  border: 4px solid #f0f1f3;\r\n  border-top-color: #0052cc;\r\n  border-radius: 50%;\r\n  animation: spin-107a20ba 0.8s linear infinite;\n}\n@keyframes spin-107a20ba {\nto {\r\n    transform: rotate(360deg);\n}\n}\n.loading-text[data-v-107a20ba] {\r\n  font-family: 'DM Sans', sans-serif;\r\n  font-size: 15px;\r\n  color: #6f767e;\r\n  margin: 0;\r\n  font-weight: 500;\n}\r\n\r\n/* ============================================\r\n   EMPTY STATE\r\n   ============================================ */\n.empty-state[data-v-107a20ba] {\r\n  text-align: center;\r\n  padding: 80px 20px;\n}\n.empty-icon[data-v-107a20ba] {\r\n  font-size: 64px;\r\n  margin-bottom: 20px;\r\n  opacity: 0.3;\n}\n.empty-text[data-v-107a20ba] {\r\n  font-family: 'Lora', serif;\r\n  font-size: 20px;\r\n  font-weight: 600;\r\n  color: #1a3353;\r\n  margin: 0 0 8px 0;\n}\n.empty-subtext[data-v-107a20ba] {\r\n  font-family: 'DM Sans', sans-serif;\r\n  font-size: 14px;\r\n  color: #9ca3af;\r\n  margin: 0;\n}\r\n\r\n/* ============================================\r\n   RESPONSIVE DESIGN\r\n   ============================================ */\n@media (max-width: 1024px) {\n.publications-layout[data-v-107a20ba] {\r\n    grid-template-columns: 180px 1fr;\r\n    gap: 32px;\n}\n.articles-grid[data-v-107a20ba] {\r\n    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));\r\n    gap: 24px;\n}\n.category-btn[data-v-107a20ba] {\r\n    font-size: 13px;\r\n    padding: 10px 16px;\n}\n}\n@media (max-width: 768px) {\n.publications-content[data-v-107a20ba] {\r\n    padding: 24px 16px;\n}\n.page-title[data-v-107a20ba] {\r\n    font-size: 28px;\n}\n.page-header[data-v-107a20ba] {\r\n    margin-bottom: 32px;\n}\n.publications-layout[data-v-107a20ba] {\r\n    grid-template-columns: 1fr;\r\n    gap: 24px;\n}\n.categories-sidebar[data-v-107a20ba] {\r\n    position: relative;\r\n    top: 0;\r\n    padding: 16px 0;\n}\n.categories-list[data-v-107a20ba] {\r\n    flex-direction: row;\r\n    overflow-x: auto;\r\n    gap: 8px;\r\n    padding: 0 8px;\r\n    -webkit-overflow-scrolling: touch;\n}\n.category-btn[data-v-107a20ba] {\r\n    white-space: nowrap;\r\n    border-left: none;\r\n    border-bottom: 3px solid transparent;\r\n    padding: 10px 16px;\n}\n.category-btn.active[data-v-107a20ba] {\r\n    border-left-color: transparent;\r\n    border-bottom-color: #0052cc;\n}\n.articles-grid[data-v-107a20ba] {\r\n    grid-template-columns: 1fr;\r\n    gap: 20px;\n}\n.article-image[data-v-107a20ba] {\r\n    height: 200px;\n}\n.article-content[data-v-107a20ba] {\r\n    padding: 20px;\n}\n.article-title[data-v-107a20ba] {\r\n    font-size: 18px;\n}\n}\n@media (max-width: 480px) {\n.page-title[data-v-107a20ba] {\r\n    font-size: 24px;\n}\n.article-image[data-v-107a20ba] {\r\n    height: 180px;\n}\n.article-content[data-v-107a20ba] {\r\n    padding: 16px;\r\n    gap: 10px;\n}\n.article-title[data-v-107a20ba] {\r\n    font-size: 16px;\n}\n.article-description[data-v-107a20ba] {\r\n    font-size: 13px;\n}\n}\r\n";
+  styleInject(css_248z$4);
 
-  script$3.render = render$3;
-  script$3.__scopeId = "data-v-107a20ba";
-  script$3.__file = "localization_hub/public/js/dashboard/pages/PublicationPage.vue";
+  script$4.render = render$4;
+  script$4.__scopeId = "data-v-107a20ba";
+  script$4.__file = "localization_hub/public/js/dashboard/pages/PublicationPage.vue";
 
-  var script$2 = {
+  var script$3 = {
     name: 'EventsPage'
   };
 
-  const _hoisted_1$2 = { class: "page-container" };
+  const _hoisted_1$3 = { class: "page-container" };
 
-  function render$2(_ctx, _cache, $props, $setup, $data, $options) {
-    return (openBlock(), createElementBlock("div", _hoisted_1$2, [...(_cache[0] || (_cache[0] = [
+  function render$3(_ctx, _cache, $props, $setup, $data, $options) {
+    return (openBlock(), createElementBlock("div", _hoisted_1$3, [...(_cache[0] || (_cache[0] = [
       createStaticVNode("<div class=\"page-content\" data-v-74a4b7a0><h2 class=\"page-title\" data-v-74a4b7a0>Events</h2><div class=\"empty-state\" data-v-74a4b7a0><div class=\"empty-icon\" data-v-74a4b7a0>📅</div><p class=\"empty-text\" data-v-74a4b7a0>No events</p><p class=\"empty-subtext\" data-v-74a4b7a0>There are no events currently.</p></div></div>", 1)
     ]))]))
   }
 
-  var css_248z$2 = "\n.page-container[data-v-74a4b7a0] {\r\n  animation: fadeIn-74a4b7a0 0.3s ease;\n}\n@keyframes fadeIn-74a4b7a0 {\nfrom { opacity: 0; transform: translateY(10px);\n}\nto { opacity: 1; transform: translateY(0);\n}\n}\n.page-content[data-v-74a4b7a0] {\r\n  background: white;\r\n  border-radius: 8px;\r\n  padding: 40px;\r\n  box-shadow: 0 1px 3px rgba(0,0,0,0.05);\n}\n.page-title[data-v-74a4b7a0] {\r\n  font-size: 24px;\r\n  font-weight: 700;\r\n  color: #2e3338;\r\n  margin-bottom: 30px;\n}\n.empty-state[data-v-74a4b7a0] {\r\n  text-align: center;\r\n  padding: 60px 20px;\n}\n.empty-icon[data-v-74a4b7a0] {\r\n  font-size: 64px;\r\n  margin-bottom: 20px;\r\n  opacity: 0.3;\n}\n.empty-text[data-v-74a4b7a0] {\r\n  font-size: 18px;\r\n  font-weight: 600;\r\n  color: #d63939;\r\n  margin-bottom: 8px;\n}\n.empty-subtext[data-v-74a4b7a0] {\r\n  color: #6c757d;\r\n  font-size: 14px;\n}\r\n";
+  var css_248z$3 = "\n.page-container[data-v-74a4b7a0] {\r\n  animation: fadeIn-74a4b7a0 0.3s ease;\n}\n@keyframes fadeIn-74a4b7a0 {\nfrom { opacity: 0; transform: translateY(10px);\n}\nto { opacity: 1; transform: translateY(0);\n}\n}\n.page-content[data-v-74a4b7a0] {\r\n  background: white;\r\n  border-radius: 8px;\r\n  padding: 40px;\r\n  box-shadow: 0 1px 3px rgba(0,0,0,0.05);\n}\n.page-title[data-v-74a4b7a0] {\r\n  font-size: 24px;\r\n  font-weight: 700;\r\n  color: #2e3338;\r\n  margin-bottom: 30px;\n}\n.empty-state[data-v-74a4b7a0] {\r\n  text-align: center;\r\n  padding: 60px 20px;\n}\n.empty-icon[data-v-74a4b7a0] {\r\n  font-size: 64px;\r\n  margin-bottom: 20px;\r\n  opacity: 0.3;\n}\n.empty-text[data-v-74a4b7a0] {\r\n  font-size: 18px;\r\n  font-weight: 600;\r\n  color: #d63939;\r\n  margin-bottom: 8px;\n}\n.empty-subtext[data-v-74a4b7a0] {\r\n  color: #6c757d;\r\n  font-size: 14px;\n}\r\n";
+  styleInject(css_248z$3);
+
+  script$3.render = render$3;
+  script$3.__scopeId = "data-v-74a4b7a0";
+  script$3.__file = "localization_hub/public/js/dashboard/pages/EventsPage.vue";
+
+  var script$2 = {
+    name: 'ReportsPage',
+
+    emits: ['view-report'],
+
+    data() {
+      return {
+        reports: [],
+        loading: true
+      };
+    },
+
+    computed: {
+      // Group reports by month and year
+      groupedReports() {
+        const groups = {};
+        
+        this.reports.forEach(report => {
+          const monthYear = this.formatMonthYear(report.date);
+          if (!groups[monthYear]) {
+            groups[monthYear] = [];
+          }
+          groups[monthYear].push(report);
+        });
+
+        // Sort each group by date descending
+        Object.keys(groups).forEach(key => {
+          groups[key].sort((a, b) => new Date(b.date) - new Date(a.date));
+        });
+
+        return groups;
+      }
+    },
+
+    mounted() {
+      this.fetchReports();
+    },
+
+    methods: {
+      // Fetch reports from Frappe
+      fetchReports() {
+        this.loading = true;
+
+        if (!window.frappe) {
+          console.error('Frappe not available');
+          this.loading = false;
+          // Demo data for testing
+          this.reports = [
+            {
+              name: '1',
+              title: 'FDA Grants Priority Review for HYMPAVZI® (marstacimab) sBLA for the Treatment of Two Hemophilia A or B Patient Populations',
+              programme: 'Prescription Medicines',
+              date: '2026-02-06',
+              written_by: 'John Doe',
+              approved_by: 'Jane Smith'
+            },
+            {
+              name: '2',
+              title: 'Pfizer Launches Cost Savings Program on TrumpRx Lowering Drug Costs for Millions of Americans',
+              programme: 'Corporate',
+              date: '2026-02-05',
+              written_by: 'Alice Johnson',
+              approved_by: 'Bob Wilson'
+            }
+          ];
+          return;
+        }
+
+        frappe.call({
+          method: 'frappe.client.get_list',
+          args: {
+            doctype: 'Reports',
+            fields: [
+              'name', 'title', 'programme', 'date', 
+              'written_by', 'approved_by'
+            ],
+            order_by: 'date desc',
+            limit_page_length: 100
+          },
+          callback: (response) => {
+            if (response.message) {
+              this.reports = response.message;
+            }
+            this.loading = false;
+          },
+          error: (error) => {
+            console.error('Error fetching reports:', error);
+            this.loading = false;
+          }
+        });
+      },
+
+      // Format month and year for grouping
+      formatMonthYear(dateString) {
+        if (!dateString) return '';
+        
+        const date = new Date(dateString);
+        const options = { month: 'long', year: 'numeric' };
+        return date.toLocaleDateString('en-US', options);
+      },
+
+      // Format day for display
+      formatDay(dateString) {
+        if (!dateString) return '';
+        
+        const date = new Date(dateString);
+        return date.toLocaleDateString('en-US', { 
+          day: '2-digit', 
+          month: '2-digit',
+          year: 'numeric'
+        });
+      },
+
+      // Create new report
+      createReport() {
+        if (window.frappe) {
+          frappe.set_route('Form', 'Reports', 'new-reports-1');
+        }
+      },
+
+      // View report detail
+      viewReport(report) {
+        // Emit event to parent component
+        this.$emit('view-report', report.name);
+      }
+    }
+  };
+
+  const _hoisted_1$2 = { class: "reports-container" };
+  const _hoisted_2$2 = { class: "reports-content" };
+  const _hoisted_3$2 = { class: "page-header" };
+  const _hoisted_4$2 = {
+    key: 0,
+    class: "loading-container"
+  };
+  const _hoisted_5$2 = { class: "reports-timeline" };
+  const _hoisted_6$2 = { class: "month-header" };
+  const _hoisted_7$2 = { class: "month-title" };
+  const _hoisted_8$2 = { class: "month-reports" };
+  const _hoisted_9$2 = ["onClick"];
+  const _hoisted_10$2 = { class: "report-date" };
+  const _hoisted_11$2 = { class: "report-content" };
+  const _hoisted_12$2 = { class: "report-title" };
+  const _hoisted_13$2 = { class: "report-tags" };
+  const _hoisted_14$2 = {
+    key: 0,
+    class: "tag"
+  };
+
+  function render$2(_ctx, _cache, $props, $setup, $data, $options) {
+    return (openBlock(), createElementBlock("div", _hoisted_1$2, [
+      createBaseVNode("div", _hoisted_2$2, [
+        createCommentVNode(" Page Header "),
+        createBaseVNode("div", _hoisted_3$2, [
+          _cache[2] || (_cache[2] = createBaseVNode("h1", { class: "page-title" }, "Reports", -1 /* CACHED */)),
+          createBaseVNode("button", {
+            class: "create-btn",
+            onClick: _cache[0] || (_cache[0] = (...args) => ($options.createReport && $options.createReport(...args)))
+          }, [...(_cache[1] || (_cache[1] = [
+            createBaseVNode("span", { class: "btn-icon" }, "+", -1 /* CACHED */),
+            createBaseVNode("span", { class: "btn-text" }, "Create a Report", -1 /* CACHED */)
+          ]))])
+        ]),
+        createCommentVNode(" Loading State "),
+        ($data.loading)
+          ? (openBlock(), createElementBlock("div", _hoisted_4$2, [...(_cache[3] || (_cache[3] = [
+              createBaseVNode("div", { class: "spinner" }, null, -1 /* CACHED */),
+              createBaseVNode("p", { class: "loading-text" }, "Loading reports...", -1 /* CACHED */)
+            ]))]))
+          : ($options.groupedReports && Object.keys($options.groupedReports).length > 0)
+            ? (openBlock(), createElementBlock(Fragment, { key: 1 }, [
+                createCommentVNode(" Reports Timeline "),
+                createBaseVNode("div", _hoisted_5$2, [
+                  (openBlock(true), createElementBlock(Fragment, null, renderList($options.groupedReports, (reports, monthYear) => {
+                    return (openBlock(), createElementBlock("div", {
+                      key: monthYear,
+                      class: "timeline-group"
+                    }, [
+                      createCommentVNode(" Month Header "),
+                      createBaseVNode("div", _hoisted_6$2, [
+                        createBaseVNode("h2", _hoisted_7$2, toDisplayString(monthYear), 1 /* TEXT */)
+                      ]),
+                      createCommentVNode(" Reports in this month "),
+                      createBaseVNode("div", _hoisted_8$2, [
+                        (openBlock(true), createElementBlock(Fragment, null, renderList(reports, (report) => {
+                          return (openBlock(), createElementBlock("div", {
+                            key: report.name,
+                            class: "report-item",
+                            onClick: $event => ($options.viewReport(report))
+                          }, [
+                            createCommentVNode(" Date Badge "),
+                            createBaseVNode("div", _hoisted_10$2, toDisplayString($options.formatDay(report.date)), 1 /* TEXT */),
+                            createCommentVNode(" Report Content "),
+                            createBaseVNode("div", _hoisted_11$2, [
+                              createBaseVNode("h3", _hoisted_12$2, toDisplayString(report.title), 1 /* TEXT */),
+                              createCommentVNode(" Tags/Categories "),
+                              createBaseVNode("div", _hoisted_13$2, [
+                                (report.programme)
+                                  ? (openBlock(), createElementBlock("span", _hoisted_14$2, toDisplayString(report.programme), 1 /* TEXT */))
+                                  : createCommentVNode("v-if", true)
+                              ])
+                            ])
+                          ], 8 /* PROPS */, _hoisted_9$2))
+                        }), 128 /* KEYED_FRAGMENT */))
+                      ])
+                    ]))
+                  }), 128 /* KEYED_FRAGMENT */))
+                ])
+              ], 2112 /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */))
+            : (openBlock(), createElementBlock(Fragment, { key: 2 }, [
+                createCommentVNode(" Empty State "),
+                _cache[4] || (_cache[4] = createBaseVNode("div", { class: "empty-state" }, [
+                  createBaseVNode("div", { class: "empty-icon" }, "📊"),
+                  createBaseVNode("p", { class: "empty-text" }, "No reports yet"),
+                  createBaseVNode("p", { class: "empty-subtext" }, "Click \"Create a Report\" to get started")
+                ], -1 /* CACHED */))
+              ], 2112 /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */))
+      ])
+    ]))
+  }
+
+  var css_248z$2 = "\r\n/* ============================================\r\n   TYPOGRAPHY - Clean Professional\r\n   ============================================ */\n@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@400;600;700&display=swap');\r\n\r\n/* ============================================\r\n   LAYOUT CONTAINER\r\n   ============================================ */\n.reports-container[data-v-8ad49794] {\r\n  min-height: 100vh;\r\n  background: #fafafa;\r\n  padding: 0;\n}\n.reports-content[data-v-8ad49794] {\r\n  max-width: 1200px;\r\n  margin: 0 auto;\r\n  padding: 48px 24px;\n}\r\n\r\n/* ============================================\r\n   PAGE HEADER\r\n   ============================================ */\n.page-header[data-v-8ad49794] {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n  margin-bottom: 48px;\r\n  padding-bottom: 24px;\r\n  border-bottom: 2px solid #e0e0e0;\n}\n.page-title[data-v-8ad49794] {\r\n  font-family: 'IBM Plex Serif', serif;\r\n  font-size: 42px;\r\n  font-weight: 700;\r\n  color: #1a1a1a;\r\n  margin: 0;\r\n  letter-spacing: -0.02em;\n}\n.create-btn[data-v-8ad49794] {\r\n  font-family: 'IBM Plex Sans', sans-serif;\r\n  background: #1a3353;\r\n  color: white;\r\n  border: none;\r\n  padding: 14px 28px;\r\n  border-radius: 8px;\r\n  font-size: 15px;\r\n  font-weight: 600;\r\n  cursor: pointer;\r\n  transition: all 0.3s ease;\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 8px;\r\n  box-shadow: 0 2px 8px rgba(26, 51, 83, 0.2);\n}\n.create-btn[data-v-8ad49794]:hover {\r\n  background: #2d5079;\r\n  transform: translateY(-2px);\r\n  box-shadow: 0 4px 12px rgba(26, 51, 83, 0.3);\n}\n.btn-icon[data-v-8ad49794] {\r\n  font-size: 20px;\r\n  font-weight: 300;\n}\n.btn-text[data-v-8ad49794] {\r\n  font-weight: 600;\n}\r\n\r\n/* ============================================\r\n   LOADING STATE\r\n   ============================================ */\n.loading-container[data-v-8ad49794] {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: center;\r\n  padding: 100px 20px;\r\n  gap: 24px;\n}\n.spinner[data-v-8ad49794] {\r\n  width: 48px;\r\n  height: 48px;\r\n  border: 4px solid #f0f0f0;\r\n  border-top-color: #1a3353;\r\n  border-radius: 50%;\r\n  animation: spin-8ad49794 0.8s linear infinite;\n}\n@keyframes spin-8ad49794 {\nto {\r\n    transform: rotate(360deg);\n}\n}\n.loading-text[data-v-8ad49794] {\r\n  font-family: 'IBM Plex Sans', sans-serif;\r\n  font-size: 16px;\r\n  color: #666;\r\n  margin: 0;\r\n  font-weight: 500;\n}\r\n\r\n/* ============================================\r\n   TIMELINE LAYOUT\r\n   ============================================ */\n.reports-timeline[data-v-8ad49794] {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 48px;\n}\n.timeline-group[data-v-8ad49794] {\r\n  animation: fadeIn-8ad49794 0.5s ease;\n}\n@keyframes fadeIn-8ad49794 {\nfrom {\r\n    opacity: 0;\r\n    transform: translateY(20px);\n}\nto {\r\n    opacity: 1;\r\n    transform: translateY(0);\n}\n}\r\n\r\n/* Month Header */\n.month-header[data-v-8ad49794] {\r\n  margin-bottom: 32px;\n}\n.month-title[data-v-8ad49794] {\r\n  font-family: 'IBM Plex Serif', serif;\r\n  font-size: 32px;\r\n  font-weight: 700;\r\n  color: #1a1a1a;\r\n  margin: 0;\r\n  letter-spacing: -0.01em;\n}\r\n\r\n/* Month Reports */\n.month-reports[data-v-8ad49794] {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 0;\r\n  border-left: 2px solid #e0e0e0;\r\n  padding-left: 0;\n}\r\n\r\n/* ============================================\r\n   REPORT ITEMS - Timeline Style\r\n   ============================================ */\n.report-item[data-v-8ad49794] {\r\n  display: grid;\r\n  grid-template-columns: 120px 1fr;\r\n  gap: 32px;\r\n  padding: 32px 0;\r\n  border-bottom: 1px solid #f0f0f0;\r\n  cursor: pointer;\r\n  transition: all 0.3s ease;\r\n  position: relative;\n}\n.report-item[data-v-8ad49794]::before {\r\n  content: '';\r\n  position: absolute;\r\n  left: -6px;\r\n  top: 40px;\r\n  width: 10px;\r\n  height: 10px;\r\n  background: #1a3353;\r\n  border-radius: 50%;\r\n  border: 2px solid white;\r\n  box-shadow: 0 0 0 2px #1a3353;\r\n  transition: all 0.3s ease;\n}\n.report-item[data-v-8ad49794]:hover {\r\n  background: #fafafa;\n}\n.report-item[data-v-8ad49794]:hover::before {\r\n  width: 14px;\r\n  height: 14px;\r\n  left: -8px;\r\n  top: 38px;\n}\r\n\r\n/* Report Date */\n.report-date[data-v-8ad49794] {\r\n  font-family: 'IBM Plex Sans', sans-serif;\r\n  font-size: 14px;\r\n  font-weight: 500;\r\n  color: #666;\r\n  padding-top: 4px;\r\n  text-align: left;\r\n  padding-left: 32px;\n}\r\n\r\n/* Report Content */\n.report-content[data-v-8ad49794] {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 12px;\n}\n.report-title[data-v-8ad49794] {\r\n  font-family: 'IBM Plex Serif', serif;\r\n  font-size: 20px;\r\n  font-weight: 600;\r\n  color: #0033cc;\r\n  line-height: 1.4;\r\n  margin: 0;\r\n  transition: color 0.3s ease;\n}\n.report-item:hover .report-title[data-v-8ad49794] {\r\n  color: #0029a3;\r\n  text-decoration: underline;\n}\r\n\r\n/* Report Tags */\n.report-tags[data-v-8ad49794] {\r\n  display: flex;\r\n  gap: 8px;\r\n  flex-wrap: wrap;\n}\n.tag[data-v-8ad49794] {\r\n  font-family: 'IBM Plex Sans', sans-serif;\r\n  font-size: 13px;\r\n  font-weight: 500;\r\n  color: #1a1a1a;\r\n  background: white;\r\n  padding: 6px 14px;\r\n  border-radius: 20px;\r\n  border: 1px solid #e0e0e0;\r\n  transition: all 0.2s ease;\n}\n.report-item:hover .tag[data-v-8ad49794] {\r\n  border-color: #1a3353;\r\n  color: #1a3353;\n}\r\n\r\n/* ============================================\r\n   EMPTY STATE\r\n   ============================================ */\n.empty-state[data-v-8ad49794] {\r\n  text-align: center;\r\n  padding: 100px 20px;\r\n  background: white;\r\n  border-radius: 12px;\r\n  border: 2px dashed #e0e0e0;\r\n  margin-top: 40px;\n}\n.empty-icon[data-v-8ad49794] {\r\n  font-size: 72px;\r\n  margin-bottom: 24px;\r\n  opacity: 0.3;\n}\n.empty-text[data-v-8ad49794] {\r\n  font-family: 'IBM Plex Serif', serif;\r\n  font-size: 24px;\r\n  font-weight: 600;\r\n  color: #1a1a1a;\r\n  margin: 0 0 12px 0;\n}\n.empty-subtext[data-v-8ad49794] {\r\n  font-family: 'IBM Plex Sans', sans-serif;\r\n  font-size: 16px;\r\n  color: #666;\r\n  margin: 0;\n}\r\n\r\n/* ============================================\r\n   RESPONSIVE DESIGN\r\n   ============================================ */\n@media (max-width: 768px) {\n.reports-content[data-v-8ad49794] {\r\n    padding: 32px 16px;\n}\n.page-header[data-v-8ad49794] {\r\n    flex-direction: column;\r\n    align-items: flex-start;\r\n    gap: 20px;\n}\n.page-title[data-v-8ad49794] {\r\n    font-size: 32px;\n}\n.create-btn[data-v-8ad49794] {\r\n    width: 100%;\r\n    justify-content: center;\n}\n.month-title[data-v-8ad49794] {\r\n    font-size: 24px;\n}\n.report-item[data-v-8ad49794] {\r\n    grid-template-columns: 1fr;\r\n    gap: 12px;\r\n    padding: 24px 0 24px 32px;\n}\n.report-date[data-v-8ad49794] {\r\n    padding-left: 0;\r\n    font-size: 13px;\n}\n.report-title[data-v-8ad49794] {\r\n    font-size: 18px;\n}\n.report-item[data-v-8ad49794]::before {\r\n    left: -6px;\r\n    top: 30px;\n}\n.report-item[data-v-8ad49794]:hover::before {\r\n    left: -7px;\r\n    top: 29px;\n}\n}\n@media (max-width: 480px) {\n.page-title[data-v-8ad49794] {\r\n    font-size: 28px;\n}\n.month-title[data-v-8ad49794] {\r\n    font-size: 20px;\n}\n.report-title[data-v-8ad49794] {\r\n    font-size: 16px;\n}\n.create-btn[data-v-8ad49794] {\r\n    padding: 12px 20px;\r\n    font-size: 14px;\n}\n}\r\n";
   styleInject(css_248z$2);
 
   script$2.render = render$2;
-  script$2.__scopeId = "data-v-74a4b7a0";
-  script$2.__file = "localization_hub/public/js/dashboard/pages/EventsPage.vue";
+  script$2.__scopeId = "data-v-8ad49794";
+  script$2.__file = "localization_hub/public/js/dashboard/pages/ReportsPage.vue";
 
   var script$1 = {
-    name: 'DataPage'
+    name: 'ReportView',
+
+    props: {
+      reportId: {
+        type: String,
+        required: true
+      }
+    },
+
+    emits: ['back'],
+
+    data() {
+      return {
+        report: null,
+        loading: true
+      };
+    },
+
+    watch: {
+      reportId: {
+        immediate: true,
+        handler(newId) {
+          if (newId) {
+            this.fetchReport();
+          }
+        }
+      }
+    },
+
+    methods: {
+      // Fetch single report
+      fetchReport() {
+        this.loading = true;
+
+        if (!window.frappe || !this.reportId) {
+          console.error('Frappe not available or no report ID');
+          this.loading = false;
+          return;
+        }
+
+        frappe.call({
+          method: 'frappe.client.get',
+          args: {
+            doctype: 'Reports',
+            name: this.reportId
+          },
+          callback: (response) => {
+            if (response.message) {
+              this.report = response.message;
+            }
+            this.loading = false;
+          },
+          error: (error) => {
+            console.error('Error fetching report:', error);
+            this.loading = false;
+          }
+        });
+      },
+
+      // Format date
+      formatDate(dateString) {
+        if (!dateString) return '';
+        
+        const date = new Date(dateString);
+        const options = { day: 'numeric', month: 'long', year: 'numeric' };
+        return date.toLocaleDateString('en-US', options);
+      },
+
+      // Go back to reports list
+      goBack() {
+        // Emit back event to parent component
+        this.$emit('back');
+      }
+    }
   };
 
-  const _hoisted_1$1 = { class: "page-container" };
+  const _hoisted_1$1 = { class: "report-view-container" };
+  const _hoisted_2$1 = { class: "report-view-content" };
+  const _hoisted_3$1 = {
+    key: 0,
+    class: "loading-container"
+  };
+  const _hoisted_4$1 = { class: "report-document" };
+  const _hoisted_5$1 = { class: "report-header" };
+  const _hoisted_6$1 = { class: "report-meta" };
+  const _hoisted_7$1 = { class: "report-date" };
+  const _hoisted_8$1 = {
+    key: 0,
+    class: "report-programme"
+  };
+  const _hoisted_9$1 = { class: "report-title" };
+  const _hoisted_10$1 = { class: "report-authors" };
+  const _hoisted_11$1 = {
+    key: 0,
+    class: "author-item"
+  };
+  const _hoisted_12$1 = { class: "author-name" };
+  const _hoisted_13$1 = {
+    key: 1,
+    class: "author-item"
+  };
+  const _hoisted_14$1 = { class: "author-name" };
+  const _hoisted_15$1 = { class: "report-body" };
+  const _hoisted_16$1 = {
+    key: 0,
+    class: "report-section"
+  };
+  const _hoisted_17$1 = ["innerHTML"];
+  const _hoisted_18$1 = {
+    key: 1,
+    class: "report-section"
+  };
+  const _hoisted_19$1 = ["innerHTML"];
+  const _hoisted_20$1 = {
+    key: 2,
+    class: "report-section"
+  };
+  const _hoisted_21$1 = ["innerHTML"];
+  const _hoisted_22$1 = {
+    key: 3,
+    class: "report-section"
+  };
+  const _hoisted_23$1 = ["innerHTML"];
+  const _hoisted_24$1 = { class: "report-footer" };
+  const _hoisted_25$1 = {
+    key: 0,
+    class: "approval"
+  };
+  const _hoisted_26$1 = { class: "approval-name" };
+  const _hoisted_27$1 = { class: "error-state" };
 
   function render$1(_ctx, _cache, $props, $setup, $data, $options) {
-    return (openBlock(), createElementBlock("div", _hoisted_1$1, [...(_cache[0] || (_cache[0] = [
-      createStaticVNode("<div class=\"page-content\" data-v-665debf0><h2 class=\"page-title\" data-v-665debf0>Data</h2><div class=\"empty-state\" data-v-665debf0><div class=\"empty-icon\" data-v-665debf0>💼</div><p class=\"empty-text\" data-v-665debf0>No data available</p><p class=\"empty-subtext\" data-v-665debf0>Check back later</p></div></div>", 1)
-    ]))]))
+    return (openBlock(), createElementBlock("div", _hoisted_1$1, [
+      createBaseVNode("div", _hoisted_2$1, [
+        createCommentVNode(" Loading State "),
+        ($data.loading)
+          ? (openBlock(), createElementBlock("div", _hoisted_3$1, [...(_cache[2] || (_cache[2] = [
+              createBaseVNode("div", { class: "spinner" }, null, -1 /* CACHED */),
+              createBaseVNode("p", { class: "loading-text" }, "Loading report...", -1 /* CACHED */)
+            ]))]))
+          : ($data.report)
+            ? (openBlock(), createElementBlock(Fragment, { key: 1 }, [
+                createCommentVNode(" Report Content "),
+                createBaseVNode("div", _hoisted_4$1, [
+                  createCommentVNode(" Back Button "),
+                  createBaseVNode("button", {
+                    class: "back-btn",
+                    onClick: _cache[0] || (_cache[0] = (...args) => ($options.goBack && $options.goBack(...args)))
+                  }, [...(_cache[3] || (_cache[3] = [
+                    createBaseVNode("span", { class: "back-icon" }, "←", -1 /* CACHED */),
+                    createBaseVNode("span", null, "Back to Reports", -1 /* CACHED */)
+                  ]))]),
+                  createCommentVNode(" Report Header "),
+                  createBaseVNode("header", _hoisted_5$1, [
+                    createBaseVNode("div", _hoisted_6$1, [
+                      createBaseVNode("span", _hoisted_7$1, toDisplayString($options.formatDate($data.report.date)), 1 /* TEXT */),
+                      ($data.report.programme)
+                        ? (openBlock(), createElementBlock("span", _hoisted_8$1, toDisplayString($data.report.programme), 1 /* TEXT */))
+                        : createCommentVNode("v-if", true)
+                    ]),
+                    createBaseVNode("h1", _hoisted_9$1, toDisplayString($data.report.title), 1 /* TEXT */),
+                    createBaseVNode("div", _hoisted_10$1, [
+                      ($data.report.written_by)
+                        ? (openBlock(), createElementBlock("div", _hoisted_11$1, [
+                            _cache[4] || (_cache[4] = createBaseVNode("span", { class: "author-label" }, "Written by:", -1 /* CACHED */)),
+                            createBaseVNode("span", _hoisted_12$1, toDisplayString($data.report.written_by), 1 /* TEXT */)
+                          ]))
+                        : createCommentVNode("v-if", true),
+                      ($data.report.accompanied_by)
+                        ? (openBlock(), createElementBlock("div", _hoisted_13$1, [
+                            _cache[5] || (_cache[5] = createBaseVNode("span", { class: "author-label" }, "Accompanied by:", -1 /* CACHED */)),
+                            createBaseVNode("span", _hoisted_14$1, toDisplayString($data.report.accompanied_by), 1 /* TEXT */)
+                          ]))
+                        : createCommentVNode("v-if", true)
+                    ])
+                  ]),
+                  createCommentVNode(" Report Sections "),
+                  createBaseVNode("div", _hoisted_15$1, [
+                    createCommentVNode(" Background "),
+                    ($data.report.background)
+                      ? (openBlock(), createElementBlock("section", _hoisted_16$1, [
+                          _cache[6] || (_cache[6] = createBaseVNode("h2", { class: "section-title" }, "Background", -1 /* CACHED */)),
+                          createBaseVNode("div", {
+                            class: "section-content",
+                            innerHTML: $data.report.background
+                          }, null, 8 /* PROPS */, _hoisted_17$1)
+                        ]))
+                      : createCommentVNode("v-if", true),
+                    createCommentVNode(" Objectives "),
+                    ($data.report.objectives)
+                      ? (openBlock(), createElementBlock("section", _hoisted_18$1, [
+                          _cache[7] || (_cache[7] = createBaseVNode("h2", { class: "section-title" }, "Objectives", -1 /* CACHED */)),
+                          createBaseVNode("div", {
+                            class: "section-content",
+                            innerHTML: $data.report.objectives
+                          }, null, 8 /* PROPS */, _hoisted_19$1)
+                        ]))
+                      : createCommentVNode("v-if", true),
+                    createCommentVNode(" Findings "),
+                    ($data.report.findings)
+                      ? (openBlock(), createElementBlock("section", _hoisted_20$1, [
+                          _cache[8] || (_cache[8] = createBaseVNode("h2", { class: "section-title" }, "Findings", -1 /* CACHED */)),
+                          createBaseVNode("div", {
+                            class: "section-content",
+                            innerHTML: $data.report.findings
+                          }, null, 8 /* PROPS */, _hoisted_21$1)
+                        ]))
+                      : createCommentVNode("v-if", true),
+                    createCommentVNode(" Challenges & Resolutions "),
+                    ($data.report.challenges_resolutions)
+                      ? (openBlock(), createElementBlock("section", _hoisted_22$1, [
+                          _cache[9] || (_cache[9] = createBaseVNode("h2", { class: "section-title" }, "Challenges & Resolutions", -1 /* CACHED */)),
+                          createBaseVNode("div", {
+                            class: "section-content",
+                            innerHTML: $data.report.challenges_resolutions
+                          }, null, 8 /* PROPS */, _hoisted_23$1)
+                        ]))
+                      : createCommentVNode("v-if", true)
+                  ]),
+                  createCommentVNode(" Report Footer "),
+                  createBaseVNode("footer", _hoisted_24$1, [
+                    ($data.report.approved_by)
+                      ? (openBlock(), createElementBlock("div", _hoisted_25$1, [
+                          _cache[10] || (_cache[10] = createBaseVNode("span", { class: "approval-label" }, "Approved by:", -1 /* CACHED */)),
+                          createBaseVNode("span", _hoisted_26$1, toDisplayString($data.report.approved_by), 1 /* TEXT */)
+                        ]))
+                      : createCommentVNode("v-if", true)
+                  ])
+                ])
+              ], 2112 /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */))
+            : (openBlock(), createElementBlock(Fragment, { key: 2 }, [
+                createCommentVNode(" Error State "),
+                createBaseVNode("div", _hoisted_27$1, [
+                  _cache[12] || (_cache[12] = createBaseVNode("div", { class: "error-icon" }, "⚠️", -1 /* CACHED */)),
+                  _cache[13] || (_cache[13] = createBaseVNode("p", { class: "error-text" }, "Report not found", -1 /* CACHED */)),
+                  createBaseVNode("button", {
+                    class: "back-btn",
+                    onClick: _cache[1] || (_cache[1] = (...args) => ($options.goBack && $options.goBack(...args)))
+                  }, [...(_cache[11] || (_cache[11] = [
+                    createBaseVNode("span", { class: "back-icon" }, "←", -1 /* CACHED */),
+                    createBaseVNode("span", null, "Back to Reports", -1 /* CACHED */)
+                  ]))])
+                ])
+              ], 2112 /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */))
+      ])
+    ]))
   }
 
-  var css_248z$1 = "\n.page-container[data-v-665debf0] {\r\n  animation: fadeIn-665debf0 0.3s ease;\n}\n@keyframes fadeIn-665debf0 {\nfrom { opacity: 0; transform: translateY(10px);\n}\nto { opacity: 1; transform: translateY(0);\n}\n}\n.page-content[data-v-665debf0] {\r\n  background: white;\r\n  border-radius: 8px;\r\n  padding: 40px;\r\n  box-shadow: 0 1px 3px rgba(0,0,0,0.05);\n}\n.page-title[data-v-665debf0] {\r\n  font-size: 24px;\r\n  font-weight: 700;\r\n  color: #2e3338;\r\n  margin-bottom: 30px;\n}\n.empty-state[data-v-665debf0] {\r\n  text-align: center;\r\n  padding: 60px 20px;\n}\n.empty-icon[data-v-665debf0] {\r\n  font-size: 64px;\r\n  margin-bottom: 20px;\r\n  opacity: 0.3;\n}\n.empty-text[data-v-665debf0] {\r\n  font-size: 18px;\r\n  font-weight: 600;\r\n  color: #d63939;\r\n  margin-bottom: 8px;\n}\n.empty-subtext[data-v-665debf0] {\r\n  color: #6c757d;\r\n  font-size: 14px;\n}\r\n";
+  var css_248z$1 = "\r\n/* ============================================\r\n   TYPOGRAPHY - Document Style\r\n   ============================================ */\n@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@400;600;700&display=swap');\r\n\r\n/* ============================================\r\n   LAYOUT CONTAINER\r\n   ============================================ */\n.report-view-container[data-v-1082aa61] {\r\n  min-height: 100vh;\r\n  background: #f5f5f5;\r\n  padding: 0;\n}\n.report-view-content[data-v-1082aa61] {\r\n  max-width: 900px;\r\n  margin: 0 auto;\r\n  padding: 48px 24px;\n}\r\n\r\n/* ============================================\r\n   LOADING & ERROR STATES\r\n   ============================================ */\n.loading-container[data-v-1082aa61],\r\n.error-state[data-v-1082aa61] {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: center;\r\n  padding: 100px 20px;\r\n  gap: 24px;\n}\n.spinner[data-v-1082aa61] {\r\n  width: 48px;\r\n  height: 48px;\r\n  border: 4px solid #f0f0f0;\r\n  border-top-color: #1a3353;\r\n  border-radius: 50%;\r\n  animation: spin-1082aa61 0.8s linear infinite;\n}\n@keyframes spin-1082aa61 {\nto {\r\n    transform: rotate(360deg);\n}\n}\n.loading-text[data-v-1082aa61],\r\n.error-text[data-v-1082aa61] {\r\n  font-family: 'IBM Plex Sans', sans-serif;\r\n  font-size: 16px;\r\n  color: #666;\r\n  margin: 0;\r\n  font-weight: 500;\n}\n.error-icon[data-v-1082aa61] {\r\n  font-size: 72px;\r\n  opacity: 0.3;\n}\r\n\r\n/* ============================================\r\n   BACK BUTTON\r\n   ============================================ */\n.back-btn[data-v-1082aa61] {\r\n  font-family: 'IBM Plex Sans', sans-serif;\r\n  background: white;\r\n  color: #1a3353;\r\n  border: 1px solid #e0e0e0;\r\n  padding: 10px 20px;\r\n  border-radius: 6px;\r\n  font-size: 14px;\r\n  font-weight: 500;\r\n  cursor: pointer;\r\n  transition: all 0.3s ease;\r\n  display: inline-flex;\r\n  align-items: center;\r\n  gap: 8px;\r\n  margin-bottom: 32px;\n}\n.back-btn[data-v-1082aa61]:hover {\r\n  background: #f5f5f5;\r\n  border-color: #1a3353;\n}\n.back-icon[data-v-1082aa61] {\r\n  font-size: 18px;\n}\r\n\r\n/* ============================================\r\n   REPORT DOCUMENT\r\n   ============================================ */\n.report-document[data-v-1082aa61] {\r\n  background: white;\r\n  border-radius: 8px;\r\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);\r\n  padding: 64px;\r\n  animation: fadeIn-1082aa61 0.5s ease;\n}\n@keyframes fadeIn-1082aa61 {\nfrom {\r\n    opacity: 0;\r\n    transform: translateY(20px);\n}\nto {\r\n    opacity: 1;\r\n    transform: translateY(0);\n}\n}\r\n\r\n/* ============================================\r\n   REPORT HEADER\r\n   ============================================ */\n.report-header[data-v-1082aa61] {\r\n  border-bottom: 2px solid #e0e0e0;\r\n  padding-bottom: 32px;\r\n  margin-bottom: 48px;\n}\n.report-meta[data-v-1082aa61] {\r\n  display: flex;\r\n  gap: 16px;\r\n  margin-bottom: 16px;\r\n  flex-wrap: wrap;\n}\n.report-date[data-v-1082aa61] {\r\n  font-family: 'IBM Plex Sans', sans-serif;\r\n  font-size: 14px;\r\n  font-weight: 500;\r\n  color: #666;\n}\n.report-programme[data-v-1082aa61] {\r\n  font-family: 'IBM Plex Sans', sans-serif;\r\n  font-size: 13px;\r\n  font-weight: 600;\r\n  color: #1a3353;\r\n  background: #f0f4f8;\r\n  padding: 4px 12px;\r\n  border-radius: 12px;\n}\n.report-title[data-v-1082aa61] {\r\n  font-family: 'IBM Plex Serif', serif;\r\n  font-size: 32px;\r\n  font-weight: 700;\r\n  color: #1a1a1a;\r\n  line-height: 1.3;\r\n  margin: 0 0 24px 0;\r\n  letter-spacing: -0.01em;\n}\n.report-authors[data-v-1082aa61] {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 8px;\n}\n.author-item[data-v-1082aa61] {\r\n  font-family: 'IBM Plex Sans', sans-serif;\r\n  font-size: 14px;\r\n  color: #666;\n}\n.author-label[data-v-1082aa61] {\r\n  font-weight: 600;\r\n  color: #1a1a1a;\r\n  margin-right: 8px;\n}\n.author-name[data-v-1082aa61] {\r\n  font-weight: 400;\n}\r\n\r\n/* ============================================\r\n   REPORT BODY\r\n   ============================================ */\n.report-body[data-v-1082aa61] {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 48px;\n}\n.report-section[data-v-1082aa61] {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 20px;\n}\n.section-title[data-v-1082aa61] {\r\n  font-family: 'IBM Plex Serif', serif;\r\n  font-size: 24px;\r\n  font-weight: 700;\r\n  color: #1a3353;\r\n  margin: 0;\r\n  padding-bottom: 12px;\r\n  border-bottom: 1px solid #e0e0e0;\n}\n.section-content[data-v-1082aa61] {\r\n  font-family: 'IBM Plex Sans', sans-serif;\r\n  font-size: 16px;\r\n  line-height: 1.8;\r\n  color: #333;\n}\r\n\r\n/* Rich text content styling */\n.section-content[data-v-1082aa61] p {\r\n  margin: 0 0 16px 0;\n}\n.section-content[data-v-1082aa61] p:last-child {\r\n  margin-bottom: 0;\n}\n.section-content[data-v-1082aa61] ul,\r\n.section-content[data-v-1082aa61] ol {\r\n  margin: 0 0 16px 0;\r\n  padding-left: 24px;\n}\n.section-content[data-v-1082aa61] li {\r\n  margin-bottom: 8px;\n}\n.section-content[data-v-1082aa61] strong {\r\n  font-weight: 600;\r\n  color: #1a1a1a;\n}\n.section-content[data-v-1082aa61] em {\r\n  font-style: italic;\n}\n.section-content[data-v-1082aa61] a {\r\n  color: #0033cc;\r\n  text-decoration: underline;\n}\n.section-content[data-v-1082aa61] a:hover {\r\n  color: #0029a3;\n}\r\n\r\n/* ============================================\r\n   REPORT FOOTER\r\n   ============================================ */\n.report-footer[data-v-1082aa61] {\r\n  border-top: 2px solid #e0e0e0;\r\n  padding-top: 32px;\r\n  margin-top: 48px;\n}\n.approval[data-v-1082aa61] {\r\n  font-family: 'IBM Plex Sans', sans-serif;\r\n  font-size: 14px;\r\n  color: #666;\r\n  display: flex;\r\n  gap: 8px;\n}\n.approval-label[data-v-1082aa61] {\r\n  font-weight: 600;\r\n  color: #1a1a1a;\n}\n.approval-name[data-v-1082aa61] {\r\n  font-weight: 400;\n}\r\n\r\n/* ============================================\r\n   RESPONSIVE DESIGN\r\n   ============================================ */\n@media (max-width: 768px) {\n.report-view-content[data-v-1082aa61] {\r\n    padding: 24px 16px;\n}\n.report-document[data-v-1082aa61] {\r\n    padding: 32px 24px;\r\n    border-radius: 0;\n}\n.report-title[data-v-1082aa61] {\r\n    font-size: 24px;\n}\n.section-title[data-v-1082aa61] {\r\n    font-size: 20px;\n}\n.section-content[data-v-1082aa61] {\r\n    font-size: 15px;\n}\n}\n@media (max-width: 480px) {\n.report-document[data-v-1082aa61] {\r\n    padding: 24px 16px;\n}\n.report-title[data-v-1082aa61] {\r\n    font-size: 20px;\n}\n.section-title[data-v-1082aa61] {\r\n    font-size: 18px;\n}\n.section-content[data-v-1082aa61] {\r\n    font-size: 14px;\r\n    line-height: 1.7;\n}\n}\r\n\r\n/* Print Styles */\n@media print {\n.report-view-container[data-v-1082aa61] {\r\n    background: white;\n}\n.back-btn[data-v-1082aa61] {\r\n    display: none;\n}\n.report-document[data-v-1082aa61] {\r\n    box-shadow: none;\r\n    padding: 0;\n}\n}\r\n";
   styleInject(css_248z$1);
 
   script$1.render = render$1;
-  script$1.__scopeId = "data-v-665debf0";
-  script$1.__file = "localization_hub/public/js/dashboard/pages/EmergencyPage.vue";
+  script$1.__scopeId = "data-v-1082aa61";
+  script$1.__file = "localization_hub/public/js/dashboard/pages/ReportView.vue";
 
   var script = {
     name: 'DashboardApp',
     
     components: {
-      DashboardPage: script$6,
-      ProfilePage: script$5,
-      DataPage: script$4,
-      PublicationPage: script$3,
-      EventsPage: script$2,
-      EmergencyPage: script$1
+      DashboardPage: script$7,
+      ProfilePage: script$6,
+      DataPage: script$5,
+      PublicationPage: script$4,
+      EventsPage: script$3,
+      ReportsPage: script$2,
+      ReportView: script$1
     },
     
     data() {
       return {
         currentPage: 'dashboard',
+        selectedReportId: null,
         userName: 'User',
         userEmail: 'user@example.com',
         showDropdown: false,
@@ -8194,10 +8661,23 @@
           'data': 'Data',
           'publication': 'Publication',
           'events': 'Events',
-          'emergency': 'Emergency',
-          'profile': 'Profile'
+          'reports': 'Reports',
+          'report-view': 'Report Details',
+          'profile': 'Profile',
         };
         return titles[this.currentPage] || 'Dashboard';
+      },
+
+      // Handle viewing a report
+      viewReportDetail(reportId) {
+        this.selectedReportId = reportId;
+        this.currentPage = 'report-view';
+      },
+
+      // Handle back from report view
+      backToReports() {
+        this.currentPage = 'reports';
+        this.selectedReportId = null;
       },
 
       changeLanguage(lang) {
@@ -8351,7 +8831,8 @@
     const _component_DataPage = resolveComponent("DataPage");
     const _component_PublicationPage = resolveComponent("PublicationPage");
     const _component_EventsPage = resolveComponent("EventsPage");
-    const _component_EmergencyPage = resolveComponent("EmergencyPage");
+    const _component_ReportsPage = resolveComponent("ReportsPage");
+    const _component_ReportView = resolveComponent("ReportView");
 
     return (openBlock(), createElementBlock("div", _hoisted_1, [
       createCommentVNode(" SVG Icon Definitions "),
@@ -8457,16 +8938,16 @@
             ], -1 /* CACHED */)),
             createBaseVNode("span", _hoisted_15, toDisplayString($options.__("Events")), 1 /* TEXT */)
           ], 2 /* CLASS */),
-          createCommentVNode(" Emergency "),
+          createCommentVNode(" Reports "),
           createBaseVNode("a", {
             href: "#",
-            onClick: _cache[7] || (_cache[7] = withModifiers($event => ($data.currentPage = 'emergency'), ["prevent"])),
-            class: normalizeClass(["sidebar-item", { active: $data.currentPage === 'emergency' }])
+            onClick: _cache[7] || (_cache[7] = withModifiers($event => ($data.currentPage = 'reports'), ["prevent"])),
+            class: normalizeClass(["sidebar-item", { active: $data.currentPage === 'reports' || $data.currentPage === 'report-view' }])
           }, [
             _cache[19] || (_cache[19] = createBaseVNode("svg", { class: "sidebar-icon" }, [
               createBaseVNode("use", { href: "#icon-alert-circle" })
             ], -1 /* CACHED */)),
-            createBaseVNode("span", _hoisted_16, toDisplayString($options.__("Emergency")), 1 /* TEXT */)
+            createBaseVNode("span", _hoisted_16, toDisplayString($options.__("Reports")), 1 /* TEXT */)
           ], 2 /* CLASS */),
           _cache[24] || (_cache[24] = createBaseVNode("div", { class: "sidebar-divider" }, null, -1 /* CACHED */)),
           createCommentVNode(" External Links "),
@@ -8636,8 +9117,18 @@
           ($data.currentPage === 'events')
             ? (openBlock(), createBlock(_component_EventsPage, { key: 4 }))
             : createCommentVNode("v-if", true),
-          ($data.currentPage === 'emergency')
-            ? (openBlock(), createBlock(_component_EmergencyPage, { key: 5 }))
+          ($data.currentPage === 'reports')
+            ? (openBlock(), createBlock(_component_ReportsPage, {
+                key: 5,
+                onViewReport: $options.viewReportDetail
+              }, null, 8 /* PROPS */, ["onViewReport"]))
+            : createCommentVNode("v-if", true),
+          ($data.currentPage === 'report-view')
+            ? (openBlock(), createBlock(_component_ReportView, {
+                key: 6,
+                "report-id": $data.selectedReportId,
+                onBack: $options.backToReports
+              }, null, 8 /* PROPS */, ["report-id", "onBack"]))
             : createCommentVNode("v-if", true)
         ])
       ])

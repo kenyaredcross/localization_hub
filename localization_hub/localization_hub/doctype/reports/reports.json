@@ -1,0 +1,128 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-02-09 10:35:37.390238",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "published",
+  "title",
+  "programme",
+  "date",
+  "written_by",
+  "accompanied_by",
+  "background_and_objectives_section_section",
+  "background",
+  "objectives",
+  "findings_section_section",
+  "findings",
+  "section_break_qyjp",
+  "challenges_resolutions",
+  "section_break_tovi",
+  "approved_by"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "Published"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title"
+  },
+  {
+   "fieldname": "programme",
+   "fieldtype": "Data",
+   "label": "Programme"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "default": "__user",
+   "fieldname": "written_by",
+   "fieldtype": "Data",
+   "label": "Written By"
+  },
+  {
+   "fieldname": "accompanied_by",
+   "fieldtype": "Data",
+   "label": "Accompanied By"
+  },
+  {
+   "fieldname": "background",
+   "fieldtype": "Text Editor",
+   "label": "Background"
+  },
+  {
+   "fieldname": "objectives",
+   "fieldtype": "Text Editor",
+   "label": "Objectives"
+  },
+  {
+   "fieldname": "findings_section_section",
+   "fieldtype": "Section Break",
+   "label": "Findings Section"
+  },
+  {
+   "fieldname": "findings",
+   "fieldtype": "Text Editor",
+   "label": "Findings"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Data",
+   "label": "Approved by"
+  },
+  {
+   "fieldname": "background_and_objectives_section_section",
+   "fieldtype": "Section Break",
+   "label": "Background and Objectives Section"
+  },
+  {
+   "fieldname": "section_break_qyjp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_tovi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "challenges_resolutions",
+   "fieldtype": "Text Editor",
+   "label": "Challenges and Resolutions"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-02-09 11:34:02.032223",
+ "modified_by": "Administrator",
+ "module": "Localization Hub",
+ "name": "Reports",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

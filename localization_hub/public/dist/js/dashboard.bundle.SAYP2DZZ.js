@@ -1,4 +1,4 @@
-frappe.dom.set_style("@import \"https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap\";\n@import \"https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap\";\n\n/* sfc-style:/home/nigel/school-bench/apps/localization_hub/localization_hub/public/js/dashboard/pages/DashboardPage.vue?type=style&index=0 */\n.page-container[data-v-894d2998] {\n  animation: fadeIn-894d2998 0.3s ease;\n}\n@keyframes fadeIn-894d2998 {\n  from {\n    opacity: 0;\n    transform: translateY(10px);\n  }\n  to {\n    opacity: 1;\n    transform: translateY(0);\n  }\n}\n.page-content[data-v-894d2998] {\n  background: white;\n  border-radius: 12px;\n  padding: 32px;\n  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);\n  border: 1px solid #f0f1f3;\n  max-width: 100%;\n}\n.section-header[data-v-894d2998] {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  margin-bottom: 24px;\n}\n.section-title[data-v-894d2998] {\n  font-size: 24px;\n  font-weight: 700;\n  color: #1a3353;\n  margin: 0;\n  letter-spacing: -0.02em;\n}\n.view-all-link[data-v-894d2998] {\n  font-size: 14px;\n  color: #d63939;\n  text-decoration: none;\n  font-weight: 600;\n  transition: all 0.2s;\n  display: flex;\n  align-items: center;\n  gap: 4px;\n}\n.view-all-link[data-v-894d2998]:hover {\n  color: #c02d2d;\n  transform: translateX(2px);\n}\n.news-section[data-v-894d2998] {\n  margin-bottom: 48px;\n}\n.news-grid[data-v-894d2998] {\n  display: grid;\n  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));\n  gap: 20px;\n}\n.news-card[data-v-894d2998] {\n  background: white;\n  border-radius: 8px;\n  overflow: hidden;\n  border: 1px solid #e8ebed;\n  transition: all 0.2s ease;\n  cursor: pointer;\n  display: flex;\n  flex-direction: column;\n}\n.news-card[data-v-894d2998]:hover {\n  transform: translateY(-2px);\n  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);\n  border-color: #d0d0d0;\n}\n.news-image[data-v-894d2998] {\n  width: 100%;\n  height: 180px;\n  overflow: hidden;\n  background: #1a3353;\n  position: relative;\n}\n.news-image img[data-v-894d2998] {\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n  transition: transform 0.3s ease;\n}\n.news-card:hover .news-image img[data-v-894d2998] {\n  transform: scale(1.03);\n}\n.news-badge[data-v-894d2998] {\n  position: absolute;\n  top: 12px;\n  left: 12px;\n  background: rgba(26, 51, 83, 0.9);\n  backdrop-filter: blur(8px);\n  color: white;\n  padding: 6px 12px;\n  border-radius: 4px;\n  font-size: 11px;\n  font-weight: 600;\n  display: flex;\n  align-items: center;\n  gap: 6px;\n}\n.badge-icon[data-v-894d2998] {\n  font-size: 14px;\n}\n.badge-text[data-v-894d2998] {\n  text-transform: uppercase;\n  letter-spacing: 0.5px;\n}\n.news-content[data-v-894d2998] {\n  padding: 16px;\n  display: flex;\n  flex-direction: column;\n  gap: 10px;\n  flex: 1;\n}\n.news-meta[data-v-894d2998] {\n  display: flex;\n  align-items: center;\n}\n.news-date[data-v-894d2998] {\n  font-size: 12px;\n  color: #6f767e;\n  font-weight: 500;\n}\n.news-title[data-v-894d2998] {\n  font-size: 16px;\n  font-weight: 600;\n  color: #1a3353;\n  line-height: 1.4;\n  margin: 0;\n  display: -webkit-box;\n  -webkit-line-clamp: 2;\n  -webkit-box-orient: vertical;\n  overflow: hidden;\n}\n.news-summary[data-v-894d2998] {\n  font-size: 13px;\n  color: #6f767e;\n  line-height: 1.5;\n  margin: 0;\n  display: -webkit-box;\n  -webkit-line-clamp: 2;\n  -webkit-box-orient: vertical;\n  overflow: hidden;\n}\n.news-footer[data-v-894d2998] {\n  margin-top: auto;\n  padding-top: 8px;\n}\n.highlights-section[data-v-894d2998] {\n  margin-top: 48px;\n}\n.highlights-grid[data-v-894d2998] {\n  display: grid;\n  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));\n  gap: 20px;\n}\n.highlight-card[data-v-894d2998] {\n  background: white;\n  border-radius: 8px;\n  overflow: hidden;\n  border: 1px solid #e8ebed;\n  transition: all 0.2s ease;\n  cursor: pointer;\n}\n.highlight-card[data-v-894d2998]:hover {\n  transform: translateY(-2px);\n  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);\n  border-color: #d0d0d0;\n}\n.highlight-image[data-v-894d2998] {\n  width: 100%;\n  height: 160px;\n  overflow: hidden;\n  background: #1a3353;\n}\n.highlight-image img[data-v-894d2998] {\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n  transition: transform 0.3s ease;\n}\n.highlight-card:hover .highlight-image img[data-v-894d2998] {\n  transform: scale(1.03);\n}\n.highlight-content[data-v-894d2998] {\n  padding: 20px;\n  background: #f8f9fa;\n}\n.highlight-category[data-v-894d2998] {\n  font-size: 15px;\n  font-weight: 700;\n  color: #1a3353;\n  margin: 0 0 10px 0;\n  line-height: 1.3;\n}\n.highlight-link[data-v-894d2998] {\n  font-size: 13px;\n  color: #0066cc;\n  text-decoration: none;\n  font-weight: 600;\n  transition: color 0.2s;\n  display: inline-flex;\n  align-items: center;\n  gap: 4px;\n}\n.highlight-link[data-v-894d2998]:hover {\n  color: #004499;\n}\n.empty-state[data-v-894d2998],\n.loading-state[data-v-894d2998] {\n  grid-column: 1 / -1;\n  text-align: center;\n  padding: 60px 20px;\n}\n.empty-icon[data-v-894d2998] {\n  font-size: 48px;\n  margin-bottom: 16px;\n  opacity: 0.3;\n}\n.empty-text[data-v-894d2998] {\n  font-size: 16px;\n  font-weight: 600;\n  color: #6f767e;\n  margin: 0 0 8px 0;\n}\n.empty-subtext[data-v-894d2998] {\n  font-size: 14px;\n  color: #9ca3af;\n  margin: 0;\n}\n.loading-state[data-v-894d2998] {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  gap: 16px;\n}\n.spinner[data-v-894d2998] {\n  width: 40px;\n  height: 40px;\n  border: 3px solid #f0f1f3;\n  border-top-color: #d63939;\n  border-radius: 50%;\n  animation: spin-894d2998 0.8s linear infinite;\n}\n@keyframes spin-894d2998 {\n  to {\n    transform: rotate(360deg);\n  }\n}\n.loading-state p[data-v-894d2998] {\n  color: #6f767e;\n  font-size: 14px;\n  margin: 0;\n}\n@media (max-width: 768px) {\n  .page-content[data-v-894d2998] {\n    padding: 20px;\n    border-radius: 8px;\n  }\n  .news-grid[data-v-894d2998],\n  .highlights-grid[data-v-894d2998] {\n    grid-template-columns: 1fr;\n  }\n  .section-title[data-v-894d2998] {\n    font-size: 20px;\n  }\n  .view-all-link[data-v-894d2998] {\n    font-size: 13px;\n  }\n  .news-section[data-v-894d2998] {\n    margin-bottom: 32px;\n  }\n  .highlights-section[data-v-894d2998] {\n    margin-top: 32px;\n  }\n}\n\n/* sfc-style:/home/nigel/school-bench/apps/localization_hub/localization_hub/public/js/dashboard/pages/ProfilePage.vue?type=style&index=0 */\n.page-container[data-v-713b4c86] {\n  animation: fadeIn-713b4c86 0.3s ease;\n}\n@keyframes fadeIn-713b4c86 {\n  from {\n    opacity: 0;\n    transform: translateY(10px);\n  }\n  to {\n    opacity: 1;\n    transform: translateY(0);\n  }\n}\n.page-content[data-v-713b4c86] {\n  background: white;\n  border-radius: 8px;\n  padding: 40px;\n  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);\n}\n.page-title[data-v-713b4c86] {\n  font-size: 24px;\n  font-weight: 700;\n  color: #2e3338;\n  margin-bottom: 30px;\n}\n.profile-section[data-v-713b4c86] {\n  max-width: 600px;\n}\n.profile-header[data-v-713b4c86] {\n  display: flex;\n  align-items: center;\n  gap: 20px;\n  margin-bottom: 30px;\n  padding-bottom: 30px;\n  border-bottom: 1px solid #e8ebed;\n}\n.profile-avatar[data-v-713b4c86] {\n  width: 80px;\n  height: 80px;\n  border-radius: 50%;\n  background: #d63939;\n  color: white;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-size: 32px;\n  font-weight: 600;\n}\n.profile-info h3[data-v-713b4c86] {\n  font-size: 20px;\n  font-weight: 600;\n  color: #2e3338;\n  margin-bottom: 4px;\n}\n.profile-info p[data-v-713b4c86] {\n  color: #6c757d;\n  font-size: 14px;\n  margin: 0;\n}\n.info-grid[data-v-713b4c86] {\n  display: grid;\n  gap: 20px;\n  margin-bottom: 30px;\n}\n.info-item[data-v-713b4c86] {\n  display: flex;\n  flex-direction: column;\n  gap: 4px;\n}\n.info-label[data-v-713b4c86] {\n  font-size: 12px;\n  color: #6c757d;\n  text-transform: uppercase;\n  font-weight: 500;\n}\n.info-value[data-v-713b4c86] {\n  font-size: 16px;\n  color: #2e3338;\n  font-weight: 500;\n}\n.edit-button[data-v-713b4c86] {\n  padding: 12px 24px;\n  background: #d63939;\n  color: white;\n  border: none;\n  border-radius: 6px;\n  font-weight: 600;\n  cursor: pointer;\n  transition: all 0.2s;\n}\n.edit-button[data-v-713b4c86]:hover {\n  background: #c02929;\n  transform: translateY(-2px);\n  box-shadow: 0 4px 8px rgba(214, 57, 57, 0.3);\n}\n\n/* sfc-style:/home/nigel/school-bench/apps/localization_hub/localization_hub/public/js/dashboard/pages/DataPage.vue?type=style&index=0 */\n[data-v-21e20f88]:root {\n  --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);\n  --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);\n  --success-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);\n}\n.data-page-container[data-v-21e20f88] {\n  min-height: 100vh;\n  background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);\n  padding: 0;\n}\n.data-page-content[data-v-21e20f88] {\n  max-width: 1400px;\n  margin: 0 auto;\n  padding: 48px 24px;\n}\n.page-header[data-v-21e20f88] {\n  margin-bottom: 48px;\n  animation: slideDown-21e20f88 0.6s cubic-bezier(0.4, 0, 0.2, 1);\n}\n@keyframes slideDown-21e20f88 {\n  from {\n    opacity: 0;\n    transform: translateY(-20px);\n  }\n  to {\n    opacity: 1;\n    transform: translateY(0);\n  }\n}\n.header-content[data-v-21e20f88] {\n  text-align: center;\n}\n.page-title[data-v-21e20f88] {\n  font-family: \"Outfit\", sans-serif;\n  font-size: 48px;\n  font-weight: 800;\n  background: linear-gradient(135deg, #1a3353 0%, #4a5f8a 100%);\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent;\n  background-clip: text;\n  margin: 0 0 12px 0;\n  letter-spacing: -0.03em;\n}\n.page-subtitle[data-v-21e20f88] {\n  font-family: \"Manrope\", sans-serif;\n  font-size: 18px;\n  color: #64748b;\n  margin: 0;\n  font-weight: 500;\n}\n.stats-overview[data-v-21e20f88] {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));\n  gap: 20px;\n  margin-bottom: 40px;\n  animation: fadeInUp-21e20f88 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.1s both;\n}\n@keyframes fadeInUp-21e20f88 {\n  from {\n    opacity: 0;\n    transform: translateY(30px);\n  }\n  to {\n    opacity: 1;\n    transform: translateY(0);\n  }\n}\n.stat-card[data-v-21e20f88] {\n  background: white;\n  padding: 24px;\n  border-radius: 16px;\n  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.08);\n  border: 1px solid rgba(226, 232, 240, 0.8);\n  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);\n}\n.stat-card[data-v-21e20f88]:hover {\n  transform: translateY(-4px);\n  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);\n}\n.stat-value[data-v-21e20f88] {\n  font-family: \"Outfit\", sans-serif;\n  font-size: 36px;\n  font-weight: 700;\n  color: #1a3353;\n  margin-bottom: 8px;\n}\n.stat-label[data-v-21e20f88] {\n  font-family: \"Manrope\", sans-serif;\n  font-size: 14px;\n  color: #64748b;\n  font-weight: 500;\n  margin-bottom: 8px;\n}\n.stat-trend[data-v-21e20f88] {\n  font-family: \"Manrope\", sans-serif;\n  font-size: 13px;\n  font-weight: 600;\n  display: inline-flex;\n  align-items: center;\n  gap: 4px;\n}\n.stat-trend.positive[data-v-21e20f88] {\n  color: #10b981;\n}\n.stat-trend.negative[data-v-21e20f88] {\n  color: #ef4444;\n}\n.stat-trend.positive[data-v-21e20f88]::before {\n  content: \"\\2197\";\n}\n.stat-trend.negative[data-v-21e20f88]::before {\n  content: \"\\2198\";\n}\n.category-filters[data-v-21e20f88] {\n  display: flex;\n  gap: 12px;\n  margin-bottom: 40px;\n  padding: 16px;\n  background: white;\n  border-radius: 16px;\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);\n  overflow-x: auto;\n  -webkit-overflow-scrolling: touch;\n  animation: fadeInUp-21e20f88 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.2s both;\n}\n.filter-btn[data-v-21e20f88] {\n  font-family: \"Manrope\", sans-serif;\n  background: transparent;\n  border: 2px solid #e2e8f0;\n  padding: 12px 24px;\n  border-radius: 12px;\n  font-size: 14px;\n  font-weight: 600;\n  color: #475569;\n  cursor: pointer;\n  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);\n  display: flex;\n  align-items: center;\n  gap: 8px;\n  white-space: nowrap;\n}\n.filter-btn[data-v-21e20f88]:hover {\n  background: #f8fafc;\n  border-color: #cbd5e1;\n  transform: translateY(-2px);\n}\n.filter-btn.active[data-v-21e20f88] {\n  background: #64748b;\n  border-color: transparent;\n  color: white;\n  box-shadow: 0 2px 8px rgba(100, 116, 139, 0.3);\n}\n.filter-icon[data-v-21e20f88] {\n  font-size: 18px;\n}\n.filter-label[data-v-21e20f88] {\n  font-weight: 600;\n}\n.data-grid[data-v-21e20f88] {\n  display: grid;\n  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));\n  gap: 20px;\n  animation: fadeInUp-21e20f88 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.3s both;\n}\n.data-card[data-v-21e20f88] {\n  background: white;\n  border-radius: 20px;\n  overflow: hidden;\n  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);\n  border: 1px solid rgba(226, 232, 240, 0.8);\n  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.08);\n  display: flex;\n  flex-direction: column;\n  position: relative;\n  overflow: visible;\n}\n.data-card[data-v-21e20f88]::before {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  height: 3px;\n  background: #64748b;\n  transform: scaleX(0);\n  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);\n}\n.data-card[data-v-21e20f88]:hover {\n  transform: translateY(-4px);\n  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);\n}\n.data-card[data-v-21e20f88]:hover::before {\n  transform: scaleX(1);\n}\n.card-header[data-v-21e20f88] {\n  padding: 16px 16px 12px;\n  display: flex;\n  justify-content: space-between;\n  align-items: flex-start;\n}\n.card-icon[data-v-21e20f88] {\n  width: 40px;\n  height: 40px;\n  border-radius: 10px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-size: 20px;\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);\n  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);\n}\n.data-card:hover .card-icon[data-v-21e20f88] {\n  transform: scale(1.05);\n}\n.card-meta[data-v-21e20f88] {\n  text-align: right;\n}\n.category-badge[data-v-21e20f88] {\n  font-family: \"Manrope\", sans-serif;\n  font-size: 10px;\n  font-weight: 600;\n  text-transform: uppercase;\n  letter-spacing: 0.5px;\n  color: #64748b;\n  background: #f1f5f9;\n  padding: 4px 10px;\n  border-radius: 6px;\n}\n.card-body[data-v-21e20f88] {\n  padding: 0 16px 16px;\n  flex: 1;\n}\n.card-title[data-v-21e20f88] {\n  font-family: \"Outfit\", sans-serif;\n  font-size: 16px;\n  font-weight: 700;\n  color: #1a3353;\n  margin: 0 0 8px 0;\n  line-height: 1.3;\n}\n.card-description[data-v-21e20f88] {\n  font-family: \"Manrope\", sans-serif;\n  font-size: 13px;\n  line-height: 1.5;\n  color: #64748b;\n  margin: 0 0 12px 0;\n  display: -webkit-box;\n  -webkit-line-clamp: 2;\n  -webkit-box-orient: vertical;\n  overflow: hidden;\n}\n.card-metadata[data-v-21e20f88] {\n  display: flex;\n  flex-direction: column;\n  gap: 6px;\n}\n.metadata-item[data-v-21e20f88] {\n  font-family: \"Manrope\", sans-serif;\n  font-size: 11px;\n  color: #94a3b8;\n  display: flex;\n  align-items: center;\n  gap: 6px;\n}\n.metadata-icon[data-v-21e20f88] {\n  font-size: 12px;\n}\n.metadata-text[data-v-21e20f88] {\n  font-weight: 500;\n}\n.card-footer[data-v-21e20f88] {\n  padding: 12px 16px 16px;\n  display: flex;\n  gap: 8px;\n  border-top: 1px solid #f1f5f9;\n}\n.download-btn[data-v-21e20f88] {\n  font-family: \"Manrope\", sans-serif;\n  flex: 1;\n  background: #64748b;\n  color: white;\n  border: none;\n  padding: 10px 16px;\n  border-radius: 8px;\n  font-size: 12px;\n  font-weight: 600;\n  cursor: pointer;\n  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  gap: 6px;\n  box-shadow: 0 2px 4px rgba(100, 116, 139, 0.2);\n}\n.download-btn[data-v-21e20f88]:hover {\n  background: #475569;\n  transform: translateY(-1px);\n  box-shadow: 0 4px 8px rgba(100, 116, 139, 0.3);\n}\n.download-btn[data-v-21e20f88]:active {\n  transform: translateY(0);\n}\n.preview-btn[data-v-21e20f88] {\n  font-family: \"Manrope\", sans-serif;\n  background: white;\n  color: #64748b;\n  border: 1.5px solid #cbd5e1;\n  padding: 10px 16px;\n  border-radius: 8px;\n  font-size: 12px;\n  font-weight: 600;\n  cursor: pointer;\n  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);\n  display: flex;\n  align-items: center;\n  gap: 6px;\n}\n.preview-btn[data-v-21e20f88]:hover {\n  background: #f8fafc;\n  border-color: #64748b;\n  transform: translateY(-1px);\n}\n.btn-icon[data-v-21e20f88] {\n  font-size: 14px;\n}\n.btn-text[data-v-21e20f88] {\n  font-weight: 600;\n}\n.loading-container[data-v-21e20f88] {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  padding: 100px 20px;\n  gap: 24px;\n}\n.spinner[data-v-21e20f88] {\n  width: 56px;\n  height: 56px;\n  border: 5px solid #f1f5f9;\n  border-top-color: #64748b;\n  border-radius: 50%;\n  animation: spin-21e20f88 0.8s linear infinite;\n}\n@keyframes spin-21e20f88 {\n  to {\n    transform: rotate(360deg);\n  }\n}\n.loading-text[data-v-21e20f88] {\n  font-family: \"Manrope\", sans-serif;\n  font-size: 16px;\n  color: #64748b;\n  margin: 0;\n  font-weight: 600;\n}\n.empty-state[data-v-21e20f88] {\n  text-align: center;\n  padding: 100px 20px;\n  background: white;\n  border-radius: 20px;\n  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);\n}\n.empty-icon[data-v-21e20f88] {\n  font-size: 80px;\n  margin-bottom: 24px;\n  opacity: 0.3;\n}\n.empty-text[data-v-21e20f88] {\n  font-family: \"Outfit\", sans-serif;\n  font-size: 24px;\n  font-weight: 700;\n  color: #1a3353;\n  margin: 0 0 12px 0;\n}\n.empty-subtext[data-v-21e20f88] {\n  font-family: \"Manrope\", sans-serif;\n  font-size: 16px;\n  color: #94a3b8;\n  margin: 0;\n}\n@media (max-width: 1024px) {\n  .data-grid[data-v-21e20f88] {\n    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));\n    gap: 20px;\n  }\n  .stats-overview[data-v-21e20f88] {\n    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));\n  }\n}\n@media (max-width: 768px) {\n  .data-page-content[data-v-21e20f88] {\n    padding: 32px 16px;\n  }\n  .page-title[data-v-21e20f88] {\n    font-size: 36px;\n  }\n  .page-subtitle[data-v-21e20f88] {\n    font-size: 16px;\n  }\n  .page-header[data-v-21e20f88] {\n    margin-bottom: 32px;\n  }\n  .category-filters[data-v-21e20f88] {\n    padding: 12px;\n  }\n  .filter-btn[data-v-21e20f88] {\n    padding: 10px 20px;\n    font-size: 13px;\n  }\n  .data-grid[data-v-21e20f88] {\n    grid-template-columns: 1fr;\n    gap: 16px;\n  }\n  .stats-overview[data-v-21e20f88] {\n    grid-template-columns: 1fr;\n    gap: 16px;\n  }\n  .card-footer[data-v-21e20f88] {\n    flex-direction: column;\n  }\n  .preview-btn[data-v-21e20f88] {\n    width: 100%;\n  }\n}\n@media (max-width: 480px) {\n  .page-title[data-v-21e20f88] {\n    font-size: 28px;\n  }\n  .page-subtitle[data-v-21e20f88] {\n    font-size: 14px;\n  }\n  .stat-value[data-v-21e20f88] {\n    font-size: 28px;\n  }\n  .card-title[data-v-21e20f88] {\n    font-size: 18px;\n  }\n  .card-description[data-v-21e20f88] {\n    font-size: 13px;\n  }\n}\n\n/* sfc-style:/home/nigel/school-bench/apps/localization_hub/localization_hub/public/js/dashboard/pages/PublicationPage.vue?type=style&index=0 */\n.publications-container[data-v-4ff9fe60] {\n  min-height: 100vh;\n  background: #f8f9fa;\n  padding: 0;\n}\n.publications-content[data-v-4ff9fe60] {\n  max-width: 1400px;\n  margin: 0 auto;\n  padding: 40px 24px;\n}\n.page-header[data-v-4ff9fe60] {\n  margin-bottom: 40px;\n  border-bottom: 3px solid #1a3353;\n  padding-bottom: 16px;\n}\n.page-title[data-v-4ff9fe60] {\n  font-family: \"Lora\", serif;\n  font-size: 36px;\n  font-weight: 700;\n  color: #1a3353;\n  margin: 0;\n  letter-spacing: -0.02em;\n}\n.publications-layout[data-v-4ff9fe60] {\n  display: grid;\n  grid-template-columns: 220px 1fr;\n  gap: 48px;\n  align-items: start;\n}\n.categories-sidebar[data-v-4ff9fe60] {\n  position: sticky;\n  top: 24px;\n  background: white;\n  border-radius: 8px;\n  padding: 24px 0;\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);\n  border: 1px solid #e8ebed;\n}\n.categories-list[data-v-4ff9fe60] {\n  display: flex;\n  flex-direction: column;\n  gap: 4px;\n}\n.category-btn[data-v-4ff9fe60] {\n  font-family: \"DM Sans\", sans-serif;\n  background: transparent;\n  border: none;\n  padding: 12px 24px;\n  text-align: left;\n  font-size: 14px;\n  font-weight: 500;\n  color: #1a3353;\n  cursor: pointer;\n  transition: all 0.2s ease;\n  position: relative;\n  border-left: 3px solid transparent;\n}\n.category-btn[data-v-4ff9fe60]:hover {\n  background: #f8f9fa;\n  color: #0052cc;\n}\n.category-btn.active[data-v-4ff9fe60] {\n  background: #f0f4f8;\n  color: #0052cc;\n  font-weight: 600;\n  border-left-color: #0052cc;\n}\n.articles-section[data-v-4ff9fe60] {\n  min-height: 400px;\n}\n.articles-grid[data-v-4ff9fe60] {\n  display: grid;\n  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));\n  gap: 32px;\n  animation: fadeIn-4ff9fe60 0.4s ease;\n}\n@keyframes fadeIn-4ff9fe60 {\n  from {\n    opacity: 0;\n    transform: translateY(20px);\n  }\n  to {\n    opacity: 1;\n    transform: translateY(0);\n  }\n}\n.article-card[data-v-4ff9fe60] {\n  background: white;\n  border-radius: 8px;\n  overflow: hidden;\n  cursor: pointer;\n  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);\n  border: 1px solid #e8ebed;\n  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);\n  display: flex;\n  flex-direction: column;\n}\n.article-card[data-v-4ff9fe60]:hover {\n  transform: translateY(-4px);\n  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);\n  border-color: #d0d0d0;\n}\n.article-image[data-v-4ff9fe60] {\n  width: 100%;\n  height: 240px;\n  overflow: hidden;\n  background: linear-gradient(135deg, #1a3353 0%, #2d5079 100%);\n  position: relative;\n}\n.article-image img[data-v-4ff9fe60] {\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);\n}\n.article-card:hover .article-image img[data-v-4ff9fe60] {\n  transform: scale(1.05);\n}\n.article-content[data-v-4ff9fe60] {\n  padding: 24px;\n  display: flex;\n  flex-direction: column;\n  gap: 12px;\n  flex: 1;\n}\n.article-category[data-v-4ff9fe60] {\n  font-family: \"DM Sans\", sans-serif;\n  font-size: 11px;\n  font-weight: 700;\n  text-transform: uppercase;\n  letter-spacing: 1px;\n  color: #0052cc;\n  margin: 0;\n}\n.article-title[data-v-4ff9fe60] {\n  font-family: \"Lora\", serif;\n  font-size: 20px;\n  font-weight: 700;\n  line-height: 1.4;\n  color: #1a3353;\n  margin: 0;\n  display: -webkit-box;\n  -webkit-line-clamp: 2;\n  -webkit-box-orient: vertical;\n  overflow: hidden;\n  transition: color 0.2s;\n}\n.article-card:hover .article-title[data-v-4ff9fe60] {\n  color: #0052cc;\n}\n.article-description[data-v-4ff9fe60] {\n  font-family: \"DM Sans\", sans-serif;\n  font-size: 14px;\n  line-height: 1.6;\n  color: #6f767e;\n  margin: 0;\n  display: -webkit-box;\n  -webkit-line-clamp: 3;\n  -webkit-box-orient: vertical;\n  overflow: hidden;\n}\n.loading-container[data-v-4ff9fe60] {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  padding: 80px 20px;\n  gap: 20px;\n}\n.spinner[data-v-4ff9fe60] {\n  width: 48px;\n  height: 48px;\n  border: 4px solid #f0f1f3;\n  border-top-color: #0052cc;\n  border-radius: 50%;\n  animation: spin-4ff9fe60 0.8s linear infinite;\n}\n@keyframes spin-4ff9fe60 {\n  to {\n    transform: rotate(360deg);\n  }\n}\n.loading-text[data-v-4ff9fe60] {\n  font-family: \"DM Sans\", sans-serif;\n  font-size: 15px;\n  color: #6f767e;\n  margin: 0;\n  font-weight: 500;\n}\n.empty-state[data-v-4ff9fe60] {\n  text-align: center;\n  padding: 80px 20px;\n}\n.empty-icon[data-v-4ff9fe60] {\n  font-size: 64px;\n  margin-bottom: 20px;\n  opacity: 0.3;\n}\n.empty-text[data-v-4ff9fe60] {\n  font-family: \"Lora\", serif;\n  font-size: 20px;\n  font-weight: 600;\n  color: #1a3353;\n  margin: 0 0 8px 0;\n}\n.empty-subtext[data-v-4ff9fe60] {\n  font-family: \"DM Sans\", sans-serif;\n  font-size: 14px;\n  color: #9ca3af;\n  margin: 0;\n}\n@media (max-width: 1024px) {\n  .publications-layout[data-v-4ff9fe60] {\n    grid-template-columns: 180px 1fr;\n    gap: 32px;\n  }\n  .articles-grid[data-v-4ff9fe60] {\n    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));\n    gap: 24px;\n  }\n  .category-btn[data-v-4ff9fe60] {\n    font-size: 13px;\n    padding: 10px 16px;\n  }\n}\n@media (max-width: 768px) {\n  .publications-content[data-v-4ff9fe60] {\n    padding: 24px 16px;\n  }\n  .page-title[data-v-4ff9fe60] {\n    font-size: 28px;\n  }\n  .page-header[data-v-4ff9fe60] {\n    margin-bottom: 32px;\n  }\n  .publications-layout[data-v-4ff9fe60] {\n    grid-template-columns: 1fr;\n    gap: 24px;\n  }\n  .categories-sidebar[data-v-4ff9fe60] {\n    position: relative;\n    top: 0;\n    padding: 16px 0;\n  }\n  .categories-list[data-v-4ff9fe60] {\n    flex-direction: row;\n    overflow-x: auto;\n    gap: 8px;\n    padding: 0 8px;\n    -webkit-overflow-scrolling: touch;\n  }\n  .category-btn[data-v-4ff9fe60] {\n    white-space: nowrap;\n    border-left: none;\n    border-bottom: 3px solid transparent;\n    padding: 10px 16px;\n  }\n  .category-btn.active[data-v-4ff9fe60] {\n    border-left-color: transparent;\n    border-bottom-color: #0052cc;\n  }\n  .articles-grid[data-v-4ff9fe60] {\n    grid-template-columns: 1fr;\n    gap: 20px;\n  }\n  .article-image[data-v-4ff9fe60] {\n    height: 200px;\n  }\n  .article-content[data-v-4ff9fe60] {\n    padding: 20px;\n  }\n  .article-title[data-v-4ff9fe60] {\n    font-size: 18px;\n  }\n}\n@media (max-width: 480px) {\n  .page-title[data-v-4ff9fe60] {\n    font-size: 24px;\n  }\n  .article-image[data-v-4ff9fe60] {\n    height: 180px;\n  }\n  .article-content[data-v-4ff9fe60] {\n    padding: 16px;\n    gap: 10px;\n  }\n  .article-title[data-v-4ff9fe60] {\n    font-size: 16px;\n  }\n  .article-description[data-v-4ff9fe60] {\n    font-size: 13px;\n  }\n}\n\n/* sfc-style:/home/nigel/school-bench/apps/localization_hub/localization_hub/public/js/dashboard/pages/EventsPage.vue?type=style&index=0 */\n.page-container[data-v-b38de6e3] {\n  animation: fadeIn-b38de6e3 0.3s ease;\n}\n@keyframes fadeIn-b38de6e3 {\n  from {\n    opacity: 0;\n    transform: translateY(10px);\n  }\n  to {\n    opacity: 1;\n    transform: translateY(0);\n  }\n}\n.page-content[data-v-b38de6e3] {\n  background: white;\n  border-radius: 8px;\n  padding: 40px;\n  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);\n}\n.page-title[data-v-b38de6e3] {\n  font-size: 24px;\n  font-weight: 700;\n  color: #2e3338;\n  margin-bottom: 30px;\n}\n.empty-state[data-v-b38de6e3] {\n  text-align: center;\n  padding: 60px 20px;\n}\n.empty-icon[data-v-b38de6e3] {\n  font-size: 64px;\n  margin-bottom: 20px;\n  opacity: 0.3;\n}\n.empty-text[data-v-b38de6e3] {\n  font-size: 18px;\n  font-weight: 600;\n  color: #d63939;\n  margin-bottom: 8px;\n}\n.empty-subtext[data-v-b38de6e3] {\n  color: #6c757d;\n  font-size: 14px;\n}\n\n/* sfc-style:/home/nigel/school-bench/apps/localization_hub/localization_hub/public/js/dashboard/pages/EmergencyPage.vue?type=style&index=0 */\n.page-container[data-v-94cab38f] {\n  animation: fadeIn-94cab38f 0.3s ease;\n}\n@keyframes fadeIn-94cab38f {\n  from {\n    opacity: 0;\n    transform: translateY(10px);\n  }\n  to {\n    opacity: 1;\n    transform: translateY(0);\n  }\n}\n.page-content[data-v-94cab38f] {\n  background: white;\n  border-radius: 8px;\n  padding: 40px;\n  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);\n}\n.page-title[data-v-94cab38f] {\n  font-size: 24px;\n  font-weight: 700;\n  color: #2e3338;\n  margin-bottom: 30px;\n}\n.empty-state[data-v-94cab38f] {\n  text-align: center;\n  padding: 60px 20px;\n}\n.empty-icon[data-v-94cab38f] {\n  font-size: 64px;\n  margin-bottom: 20px;\n  opacity: 0.3;\n}\n.empty-text[data-v-94cab38f] {\n  font-size: 18px;\n  font-weight: 600;\n  color: #d63939;\n  margin-bottom: 8px;\n}\n.empty-subtext[data-v-94cab38f] {\n  color: #6c757d;\n  font-size: 14px;\n}\n\n/* sfc-style:/home/nigel/school-bench/apps/localization_hub/localization_hub/public/js/dashboard/App.vue?type=style&index=0 */\n.dashboard-container[data-v-a088781b] {\n  display: flex;\n  height: 100vh;\n  width: 100vw;\n  background: #f5f7fa;\n  overflow: hidden;\n  margin: 0;\n  padding: 0;\n  position: fixed;\n  top: 0;\n  left: 0;\n}\n.sidebar[data-v-a088781b] {\n  width: 200px;\n  background: #fafbfc;\n  border-right: 1px solid #f0f1f3;\n  padding: 16px 0;\n  display: flex;\n  flex-direction: column;\n  height: 100vh;\n  overflow-y: auto;\n  flex-shrink: 0;\n  position: relative;\n  z-index: 100;\n}\n.sidebar-header-container[data-v-a088781b] {\n  position: relative;\n  margin-bottom: 16px;\n  z-index: 1002;\n}\n.sidebar-header[data-v-a088781b] {\n  padding: 12px 16px 16px 16px;\n  border-bottom: 1px solid #f0f1f3;\n  cursor: pointer;\n  transition: background 0.15s ease;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  margin: 0 8px 16px 8px;\n  border-radius: 8px;\n}\n.sidebar-header[data-v-a088781b]:hover {\n  background: #f5f6f7;\n}\n.header-content[data-v-a088781b] {\n  display: flex;\n  align-items: center;\n  gap: 12px;\n  flex: 1;\n}\n.header-text[data-v-a088781b] {\n  flex: 1;\n}\n.app-logo[data-v-a088781b] {\n  font-size: 24px;\n}\n.app-name[data-v-a088781b] {\n  font-size: 14px;\n  font-weight: 600;\n  color: #1a1d1f;\n  letter-spacing: -0.01em;\n}\n.user-info[data-v-a088781b] {\n  font-size: 11px;\n  color: #6f767e;\n  margin-top: 2px;\n  font-weight: 500;\n}\n.dropdown-icon[data-v-a088781b] {\n  display: flex;\n  align-items: center;\n  color: #6f767e;\n  margin-left: 8px;\n}\n.chevron[data-v-a088781b] {\n  transition: transform 0.2s;\n  color: #6f767e;\n  font-size: 10px;\n  display: inline-block;\n}\n.chevron.open[data-v-a088781b] {\n  transform: rotate(180deg);\n}\n.dropdown-menu[data-v-a088781b] {\n  position: absolute;\n  top: 100%;\n  left: 8px;\n  right: 8px;\n  background: white;\n  border: 1px solid #f0f1f3;\n  border-radius: 10px;\n  margin-top: 8px;\n  padding: 6px;\n  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.08);\n  z-index: 2000;\n}\n.dropdown-enter-active[data-v-a088781b],\n.dropdown-leave-active[data-v-a088781b] {\n  transition: all 0.2s ease;\n}\n.dropdown-enter-from[data-v-a088781b] {\n  opacity: 0;\n  transform: translateY(-10px);\n}\n.dropdown-leave-to[data-v-a088781b] {\n  opacity: 0;\n  transform: translateY(-5px);\n}\n.dropdown-item[data-v-a088781b] {\n  display: flex;\n  align-items: center;\n  gap: 10px;\n  padding: 10px 12px;\n  color: #33383f;\n  text-decoration: none;\n  transition: background 0.15s ease;\n  cursor: pointer;\n  font-size: 13px;\n  border-radius: 6px;\n  font-weight: 500;\n}\n.dropdown-item[data-v-a088781b]:hover {\n  background: #f5f6f7;\n}\n.dropdown-icon-item[data-v-a088781b] {\n  width: 16px;\n  height: 16px;\n  stroke-width: 2;\n  stroke: currentColor;\n  fill: none;\n  flex-shrink: 0;\n}\n.dropdown-divider[data-v-a088781b] {\n  height: 1px;\n  background: #f0f1f3;\n  margin: 4px 0;\n}\n.sidebar-menu[data-v-a088781b] {\n  display: flex;\n  flex-direction: column;\n  gap: 2px;\n  padding: 0 8px;\n}\n.sidebar-item[data-v-a088781b] {\n  display: flex;\n  align-items: center;\n  gap: 10px;\n  padding: 10px 12px;\n  border-radius: 6px;\n  text-decoration: none;\n  color: #33383f;\n  transition: all 0.15s ease;\n  cursor: pointer;\n  font-size: 13px;\n}\n.sidebar-item[data-v-a088781b]:hover {\n  background: #f0f1f3;\n  transform: translateX(2px);\n}\n.sidebar-item.active[data-v-a088781b] {\n  background: #fff0f0;\n  color: #d63939;\n  font-weight: 600;\n  box-shadow: 0 1px 3px rgba(214, 57, 57, 0.1);\n}\n.sidebar-icon[data-v-a088781b] {\n  width: 18px;\n  height: 18px;\n  stroke-width: 2;\n  stroke: currentColor;\n  fill: none;\n  flex-shrink: 0;\n}\n.sidebar-label[data-v-a088781b] {\n  font-size: 13px;\n  font-weight: 500;\n  letter-spacing: -0.01em;\n}\n.sidebar-divider[data-v-a088781b] {\n  height: 1px;\n  background: #f0f1f3;\n  margin: 10px 8px;\n}\n.main-content[data-v-a088781b] {\n  flex: 1;\n  display: flex;\n  flex-direction: column;\n  height: 100vh;\n  overflow: hidden;\n}\n.welcome-banner[data-v-a088781b] {\n  background: white;\n  padding: 20px 28px;\n  margin: 16px 24px 0 24px;\n  border-radius: 12px;\n  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);\n  border: 1px solid #f0f1f3;\n  flex-shrink: 0;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n}\n.welcome-banner h1[data-v-a088781b] {\n  font-size: 24px;\n  font-weight: 600;\n  color: #1a1d1f;\n  margin: 0;\n  letter-spacing: -0.02em;\n}\n.page-title-bar[data-v-a088781b] {\n  background: white;\n  padding: 20px 28px;\n  margin: 16px 24px 0 24px;\n  border-radius: 12px;\n  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);\n  border: 1px solid #f0f1f3;\n  flex-shrink: 0;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n}\n.page-title[data-v-a088781b] {\n  font-size: 20px;\n  color: #1a1d1f;\n  font-weight: 600;\n  letter-spacing: -0.01em;\n  margin: 0;\n}\n.user-name[data-v-a088781b] {\n  color: #d63939;\n  font-weight: 600;\n}\n.language-toggle-wrapper[data-v-a088781b] {\n  position: relative;\n  z-index: 1001;\n}\n.language-toggle[data-v-a088781b] {\n  display: flex;\n  align-items: center;\n  gap: 6px;\n  padding: 8px 14px;\n  background: #d63939;\n  color: white;\n  border-radius: 8px;\n  cursor: pointer;\n  transition: all 0.2s ease;\n  font-size: 13px;\n  font-weight: 600;\n  user-select: none;\n  box-shadow: 0 1px 2px rgba(214, 57, 57, 0.15);\n}\n.language-toggle[data-v-a088781b]:hover {\n  background: #c02d2d;\n  box-shadow: 0 2px 4px rgba(214, 57, 57, 0.25);\n  transform: translateY(-1px);\n}\n.lang-icon-svg[data-v-a088781b] {\n  width: 16px;\n  height: 16px;\n  stroke-width: 2;\n  stroke: currentColor;\n  fill: none;\n}\n.lang-text[data-v-a088781b] {\n  font-weight: 600;\n  letter-spacing: 0.02em;\n}\n.lang-chevron[data-v-a088781b] {\n  transition: transform 0.2s;\n  opacity: 0.8;\n}\n.lang-chevron.open[data-v-a088781b] {\n  transform: rotate(180deg);\n}\n.language-dropdown[data-v-a088781b] {\n  position: absolute;\n  top: calc(100% + 6px);\n  right: 0;\n  background: white;\n  border: 1px solid #f0f1f3;\n  border-radius: 10px;\n  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.08);\n  min-width: 200px;\n  z-index: 2000;\n  overflow: hidden;\n}\n.language-dropdown-header[data-v-a088781b] {\n  padding: 10px 14px;\n  font-size: 11px;\n  font-weight: 600;\n  color: #6f767e;\n  text-transform: uppercase;\n  letter-spacing: 0.05em;\n  border-bottom: 1px solid #f0f1f3;\n  background: #fafbfc;\n}\n.language-option[data-v-a088781b] {\n  display: flex;\n  align-items: center;\n  gap: 10px;\n  padding: 10px 14px;\n  color: #33383f;\n  text-decoration: none;\n  transition: all 0.15s;\n  cursor: pointer;\n  font-size: 13px;\n  font-weight: 500;\n}\n.language-option[data-v-a088781b]:hover {\n  background: #f5f6f7;\n}\n.language-option.active[data-v-a088781b] {\n  background: #fff5f5;\n  color: #d63939;\n  font-weight: 600;\n}\n.lang-flag[data-v-a088781b] {\n  font-size: 18px;\n  width: 22px;\n  text-align: center;\n}\n.lang-name[data-v-a088781b] {\n  flex: 1;\n  font-size: 13px;\n}\n.checkmark[data-v-a088781b] {\n  color: #d63939;\n  font-weight: bold;\n  font-size: 14px;\n}\n.lang-dropdown-enter-active[data-v-a088781b],\n.lang-dropdown-leave-active[data-v-a088781b] {\n  transition: all 0.2s ease;\n}\n.lang-dropdown-enter-from[data-v-a088781b] {\n  opacity: 0;\n  transform: translateY(-10px);\n}\n.lang-dropdown-leave-to[data-v-a088781b] {\n  opacity: 0;\n  transform: translateY(-5px);\n}\n.content-area[data-v-a088781b] {\n  flex: 1;\n  background: #f5f7fa;\n  overflow-y: auto;\n  overflow-x: hidden;\n  padding: 24px 24px 40px 24px;\n}\n@media (max-width: 768px) {\n  .sidebar[data-v-a088781b] {\n    width: 70px;\n  }\n  .sidebar-label[data-v-a088781b],\n  .app-name[data-v-a088781b],\n  .user-info[data-v-a088781b] {\n    display: none;\n  }\n  .header-text[data-v-a088781b] {\n    display: none;\n  }\n  .sidebar-header[data-v-a088781b] {\n    justify-content: center;\n  }\n  .content-area[data-v-a088781b] {\n    padding: 20px;\n  }\n  .welcome-banner[data-v-a088781b],\n  .page-title-bar[data-v-a088781b] {\n    flex-direction: column;\n    align-items: flex-start;\n    gap: 16px;\n    padding: 16px 20px;\n    margin: 12px 16px 0 16px;\n  }\n  .welcome-banner h1[data-v-a088781b],\n  .page-title[data-v-a088781b] {\n    font-size: 20px;\n  }\n}\n/*# sourceMappingURL=dashboard.bundle.5N55KEJT.css.map */\n");
+frappe.dom.set_style("@import \"https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap\";\n@import \"https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap\";\n@import \"https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@400;600;700&display=swap\";\n\n/* sfc-style:/home/nigel/school-bench/apps/localization_hub/localization_hub/public/js/dashboard/pages/DashboardPage.vue?type=style&index=0 */\n.page-container[data-v-894d2998] {\n  animation: fadeIn-894d2998 0.3s ease;\n}\n@keyframes fadeIn-894d2998 {\n  from {\n    opacity: 0;\n    transform: translateY(10px);\n  }\n  to {\n    opacity: 1;\n    transform: translateY(0);\n  }\n}\n.page-content[data-v-894d2998] {\n  background: white;\n  border-radius: 12px;\n  padding: 32px;\n  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);\n  border: 1px solid #f0f1f3;\n  max-width: 100%;\n}\n.section-header[data-v-894d2998] {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  margin-bottom: 24px;\n}\n.section-title[data-v-894d2998] {\n  font-size: 24px;\n  font-weight: 700;\n  color: #1a3353;\n  margin: 0;\n  letter-spacing: -0.02em;\n}\n.view-all-link[data-v-894d2998] {\n  font-size: 14px;\n  color: #d63939;\n  text-decoration: none;\n  font-weight: 600;\n  transition: all 0.2s;\n  display: flex;\n  align-items: center;\n  gap: 4px;\n}\n.view-all-link[data-v-894d2998]:hover {\n  color: #c02d2d;\n  transform: translateX(2px);\n}\n.news-section[data-v-894d2998] {\n  margin-bottom: 48px;\n}\n.news-grid[data-v-894d2998] {\n  display: grid;\n  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));\n  gap: 20px;\n}\n.news-card[data-v-894d2998] {\n  background: white;\n  border-radius: 8px;\n  overflow: hidden;\n  border: 1px solid #e8ebed;\n  transition: all 0.2s ease;\n  cursor: pointer;\n  display: flex;\n  flex-direction: column;\n}\n.news-card[data-v-894d2998]:hover {\n  transform: translateY(-2px);\n  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);\n  border-color: #d0d0d0;\n}\n.news-image[data-v-894d2998] {\n  width: 100%;\n  height: 180px;\n  overflow: hidden;\n  background: #1a3353;\n  position: relative;\n}\n.news-image img[data-v-894d2998] {\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n  transition: transform 0.3s ease;\n}\n.news-card:hover .news-image img[data-v-894d2998] {\n  transform: scale(1.03);\n}\n.news-badge[data-v-894d2998] {\n  position: absolute;\n  top: 12px;\n  left: 12px;\n  background: rgba(26, 51, 83, 0.9);\n  backdrop-filter: blur(8px);\n  color: white;\n  padding: 6px 12px;\n  border-radius: 4px;\n  font-size: 11px;\n  font-weight: 600;\n  display: flex;\n  align-items: center;\n  gap: 6px;\n}\n.badge-icon[data-v-894d2998] {\n  font-size: 14px;\n}\n.badge-text[data-v-894d2998] {\n  text-transform: uppercase;\n  letter-spacing: 0.5px;\n}\n.news-content[data-v-894d2998] {\n  padding: 16px;\n  display: flex;\n  flex-direction: column;\n  gap: 10px;\n  flex: 1;\n}\n.news-meta[data-v-894d2998] {\n  display: flex;\n  align-items: center;\n}\n.news-date[data-v-894d2998] {\n  font-size: 12px;\n  color: #6f767e;\n  font-weight: 500;\n}\n.news-title[data-v-894d2998] {\n  font-size: 16px;\n  font-weight: 600;\n  color: #1a3353;\n  line-height: 1.4;\n  margin: 0;\n  display: -webkit-box;\n  -webkit-line-clamp: 2;\n  -webkit-box-orient: vertical;\n  overflow: hidden;\n}\n.news-summary[data-v-894d2998] {\n  font-size: 13px;\n  color: #6f767e;\n  line-height: 1.5;\n  margin: 0;\n  display: -webkit-box;\n  -webkit-line-clamp: 2;\n  -webkit-box-orient: vertical;\n  overflow: hidden;\n}\n.news-footer[data-v-894d2998] {\n  margin-top: auto;\n  padding-top: 8px;\n}\n.highlights-section[data-v-894d2998] {\n  margin-top: 48px;\n}\n.highlights-grid[data-v-894d2998] {\n  display: grid;\n  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));\n  gap: 20px;\n}\n.highlight-card[data-v-894d2998] {\n  background: white;\n  border-radius: 8px;\n  overflow: hidden;\n  border: 1px solid #e8ebed;\n  transition: all 0.2s ease;\n  cursor: pointer;\n}\n.highlight-card[data-v-894d2998]:hover {\n  transform: translateY(-2px);\n  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);\n  border-color: #d0d0d0;\n}\n.highlight-image[data-v-894d2998] {\n  width: 100%;\n  height: 160px;\n  overflow: hidden;\n  background: #1a3353;\n}\n.highlight-image img[data-v-894d2998] {\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n  transition: transform 0.3s ease;\n}\n.highlight-card:hover .highlight-image img[data-v-894d2998] {\n  transform: scale(1.03);\n}\n.highlight-content[data-v-894d2998] {\n  padding: 20px;\n  background: #f8f9fa;\n}\n.highlight-category[data-v-894d2998] {\n  font-size: 15px;\n  font-weight: 700;\n  color: #1a3353;\n  margin: 0 0 10px 0;\n  line-height: 1.3;\n}\n.highlight-link[data-v-894d2998] {\n  font-size: 13px;\n  color: #0066cc;\n  text-decoration: none;\n  font-weight: 600;\n  transition: color 0.2s;\n  display: inline-flex;\n  align-items: center;\n  gap: 4px;\n}\n.highlight-link[data-v-894d2998]:hover {\n  color: #004499;\n}\n.empty-state[data-v-894d2998],\n.loading-state[data-v-894d2998] {\n  grid-column: 1 / -1;\n  text-align: center;\n  padding: 60px 20px;\n}\n.empty-icon[data-v-894d2998] {\n  font-size: 48px;\n  margin-bottom: 16px;\n  opacity: 0.3;\n}\n.empty-text[data-v-894d2998] {\n  font-size: 16px;\n  font-weight: 600;\n  color: #6f767e;\n  margin: 0 0 8px 0;\n}\n.empty-subtext[data-v-894d2998] {\n  font-size: 14px;\n  color: #9ca3af;\n  margin: 0;\n}\n.loading-state[data-v-894d2998] {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  gap: 16px;\n}\n.spinner[data-v-894d2998] {\n  width: 40px;\n  height: 40px;\n  border: 3px solid #f0f1f3;\n  border-top-color: #d63939;\n  border-radius: 50%;\n  animation: spin-894d2998 0.8s linear infinite;\n}\n@keyframes spin-894d2998 {\n  to {\n    transform: rotate(360deg);\n  }\n}\n.loading-state p[data-v-894d2998] {\n  color: #6f767e;\n  font-size: 14px;\n  margin: 0;\n}\n@media (max-width: 768px) {\n  .page-content[data-v-894d2998] {\n    padding: 20px;\n    border-radius: 8px;\n  }\n  .news-grid[data-v-894d2998],\n  .highlights-grid[data-v-894d2998] {\n    grid-template-columns: 1fr;\n  }\n  .section-title[data-v-894d2998] {\n    font-size: 20px;\n  }\n  .view-all-link[data-v-894d2998] {\n    font-size: 13px;\n  }\n  .news-section[data-v-894d2998] {\n    margin-bottom: 32px;\n  }\n  .highlights-section[data-v-894d2998] {\n    margin-top: 32px;\n  }\n}\n\n/* sfc-style:/home/nigel/school-bench/apps/localization_hub/localization_hub/public/js/dashboard/pages/ProfilePage.vue?type=style&index=0 */\n.page-container[data-v-713b4c86] {\n  animation: fadeIn-713b4c86 0.3s ease;\n}\n@keyframes fadeIn-713b4c86 {\n  from {\n    opacity: 0;\n    transform: translateY(10px);\n  }\n  to {\n    opacity: 1;\n    transform: translateY(0);\n  }\n}\n.page-content[data-v-713b4c86] {\n  background: white;\n  border-radius: 8px;\n  padding: 40px;\n  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);\n}\n.page-title[data-v-713b4c86] {\n  font-size: 24px;\n  font-weight: 700;\n  color: #2e3338;\n  margin-bottom: 30px;\n}\n.profile-section[data-v-713b4c86] {\n  max-width: 600px;\n}\n.profile-header[data-v-713b4c86] {\n  display: flex;\n  align-items: center;\n  gap: 20px;\n  margin-bottom: 30px;\n  padding-bottom: 30px;\n  border-bottom: 1px solid #e8ebed;\n}\n.profile-avatar[data-v-713b4c86] {\n  width: 80px;\n  height: 80px;\n  border-radius: 50%;\n  background: #d63939;\n  color: white;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-size: 32px;\n  font-weight: 600;\n}\n.profile-info h3[data-v-713b4c86] {\n  font-size: 20px;\n  font-weight: 600;\n  color: #2e3338;\n  margin-bottom: 4px;\n}\n.profile-info p[data-v-713b4c86] {\n  color: #6c757d;\n  font-size: 14px;\n  margin: 0;\n}\n.info-grid[data-v-713b4c86] {\n  display: grid;\n  gap: 20px;\n  margin-bottom: 30px;\n}\n.info-item[data-v-713b4c86] {\n  display: flex;\n  flex-direction: column;\n  gap: 4px;\n}\n.info-label[data-v-713b4c86] {\n  font-size: 12px;\n  color: #6c757d;\n  text-transform: uppercase;\n  font-weight: 500;\n}\n.info-value[data-v-713b4c86] {\n  font-size: 16px;\n  color: #2e3338;\n  font-weight: 500;\n}\n.edit-button[data-v-713b4c86] {\n  padding: 12px 24px;\n  background: #d63939;\n  color: white;\n  border: none;\n  border-radius: 6px;\n  font-weight: 600;\n  cursor: pointer;\n  transition: all 0.2s;\n}\n.edit-button[data-v-713b4c86]:hover {\n  background: #c02929;\n  transform: translateY(-2px);\n  box-shadow: 0 4px 8px rgba(214, 57, 57, 0.3);\n}\n\n/* sfc-style:/home/nigel/school-bench/apps/localization_hub/localization_hub/public/js/dashboard/pages/DataPage.vue?type=style&index=0 */\n[data-v-21e20f88]:root {\n  --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);\n  --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);\n  --success-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);\n}\n.data-page-container[data-v-21e20f88] {\n  min-height: 100vh;\n  background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);\n  padding: 0;\n}\n.data-page-content[data-v-21e20f88] {\n  max-width: 1400px;\n  margin: 0 auto;\n  padding: 48px 24px;\n}\n.page-header[data-v-21e20f88] {\n  margin-bottom: 48px;\n  animation: slideDown-21e20f88 0.6s cubic-bezier(0.4, 0, 0.2, 1);\n}\n@keyframes slideDown-21e20f88 {\n  from {\n    opacity: 0;\n    transform: translateY(-20px);\n  }\n  to {\n    opacity: 1;\n    transform: translateY(0);\n  }\n}\n.header-content[data-v-21e20f88] {\n  text-align: center;\n}\n.page-title[data-v-21e20f88] {\n  font-family: \"Outfit\", sans-serif;\n  font-size: 48px;\n  font-weight: 800;\n  background: linear-gradient(135deg, #1a3353 0%, #4a5f8a 100%);\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent;\n  background-clip: text;\n  margin: 0 0 12px 0;\n  letter-spacing: -0.03em;\n}\n.page-subtitle[data-v-21e20f88] {\n  font-family: \"Manrope\", sans-serif;\n  font-size: 18px;\n  color: #64748b;\n  margin: 0;\n  font-weight: 500;\n}\n.stats-overview[data-v-21e20f88] {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));\n  gap: 20px;\n  margin-bottom: 40px;\n  animation: fadeInUp-21e20f88 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.1s both;\n}\n@keyframes fadeInUp-21e20f88 {\n  from {\n    opacity: 0;\n    transform: translateY(30px);\n  }\n  to {\n    opacity: 1;\n    transform: translateY(0);\n  }\n}\n.stat-card[data-v-21e20f88] {\n  background: white;\n  padding: 24px;\n  border-radius: 16px;\n  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.08);\n  border: 1px solid rgba(226, 232, 240, 0.8);\n  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);\n}\n.stat-card[data-v-21e20f88]:hover {\n  transform: translateY(-4px);\n  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);\n}\n.stat-value[data-v-21e20f88] {\n  font-family: \"Outfit\", sans-serif;\n  font-size: 36px;\n  font-weight: 700;\n  color: #1a3353;\n  margin-bottom: 8px;\n}\n.stat-label[data-v-21e20f88] {\n  font-family: \"Manrope\", sans-serif;\n  font-size: 14px;\n  color: #64748b;\n  font-weight: 500;\n  margin-bottom: 8px;\n}\n.stat-trend[data-v-21e20f88] {\n  font-family: \"Manrope\", sans-serif;\n  font-size: 13px;\n  font-weight: 600;\n  display: inline-flex;\n  align-items: center;\n  gap: 4px;\n}\n.stat-trend.positive[data-v-21e20f88] {\n  color: #10b981;\n}\n.stat-trend.negative[data-v-21e20f88] {\n  color: #ef4444;\n}\n.stat-trend.positive[data-v-21e20f88]::before {\n  content: \"\\2197\";\n}\n.stat-trend.negative[data-v-21e20f88]::before {\n  content: \"\\2198\";\n}\n.category-filters[data-v-21e20f88] {\n  display: flex;\n  gap: 12px;\n  margin-bottom: 40px;\n  padding: 16px;\n  background: white;\n  border-radius: 16px;\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);\n  overflow-x: auto;\n  -webkit-overflow-scrolling: touch;\n  animation: fadeInUp-21e20f88 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.2s both;\n}\n.filter-btn[data-v-21e20f88] {\n  font-family: \"Manrope\", sans-serif;\n  background: transparent;\n  border: 2px solid #e2e8f0;\n  padding: 12px 24px;\n  border-radius: 12px;\n  font-size: 14px;\n  font-weight: 600;\n  color: #475569;\n  cursor: pointer;\n  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);\n  display: flex;\n  align-items: center;\n  gap: 8px;\n  white-space: nowrap;\n}\n.filter-btn[data-v-21e20f88]:hover {\n  background: #f8fafc;\n  border-color: #cbd5e1;\n  transform: translateY(-2px);\n}\n.filter-btn.active[data-v-21e20f88] {\n  background: #64748b;\n  border-color: transparent;\n  color: white;\n  box-shadow: 0 2px 8px rgba(100, 116, 139, 0.3);\n}\n.filter-icon[data-v-21e20f88] {\n  font-size: 18px;\n}\n.filter-label[data-v-21e20f88] {\n  font-weight: 600;\n}\n.data-grid[data-v-21e20f88] {\n  display: grid;\n  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));\n  gap: 20px;\n  animation: fadeInUp-21e20f88 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.3s both;\n}\n.data-card[data-v-21e20f88] {\n  background: white;\n  border-radius: 20px;\n  overflow: hidden;\n  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);\n  border: 1px solid rgba(226, 232, 240, 0.8);\n  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.08);\n  display: flex;\n  flex-direction: column;\n  position: relative;\n  overflow: visible;\n}\n.data-card[data-v-21e20f88]::before {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  height: 3px;\n  background: #64748b;\n  transform: scaleX(0);\n  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);\n}\n.data-card[data-v-21e20f88]:hover {\n  transform: translateY(-4px);\n  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);\n}\n.data-card[data-v-21e20f88]:hover::before {\n  transform: scaleX(1);\n}\n.card-header[data-v-21e20f88] {\n  padding: 16px 16px 12px;\n  display: flex;\n  justify-content: space-between;\n  align-items: flex-start;\n}\n.card-icon[data-v-21e20f88] {\n  width: 40px;\n  height: 40px;\n  border-radius: 10px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-size: 20px;\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);\n  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);\n}\n.data-card:hover .card-icon[data-v-21e20f88] {\n  transform: scale(1.05);\n}\n.card-meta[data-v-21e20f88] {\n  text-align: right;\n}\n.category-badge[data-v-21e20f88] {\n  font-family: \"Manrope\", sans-serif;\n  font-size: 10px;\n  font-weight: 600;\n  text-transform: uppercase;\n  letter-spacing: 0.5px;\n  color: #64748b;\n  background: #f1f5f9;\n  padding: 4px 10px;\n  border-radius: 6px;\n}\n.card-body[data-v-21e20f88] {\n  padding: 0 16px 16px;\n  flex: 1;\n}\n.card-title[data-v-21e20f88] {\n  font-family: \"Outfit\", sans-serif;\n  font-size: 16px;\n  font-weight: 700;\n  color: #1a3353;\n  margin: 0 0 8px 0;\n  line-height: 1.3;\n}\n.card-description[data-v-21e20f88] {\n  font-family: \"Manrope\", sans-serif;\n  font-size: 13px;\n  line-height: 1.5;\n  color: #64748b;\n  margin: 0 0 12px 0;\n  display: -webkit-box;\n  -webkit-line-clamp: 2;\n  -webkit-box-orient: vertical;\n  overflow: hidden;\n}\n.card-metadata[data-v-21e20f88] {\n  display: flex;\n  flex-direction: column;\n  gap: 6px;\n}\n.metadata-item[data-v-21e20f88] {\n  font-family: \"Manrope\", sans-serif;\n  font-size: 11px;\n  color: #94a3b8;\n  display: flex;\n  align-items: center;\n  gap: 6px;\n}\n.metadata-icon[data-v-21e20f88] {\n  font-size: 12px;\n}\n.metadata-text[data-v-21e20f88] {\n  font-weight: 500;\n}\n.card-footer[data-v-21e20f88] {\n  padding: 12px 16px 16px;\n  display: flex;\n  gap: 8px;\n  border-top: 1px solid #f1f5f9;\n}\n.download-btn[data-v-21e20f88] {\n  font-family: \"Manrope\", sans-serif;\n  flex: 1;\n  background: #64748b;\n  color: white;\n  border: none;\n  padding: 10px 16px;\n  border-radius: 8px;\n  font-size: 12px;\n  font-weight: 600;\n  cursor: pointer;\n  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  gap: 6px;\n  box-shadow: 0 2px 4px rgba(100, 116, 139, 0.2);\n}\n.download-btn[data-v-21e20f88]:hover {\n  background: #475569;\n  transform: translateY(-1px);\n  box-shadow: 0 4px 8px rgba(100, 116, 139, 0.3);\n}\n.download-btn[data-v-21e20f88]:active {\n  transform: translateY(0);\n}\n.preview-btn[data-v-21e20f88] {\n  font-family: \"Manrope\", sans-serif;\n  background: white;\n  color: #64748b;\n  border: 1.5px solid #cbd5e1;\n  padding: 10px 16px;\n  border-radius: 8px;\n  font-size: 12px;\n  font-weight: 600;\n  cursor: pointer;\n  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);\n  display: flex;\n  align-items: center;\n  gap: 6px;\n}\n.preview-btn[data-v-21e20f88]:hover {\n  background: #f8fafc;\n  border-color: #64748b;\n  transform: translateY(-1px);\n}\n.btn-icon[data-v-21e20f88] {\n  font-size: 14px;\n}\n.btn-text[data-v-21e20f88] {\n  font-weight: 600;\n}\n.loading-container[data-v-21e20f88] {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  padding: 100px 20px;\n  gap: 24px;\n}\n.spinner[data-v-21e20f88] {\n  width: 56px;\n  height: 56px;\n  border: 5px solid #f1f5f9;\n  border-top-color: #64748b;\n  border-radius: 50%;\n  animation: spin-21e20f88 0.8s linear infinite;\n}\n@keyframes spin-21e20f88 {\n  to {\n    transform: rotate(360deg);\n  }\n}\n.loading-text[data-v-21e20f88] {\n  font-family: \"Manrope\", sans-serif;\n  font-size: 16px;\n  color: #64748b;\n  margin: 0;\n  font-weight: 600;\n}\n.empty-state[data-v-21e20f88] {\n  text-align: center;\n  padding: 100px 20px;\n  background: white;\n  border-radius: 20px;\n  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);\n}\n.empty-icon[data-v-21e20f88] {\n  font-size: 80px;\n  margin-bottom: 24px;\n  opacity: 0.3;\n}\n.empty-text[data-v-21e20f88] {\n  font-family: \"Outfit\", sans-serif;\n  font-size: 24px;\n  font-weight: 700;\n  color: #1a3353;\n  margin: 0 0 12px 0;\n}\n.empty-subtext[data-v-21e20f88] {\n  font-family: \"Manrope\", sans-serif;\n  font-size: 16px;\n  color: #94a3b8;\n  margin: 0;\n}\n@media (max-width: 1024px) {\n  .data-grid[data-v-21e20f88] {\n    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));\n    gap: 20px;\n  }\n  .stats-overview[data-v-21e20f88] {\n    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));\n  }\n}\n@media (max-width: 768px) {\n  .data-page-content[data-v-21e20f88] {\n    padding: 32px 16px;\n  }\n  .page-title[data-v-21e20f88] {\n    font-size: 36px;\n  }\n  .page-subtitle[data-v-21e20f88] {\n    font-size: 16px;\n  }\n  .page-header[data-v-21e20f88] {\n    margin-bottom: 32px;\n  }\n  .category-filters[data-v-21e20f88] {\n    padding: 12px;\n  }\n  .filter-btn[data-v-21e20f88] {\n    padding: 10px 20px;\n    font-size: 13px;\n  }\n  .data-grid[data-v-21e20f88] {\n    grid-template-columns: 1fr;\n    gap: 16px;\n  }\n  .stats-overview[data-v-21e20f88] {\n    grid-template-columns: 1fr;\n    gap: 16px;\n  }\n  .card-footer[data-v-21e20f88] {\n    flex-direction: column;\n  }\n  .preview-btn[data-v-21e20f88] {\n    width: 100%;\n  }\n}\n@media (max-width: 480px) {\n  .page-title[data-v-21e20f88] {\n    font-size: 28px;\n  }\n  .page-subtitle[data-v-21e20f88] {\n    font-size: 14px;\n  }\n  .stat-value[data-v-21e20f88] {\n    font-size: 28px;\n  }\n  .card-title[data-v-21e20f88] {\n    font-size: 18px;\n  }\n  .card-description[data-v-21e20f88] {\n    font-size: 13px;\n  }\n}\n\n/* sfc-style:/home/nigel/school-bench/apps/localization_hub/localization_hub/public/js/dashboard/pages/PublicationPage.vue?type=style&index=0 */\n.publications-container[data-v-4ff9fe60] {\n  min-height: 100vh;\n  background: #f8f9fa;\n  padding: 0;\n}\n.publications-content[data-v-4ff9fe60] {\n  max-width: 1400px;\n  margin: 0 auto;\n  padding: 40px 24px;\n}\n.page-header[data-v-4ff9fe60] {\n  margin-bottom: 40px;\n  border-bottom: 3px solid #1a3353;\n  padding-bottom: 16px;\n}\n.page-title[data-v-4ff9fe60] {\n  font-family: \"Lora\", serif;\n  font-size: 36px;\n  font-weight: 700;\n  color: #1a3353;\n  margin: 0;\n  letter-spacing: -0.02em;\n}\n.publications-layout[data-v-4ff9fe60] {\n  display: grid;\n  grid-template-columns: 220px 1fr;\n  gap: 48px;\n  align-items: start;\n}\n.categories-sidebar[data-v-4ff9fe60] {\n  position: sticky;\n  top: 24px;\n  background: white;\n  border-radius: 8px;\n  padding: 24px 0;\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);\n  border: 1px solid #e8ebed;\n}\n.categories-list[data-v-4ff9fe60] {\n  display: flex;\n  flex-direction: column;\n  gap: 4px;\n}\n.category-btn[data-v-4ff9fe60] {\n  font-family: \"DM Sans\", sans-serif;\n  background: transparent;\n  border: none;\n  padding: 12px 24px;\n  text-align: left;\n  font-size: 14px;\n  font-weight: 500;\n  color: #1a3353;\n  cursor: pointer;\n  transition: all 0.2s ease;\n  position: relative;\n  border-left: 3px solid transparent;\n}\n.category-btn[data-v-4ff9fe60]:hover {\n  background: #f8f9fa;\n  color: #0052cc;\n}\n.category-btn.active[data-v-4ff9fe60] {\n  background: #f0f4f8;\n  color: #0052cc;\n  font-weight: 600;\n  border-left-color: #0052cc;\n}\n.articles-section[data-v-4ff9fe60] {\n  min-height: 400px;\n}\n.articles-grid[data-v-4ff9fe60] {\n  display: grid;\n  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));\n  gap: 32px;\n  animation: fadeIn-4ff9fe60 0.4s ease;\n}\n@keyframes fadeIn-4ff9fe60 {\n  from {\n    opacity: 0;\n    transform: translateY(20px);\n  }\n  to {\n    opacity: 1;\n    transform: translateY(0);\n  }\n}\n.article-card[data-v-4ff9fe60] {\n  background: white;\n  border-radius: 8px;\n  overflow: hidden;\n  cursor: pointer;\n  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);\n  border: 1px solid #e8ebed;\n  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);\n  display: flex;\n  flex-direction: column;\n}\n.article-card[data-v-4ff9fe60]:hover {\n  transform: translateY(-4px);\n  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);\n  border-color: #d0d0d0;\n}\n.article-image[data-v-4ff9fe60] {\n  width: 100%;\n  height: 240px;\n  overflow: hidden;\n  background: linear-gradient(135deg, #1a3353 0%, #2d5079 100%);\n  position: relative;\n}\n.article-image img[data-v-4ff9fe60] {\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);\n}\n.article-card:hover .article-image img[data-v-4ff9fe60] {\n  transform: scale(1.05);\n}\n.article-content[data-v-4ff9fe60] {\n  padding: 24px;\n  display: flex;\n  flex-direction: column;\n  gap: 12px;\n  flex: 1;\n}\n.article-category[data-v-4ff9fe60] {\n  font-family: \"DM Sans\", sans-serif;\n  font-size: 11px;\n  font-weight: 700;\n  text-transform: uppercase;\n  letter-spacing: 1px;\n  color: #0052cc;\n  margin: 0;\n}\n.article-title[data-v-4ff9fe60] {\n  font-family: \"Lora\", serif;\n  font-size: 20px;\n  font-weight: 700;\n  line-height: 1.4;\n  color: #1a3353;\n  margin: 0;\n  display: -webkit-box;\n  -webkit-line-clamp: 2;\n  -webkit-box-orient: vertical;\n  overflow: hidden;\n  transition: color 0.2s;\n}\n.article-card:hover .article-title[data-v-4ff9fe60] {\n  color: #0052cc;\n}\n.article-description[data-v-4ff9fe60] {\n  font-family: \"DM Sans\", sans-serif;\n  font-size: 14px;\n  line-height: 1.6;\n  color: #6f767e;\n  margin: 0;\n  display: -webkit-box;\n  -webkit-line-clamp: 3;\n  -webkit-box-orient: vertical;\n  overflow: hidden;\n}\n.loading-container[data-v-4ff9fe60] {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  padding: 80px 20px;\n  gap: 20px;\n}\n.spinner[data-v-4ff9fe60] {\n  width: 48px;\n  height: 48px;\n  border: 4px solid #f0f1f3;\n  border-top-color: #0052cc;\n  border-radius: 50%;\n  animation: spin-4ff9fe60 0.8s linear infinite;\n}\n@keyframes spin-4ff9fe60 {\n  to {\n    transform: rotate(360deg);\n  }\n}\n.loading-text[data-v-4ff9fe60] {\n  font-family: \"DM Sans\", sans-serif;\n  font-size: 15px;\n  color: #6f767e;\n  margin: 0;\n  font-weight: 500;\n}\n.empty-state[data-v-4ff9fe60] {\n  text-align: center;\n  padding: 80px 20px;\n}\n.empty-icon[data-v-4ff9fe60] {\n  font-size: 64px;\n  margin-bottom: 20px;\n  opacity: 0.3;\n}\n.empty-text[data-v-4ff9fe60] {\n  font-family: \"Lora\", serif;\n  font-size: 20px;\n  font-weight: 600;\n  color: #1a3353;\n  margin: 0 0 8px 0;\n}\n.empty-subtext[data-v-4ff9fe60] {\n  font-family: \"DM Sans\", sans-serif;\n  font-size: 14px;\n  color: #9ca3af;\n  margin: 0;\n}\n@media (max-width: 1024px) {\n  .publications-layout[data-v-4ff9fe60] {\n    grid-template-columns: 180px 1fr;\n    gap: 32px;\n  }\n  .articles-grid[data-v-4ff9fe60] {\n    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));\n    gap: 24px;\n  }\n  .category-btn[data-v-4ff9fe60] {\n    font-size: 13px;\n    padding: 10px 16px;\n  }\n}\n@media (max-width: 768px) {\n  .publications-content[data-v-4ff9fe60] {\n    padding: 24px 16px;\n  }\n  .page-title[data-v-4ff9fe60] {\n    font-size: 28px;\n  }\n  .page-header[data-v-4ff9fe60] {\n    margin-bottom: 32px;\n  }\n  .publications-layout[data-v-4ff9fe60] {\n    grid-template-columns: 1fr;\n    gap: 24px;\n  }\n  .categories-sidebar[data-v-4ff9fe60] {\n    position: relative;\n    top: 0;\n    padding: 16px 0;\n  }\n  .categories-list[data-v-4ff9fe60] {\n    flex-direction: row;\n    overflow-x: auto;\n    gap: 8px;\n    padding: 0 8px;\n    -webkit-overflow-scrolling: touch;\n  }\n  .category-btn[data-v-4ff9fe60] {\n    white-space: nowrap;\n    border-left: none;\n    border-bottom: 3px solid transparent;\n    padding: 10px 16px;\n  }\n  .category-btn.active[data-v-4ff9fe60] {\n    border-left-color: transparent;\n    border-bottom-color: #0052cc;\n  }\n  .articles-grid[data-v-4ff9fe60] {\n    grid-template-columns: 1fr;\n    gap: 20px;\n  }\n  .article-image[data-v-4ff9fe60] {\n    height: 200px;\n  }\n  .article-content[data-v-4ff9fe60] {\n    padding: 20px;\n  }\n  .article-title[data-v-4ff9fe60] {\n    font-size: 18px;\n  }\n}\n@media (max-width: 480px) {\n  .page-title[data-v-4ff9fe60] {\n    font-size: 24px;\n  }\n  .article-image[data-v-4ff9fe60] {\n    height: 180px;\n  }\n  .article-content[data-v-4ff9fe60] {\n    padding: 16px;\n    gap: 10px;\n  }\n  .article-title[data-v-4ff9fe60] {\n    font-size: 16px;\n  }\n  .article-description[data-v-4ff9fe60] {\n    font-size: 13px;\n  }\n}\n\n/* sfc-style:/home/nigel/school-bench/apps/localization_hub/localization_hub/public/js/dashboard/pages/EventsPage.vue?type=style&index=0 */\n.page-container[data-v-b38de6e3] {\n  animation: fadeIn-b38de6e3 0.3s ease;\n}\n@keyframes fadeIn-b38de6e3 {\n  from {\n    opacity: 0;\n    transform: translateY(10px);\n  }\n  to {\n    opacity: 1;\n    transform: translateY(0);\n  }\n}\n.page-content[data-v-b38de6e3] {\n  background: white;\n  border-radius: 8px;\n  padding: 40px;\n  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);\n}\n.page-title[data-v-b38de6e3] {\n  font-size: 24px;\n  font-weight: 700;\n  color: #2e3338;\n  margin-bottom: 30px;\n}\n.empty-state[data-v-b38de6e3] {\n  text-align: center;\n  padding: 60px 20px;\n}\n.empty-icon[data-v-b38de6e3] {\n  font-size: 64px;\n  margin-bottom: 20px;\n  opacity: 0.3;\n}\n.empty-text[data-v-b38de6e3] {\n  font-size: 18px;\n  font-weight: 600;\n  color: #d63939;\n  margin-bottom: 8px;\n}\n.empty-subtext[data-v-b38de6e3] {\n  color: #6c757d;\n  font-size: 14px;\n}\n\n/* sfc-style:/home/nigel/school-bench/apps/localization_hub/localization_hub/public/js/dashboard/pages/ReportsPage.vue?type=style&index=0 */\n.reports-container[data-v-1544f3b6] {\n  min-height: 100vh;\n  background: #fafafa;\n  padding: 0;\n}\n.reports-content[data-v-1544f3b6] {\n  max-width: 1200px;\n  margin: 0 auto;\n  padding: 48px 24px;\n}\n.page-header[data-v-1544f3b6] {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  margin-bottom: 48px;\n  padding-bottom: 24px;\n  border-bottom: 2px solid #e0e0e0;\n}\n.page-title[data-v-1544f3b6] {\n  font-family: \"IBM Plex Serif\", serif;\n  font-size: 42px;\n  font-weight: 700;\n  color: #1a1a1a;\n  margin: 0;\n  letter-spacing: -0.02em;\n}\n.create-btn[data-v-1544f3b6] {\n  font-family: \"IBM Plex Sans\", sans-serif;\n  background: #1a3353;\n  color: white;\n  border: none;\n  padding: 14px 28px;\n  border-radius: 8px;\n  font-size: 15px;\n  font-weight: 600;\n  cursor: pointer;\n  transition: all 0.3s ease;\n  display: flex;\n  align-items: center;\n  gap: 8px;\n  box-shadow: 0 2px 8px rgba(26, 51, 83, 0.2);\n}\n.create-btn[data-v-1544f3b6]:hover {\n  background: #2d5079;\n  transform: translateY(-2px);\n  box-shadow: 0 4px 12px rgba(26, 51, 83, 0.3);\n}\n.btn-icon[data-v-1544f3b6] {\n  font-size: 20px;\n  font-weight: 300;\n}\n.btn-text[data-v-1544f3b6] {\n  font-weight: 600;\n}\n.loading-container[data-v-1544f3b6] {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  padding: 100px 20px;\n  gap: 24px;\n}\n.spinner[data-v-1544f3b6] {\n  width: 48px;\n  height: 48px;\n  border: 4px solid #f0f0f0;\n  border-top-color: #1a3353;\n  border-radius: 50%;\n  animation: spin-1544f3b6 0.8s linear infinite;\n}\n@keyframes spin-1544f3b6 {\n  to {\n    transform: rotate(360deg);\n  }\n}\n.loading-text[data-v-1544f3b6] {\n  font-family: \"IBM Plex Sans\", sans-serif;\n  font-size: 16px;\n  color: #666;\n  margin: 0;\n  font-weight: 500;\n}\n.reports-timeline[data-v-1544f3b6] {\n  display: flex;\n  flex-direction: column;\n  gap: 48px;\n}\n.timeline-group[data-v-1544f3b6] {\n  animation: fadeIn-1544f3b6 0.5s ease;\n}\n@keyframes fadeIn-1544f3b6 {\n  from {\n    opacity: 0;\n    transform: translateY(20px);\n  }\n  to {\n    opacity: 1;\n    transform: translateY(0);\n  }\n}\n.month-header[data-v-1544f3b6] {\n  margin-bottom: 32px;\n}\n.month-title[data-v-1544f3b6] {\n  font-family: \"IBM Plex Serif\", serif;\n  font-size: 32px;\n  font-weight: 700;\n  color: #1a1a1a;\n  margin: 0;\n  letter-spacing: -0.01em;\n}\n.month-reports[data-v-1544f3b6] {\n  display: flex;\n  flex-direction: column;\n  gap: 0;\n  border-left: 2px solid #e0e0e0;\n  padding-left: 0;\n}\n.report-item[data-v-1544f3b6] {\n  display: grid;\n  grid-template-columns: 120px 1fr;\n  gap: 32px;\n  padding: 32px 0;\n  border-bottom: 1px solid #f0f0f0;\n  cursor: pointer;\n  transition: all 0.3s ease;\n  position: relative;\n}\n.report-item[data-v-1544f3b6]::before {\n  content: \"\";\n  position: absolute;\n  left: -6px;\n  top: 40px;\n  width: 10px;\n  height: 10px;\n  background: #1a3353;\n  border-radius: 50%;\n  border: 2px solid white;\n  box-shadow: 0 0 0 2px #1a3353;\n  transition: all 0.3s ease;\n}\n.report-item[data-v-1544f3b6]:hover {\n  background: #fafafa;\n}\n.report-item[data-v-1544f3b6]:hover::before {\n  width: 14px;\n  height: 14px;\n  left: -8px;\n  top: 38px;\n}\n.report-date[data-v-1544f3b6] {\n  font-family: \"IBM Plex Sans\", sans-serif;\n  font-size: 14px;\n  font-weight: 500;\n  color: #666;\n  padding-top: 4px;\n  text-align: left;\n  padding-left: 32px;\n}\n.report-content[data-v-1544f3b6] {\n  display: flex;\n  flex-direction: column;\n  gap: 12px;\n}\n.report-title[data-v-1544f3b6] {\n  font-family: \"IBM Plex Serif\", serif;\n  font-size: 20px;\n  font-weight: 600;\n  color: #0033cc;\n  line-height: 1.4;\n  margin: 0;\n  transition: color 0.3s ease;\n}\n.report-item:hover .report-title[data-v-1544f3b6] {\n  color: #0029a3;\n  text-decoration: underline;\n}\n.report-tags[data-v-1544f3b6] {\n  display: flex;\n  gap: 8px;\n  flex-wrap: wrap;\n}\n.tag[data-v-1544f3b6] {\n  font-family: \"IBM Plex Sans\", sans-serif;\n  font-size: 13px;\n  font-weight: 500;\n  color: #1a1a1a;\n  background: white;\n  padding: 6px 14px;\n  border-radius: 20px;\n  border: 1px solid #e0e0e0;\n  transition: all 0.2s ease;\n}\n.report-item:hover .tag[data-v-1544f3b6] {\n  border-color: #1a3353;\n  color: #1a3353;\n}\n.empty-state[data-v-1544f3b6] {\n  text-align: center;\n  padding: 100px 20px;\n  background: white;\n  border-radius: 12px;\n  border: 2px dashed #e0e0e0;\n  margin-top: 40px;\n}\n.empty-icon[data-v-1544f3b6] {\n  font-size: 72px;\n  margin-bottom: 24px;\n  opacity: 0.3;\n}\n.empty-text[data-v-1544f3b6] {\n  font-family: \"IBM Plex Serif\", serif;\n  font-size: 24px;\n  font-weight: 600;\n  color: #1a1a1a;\n  margin: 0 0 12px 0;\n}\n.empty-subtext[data-v-1544f3b6] {\n  font-family: \"IBM Plex Sans\", sans-serif;\n  font-size: 16px;\n  color: #666;\n  margin: 0;\n}\n@media (max-width: 768px) {\n  .reports-content[data-v-1544f3b6] {\n    padding: 32px 16px;\n  }\n  .page-header[data-v-1544f3b6] {\n    flex-direction: column;\n    align-items: flex-start;\n    gap: 20px;\n  }\n  .page-title[data-v-1544f3b6] {\n    font-size: 32px;\n  }\n  .create-btn[data-v-1544f3b6] {\n    width: 100%;\n    justify-content: center;\n  }\n  .month-title[data-v-1544f3b6] {\n    font-size: 24px;\n  }\n  .report-item[data-v-1544f3b6] {\n    grid-template-columns: 1fr;\n    gap: 12px;\n    padding: 24px 0 24px 32px;\n  }\n  .report-date[data-v-1544f3b6] {\n    padding-left: 0;\n    font-size: 13px;\n  }\n  .report-title[data-v-1544f3b6] {\n    font-size: 18px;\n  }\n  .report-item[data-v-1544f3b6]::before {\n    left: -6px;\n    top: 30px;\n  }\n  .report-item[data-v-1544f3b6]:hover::before {\n    left: -7px;\n    top: 29px;\n  }\n}\n@media (max-width: 480px) {\n  .page-title[data-v-1544f3b6] {\n    font-size: 28px;\n  }\n  .month-title[data-v-1544f3b6] {\n    font-size: 20px;\n  }\n  .report-title[data-v-1544f3b6] {\n    font-size: 16px;\n  }\n  .create-btn[data-v-1544f3b6] {\n    padding: 12px 20px;\n    font-size: 14px;\n  }\n}\n\n/* sfc-style:/home/nigel/school-bench/apps/localization_hub/localization_hub/public/js/dashboard/pages/ReportView.vue?type=style&index=0 */\n.report-view-container[data-v-0906f9af] {\n  min-height: 100vh;\n  background: #f5f5f5;\n  padding: 0;\n}\n.report-view-content[data-v-0906f9af] {\n  max-width: 900px;\n  margin: 0 auto;\n  padding: 48px 24px;\n}\n.loading-container[data-v-0906f9af],\n.error-state[data-v-0906f9af] {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  padding: 100px 20px;\n  gap: 24px;\n}\n.spinner[data-v-0906f9af] {\n  width: 48px;\n  height: 48px;\n  border: 4px solid #f0f0f0;\n  border-top-color: #1a3353;\n  border-radius: 50%;\n  animation: spin-0906f9af 0.8s linear infinite;\n}\n@keyframes spin-0906f9af {\n  to {\n    transform: rotate(360deg);\n  }\n}\n.loading-text[data-v-0906f9af],\n.error-text[data-v-0906f9af] {\n  font-family: \"IBM Plex Sans\", sans-serif;\n  font-size: 16px;\n  color: #666;\n  margin: 0;\n  font-weight: 500;\n}\n.error-icon[data-v-0906f9af] {\n  font-size: 72px;\n  opacity: 0.3;\n}\n.back-btn[data-v-0906f9af] {\n  font-family: \"IBM Plex Sans\", sans-serif;\n  background: white;\n  color: #1a3353;\n  border: 1px solid #e0e0e0;\n  padding: 10px 20px;\n  border-radius: 6px;\n  font-size: 14px;\n  font-weight: 500;\n  cursor: pointer;\n  transition: all 0.3s ease;\n  display: inline-flex;\n  align-items: center;\n  gap: 8px;\n  margin-bottom: 32px;\n}\n.back-btn[data-v-0906f9af]:hover {\n  background: #f5f5f5;\n  border-color: #1a3353;\n}\n.back-icon[data-v-0906f9af] {\n  font-size: 18px;\n}\n.report-document[data-v-0906f9af] {\n  background: white;\n  border-radius: 8px;\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);\n  padding: 64px;\n  animation: fadeIn-0906f9af 0.5s ease;\n}\n@keyframes fadeIn-0906f9af {\n  from {\n    opacity: 0;\n    transform: translateY(20px);\n  }\n  to {\n    opacity: 1;\n    transform: translateY(0);\n  }\n}\n.report-header[data-v-0906f9af] {\n  border-bottom: 2px solid #e0e0e0;\n  padding-bottom: 32px;\n  margin-bottom: 48px;\n}\n.report-meta[data-v-0906f9af] {\n  display: flex;\n  gap: 16px;\n  margin-bottom: 16px;\n  flex-wrap: wrap;\n}\n.report-date[data-v-0906f9af] {\n  font-family: \"IBM Plex Sans\", sans-serif;\n  font-size: 14px;\n  font-weight: 500;\n  color: #666;\n}\n.report-programme[data-v-0906f9af] {\n  font-family: \"IBM Plex Sans\", sans-serif;\n  font-size: 13px;\n  font-weight: 600;\n  color: #1a3353;\n  background: #f0f4f8;\n  padding: 4px 12px;\n  border-radius: 12px;\n}\n.report-title[data-v-0906f9af] {\n  font-family: \"IBM Plex Serif\", serif;\n  font-size: 32px;\n  font-weight: 700;\n  color: #1a1a1a;\n  line-height: 1.3;\n  margin: 0 0 24px 0;\n  letter-spacing: -0.01em;\n}\n.report-authors[data-v-0906f9af] {\n  display: flex;\n  flex-direction: column;\n  gap: 8px;\n}\n.author-item[data-v-0906f9af] {\n  font-family: \"IBM Plex Sans\", sans-serif;\n  font-size: 14px;\n  color: #666;\n}\n.author-label[data-v-0906f9af] {\n  font-weight: 600;\n  color: #1a1a1a;\n  margin-right: 8px;\n}\n.author-name[data-v-0906f9af] {\n  font-weight: 400;\n}\n.report-body[data-v-0906f9af] {\n  display: flex;\n  flex-direction: column;\n  gap: 48px;\n}\n.report-section[data-v-0906f9af] {\n  display: flex;\n  flex-direction: column;\n  gap: 20px;\n}\n.section-title[data-v-0906f9af] {\n  font-family: \"IBM Plex Serif\", serif;\n  font-size: 24px;\n  font-weight: 700;\n  color: #1a3353;\n  margin: 0;\n  padding-bottom: 12px;\n  border-bottom: 1px solid #e0e0e0;\n}\n.section-content[data-v-0906f9af] {\n  font-family: \"IBM Plex Sans\", sans-serif;\n  font-size: 16px;\n  line-height: 1.8;\n  color: #333;\n}\n.section-content[data-v-0906f9af] p {\n  margin: 0 0 16px 0;\n}\n.section-content[data-v-0906f9af] p:last-child {\n  margin-bottom: 0;\n}\n.section-content[data-v-0906f9af] ul,\n.section-content[data-v-0906f9af] ol {\n  margin: 0 0 16px 0;\n  padding-left: 24px;\n}\n.section-content[data-v-0906f9af] li {\n  margin-bottom: 8px;\n}\n.section-content[data-v-0906f9af] strong {\n  font-weight: 600;\n  color: #1a1a1a;\n}\n.section-content[data-v-0906f9af] em {\n  font-style: italic;\n}\n.section-content[data-v-0906f9af] a {\n  color: #0033cc;\n  text-decoration: underline;\n}\n.section-content[data-v-0906f9af] a:hover {\n  color: #0029a3;\n}\n.report-footer[data-v-0906f9af] {\n  border-top: 2px solid #e0e0e0;\n  padding-top: 32px;\n  margin-top: 48px;\n}\n.approval[data-v-0906f9af] {\n  font-family: \"IBM Plex Sans\", sans-serif;\n  font-size: 14px;\n  color: #666;\n  display: flex;\n  gap: 8px;\n}\n.approval-label[data-v-0906f9af] {\n  font-weight: 600;\n  color: #1a1a1a;\n}\n.approval-name[data-v-0906f9af] {\n  font-weight: 400;\n}\n@media (max-width: 768px) {\n  .report-view-content[data-v-0906f9af] {\n    padding: 24px 16px;\n  }\n  .report-document[data-v-0906f9af] {\n    padding: 32px 24px;\n    border-radius: 0;\n  }\n  .report-title[data-v-0906f9af] {\n    font-size: 24px;\n  }\n  .section-title[data-v-0906f9af] {\n    font-size: 20px;\n  }\n  .section-content[data-v-0906f9af] {\n    font-size: 15px;\n  }\n}\n@media (max-width: 480px) {\n  .report-document[data-v-0906f9af] {\n    padding: 24px 16px;\n  }\n  .report-title[data-v-0906f9af] {\n    font-size: 20px;\n  }\n  .section-title[data-v-0906f9af] {\n    font-size: 18px;\n  }\n  .section-content[data-v-0906f9af] {\n    font-size: 14px;\n    line-height: 1.7;\n  }\n}\n@media print {\n  .report-view-container[data-v-0906f9af] {\n    background: white;\n  }\n  .back-btn[data-v-0906f9af] {\n    display: none;\n  }\n  .report-document[data-v-0906f9af] {\n    box-shadow: none;\n    padding: 0;\n  }\n}\n\n/* sfc-style:/home/nigel/school-bench/apps/localization_hub/localization_hub/public/js/dashboard/App.vue?type=style&index=0 */\n.dashboard-container[data-v-a088781b] {\n  display: flex;\n  height: 100vh;\n  width: 100vw;\n  background: #f5f7fa;\n  overflow: hidden;\n  margin: 0;\n  padding: 0;\n  position: fixed;\n  top: 0;\n  left: 0;\n}\n.sidebar[data-v-a088781b] {\n  width: 200px;\n  background: #fafbfc;\n  border-right: 1px solid #f0f1f3;\n  padding: 16px 0;\n  display: flex;\n  flex-direction: column;\n  height: 100vh;\n  overflow-y: auto;\n  flex-shrink: 0;\n  position: relative;\n  z-index: 100;\n}\n.sidebar-header-container[data-v-a088781b] {\n  position: relative;\n  margin-bottom: 16px;\n  z-index: 1002;\n}\n.sidebar-header[data-v-a088781b] {\n  padding: 12px 16px 16px 16px;\n  border-bottom: 1px solid #f0f1f3;\n  cursor: pointer;\n  transition: background 0.15s ease;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  margin: 0 8px 16px 8px;\n  border-radius: 8px;\n}\n.sidebar-header[data-v-a088781b]:hover {\n  background: #f5f6f7;\n}\n.header-content[data-v-a088781b] {\n  display: flex;\n  align-items: center;\n  gap: 12px;\n  flex: 1;\n}\n.header-text[data-v-a088781b] {\n  flex: 1;\n}\n.app-logo[data-v-a088781b] {\n  font-size: 24px;\n}\n.app-name[data-v-a088781b] {\n  font-size: 14px;\n  font-weight: 600;\n  color: #1a1d1f;\n  letter-spacing: -0.01em;\n}\n.user-info[data-v-a088781b] {\n  font-size: 11px;\n  color: #6f767e;\n  margin-top: 2px;\n  font-weight: 500;\n}\n.dropdown-icon[data-v-a088781b] {\n  display: flex;\n  align-items: center;\n  color: #6f767e;\n  margin-left: 8px;\n}\n.chevron[data-v-a088781b] {\n  transition: transform 0.2s;\n  color: #6f767e;\n  font-size: 10px;\n  display: inline-block;\n}\n.chevron.open[data-v-a088781b] {\n  transform: rotate(180deg);\n}\n.dropdown-menu[data-v-a088781b] {\n  position: absolute;\n  top: 100%;\n  left: 8px;\n  right: 8px;\n  background: white;\n  border: 1px solid #f0f1f3;\n  border-radius: 10px;\n  margin-top: 8px;\n  padding: 6px;\n  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.08);\n  z-index: 2000;\n}\n.dropdown-enter-active[data-v-a088781b],\n.dropdown-leave-active[data-v-a088781b] {\n  transition: all 0.2s ease;\n}\n.dropdown-enter-from[data-v-a088781b] {\n  opacity: 0;\n  transform: translateY(-10px);\n}\n.dropdown-leave-to[data-v-a088781b] {\n  opacity: 0;\n  transform: translateY(-5px);\n}\n.dropdown-item[data-v-a088781b] {\n  display: flex;\n  align-items: center;\n  gap: 10px;\n  padding: 10px 12px;\n  color: #33383f;\n  text-decoration: none;\n  transition: background 0.15s ease;\n  cursor: pointer;\n  font-size: 13px;\n  border-radius: 6px;\n  font-weight: 500;\n}\n.dropdown-item[data-v-a088781b]:hover {\n  background: #f5f6f7;\n}\n.dropdown-icon-item[data-v-a088781b] {\n  width: 16px;\n  height: 16px;\n  stroke-width: 2;\n  stroke: currentColor;\n  fill: none;\n  flex-shrink: 0;\n}\n.dropdown-divider[data-v-a088781b] {\n  height: 1px;\n  background: #f0f1f3;\n  margin: 4px 0;\n}\n.sidebar-menu[data-v-a088781b] {\n  display: flex;\n  flex-direction: column;\n  gap: 2px;\n  padding: 0 8px;\n}\n.sidebar-item[data-v-a088781b] {\n  display: flex;\n  align-items: center;\n  gap: 10px;\n  padding: 10px 12px;\n  border-radius: 6px;\n  text-decoration: none;\n  color: #33383f;\n  transition: all 0.15s ease;\n  cursor: pointer;\n  font-size: 13px;\n}\n.sidebar-item[data-v-a088781b]:hover {\n  background: #f0f1f3;\n  transform: translateX(2px);\n}\n.sidebar-item.active[data-v-a088781b] {\n  background: #fff0f0;\n  color: #d63939;\n  font-weight: 600;\n  box-shadow: 0 1px 3px rgba(214, 57, 57, 0.1);\n}\n.sidebar-icon[data-v-a088781b] {\n  width: 18px;\n  height: 18px;\n  stroke-width: 2;\n  stroke: currentColor;\n  fill: none;\n  flex-shrink: 0;\n}\n.sidebar-label[data-v-a088781b] {\n  font-size: 13px;\n  font-weight: 500;\n  letter-spacing: -0.01em;\n}\n.sidebar-divider[data-v-a088781b] {\n  height: 1px;\n  background: #f0f1f3;\n  margin: 10px 8px;\n}\n.main-content[data-v-a088781b] {\n  flex: 1;\n  display: flex;\n  flex-direction: column;\n  height: 100vh;\n  overflow: hidden;\n}\n.welcome-banner[data-v-a088781b] {\n  background: white;\n  padding: 20px 28px;\n  margin: 16px 24px 0 24px;\n  border-radius: 12px;\n  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);\n  border: 1px solid #f0f1f3;\n  flex-shrink: 0;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n}\n.welcome-banner h1[data-v-a088781b] {\n  font-size: 24px;\n  font-weight: 600;\n  color: #1a1d1f;\n  margin: 0;\n  letter-spacing: -0.02em;\n}\n.page-title-bar[data-v-a088781b] {\n  background: white;\n  padding: 20px 28px;\n  margin: 16px 24px 0 24px;\n  border-radius: 12px;\n  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);\n  border: 1px solid #f0f1f3;\n  flex-shrink: 0;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n}\n.page-title[data-v-a088781b] {\n  font-size: 20px;\n  color: #1a1d1f;\n  font-weight: 600;\n  letter-spacing: -0.01em;\n  margin: 0;\n}\n.user-name[data-v-a088781b] {\n  color: #d63939;\n  font-weight: 600;\n}\n.language-toggle-wrapper[data-v-a088781b] {\n  position: relative;\n  z-index: 1001;\n}\n.language-toggle[data-v-a088781b] {\n  display: flex;\n  align-items: center;\n  gap: 6px;\n  padding: 8px 14px;\n  background: #d63939;\n  color: white;\n  border-radius: 8px;\n  cursor: pointer;\n  transition: all 0.2s ease;\n  font-size: 13px;\n  font-weight: 600;\n  user-select: none;\n  box-shadow: 0 1px 2px rgba(214, 57, 57, 0.15);\n}\n.language-toggle[data-v-a088781b]:hover {\n  background: #c02d2d;\n  box-shadow: 0 2px 4px rgba(214, 57, 57, 0.25);\n  transform: translateY(-1px);\n}\n.lang-icon-svg[data-v-a088781b] {\n  width: 16px;\n  height: 16px;\n  stroke-width: 2;\n  stroke: currentColor;\n  fill: none;\n}\n.lang-text[data-v-a088781b] {\n  font-weight: 600;\n  letter-spacing: 0.02em;\n}\n.lang-chevron[data-v-a088781b] {\n  transition: transform 0.2s;\n  opacity: 0.8;\n}\n.lang-chevron.open[data-v-a088781b] {\n  transform: rotate(180deg);\n}\n.language-dropdown[data-v-a088781b] {\n  position: absolute;\n  top: calc(100% + 6px);\n  right: 0;\n  background: white;\n  border: 1px solid #f0f1f3;\n  border-radius: 10px;\n  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.08);\n  min-width: 200px;\n  z-index: 2000;\n  overflow: hidden;\n}\n.language-dropdown-header[data-v-a088781b] {\n  padding: 10px 14px;\n  font-size: 11px;\n  font-weight: 600;\n  color: #6f767e;\n  text-transform: uppercase;\n  letter-spacing: 0.05em;\n  border-bottom: 1px solid #f0f1f3;\n  background: #fafbfc;\n}\n.language-option[data-v-a088781b] {\n  display: flex;\n  align-items: center;\n  gap: 10px;\n  padding: 10px 14px;\n  color: #33383f;\n  text-decoration: none;\n  transition: all 0.15s;\n  cursor: pointer;\n  font-size: 13px;\n  font-weight: 500;\n}\n.language-option[data-v-a088781b]:hover {\n  background: #f5f6f7;\n}\n.language-option.active[data-v-a088781b] {\n  background: #fff5f5;\n  color: #d63939;\n  font-weight: 600;\n}\n.lang-flag[data-v-a088781b] {\n  font-size: 18px;\n  width: 22px;\n  text-align: center;\n}\n.lang-name[data-v-a088781b] {\n  flex: 1;\n  font-size: 13px;\n}\n.checkmark[data-v-a088781b] {\n  color: #d63939;\n  font-weight: bold;\n  font-size: 14px;\n}\n.lang-dropdown-enter-active[data-v-a088781b],\n.lang-dropdown-leave-active[data-v-a088781b] {\n  transition: all 0.2s ease;\n}\n.lang-dropdown-enter-from[data-v-a088781b] {\n  opacity: 0;\n  transform: translateY(-10px);\n}\n.lang-dropdown-leave-to[data-v-a088781b] {\n  opacity: 0;\n  transform: translateY(-5px);\n}\n.content-area[data-v-a088781b] {\n  flex: 1;\n  background: #f5f7fa;\n  overflow-y: auto;\n  overflow-x: hidden;\n  padding: 24px 24px 40px 24px;\n}\n@media (max-width: 768px) {\n  .sidebar[data-v-a088781b] {\n    width: 70px;\n  }\n  .sidebar-label[data-v-a088781b],\n  .app-name[data-v-a088781b],\n  .user-info[data-v-a088781b] {\n    display: none;\n  }\n  .header-text[data-v-a088781b] {\n    display: none;\n  }\n  .sidebar-header[data-v-a088781b] {\n    justify-content: center;\n  }\n  .content-area[data-v-a088781b] {\n    padding: 20px;\n  }\n  .welcome-banner[data-v-a088781b],\n  .page-title-bar[data-v-a088781b] {\n    flex-direction: column;\n    align-items: flex-start;\n    gap: 16px;\n    padding: 16px 20px;\n    margin: 12px 16px 0 16px;\n  }\n  .welcome-banner h1[data-v-a088781b],\n  .page-title[data-v-a088781b] {\n    font-size: 20px;\n  }\n}\n/*# sourceMappingURL=dashboard.bundle.FAJHU6EN.css.map */\n");
 (() => {
   // ../localization_hub/node_modules/@vue/shared/dist/shared.esm-bundler.js
   function makeMap(str) {
@@ -3554,7 +3554,7 @@ If this is a native custom element, make sure to exclude it from component resol
       beforeUnmount,
       destroyed,
       unmounted,
-      render: render8,
+      render: render9,
       renderTracked,
       renderTriggered,
       errorCaptured,
@@ -3707,8 +3707,8 @@ If this is a native custom element, make sure to exclude it from component resol
         instance.exposed = {};
       }
     }
-    if (render8 && instance.render === NOOP) {
-      instance.render = render8;
+    if (render9 && instance.render === NOOP) {
+      instance.render = render9;
     }
     if (inheritAttrs != null) {
       instance.inheritAttrs = inheritAttrs;
@@ -3951,7 +3951,7 @@ If this is a native custom element, make sure to exclude it from component resol
     };
   }
   var uid$1 = 0;
-  function createAppAPI(render8, hydrate) {
+  function createAppAPI(render9, hydrate) {
     return function createApp2(rootComponent, rootProps = null) {
       if (!isFunction(rootComponent)) {
         rootComponent = extend({}, rootComponent);
@@ -4057,13 +4057,13 @@ If this is a native custom element, make sure to exclude it from component resol
               context.reload = () => {
                 const cloned = cloneVNode(vnode);
                 cloned.el = null;
-                render8(cloned, rootContainer, namespace);
+                render9(cloned, rootContainer, namespace);
               };
             }
             if (isHydrate && hydrate) {
               hydrate(vnode, rootContainer);
             } else {
-              render8(vnode, rootContainer, namespace);
+              render9(vnode, rootContainer, namespace);
             }
             isMounted = true;
             app._container = rootContainer;
@@ -4095,7 +4095,7 @@ If you want to remount the same app, move your app creation logic into a factory
               app._instance,
               16
             );
-            render8(null, app._container);
+            render9(null, app._container);
             if (true) {
               app._instance = null;
               devtoolsUnmountApp(app);
@@ -4287,7 +4287,7 @@ If you want to remount the same app, move your app creation logic into a factory
       slots,
       attrs,
       emit: emit2,
-      render: render8,
+      render: render9,
       renderCache,
       props,
       data,
@@ -4315,7 +4315,7 @@ If you want to remount the same app, move your app creation logic into a factory
           }
         }) : proxyToUse;
         result = normalizeVNode(
-          render8.call(
+          render9.call(
             thisProxy,
             proxyToUse,
             renderCache,
@@ -6476,7 +6476,7 @@ For more details, see https://link.vuejs.org/feature-flags.`
       return teleportEnd ? hostNextSibling(teleportEnd) : el;
     };
     let isFlushing = false;
-    const render8 = (vnode, container, namespace) => {
+    const render9 = (vnode, container, namespace) => {
       let instance;
       if (vnode == null) {
         if (container._vnode) {
@@ -6522,9 +6522,9 @@ For more details, see https://link.vuejs.org/feature-flags.`
       );
     }
     return {
-      render: render8,
+      render: render9,
       hydrate,
-      createApp: createAppAPI(render8, hydrate)
+      createApp: createAppAPI(render9, hydrate)
     };
   }
   function resolveChildrenNamespace({ type, props }, currentNamespace) {
@@ -9348,26 +9348,459 @@ Expected function or array of functions, received type ${typeof value}.`
   EventsPage_default.__scopeId = "data-v-b38de6e3";
   var EventsPage_default2 = EventsPage_default;
 
-  // sfc-script:/home/nigel/school-bench/apps/localization_hub/localization_hub/public/js/dashboard/pages/EmergencyPage.vue?type=script
-  var EmergencyPage_default = {
-    name: "DataPage"
+  // sfc-script:/home/nigel/school-bench/apps/localization_hub/localization_hub/public/js/dashboard/pages/ReportsPage.vue?type=script
+  var ReportsPage_default = {
+    name: "ReportsPage",
+    emits: ["view-report"],
+    data() {
+      return {
+        reports: [],
+        loading: true
+      };
+    },
+    computed: {
+      groupedReports() {
+        const groups = {};
+        this.reports.forEach((report) => {
+          const monthYear = this.formatMonthYear(report.date);
+          if (!groups[monthYear]) {
+            groups[monthYear] = [];
+          }
+          groups[monthYear].push(report);
+        });
+        Object.keys(groups).forEach((key) => {
+          groups[key].sort((a, b) => new Date(b.date) - new Date(a.date));
+        });
+        return groups;
+      }
+    },
+    mounted() {
+      this.fetchReports();
+    },
+    methods: {
+      fetchReports() {
+        this.loading = true;
+        if (!window.frappe) {
+          console.error("Frappe not available");
+          this.loading = false;
+          this.reports = [
+            {
+              name: "1",
+              title: "FDA Grants Priority Review for HYMPAVZI\xAE (marstacimab) sBLA for the Treatment of Two Hemophilia A or B Patient Populations",
+              programme: "Prescription Medicines",
+              date: "2026-02-06",
+              written_by: "John Doe",
+              approved_by: "Jane Smith"
+            },
+            {
+              name: "2",
+              title: "Pfizer Launches Cost Savings Program on TrumpRx Lowering Drug Costs for Millions of Americans",
+              programme: "Corporate",
+              date: "2026-02-05",
+              written_by: "Alice Johnson",
+              approved_by: "Bob Wilson"
+            }
+          ];
+          return;
+        }
+        frappe.call({
+          method: "frappe.client.get_list",
+          args: {
+            doctype: "Reports",
+            fields: [
+              "name",
+              "title",
+              "programme",
+              "date",
+              "written_by",
+              "approved_by"
+            ],
+            order_by: "date desc",
+            limit_page_length: 100
+          },
+          callback: (response) => {
+            if (response.message) {
+              this.reports = response.message;
+            }
+            this.loading = false;
+          },
+          error: (error) => {
+            console.error("Error fetching reports:", error);
+            this.loading = false;
+          }
+        });
+      },
+      formatMonthYear(dateString) {
+        if (!dateString)
+          return "";
+        const date = new Date(dateString);
+        const options = { month: "long", year: "numeric" };
+        return date.toLocaleDateString("en-US", options);
+      },
+      formatDay(dateString) {
+        if (!dateString)
+          return "";
+        const date = new Date(dateString);
+        return date.toLocaleDateString("en-US", {
+          day: "2-digit",
+          month: "2-digit",
+          year: "numeric"
+        });
+      },
+      createReport() {
+        if (window.frappe) {
+          frappe.set_route("Form", "Reports", "new-reports-1");
+        }
+      },
+      viewReport(report) {
+        this.$emit("view-report", report.name);
+      }
+    }
   };
 
-  // sfc-template:/home/nigel/school-bench/apps/localization_hub/localization_hub/public/js/dashboard/pages/EmergencyPage.vue?type=template
-  var _hoisted_117 = { class: "page-container" };
-  var _hoisted_216 = /* @__PURE__ */ createStaticVNode('<div class="page-content" data-v-94cab38f><h2 class="page-title" data-v-94cab38f>Data</h2><div class="empty-state" data-v-94cab38f><div class="empty-icon" data-v-94cab38f>\u{1F4BC}</div><p class="empty-text" data-v-94cab38f>No data available</p><p class="empty-subtext" data-v-94cab38f>Check back later</p></div></div>', 1);
-  var _hoisted_315 = [
-    _hoisted_216
+  // sfc-template:/home/nigel/school-bench/apps/localization_hub/localization_hub/public/js/dashboard/pages/ReportsPage.vue?type=template
+  var _withScopeId5 = (n) => (pushScopeId("data-v-1544f3b6"), n = n(), popScopeId(), n);
+  var _hoisted_117 = { class: "reports-container" };
+  var _hoisted_216 = { class: "reports-content" };
+  var _hoisted_315 = { class: "page-header" };
+  var _hoisted_49 = /* @__PURE__ */ _withScopeId5(() => /* @__PURE__ */ createBaseVNode("h1", { class: "page-title" }, "Reports", -1));
+  var _hoisted_55 = /* @__PURE__ */ _withScopeId5(() => /* @__PURE__ */ createBaseVNode("span", { class: "btn-icon" }, "+", -1));
+  var _hoisted_65 = /* @__PURE__ */ _withScopeId5(() => /* @__PURE__ */ createBaseVNode("span", { class: "btn-text" }, "Create a Report", -1));
+  var _hoisted_75 = [
+    _hoisted_55,
+    _hoisted_65
   ];
+  var _hoisted_85 = {
+    key: 0,
+    class: "loading-container"
+  };
+  var _hoisted_95 = /* @__PURE__ */ _withScopeId5(() => /* @__PURE__ */ createBaseVNode("div", { class: "spinner" }, null, -1));
+  var _hoisted_105 = /* @__PURE__ */ _withScopeId5(() => /* @__PURE__ */ createBaseVNode("p", { class: "loading-text" }, "Loading reports...", -1));
+  var _hoisted_118 = [
+    _hoisted_95,
+    _hoisted_105
+  ];
+  var _hoisted_125 = { class: "reports-timeline" };
+  var _hoisted_135 = { class: "month-header" };
+  var _hoisted_145 = { class: "month-title" };
+  var _hoisted_155 = { class: "month-reports" };
+  var _hoisted_165 = ["onClick"];
+  var _hoisted_175 = { class: "report-date" };
+  var _hoisted_185 = { class: "report-content" };
+  var _hoisted_195 = { class: "report-title" };
+  var _hoisted_204 = { class: "report-tags" };
+  var _hoisted_217 = {
+    key: 0,
+    class: "tag"
+  };
+  var _hoisted_224 = /* @__PURE__ */ _withScopeId5(() => /* @__PURE__ */ createBaseVNode("div", { class: "empty-state" }, [
+    /* @__PURE__ */ createBaseVNode("div", { class: "empty-icon" }, "\u{1F4CA}"),
+    /* @__PURE__ */ createBaseVNode("p", { class: "empty-text" }, "No reports yet"),
+    /* @__PURE__ */ createBaseVNode("p", { class: "empty-subtext" }, 'Click "Create a Report" to get started')
+  ], -1));
   function render6(_ctx, _cache, $props, $setup, $data, $options) {
-    return openBlock(), createElementBlock("div", _hoisted_117, [..._hoisted_315]);
+    return openBlock(), createElementBlock("div", _hoisted_117, [
+      createBaseVNode("div", _hoisted_216, [
+        createCommentVNode(" Page Header "),
+        createBaseVNode("div", _hoisted_315, [
+          _hoisted_49,
+          createBaseVNode("button", {
+            class: "create-btn",
+            onClick: _cache[0] || (_cache[0] = (...args) => $options.createReport && $options.createReport(...args))
+          }, [..._hoisted_75])
+        ]),
+        createCommentVNode(" Loading State "),
+        $data.loading ? (openBlock(), createElementBlock("div", _hoisted_85, [..._hoisted_118])) : $options.groupedReports && Object.keys($options.groupedReports).length > 0 ? (openBlock(), createElementBlock(Fragment, { key: 1 }, [
+          createCommentVNode(" Reports Timeline "),
+          createBaseVNode("div", _hoisted_125, [
+            (openBlock(true), createElementBlock(Fragment, null, renderList($options.groupedReports, (reports, monthYear) => {
+              return openBlock(), createElementBlock("div", {
+                key: monthYear,
+                class: "timeline-group"
+              }, [
+                createCommentVNode(" Month Header "),
+                createBaseVNode("div", _hoisted_135, [
+                  createBaseVNode("h2", _hoisted_145, toDisplayString(monthYear), 1)
+                ]),
+                createCommentVNode(" Reports in this month "),
+                createBaseVNode("div", _hoisted_155, [
+                  (openBlock(true), createElementBlock(Fragment, null, renderList(reports, (report) => {
+                    return openBlock(), createElementBlock("div", {
+                      key: report.name,
+                      class: "report-item",
+                      onClick: ($event) => $options.viewReport(report)
+                    }, [
+                      createCommentVNode(" Date Badge "),
+                      createBaseVNode("div", _hoisted_175, toDisplayString($options.formatDay(report.date)), 1),
+                      createCommentVNode(" Report Content "),
+                      createBaseVNode("div", _hoisted_185, [
+                        createBaseVNode("h3", _hoisted_195, toDisplayString(report.title), 1),
+                        createCommentVNode(" Tags/Categories "),
+                        createBaseVNode("div", _hoisted_204, [
+                          report.programme ? (openBlock(), createElementBlock("span", _hoisted_217, toDisplayString(report.programme), 1)) : createCommentVNode("v-if", true)
+                        ])
+                      ])
+                    ], 8, _hoisted_165);
+                  }), 128))
+                ])
+              ]);
+            }), 128))
+          ])
+        ], 2112)) : (openBlock(), createElementBlock(Fragment, { key: 2 }, [
+          createCommentVNode(" Empty State "),
+          _hoisted_224
+        ], 2112))
+      ])
+    ]);
   }
 
-  // ../localization_hub/localization_hub/public/js/dashboard/pages/EmergencyPage.vue
-  EmergencyPage_default.render = render6;
-  EmergencyPage_default.__file = "../localization_hub/localization_hub/public/js/dashboard/pages/EmergencyPage.vue";
-  EmergencyPage_default.__scopeId = "data-v-94cab38f";
-  var EmergencyPage_default2 = EmergencyPage_default;
+  // ../localization_hub/localization_hub/public/js/dashboard/pages/ReportsPage.vue
+  ReportsPage_default.render = render6;
+  ReportsPage_default.__file = "../localization_hub/localization_hub/public/js/dashboard/pages/ReportsPage.vue";
+  ReportsPage_default.__scopeId = "data-v-1544f3b6";
+  var ReportsPage_default2 = ReportsPage_default;
+
+  // sfc-script:/home/nigel/school-bench/apps/localization_hub/localization_hub/public/js/dashboard/pages/ReportView.vue?type=script
+  var ReportView_default = {
+    name: "ReportView",
+    props: {
+      reportId: {
+        type: String,
+        required: true
+      }
+    },
+    emits: ["back"],
+    data() {
+      return {
+        report: null,
+        loading: true
+      };
+    },
+    watch: {
+      reportId: {
+        immediate: true,
+        handler(newId) {
+          if (newId) {
+            this.fetchReport();
+          }
+        }
+      }
+    },
+    methods: {
+      fetchReport() {
+        this.loading = true;
+        if (!window.frappe || !this.reportId) {
+          console.error("Frappe not available or no report ID");
+          this.loading = false;
+          return;
+        }
+        frappe.call({
+          method: "frappe.client.get",
+          args: {
+            doctype: "Reports",
+            name: this.reportId
+          },
+          callback: (response) => {
+            if (response.message) {
+              this.report = response.message;
+            }
+            this.loading = false;
+          },
+          error: (error) => {
+            console.error("Error fetching report:", error);
+            this.loading = false;
+          }
+        });
+      },
+      formatDate(dateString) {
+        if (!dateString)
+          return "";
+        const date = new Date(dateString);
+        const options = { day: "numeric", month: "long", year: "numeric" };
+        return date.toLocaleDateString("en-US", options);
+      },
+      goBack() {
+        this.$emit("back");
+      }
+    }
+  };
+
+  // sfc-template:/home/nigel/school-bench/apps/localization_hub/localization_hub/public/js/dashboard/pages/ReportView.vue?type=template
+  var _withScopeId6 = (n) => (pushScopeId("data-v-0906f9af"), n = n(), popScopeId(), n);
+  var _hoisted_119 = { class: "report-view-container" };
+  var _hoisted_218 = { class: "report-view-content" };
+  var _hoisted_316 = {
+    key: 0,
+    class: "loading-container"
+  };
+  var _hoisted_410 = /* @__PURE__ */ _withScopeId6(() => /* @__PURE__ */ createBaseVNode("div", { class: "spinner" }, null, -1));
+  var _hoisted_56 = /* @__PURE__ */ _withScopeId6(() => /* @__PURE__ */ createBaseVNode("p", { class: "loading-text" }, "Loading report...", -1));
+  var _hoisted_66 = [
+    _hoisted_410,
+    _hoisted_56
+  ];
+  var _hoisted_76 = { class: "report-document" };
+  var _hoisted_86 = /* @__PURE__ */ _withScopeId6(() => /* @__PURE__ */ createBaseVNode("span", { class: "back-icon" }, "\u2190", -1));
+  var _hoisted_96 = /* @__PURE__ */ _withScopeId6(() => /* @__PURE__ */ createBaseVNode("span", null, "Back to Reports", -1));
+  var _hoisted_106 = [
+    _hoisted_86,
+    _hoisted_96
+  ];
+  var _hoisted_1110 = { class: "report-header" };
+  var _hoisted_126 = { class: "report-meta" };
+  var _hoisted_136 = { class: "report-date" };
+  var _hoisted_146 = {
+    key: 0,
+    class: "report-programme"
+  };
+  var _hoisted_156 = { class: "report-title" };
+  var _hoisted_166 = { class: "report-authors" };
+  var _hoisted_176 = {
+    key: 0,
+    class: "author-item"
+  };
+  var _hoisted_186 = /* @__PURE__ */ _withScopeId6(() => /* @__PURE__ */ createBaseVNode("span", { class: "author-label" }, "Written by:", -1));
+  var _hoisted_196 = { class: "author-name" };
+  var _hoisted_205 = {
+    key: 1,
+    class: "author-item"
+  };
+  var _hoisted_219 = /* @__PURE__ */ _withScopeId6(() => /* @__PURE__ */ createBaseVNode("span", { class: "author-label" }, "Accompanied by:", -1));
+  var _hoisted_225 = { class: "author-name" };
+  var _hoisted_234 = { class: "report-body" };
+  var _hoisted_244 = {
+    key: 0,
+    class: "report-section"
+  };
+  var _hoisted_253 = /* @__PURE__ */ _withScopeId6(() => /* @__PURE__ */ createBaseVNode("h2", { class: "section-title" }, "Background", -1));
+  var _hoisted_263 = ["innerHTML"];
+  var _hoisted_273 = {
+    key: 1,
+    class: "report-section"
+  };
+  var _hoisted_283 = /* @__PURE__ */ _withScopeId6(() => /* @__PURE__ */ createBaseVNode("h2", { class: "section-title" }, "Objectives", -1));
+  var _hoisted_293 = ["innerHTML"];
+  var _hoisted_303 = {
+    key: 2,
+    class: "report-section"
+  };
+  var _hoisted_317 = /* @__PURE__ */ _withScopeId6(() => /* @__PURE__ */ createBaseVNode("h2", { class: "section-title" }, "Findings", -1));
+  var _hoisted_323 = ["innerHTML"];
+  var _hoisted_333 = {
+    key: 3,
+    class: "report-section"
+  };
+  var _hoisted_343 = /* @__PURE__ */ _withScopeId6(() => /* @__PURE__ */ createBaseVNode("h2", { class: "section-title" }, "Challenges & Resolutions", -1));
+  var _hoisted_353 = ["innerHTML"];
+  var _hoisted_363 = { class: "report-footer" };
+  var _hoisted_373 = {
+    key: 0,
+    class: "approval"
+  };
+  var _hoisted_383 = /* @__PURE__ */ _withScopeId6(() => /* @__PURE__ */ createBaseVNode("span", { class: "approval-label" }, "Approved by:", -1));
+  var _hoisted_393 = { class: "approval-name" };
+  var _hoisted_403 = { class: "error-state" };
+  var _hoisted_412 = /* @__PURE__ */ _withScopeId6(() => /* @__PURE__ */ createBaseVNode("div", { class: "error-icon" }, "\u26A0\uFE0F", -1));
+  var _hoisted_423 = /* @__PURE__ */ _withScopeId6(() => /* @__PURE__ */ createBaseVNode("p", { class: "error-text" }, "Report not found", -1));
+  var _hoisted_433 = /* @__PURE__ */ _withScopeId6(() => /* @__PURE__ */ createBaseVNode("span", { class: "back-icon" }, "\u2190", -1));
+  var _hoisted_442 = /* @__PURE__ */ _withScopeId6(() => /* @__PURE__ */ createBaseVNode("span", null, "Back to Reports", -1));
+  var _hoisted_452 = [
+    _hoisted_433,
+    _hoisted_442
+  ];
+  function render7(_ctx, _cache, $props, $setup, $data, $options) {
+    return openBlock(), createElementBlock("div", _hoisted_119, [
+      createBaseVNode("div", _hoisted_218, [
+        createCommentVNode(" Loading State "),
+        $data.loading ? (openBlock(), createElementBlock("div", _hoisted_316, [..._hoisted_66])) : $data.report ? (openBlock(), createElementBlock(Fragment, { key: 1 }, [
+          createCommentVNode(" Report Content "),
+          createBaseVNode("div", _hoisted_76, [
+            createCommentVNode(" Back Button "),
+            createBaseVNode("button", {
+              class: "back-btn",
+              onClick: _cache[0] || (_cache[0] = (...args) => $options.goBack && $options.goBack(...args))
+            }, [..._hoisted_106]),
+            createCommentVNode(" Report Header "),
+            createBaseVNode("header", _hoisted_1110, [
+              createBaseVNode("div", _hoisted_126, [
+                createBaseVNode("span", _hoisted_136, toDisplayString($options.formatDate($data.report.date)), 1),
+                $data.report.programme ? (openBlock(), createElementBlock("span", _hoisted_146, toDisplayString($data.report.programme), 1)) : createCommentVNode("v-if", true)
+              ]),
+              createBaseVNode("h1", _hoisted_156, toDisplayString($data.report.title), 1),
+              createBaseVNode("div", _hoisted_166, [
+                $data.report.written_by ? (openBlock(), createElementBlock("div", _hoisted_176, [
+                  _hoisted_186,
+                  createBaseVNode("span", _hoisted_196, toDisplayString($data.report.written_by), 1)
+                ])) : createCommentVNode("v-if", true),
+                $data.report.accompanied_by ? (openBlock(), createElementBlock("div", _hoisted_205, [
+                  _hoisted_219,
+                  createBaseVNode("span", _hoisted_225, toDisplayString($data.report.accompanied_by), 1)
+                ])) : createCommentVNode("v-if", true)
+              ])
+            ]),
+            createCommentVNode(" Report Sections "),
+            createBaseVNode("div", _hoisted_234, [
+              createCommentVNode(" Background "),
+              $data.report.background ? (openBlock(), createElementBlock("section", _hoisted_244, [
+                _hoisted_253,
+                createBaseVNode("div", {
+                  class: "section-content",
+                  innerHTML: $data.report.background
+                }, null, 8, _hoisted_263)
+              ])) : createCommentVNode("v-if", true),
+              createCommentVNode(" Objectives "),
+              $data.report.objectives ? (openBlock(), createElementBlock("section", _hoisted_273, [
+                _hoisted_283,
+                createBaseVNode("div", {
+                  class: "section-content",
+                  innerHTML: $data.report.objectives
+                }, null, 8, _hoisted_293)
+              ])) : createCommentVNode("v-if", true),
+              createCommentVNode(" Findings "),
+              $data.report.findings ? (openBlock(), createElementBlock("section", _hoisted_303, [
+                _hoisted_317,
+                createBaseVNode("div", {
+                  class: "section-content",
+                  innerHTML: $data.report.findings
+                }, null, 8, _hoisted_323)
+              ])) : createCommentVNode("v-if", true),
+              createCommentVNode(" Challenges & Resolutions "),
+              $data.report.challenges_resolutions ? (openBlock(), createElementBlock("section", _hoisted_333, [
+                _hoisted_343,
+                createBaseVNode("div", {
+                  class: "section-content",
+                  innerHTML: $data.report.challenges_resolutions
+                }, null, 8, _hoisted_353)
+              ])) : createCommentVNode("v-if", true)
+            ]),
+            createCommentVNode(" Report Footer "),
+            createBaseVNode("footer", _hoisted_363, [
+              $data.report.approved_by ? (openBlock(), createElementBlock("div", _hoisted_373, [
+                _hoisted_383,
+                createBaseVNode("span", _hoisted_393, toDisplayString($data.report.approved_by), 1)
+              ])) : createCommentVNode("v-if", true)
+            ])
+          ])
+        ], 2112)) : (openBlock(), createElementBlock(Fragment, { key: 2 }, [
+          createCommentVNode(" Error State "),
+          createBaseVNode("div", _hoisted_403, [
+            _hoisted_412,
+            _hoisted_423,
+            createBaseVNode("button", {
+              class: "back-btn",
+              onClick: _cache[1] || (_cache[1] = (...args) => $options.goBack && $options.goBack(...args))
+            }, [..._hoisted_452])
+          ])
+        ], 2112))
+      ])
+    ]);
+  }
+
+  // ../localization_hub/localization_hub/public/js/dashboard/pages/ReportView.vue
+  ReportView_default.render = render7;
+  ReportView_default.__file = "../localization_hub/localization_hub/public/js/dashboard/pages/ReportView.vue";
+  ReportView_default.__scopeId = "data-v-0906f9af";
+  var ReportView_default2 = ReportView_default;
 
   // sfc-script:/home/nigel/school-bench/apps/localization_hub/localization_hub/public/js/dashboard/App.vue?type=script
   var App_default = {
@@ -9378,11 +9811,13 @@ Expected function or array of functions, received type ${typeof value}.`
       DataPage: DataPage_default2,
       PublicationPage: PublicationPage_default2,
       EventsPage: EventsPage_default2,
-      EmergencyPage: EmergencyPage_default2
+      ReportsPage: ReportsPage_default2,
+      ReportView: ReportView_default2
     },
     data() {
       return {
         currentPage: "dashboard",
+        selectedReportId: null,
         userName: "User",
         userEmail: "user@example.com",
         showDropdown: false,
@@ -9433,10 +9868,19 @@ Expected function or array of functions, received type ${typeof value}.`
           "data": "Data",
           "publication": "Publication",
           "events": "Events",
-          "emergency": "Emergency",
+          "reports": "Reports",
+          "report-view": "Report Details",
           "profile": "Profile"
         };
         return titles[this.currentPage] || "Dashboard";
+      },
+      viewReportDetail(reportId) {
+        this.selectedReportId = reportId;
+        this.currentPage = "report-view";
+      },
+      backToReports() {
+        this.currentPage = "reports";
+        this.selectedReportId = null;
       },
       changeLanguage(lang) {
         if (lang.code === this.currentLanguage.code) {
@@ -9498,86 +9942,86 @@ Expected function or array of functions, received type ${typeof value}.`
   };
 
   // sfc-template:/home/nigel/school-bench/apps/localization_hub/localization_hub/public/js/dashboard/App.vue?type=template
-  var _withScopeId5 = (n) => (pushScopeId("data-v-a088781b"), n = n(), popScopeId(), n);
-  var _hoisted_118 = { class: "dashboard-container" };
-  var _hoisted_217 = {
+  var _withScopeId7 = (n) => (pushScopeId("data-v-a088781b"), n = n(), popScopeId(), n);
+  var _hoisted_120 = { class: "dashboard-container" };
+  var _hoisted_220 = {
     style: { "display": "none" },
     xmlns: "http://www.w3.org/2000/svg"
   };
-  var _hoisted_316 = /* @__PURE__ */ createStaticVNode('<symbol id="icon-grid" viewBox="0 0 24 24" data-v-a088781b><rect x="3" y="3" width="7" height="7" data-v-a088781b></rect><rect x="14" y="3" width="7" height="7" data-v-a088781b></rect><rect x="14" y="14" width="7" height="7" data-v-a088781b></rect><rect x="3" y="14" width="7" height="7" data-v-a088781b></rect></symbol><symbol id="icon-database" viewBox="0 0 24 24" data-v-a088781b><ellipse cx="12" cy="5" rx="9" ry="3" data-v-a088781b></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" data-v-a088781b></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" data-v-a088781b></path></symbol><symbol id="icon-file-text" viewBox="0 0 24 24" data-v-a088781b><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" data-v-a088781b></path><polyline points="14 2 14 8 20 8" data-v-a088781b></polyline><line x1="16" y1="13" x2="8" y2="13" data-v-a088781b></line><line x1="16" y1="17" x2="8" y2="17" data-v-a088781b></line><polyline points="10 9 9 9 8 9" data-v-a088781b></polyline></symbol><symbol id="icon-calendar" viewBox="0 0 24 24" data-v-a088781b><rect x="3" y="4" width="18" height="18" rx="2" ry="2" data-v-a088781b></rect><line x1="16" y1="2" x2="16" y2="6" data-v-a088781b></line><line x1="8" y1="2" x2="8" y2="6" data-v-a088781b></line><line x1="3" y1="10" x2="21" y2="10" data-v-a088781b></line></symbol><symbol id="icon-alert-circle" viewBox="0 0 24 24" data-v-a088781b><circle cx="12" cy="12" r="10" data-v-a088781b></circle><line x1="12" y1="8" x2="12" y2="12" data-v-a088781b></line><line x1="12" y1="16" x2="12.01" y2="16" data-v-a088781b></line></symbol><symbol id="icon-message-square" viewBox="0 0 24 24" data-v-a088781b><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" data-v-a088781b></path></symbol><symbol id="icon-book-open" viewBox="0 0 24 24" data-v-a088781b><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" data-v-a088781b></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" data-v-a088781b></path></symbol><symbol id="icon-home" viewBox="0 0 24 24" data-v-a088781b><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" data-v-a088781b></path><polyline points="9 22 9 12 15 12 15 22" data-v-a088781b></polyline></symbol><symbol id="icon-help-circle" viewBox="0 0 24 24" data-v-a088781b><circle cx="12" cy="12" r="10" data-v-a088781b></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" data-v-a088781b></path><line x1="12" y1="17" x2="12.01" y2="17" data-v-a088781b></line></symbol><symbol id="icon-user" viewBox="0 0 24 24" data-v-a088781b><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" data-v-a088781b></path><circle cx="12" cy="7" r="4" data-v-a088781b></circle></symbol><symbol id="icon-log-out" viewBox="0 0 24 24" data-v-a088781b><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" data-v-a088781b></path><polyline points="16 17 21 12 16 7" data-v-a088781b></polyline><line x1="21" y1="12" x2="9" y2="12" data-v-a088781b></line></symbol><symbol id="icon-globe" viewBox="0 0 24 24" data-v-a088781b><circle cx="12" cy="12" r="10" data-v-a088781b></circle><line x1="2" y1="12" x2="22" y2="12" data-v-a088781b></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" data-v-a088781b></path></symbol>', 12);
-  var _hoisted_155 = [
-    _hoisted_316
+  var _hoisted_318 = /* @__PURE__ */ createStaticVNode('<symbol id="icon-grid" viewBox="0 0 24 24" data-v-a088781b><rect x="3" y="3" width="7" height="7" data-v-a088781b></rect><rect x="14" y="3" width="7" height="7" data-v-a088781b></rect><rect x="14" y="14" width="7" height="7" data-v-a088781b></rect><rect x="3" y="14" width="7" height="7" data-v-a088781b></rect></symbol><symbol id="icon-database" viewBox="0 0 24 24" data-v-a088781b><ellipse cx="12" cy="5" rx="9" ry="3" data-v-a088781b></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" data-v-a088781b></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" data-v-a088781b></path></symbol><symbol id="icon-file-text" viewBox="0 0 24 24" data-v-a088781b><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" data-v-a088781b></path><polyline points="14 2 14 8 20 8" data-v-a088781b></polyline><line x1="16" y1="13" x2="8" y2="13" data-v-a088781b></line><line x1="16" y1="17" x2="8" y2="17" data-v-a088781b></line><polyline points="10 9 9 9 8 9" data-v-a088781b></polyline></symbol><symbol id="icon-calendar" viewBox="0 0 24 24" data-v-a088781b><rect x="3" y="4" width="18" height="18" rx="2" ry="2" data-v-a088781b></rect><line x1="16" y1="2" x2="16" y2="6" data-v-a088781b></line><line x1="8" y1="2" x2="8" y2="6" data-v-a088781b></line><line x1="3" y1="10" x2="21" y2="10" data-v-a088781b></line></symbol><symbol id="icon-alert-circle" viewBox="0 0 24 24" data-v-a088781b><circle cx="12" cy="12" r="10" data-v-a088781b></circle><line x1="12" y1="8" x2="12" y2="12" data-v-a088781b></line><line x1="12" y1="16" x2="12.01" y2="16" data-v-a088781b></line></symbol><symbol id="icon-message-square" viewBox="0 0 24 24" data-v-a088781b><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" data-v-a088781b></path></symbol><symbol id="icon-book-open" viewBox="0 0 24 24" data-v-a088781b><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" data-v-a088781b></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" data-v-a088781b></path></symbol><symbol id="icon-home" viewBox="0 0 24 24" data-v-a088781b><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" data-v-a088781b></path><polyline points="9 22 9 12 15 12 15 22" data-v-a088781b></polyline></symbol><symbol id="icon-help-circle" viewBox="0 0 24 24" data-v-a088781b><circle cx="12" cy="12" r="10" data-v-a088781b></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" data-v-a088781b></path><line x1="12" y1="17" x2="12.01" y2="17" data-v-a088781b></line></symbol><symbol id="icon-user" viewBox="0 0 24 24" data-v-a088781b><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" data-v-a088781b></path><circle cx="12" cy="7" r="4" data-v-a088781b></circle></symbol><symbol id="icon-log-out" viewBox="0 0 24 24" data-v-a088781b><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" data-v-a088781b></path><polyline points="16 17 21 12 16 7" data-v-a088781b></polyline><line x1="21" y1="12" x2="9" y2="12" data-v-a088781b></line></symbol><symbol id="icon-globe" viewBox="0 0 24 24" data-v-a088781b><circle cx="12" cy="12" r="10" data-v-a088781b></circle><line x1="2" y1="12" x2="22" y2="12" data-v-a088781b></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" data-v-a088781b></path></symbol>', 12);
+  var _hoisted_157 = [
+    _hoisted_318
   ];
-  var _hoisted_165 = { class: "sidebar" };
-  var _hoisted_175 = { class: "sidebar-header-container" };
-  var _hoisted_185 = { class: "header-content" };
-  var _hoisted_195 = /* @__PURE__ */ _withScopeId5(() => /* @__PURE__ */ createBaseVNode("div", { class: "app-logo" }, "\u{1F30D}", -1));
-  var _hoisted_204 = { class: "header-text" };
-  var _hoisted_218 = { class: "app-name" };
-  var _hoisted_224 = { class: "user-info" };
-  var _hoisted_234 = { class: "dropdown-icon" };
-  var _hoisted_244 = {
+  var _hoisted_167 = { class: "sidebar" };
+  var _hoisted_177 = { class: "sidebar-header-container" };
+  var _hoisted_187 = { class: "header-content" };
+  var _hoisted_197 = /* @__PURE__ */ _withScopeId7(() => /* @__PURE__ */ createBaseVNode("div", { class: "app-logo" }, "\u{1F30D}", -1));
+  var _hoisted_206 = { class: "header-text" };
+  var _hoisted_2110 = { class: "app-name" };
+  var _hoisted_226 = { class: "user-info" };
+  var _hoisted_235 = { class: "dropdown-icon" };
+  var _hoisted_245 = {
     key: 0,
     class: "dropdown-menu"
   };
-  var _hoisted_253 = /* @__PURE__ */ _withScopeId5(() => /* @__PURE__ */ createBaseVNode("svg", { class: "dropdown-icon-item" }, [
+  var _hoisted_254 = /* @__PURE__ */ _withScopeId7(() => /* @__PURE__ */ createBaseVNode("svg", { class: "dropdown-icon-item" }, [
     /* @__PURE__ */ createBaseVNode("use", { href: "#icon-user" })
   ], -1));
-  var _hoisted_263 = /* @__PURE__ */ _withScopeId5(() => /* @__PURE__ */ createBaseVNode("div", { class: "dropdown-divider" }, null, -1));
-  var _hoisted_273 = /* @__PURE__ */ _withScopeId5(() => /* @__PURE__ */ createBaseVNode("svg", { class: "dropdown-icon-item" }, [
+  var _hoisted_264 = /* @__PURE__ */ _withScopeId7(() => /* @__PURE__ */ createBaseVNode("div", { class: "dropdown-divider" }, null, -1));
+  var _hoisted_274 = /* @__PURE__ */ _withScopeId7(() => /* @__PURE__ */ createBaseVNode("svg", { class: "dropdown-icon-item" }, [
     /* @__PURE__ */ createBaseVNode("use", { href: "#icon-log-out" })
   ], -1));
-  var _hoisted_283 = { class: "sidebar-menu" };
-  var _hoisted_293 = /* @__PURE__ */ _withScopeId5(() => /* @__PURE__ */ createBaseVNode("svg", { class: "sidebar-icon" }, [
+  var _hoisted_284 = { class: "sidebar-menu" };
+  var _hoisted_294 = /* @__PURE__ */ _withScopeId7(() => /* @__PURE__ */ createBaseVNode("svg", { class: "sidebar-icon" }, [
     /* @__PURE__ */ createBaseVNode("use", { href: "#icon-grid" })
   ], -1));
-  var _hoisted_303 = { class: "sidebar-label" };
-  var _hoisted_317 = /* @__PURE__ */ _withScopeId5(() => /* @__PURE__ */ createBaseVNode("svg", { class: "sidebar-icon" }, [
+  var _hoisted_304 = { class: "sidebar-label" };
+  var _hoisted_319 = /* @__PURE__ */ _withScopeId7(() => /* @__PURE__ */ createBaseVNode("svg", { class: "sidebar-icon" }, [
     /* @__PURE__ */ createBaseVNode("use", { href: "#icon-database" })
   ], -1));
-  var _hoisted_323 = { class: "sidebar-label" };
-  var _hoisted_333 = /* @__PURE__ */ _withScopeId5(() => /* @__PURE__ */ createBaseVNode("svg", { class: "sidebar-icon" }, [
+  var _hoisted_324 = { class: "sidebar-label" };
+  var _hoisted_334 = /* @__PURE__ */ _withScopeId7(() => /* @__PURE__ */ createBaseVNode("svg", { class: "sidebar-icon" }, [
     /* @__PURE__ */ createBaseVNode("use", { href: "#icon-file-text" })
   ], -1));
-  var _hoisted_343 = { class: "sidebar-label" };
-  var _hoisted_353 = /* @__PURE__ */ _withScopeId5(() => /* @__PURE__ */ createBaseVNode("svg", { class: "sidebar-icon" }, [
+  var _hoisted_344 = { class: "sidebar-label" };
+  var _hoisted_354 = /* @__PURE__ */ _withScopeId7(() => /* @__PURE__ */ createBaseVNode("svg", { class: "sidebar-icon" }, [
     /* @__PURE__ */ createBaseVNode("use", { href: "#icon-calendar" })
   ], -1));
-  var _hoisted_363 = { class: "sidebar-label" };
-  var _hoisted_373 = /* @__PURE__ */ _withScopeId5(() => /* @__PURE__ */ createBaseVNode("svg", { class: "sidebar-icon" }, [
+  var _hoisted_364 = { class: "sidebar-label" };
+  var _hoisted_374 = /* @__PURE__ */ _withScopeId7(() => /* @__PURE__ */ createBaseVNode("svg", { class: "sidebar-icon" }, [
     /* @__PURE__ */ createBaseVNode("use", { href: "#icon-alert-circle" })
   ], -1));
-  var _hoisted_383 = { class: "sidebar-label" };
-  var _hoisted_393 = /* @__PURE__ */ _withScopeId5(() => /* @__PURE__ */ createBaseVNode("div", { class: "sidebar-divider" }, null, -1));
-  var _hoisted_403 = {
+  var _hoisted_384 = { class: "sidebar-label" };
+  var _hoisted_394 = /* @__PURE__ */ _withScopeId7(() => /* @__PURE__ */ createBaseVNode("div", { class: "sidebar-divider" }, null, -1));
+  var _hoisted_404 = {
     href: "/raven",
     class: "sidebar-item"
   };
-  var _hoisted_412 = /* @__PURE__ */ _withScopeId5(() => /* @__PURE__ */ createBaseVNode("svg", { class: "sidebar-icon" }, [
+  var _hoisted_413 = /* @__PURE__ */ _withScopeId7(() => /* @__PURE__ */ createBaseVNode("svg", { class: "sidebar-icon" }, [
     /* @__PURE__ */ createBaseVNode("use", { href: "#icon-message-square" })
   ], -1));
-  var _hoisted_423 = { class: "sidebar-label" };
-  var _hoisted_433 = {
+  var _hoisted_424 = { class: "sidebar-label" };
+  var _hoisted_434 = {
     href: "/lms",
     class: "sidebar-item"
   };
-  var _hoisted_442 = /* @__PURE__ */ _withScopeId5(() => /* @__PURE__ */ createBaseVNode("svg", { class: "sidebar-icon" }, [
+  var _hoisted_443 = /* @__PURE__ */ _withScopeId7(() => /* @__PURE__ */ createBaseVNode("svg", { class: "sidebar-icon" }, [
     /* @__PURE__ */ createBaseVNode("use", { href: "#icon-book-open" })
   ], -1));
-  var _hoisted_452 = { class: "sidebar-label" };
+  var _hoisted_453 = { class: "sidebar-label" };
   var _hoisted_462 = {
     href: "/app",
     class: "sidebar-item"
   };
-  var _hoisted_472 = /* @__PURE__ */ _withScopeId5(() => /* @__PURE__ */ createBaseVNode("svg", { class: "sidebar-icon" }, [
+  var _hoisted_472 = /* @__PURE__ */ _withScopeId7(() => /* @__PURE__ */ createBaseVNode("svg", { class: "sidebar-icon" }, [
     /* @__PURE__ */ createBaseVNode("use", { href: "#icon-home" })
   ], -1));
   var _hoisted_482 = { class: "sidebar-label" };
-  var _hoisted_49 = {
+  var _hoisted_492 = {
     href: "#",
     class: "sidebar-item"
   };
-  var _hoisted_50 = /* @__PURE__ */ _withScopeId5(() => /* @__PURE__ */ createBaseVNode("svg", { class: "sidebar-icon" }, [
+  var _hoisted_50 = /* @__PURE__ */ _withScopeId7(() => /* @__PURE__ */ createBaseVNode("svg", { class: "sidebar-icon" }, [
     /* @__PURE__ */ createBaseVNode("use", { href: "#icon-help-circle" })
   ], -1));
   var _hoisted_51 = { class: "sidebar-label" };
@@ -9587,12 +10031,12 @@ Expected function or array of functions, received type ${typeof value}.`
     class: "welcome-banner"
   };
   var _hoisted_542 = { class: "user-name" };
-  var _hoisted_55 = { class: "language-toggle-wrapper" };
-  var _hoisted_56 = /* @__PURE__ */ _withScopeId5(() => /* @__PURE__ */ createBaseVNode("svg", { class: "lang-icon-svg" }, [
+  var _hoisted_552 = { class: "language-toggle-wrapper" };
+  var _hoisted_562 = /* @__PURE__ */ _withScopeId7(() => /* @__PURE__ */ createBaseVNode("svg", { class: "lang-icon-svg" }, [
     /* @__PURE__ */ createBaseVNode("use", { href: "#icon-globe" })
   ], -1));
   var _hoisted_57 = { class: "lang-text" };
-  var _hoisted_58 = /* @__PURE__ */ _withScopeId5(() => /* @__PURE__ */ createBaseVNode("path", {
+  var _hoisted_58 = /* @__PURE__ */ _withScopeId7(() => /* @__PURE__ */ createBaseVNode("path", {
     d: "M4 6L8 10L12 6",
     stroke: "currentColor",
     "stroke-width": "2",
@@ -9609,18 +10053,18 @@ Expected function or array of functions, received type ${typeof value}.`
   var _hoisted_622 = ["onClick"];
   var _hoisted_632 = { class: "lang-flag" };
   var _hoisted_642 = { class: "lang-name" };
-  var _hoisted_65 = {
+  var _hoisted_652 = {
     key: 0,
     class: "checkmark"
   };
-  var _hoisted_66 = { class: "page-title-bar" };
+  var _hoisted_662 = { class: "page-title-bar" };
   var _hoisted_67 = { class: "page-title" };
   var _hoisted_68 = { class: "language-toggle-wrapper" };
-  var _hoisted_69 = /* @__PURE__ */ _withScopeId5(() => /* @__PURE__ */ createBaseVNode("svg", { class: "lang-icon-svg" }, [
+  var _hoisted_69 = /* @__PURE__ */ _withScopeId7(() => /* @__PURE__ */ createBaseVNode("svg", { class: "lang-icon-svg" }, [
     /* @__PURE__ */ createBaseVNode("use", { href: "#icon-globe" })
   ], -1));
   var _hoisted_70 = { class: "lang-text" };
-  var _hoisted_71 = /* @__PURE__ */ _withScopeId5(() => /* @__PURE__ */ createBaseVNode("path", {
+  var _hoisted_71 = /* @__PURE__ */ _withScopeId7(() => /* @__PURE__ */ createBaseVNode("path", {
     d: "M4 6L8 10L12 6",
     stroke: "currentColor",
     "stroke-width": "2",
@@ -9634,40 +10078,41 @@ Expected function or array of functions, received type ${typeof value}.`
     class: "language-dropdown"
   };
   var _hoisted_742 = { class: "language-dropdown-header" };
-  var _hoisted_75 = ["onClick"];
-  var _hoisted_76 = { class: "lang-flag" };
+  var _hoisted_752 = ["onClick"];
+  var _hoisted_762 = { class: "lang-flag" };
   var _hoisted_77 = { class: "lang-name" };
   var _hoisted_78 = {
     key: 0,
     class: "checkmark"
   };
   var _hoisted_79 = { class: "content-area" };
-  function render7(_ctx, _cache, $props, $setup, $data, $options) {
+  function render8(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_DashboardPage = resolveComponent("DashboardPage");
     const _component_ProfilePage = resolveComponent("ProfilePage");
     const _component_DataPage = resolveComponent("DataPage");
     const _component_PublicationPage = resolveComponent("PublicationPage");
     const _component_EventsPage = resolveComponent("EventsPage");
-    const _component_EmergencyPage = resolveComponent("EmergencyPage");
-    return openBlock(), createElementBlock("div", _hoisted_118, [
+    const _component_ReportsPage = resolveComponent("ReportsPage");
+    const _component_ReportView = resolveComponent("ReportView");
+    return openBlock(), createElementBlock("div", _hoisted_120, [
       createCommentVNode(" SVG Icon Definitions "),
-      (openBlock(), createElementBlock("svg", _hoisted_217, [..._hoisted_155])),
+      (openBlock(), createElementBlock("svg", _hoisted_220, [..._hoisted_157])),
       createCommentVNode(" Sidebar "),
-      createBaseVNode("div", _hoisted_165, [
+      createBaseVNode("div", _hoisted_167, [
         createCommentVNode(" Sidebar Header with Dropdown "),
-        createBaseVNode("div", _hoisted_175, [
+        createBaseVNode("div", _hoisted_177, [
           createBaseVNode("div", {
             class: "sidebar-header",
             onClick: _cache[0] || (_cache[0] = (...args) => $options.toggleDropdown && $options.toggleDropdown(...args))
           }, [
-            createBaseVNode("div", _hoisted_185, [
-              _hoisted_195,
-              createBaseVNode("div", _hoisted_204, [
-                createBaseVNode("div", _hoisted_218, toDisplayString($options.__("LocalizationHub")), 1),
-                createBaseVNode("div", _hoisted_224, toDisplayString($data.userName), 1)
+            createBaseVNode("div", _hoisted_187, [
+              _hoisted_197,
+              createBaseVNode("div", _hoisted_206, [
+                createBaseVNode("div", _hoisted_2110, toDisplayString($options.__("LocalizationHub")), 1),
+                createBaseVNode("div", _hoisted_226, toDisplayString($data.userName), 1)
               ])
             ]),
-            createBaseVNode("div", _hoisted_234, [
+            createBaseVNode("div", _hoisted_235, [
               createBaseVNode("span", {
                 class: normalizeClass(["chevron", { open: $data.showDropdown }])
               }, "\u25BC", 2)
@@ -9676,22 +10121,22 @@ Expected function or array of functions, received type ${typeof value}.`
           createCommentVNode(" Dropdown Menu "),
           createVNode(Transition, { name: "dropdown" }, {
             default: withCtx(() => [
-              $data.showDropdown ? (openBlock(), createElementBlock("div", _hoisted_244, [
+              $data.showDropdown ? (openBlock(), createElementBlock("div", _hoisted_245, [
                 createBaseVNode("a", {
                   href: "#",
                   onClick: _cache[1] || (_cache[1] = withModifiers((...args) => $options.navigateToProfile && $options.navigateToProfile(...args), ["prevent"])),
                   class: "dropdown-item"
                 }, [
-                  _hoisted_253,
+                  _hoisted_254,
                   createBaseVNode("span", null, toDisplayString($options.__("Profile")), 1)
                 ]),
-                _hoisted_263,
+                _hoisted_264,
                 createBaseVNode("a", {
                   href: "#",
                   onClick: _cache[2] || (_cache[2] = withModifiers((...args) => $options.logout && $options.logout(...args), ["prevent"])),
                   class: "dropdown-item"
                 }, [
-                  _hoisted_273,
+                  _hoisted_274,
                   createBaseVNode("span", null, toDisplayString($options.__("Log out")), 1)
                 ])
               ])) : createCommentVNode("v-if", true)
@@ -9700,15 +10145,15 @@ Expected function or array of functions, received type ${typeof value}.`
           })
         ]),
         createCommentVNode(" Sidebar Menu "),
-        createBaseVNode("div", _hoisted_283, [
+        createBaseVNode("div", _hoisted_284, [
           createCommentVNode(" Dashboard "),
           createBaseVNode("a", {
             href: "#",
             onClick: _cache[3] || (_cache[3] = withModifiers(($event) => $data.currentPage = "dashboard", ["prevent"])),
             class: normalizeClass(["sidebar-item", { active: $data.currentPage === "dashboard" }])
           }, [
-            _hoisted_293,
-            createBaseVNode("span", _hoisted_303, toDisplayString($options.__("Dashboard")), 1)
+            _hoisted_294,
+            createBaseVNode("span", _hoisted_304, toDisplayString($options.__("Dashboard")), 1)
           ], 2),
           createCommentVNode(" Data "),
           createBaseVNode("a", {
@@ -9716,8 +10161,8 @@ Expected function or array of functions, received type ${typeof value}.`
             onClick: _cache[4] || (_cache[4] = withModifiers(($event) => $data.currentPage = "data", ["prevent"])),
             class: normalizeClass(["sidebar-item", { active: $data.currentPage === "data" }])
           }, [
-            _hoisted_317,
-            createBaseVNode("span", _hoisted_323, toDisplayString($options.__("Data")), 1)
+            _hoisted_319,
+            createBaseVNode("span", _hoisted_324, toDisplayString($options.__("Data")), 1)
           ], 2),
           createCommentVNode(" Publication "),
           createBaseVNode("a", {
@@ -9725,8 +10170,8 @@ Expected function or array of functions, received type ${typeof value}.`
             onClick: _cache[5] || (_cache[5] = withModifiers(($event) => $data.currentPage = "publication", ["prevent"])),
             class: normalizeClass(["sidebar-item", { active: $data.currentPage === "publication" }])
           }, [
-            _hoisted_333,
-            createBaseVNode("span", _hoisted_343, toDisplayString($options.__("Publication")), 1)
+            _hoisted_334,
+            createBaseVNode("span", _hoisted_344, toDisplayString($options.__("Publication")), 1)
           ], 2),
           createCommentVNode(" Events "),
           createBaseVNode("a", {
@@ -9734,33 +10179,33 @@ Expected function or array of functions, received type ${typeof value}.`
             onClick: _cache[6] || (_cache[6] = withModifiers(($event) => $data.currentPage = "events", ["prevent"])),
             class: normalizeClass(["sidebar-item", { active: $data.currentPage === "events" }])
           }, [
-            _hoisted_353,
-            createBaseVNode("span", _hoisted_363, toDisplayString($options.__("Events")), 1)
+            _hoisted_354,
+            createBaseVNode("span", _hoisted_364, toDisplayString($options.__("Events")), 1)
           ], 2),
-          createCommentVNode(" Emergency "),
+          createCommentVNode(" Reports "),
           createBaseVNode("a", {
             href: "#",
-            onClick: _cache[7] || (_cache[7] = withModifiers(($event) => $data.currentPage = "emergency", ["prevent"])),
-            class: normalizeClass(["sidebar-item", { active: $data.currentPage === "emergency" }])
+            onClick: _cache[7] || (_cache[7] = withModifiers(($event) => $data.currentPage = "reports", ["prevent"])),
+            class: normalizeClass(["sidebar-item", { active: $data.currentPage === "reports" || $data.currentPage === "report-view" }])
           }, [
-            _hoisted_373,
-            createBaseVNode("span", _hoisted_383, toDisplayString($options.__("Emergency")), 1)
+            _hoisted_374,
+            createBaseVNode("span", _hoisted_384, toDisplayString($options.__("Reports")), 1)
           ], 2),
-          _hoisted_393,
+          _hoisted_394,
           createCommentVNode(" External Links "),
-          createBaseVNode("a", _hoisted_403, [
-            _hoisted_412,
-            createBaseVNode("span", _hoisted_423, toDisplayString($options.__("Raven")), 1)
+          createBaseVNode("a", _hoisted_404, [
+            _hoisted_413,
+            createBaseVNode("span", _hoisted_424, toDisplayString($options.__("Raven")), 1)
           ]),
-          createBaseVNode("a", _hoisted_433, [
-            _hoisted_442,
-            createBaseVNode("span", _hoisted_452, toDisplayString($options.__("Learning")), 1)
+          createBaseVNode("a", _hoisted_434, [
+            _hoisted_443,
+            createBaseVNode("span", _hoisted_453, toDisplayString($options.__("Learning")), 1)
           ]),
           createBaseVNode("a", _hoisted_462, [
             _hoisted_472,
             createBaseVNode("span", _hoisted_482, toDisplayString($options.__("Desk")), 1)
           ]),
-          createBaseVNode("a", _hoisted_49, [
+          createBaseVNode("a", _hoisted_492, [
             _hoisted_50,
             createBaseVNode("span", _hoisted_51, toDisplayString($options.__("Help Desk")), 1)
           ])
@@ -9776,12 +10221,12 @@ Expected function or array of functions, received type ${typeof value}.`
             createTextVNode("!")
           ]),
           createCommentVNode(" Language Toggle "),
-          createBaseVNode("div", _hoisted_55, [
+          createBaseVNode("div", _hoisted_552, [
             createBaseVNode("div", {
               class: "language-toggle",
               onClick: _cache[8] || (_cache[8] = (...args) => $options.toggleLanguageDropdown && $options.toggleLanguageDropdown(...args))
             }, [
-              _hoisted_56,
+              _hoisted_562,
               createBaseVNode("span", _hoisted_57, toDisplayString($data.currentLanguage.shortName), 1),
               (openBlock(), createElementBlock("svg", {
                 class: normalizeClass(["lang-chevron", { open: $data.showLanguageDropdown }]),
@@ -9805,7 +10250,7 @@ Expected function or array of functions, received type ${typeof value}.`
                     }, [
                       createBaseVNode("span", _hoisted_632, toDisplayString(lang.flag), 1),
                       createBaseVNode("span", _hoisted_642, toDisplayString(lang.name), 1),
-                      lang.code === $data.currentLanguage.code ? (openBlock(), createElementBlock("span", _hoisted_65, "\u2713")) : createCommentVNode("v-if", true)
+                      lang.code === $data.currentLanguage.code ? (openBlock(), createElementBlock("span", _hoisted_652, "\u2713")) : createCommentVNode("v-if", true)
                     ], 10, _hoisted_622);
                   }), 128))
                 ])) : createCommentVNode("v-if", true)
@@ -9815,7 +10260,7 @@ Expected function or array of functions, received type ${typeof value}.`
           ])
         ])) : (openBlock(), createElementBlock(Fragment, { key: 1 }, [
           createCommentVNode(" Page Title Bar - For OTHER pages (not dashboard) "),
-          createBaseVNode("div", _hoisted_66, [
+          createBaseVNode("div", _hoisted_662, [
             createBaseVNode("h1", _hoisted_67, toDisplayString($options.__($options.getPageTitle())), 1),
             createCommentVNode(" Language Toggle "),
             createBaseVNode("div", _hoisted_68, [
@@ -9845,10 +10290,10 @@ Expected function or array of functions, received type ${typeof value}.`
                         onClick: withModifiers(($event) => $options.changeLanguage(lang), ["prevent"]),
                         class: normalizeClass(["language-option", { active: lang.code === $data.currentLanguage.code }])
                       }, [
-                        createBaseVNode("span", _hoisted_76, toDisplayString(lang.flag), 1),
+                        createBaseVNode("span", _hoisted_762, toDisplayString(lang.flag), 1),
                         createBaseVNode("span", _hoisted_77, toDisplayString(lang.name), 1),
                         lang.code === $data.currentLanguage.code ? (openBlock(), createElementBlock("span", _hoisted_78, "\u2713")) : createCommentVNode("v-if", true)
-                      ], 10, _hoisted_75);
+                      ], 10, _hoisted_752);
                     }), 128))
                   ])) : createCommentVNode("v-if", true)
                 ]),
@@ -9868,14 +10313,22 @@ Expected function or array of functions, received type ${typeof value}.`
           $data.currentPage === "data" ? (openBlock(), createBlock(_component_DataPage, { key: 2 })) : createCommentVNode("v-if", true),
           $data.currentPage === "publication" ? (openBlock(), createBlock(_component_PublicationPage, { key: 3 })) : createCommentVNode("v-if", true),
           $data.currentPage === "events" ? (openBlock(), createBlock(_component_EventsPage, { key: 4 })) : createCommentVNode("v-if", true),
-          $data.currentPage === "emergency" ? (openBlock(), createBlock(_component_EmergencyPage, { key: 5 })) : createCommentVNode("v-if", true)
+          $data.currentPage === "reports" ? (openBlock(), createBlock(_component_ReportsPage, {
+            key: 5,
+            onViewReport: $options.viewReportDetail
+          }, null, 8, ["onViewReport"])) : createCommentVNode("v-if", true),
+          $data.currentPage === "report-view" ? (openBlock(), createBlock(_component_ReportView, {
+            key: 6,
+            "report-id": $data.selectedReportId,
+            onBack: $options.backToReports
+          }, null, 8, ["report-id", "onBack"])) : createCommentVNode("v-if", true)
         ])
       ])
     ]);
   }
 
   // ../localization_hub/localization_hub/public/js/dashboard/App.vue
-  App_default.render = render7;
+  App_default.render = render8;
   App_default.__file = "../localization_hub/localization_hub/public/js/dashboard/App.vue";
   App_default.__scopeId = "data-v-a088781b";
   var App_default2 = App_default;
@@ -9912,4 +10365,4 @@ Expected function or array of functions, received type ${typeof value}.`
 * (c) 2018-present Yuxi (Evan) You and Vue contributors
 * @license MIT
 **/
-//# sourceMappingURL=dashboard.bundle.YIXZSDXU.js.map
+//# sourceMappingURL=dashboard.bundle.SAYP2DZZ.js.map

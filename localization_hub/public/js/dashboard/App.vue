@@ -164,17 +164,17 @@
           <span class="sidebar-label">{{ __("Events") }}</span>
         </a>
 
-        <!-- Emergency -->
+        <!-- Reports -->
         <a 
           href="#"
-          @click.prevent="currentPage = 'emergency'"
+          @click.prevent="currentPage = 'reports'"
           class="sidebar-item"
-          :class="{ active: currentPage === 'emergency' }"
+          :class="{ active: currentPage === 'reports' || currentPage === 'report-view' }"
         >
           <svg class="sidebar-icon">
             <use href="#icon-alert-circle"></use>
           </svg>
-          <span class="sidebar-label">{{ __("Emergency") }}</span>
+          <span class="sidebar-label">{{ __("Reports") }}</span>
         </a>
 
         <div class="sidebar-divider"></div>
@@ -315,7 +315,8 @@
         <DataPage v-if="currentPage === 'data'" />
         <PublicationPage v-if="currentPage === 'publication'" />
         <EventsPage v-if="currentPage === 'events'" />
-        <EmergencyPage v-if="currentPage === 'emergency'" />
+        <ReportsPage v-if="currentPage === 'reports'" @view-report="viewReportDetail" />
+        <ReportView v-if="currentPage === 'report-view'" :report-id="selectedReportId" @back="backToReports" />
       </div>
     </div>
   </div>
@@ -327,7 +328,8 @@ import ProfilePage from './pages/ProfilePage.vue';
 import DataPage from './pages/DataPage.vue';
 import PublicationPage from './pages/PublicationPage.vue';
 import EventsPage from './pages/EventsPage.vue';
-import EmergencyPage from './pages/EmergencyPage.vue';
+import ReportsPage from './pages/ReportsPage.vue';
+import ReportView from './pages/ReportView.vue';
 
 export default {
   name: 'DashboardApp',
@@ -338,12 +340,14 @@ export default {
     DataPage,
     PublicationPage,
     EventsPage,
-    EmergencyPage
+    ReportsPage,
+    ReportView
   },
   
   data() {
     return {
       currentPage: 'dashboard',
+      selectedReportId: null,
       userName: 'User',
       userEmail: 'user@example.com',
       showDropdown: false,
@@ -402,10 +406,23 @@ export default {
         'data': 'Data',
         'publication': 'Publication',
         'events': 'Events',
-        'emergency': 'Emergency',
-        'profile': 'Profile'
+        'reports': 'Reports',
+        'report-view': 'Report Details',
+        'profile': 'Profile',
       };
       return titles[this.currentPage] || 'Dashboard';
+    },
+
+    // Handle viewing a report
+    viewReportDetail(reportId) {
+      this.selectedReportId = reportId;
+      this.currentPage = 'report-view';
+    },
+
+    // Handle back from report view
+    backToReports() {
+      this.currentPage = 'reports';
+      this.selectedReportId = null;
     },
 
     changeLanguage(lang) {
