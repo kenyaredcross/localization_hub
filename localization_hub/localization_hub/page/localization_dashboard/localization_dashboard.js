@@ -41,12 +41,12 @@ frappe.pages['localization_dashboard'].on_page_load = function(wrapper) {
             window.initDashboardApp('#vue-dashboard-app');
         } else {
             console.error('Vue Dashboard App not found. Did you run npm run build?');
-            $(vueContainer).html(`
-                <div style="padding: 40px; text-align: center;">
-                    <h3 style="color: #d63939;">⚠️ Build Required</h3>
-                    <p>Please run: <code>npm run build</code></p>
-                </div>
-            `);
+            $(vueContainer).html(
+                '<div style="padding: 40px; text-align: center;">' +
+                    '<h3 style="color: #d63939;">⚠️ Build Required</h3>' +
+                    '<p>Please run: <code>npm run build</code></p>' +
+                '</div>'
+            );
         }
     });
 };

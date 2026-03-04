@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About the Localisation Alliance | Localisation Hub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: #ffffff;
+            color: #111827;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        :root {
+            --rc-red: #DC2626;
+            --rc-red-dark: #B91C1C;
+            --rc-red-light: #FEE2E2;
+            --neutral-50: #F9FAFB;
+            --neutral-100: #F3F4F6;
+            --neutral-200: #E5E7EB;
+            --neutral-600: #4B5563;
+            --neutral-900: #111827;
+            --pillar-purple: #9333EA;
+            --pillar-purple-light: #F3E8FF;
+            --pillar-blue: #2563EB;
+            --pillar-blue-light: #DBEAFE;
+            --pillar-green: #16A34A;
+            --pillar-green-light: #DCFCE7;
+        }
+
+        /* Navbar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 12px 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--neutral-200);
+        }
+
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--neutral-900);
+            text-decoration: none;
+        }
+
+        .logo i {
+            color: var(--rc-red);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--neutral-900);
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--rc-red);
+        }
+
+        .btn-primary {
+            background: var(--rc-red);
+            color: white;
+            font-weight: 600;
+            padding: 10px 24px;
+            border-radius: 40px;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .btn-primary:hover {
+            background: var(--rc-red-dark);
+            transform: translateY(-2px);
+        }
+
+        /* Page Header */
+        .page-header {
+            padding: 120px 0 60px;
+            background: linear-gradient(135deg, var(--rc-red-light) 0%, var(--neutral-50) 100%);
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .page-header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: var(--neutral-900);
+        }
+
+        .page-header p {
+            font-size: 1.25rem;
+            color: var(--neutral-600);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Content Sections */
+        section {
+            padding: 80px 0;
+        }
+
+        .section-alt {
+            background: var(--neutral-50);
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 24px;
+            color: var(--neutral-900);
+        }
+
+        h3 {
+            font-size: 1.75rem;
+            margin-bottom: 16px;
+            color: var(--neutral-900);
+        }
+
+        p {
+            font-size: 1.125rem;
+            color: var(--neutral-600);
+            margin-bottom: 16px;
+            line-height: 1.8;
+        }
+
+        .highlight-box {
+            background: var(--rc-red-light);
+            border-left: 4px solid var(--rc-red);
+            padding: 24px 32px;
+            margin: 32px 0;
+            border-radius: 8px;
+        }
+
+        .highlight-box p {
+            margin: 0;
+            color: var(--neutral-900);
+            font-weight: 500;
+        }
+
+        /* Principles Grid */
+        .principles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+            margin-top: 40px;
+        }
+
+        .principle-card {
+            background: white;
+            padding: 32px;
+            border-radius: 12px;
+            border: 1px solid var(--neutral-200);
+            transition: all 0.3s;
+        }
+
+        .principle-card:hover {
+            border-color: var(--rc-red);
+            box-shadow: 0 4px 20px rgba(220, 38, 38, 0.1);
+            transform: translateY(-4px);
+        }
+
+        .principle-card h4 {
+            font-size: 1.25rem;
+            margin-bottom: 12px;
+            color: var(--rc-red);
+        }
+
+        /* Focus Areas */
+        .focus-areas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
+            margin-top: 40px;
+        }
+
+        .focus-card {
+            background: white;
+            padding: 32px;
+            border-radius: 12px;
+            border: 1px solid var(--neutral-200);
+        }
+
+        .focus-card h4 {
+            font-size: 1.5rem;
+            margin-bottom: 12px;
+            color: var(--neutral-900);
+        }
+
+        .focus-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .focus-card li {
+            padding: 8px 0;
+            padding-left: 24px;
+            position: relative;
+            color: var(--neutral-600);
+        }
+
+        .focus-card li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--rc-red);
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        /* Steering Group */
+        .steering-group {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin-top: 40px;
+        }
+
+        .member-card {
+            background: white;
+            padding: 24px;
+            border-radius: 12px;
+            border: 1px solid var(--neutral-200);
+            text-align: center;
+        }
+
+        .member-card .role {
+            display: inline-block;
+            background: var(--rc-red);
+            color: white;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .member-card h4 {
+            font-size: 1.125rem;
+            margin-bottom: 8px;
+            color: var(--neutral-900);
+        }
+
+        .member-card p {
+            font-size: 1rem;
+            color: var(--neutral-600);
+            margin: 0;
+        }
+
+        /* Mandates */
+        .mandates-list {
+            background: white;
+            padding: 32px;
+            border-radius: 12px;
+            border: 1px solid var(--neutral-200);
+            margin-top: 32px;
+        }
+
+        .mandates-list ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .mandates-list li {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--neutral-200);
+            padding-left: 48px;
+            position: relative;
+        }
+
+        .mandates-list li:last-child {
+            border-bottom: none;
+        }
+
+        .mandates-list li:before {
+            content: "\f00c";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: var(--rc-red);
+            font-size: 1.25rem;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--rc-red) 0%, var(--rc-red-dark) 100%);
+            color: white;
+            text-align: center;
+            padding: 80px 24px;
+            margin: 80px 0;
+            border-radius: 16px;
+        }
+
+        .cta-section h2 {
+            color: white;
+            margin-bottom: 16px;
+        }
+
+        .cta-section p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.25rem;
+            margin-bottom: 32px;
+        }
+
+        .btn-white {
+            background: white;
+            color: var(--rc-red);
+            font-weight: 600;
+            padding: 14px 32px;
+            border-radius: 40px;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.2s;
+        }
+
+        .btn-white:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--neutral-900);
+            color: #9CA3AF;
+            padding: 60px 0 32px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 60px;
+            margin-bottom: 40px;
+        }
+
+        .footer h4 {
+            color: white;
+            margin-bottom: 16px;
+        }
+
+        .footer p {
+            margin-bottom: 12px;
+            font-size: 1rem;
+        }
+
+        .footer a {
+            color: #9CA3AF;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            padding-top: 32px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .page-header h1 {
+                font-size: 2.5rem;
+            }
+            h2 {
+                font-size: 2rem;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="container">
+        <a href="/" class="logo">
+            <i class="fas fa-hand-holding-heart"></i>
+            <span>LOCALISATION HUB</span>
+        </a>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/members">Members</a>
+            {% if frappe.session.user == "Guest" %}
+            <a href="/login" class="btn-primary">Sign In</a>
+            {% else %}
+            <a href="/app" class="btn-primary">Dashboard</a>
+            {% endif %}
+        </div>
+    </div>
+</nav>
+
+<div class="page-header">
+    <div class="container">
+        <h1>About the Localisation Alliance</h1>
+        <p>A journey toward National Society self-reliance through collaborative leadership, shared vision, and coordinated action across Africa.</p>
+    </div>
+</div>
+
+<!-- What is the Alliance -->
+<section>
+    <div class="container">
+        <h2>What is the Localisation Alliance?</h2>
+        <p>The Localisation Alliance is a collaborative platform bringing together African National Societies committed to advancing stronger, locally led humanitarian and development systems. It provides a space for aligned leadership, shared vision, and coordinated action to accelerate localisation efforts across the continent.</p>
+        
+        <div class="highlight-box">
+            <p><strong>Mission:</strong> To build sustainable, locally led humanitarian systems through peer collaboration, institutional strengthening, and shared learning among African National Societies.</p>
+        </div>
+
+        <p>The Alliance operates as more than just a project — it represents a fundamental shift toward African-led humanitarian action, ensuring that local expertise and leadership drive the response to community needs.</p>
+    </div>
+</section>
+
+<!-- Global Mandates -->
+<section class="section-alt">
+    <div class="container">
+        <h2>Anchored in Global Commitments</h2>
+        <p>The Localisation Alliance's work is explicitly linked to key global and regional mandates, ensuring institutional credibility and alignment with the broader humanitarian ecosystem:</p>
+        
+        <div class="mandates-list">
+            <ul>
+                <li><strong>The Grand Bargain and IFRC NSD Compact</strong> — Commitments to strengthen National Society capacity and increase direct funding to local actors</li>
+                <li><strong>IFRC Strategy 2030</strong> — Building stronger National Societies as the foundation of the Red Cross Red Crescent Movement</li>
+                <li><strong>Agenda for Renewal</strong> — Ensuring National Societies are accountable, transparent, and sustainable</li>
+                <li><strong>Pan-African Conference (PAC) 2013 & 2017</strong> — Regional commitments to strengthen African National Societies' autonomy and capacity</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Steering Group -->
+<section>
+    <div class="container">
+        <h2>Leadership & Governance</h2>
+        <p>The Alliance operates through a Steering Group that provides strategic direction, coordination, and oversight. The group ensures transparency, accountability, and collective decision-making to achieve commitments under the Alliance's guiding principles.</p>
+        
+        <h3 style="margin-top: 40px;">Steering Group Members</h3>
+        <div class="steering-group">
+            <div class="member-card">
+                <span class="role">Chair</span>
+                <h4>President</h4>
+                <p>Uganda Red Cross Society</p>
+            </div>
+            <div class="member-card">
+                <span class="role">Member</span>
+                <h4>Deputy Secretary General</h4>
+                <p>Ethiopian Red Cross Society</p>
+            </div>
+            <div class="member-card">
+                <span class="role">Member</span>
+                <h4>Secretary General</h4>
+                <p>Mali Red Cross Society</p>
+            </div>
+            <div class="member-card">
+                <span class="role">Member</span>
+                <h4>Secretary General</h4>
+                <p>Zambia Red Cross Society</p>
+            </div>
+            <div class="member-card">
+                <span class="role">Member</span>
+                <h4>Deputy Secretary General</h4>
+                <p>South Sudan Red Cross Society</p>
+            </div>
+            <div class="member-card">
+                <span class="role">Member</span>
+                <h4>Deputy Secretary General Programs</h4>
+                <p>Kenya Red Cross Society</p>
+            </div>
+        </div>
+
+        <div class="highlight-box" style="margin-top: 40px;">
+            <p><strong>Secretariat Support:</strong> Technical and secretariat support is provided by the Netherlands Red Cross Society (NLRC) and the International Federation of Red Cross and Red Crescent Societies (IFRC).</p>
+        </div>
+    </div>
+</section>
+
+<!-- The Localisation Hub -->
+<section class="section-alt">
+    <div class="container">
+        <h2>The Localisation Hub</h2>
+        <p>The Localisation Hub, currently hosted by the Kenya Red Cross Society (KRCS), serves as the <strong>implementing arm of the Alliance</strong>. It translates the Alliance's vision into practice through coordination, technical support, learning facilitation, and project implementation.</p>
+        
+        <h3 style="margin-top: 40px;">Current Hub Initiatives</h3>
+        <div class="focus-areas">
+            <div class="focus-card">
+                <h4><i class="fas fa-laptop-code" style="color: var(--rc-red); margin-right: 8px;"></i> Digital Transformation</h4>
+                <ul>
+                    <li>Development of this digital platform for continuous learning</li>
+                    <li>Supporting digital transformation across National Societies</li>
+                    <li>Systems strengthening in African National Societies</li>
+                </ul>
+            </div>
+            <div class="focus-card">
+                <h4><i class="fas fa-chart-bar" style="color: var(--rc-red); margin-right: 8px;"></i> Impact & Measurement</h4>
+                <ul>
+                    <li>Conducting Financial Sustainability Impact Studies</li>
+                    <li>Designing measurement frameworks for African NS contexts</li>
+                    <li>Tracking progress through key indicators</li>
+                </ul>
+            </div>
+            <div class="focus-card">
+                <h4><i class="fas fa-users-cog" style="color: var(--rc-red); margin-right: 8px;"></i> Capacity Building</h4>
+                <ul>
+                    <li>Establishing an NSD Working Group in Africa</li>
+                    <li>Developing peer-to-peer learning assessment tools</li>
+                    <li>Facilitating knowledge exchange between societies</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Key Principles -->
+<section>
+    <div class="container">
+        <h2>Guiding Principles</h2>
+        <p>The Alliance is anchored in the following principles that guide all our work and decision-making:</p>
+        
+        <div class="principles-grid">
+            <div class="principle-card">
+                <h4>Locally Led Decision-Making</h4>
+                <p>African National Societies lead the agenda, set priorities, and own the outcomes. Decisions are made by those closest to the communities served.</p>
+            </div>
+            <div class="principle-card">
+                <h4>Mutual Accountability</h4>
+                <p>All members hold each other accountable to shared commitments, transparent processes, and collective goals.</p>
+            </div>
+            <div class="principle-card">
+                <h4>Sustainability</h4>
+                <p>Building long-term resilience through diversified resources, strong governance, and institutional development.</p>
+            </div>
+            <div class="principle-card">
+                <h4>Peer-to-Peer Collaboration</h4>
+                <p>Learning from each other's experiences, sharing solutions, and building together as equals.</p>
+            </div>
+            <div class="principle-card">
+                <h4>Institutional Strengthening</h4>
+                <p>Strengthening leadership, governance, and operational capacities across all levels of National Societies.</p>
+            </div>
+            <div class="principle-card">
+                <h4>Knowledge Sharing</h4>
+                <p>Documenting, sharing, and scaling successful approaches across the continent.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Focus Areas -->
+<section class="section-alt">
+    <div class="container">
+        <h2>Primary Areas of Focus</h2>
+        <p>The Alliance concentrates its efforts on three interconnected areas that are critical to National Society self-reliance:</p>
+        
+        <div class="focus-areas">
+            <div class="focus-card">
+                <h4>Financial Sustainability</h4>
+                <p>Building long-term financial resilience through:</p>
+                <ul>
+                    <li>Resource mobilisation strategies</li>
+                    <li>Income diversification</li>
+                    <li>Domestic fundraising capacity</li>
+                    <li>Financial planning and management</li>
+                </ul>
+            </div>
+            <div class="focus-card">
+                <h4>Institutional Development</h4>
+                <p>Strengthening organizational capacity through:</p>
+                <ul>
+                    <li>Leadership and governance</li>
+                    <li>Branch development</li>
+                    <li>Digital transformation</li>
+                    <li>Systems and processes</li>
+                </ul>
+            </div>
+            <div class="focus-card">
+                <h4>Knowledge Sharing</h4>
+                <p>Facilitating learning and collaboration through:</p>
+                <ul>
+                    <li>Regional peer exchange</li>
+                    <li>Tool and resource documentation</li>
+                    <li>Best practice sharing</li>
+                    <li>Community of practice</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section>
+    <div class="container">
+        <div class="cta-section">
+            <h2>Join the Journey</h2>
+            <p>The Localisation Alliance is building the future of African-led humanitarian action. Be part of the movement.</p>
+            <a href="/members" class="btn-white">Meet Our Members</a>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <a href="/" class="logo" style="color:white; margin-bottom:16px; display: inline-flex;">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <span>LOCALISATION HUB</span>
+                </a>
+                <p>The implementing arm of the Localisation Alliance — empowering African National Societies through locally led development.</p>
+            </div>
+            <div>
+                <h4>Platform</h4>
+                <p><a href="/app">Resources</a></p>
+                <p><a href="/peer-exchange">Peer Exchange</a></p>
+                <p><a href="/insights">Community Insights</a></p>
+            </div>
+            <div>
+                <h4>About</h4>
+                <p><a href="/about">Our Mission</a></p>
+                <p><a href="/members">Members</a></p>
+                <p><a href="/partners">Partners</a></p>
+            </div>
+            <div>
+                <h4>Connect</h4>
+                <p><a href="/contact">Contact</a></p>
+                <p><a href="/support">Support</a></p>
+                <p><a href="/feedback">Feedback</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Localisation Hub – Hosted by Kenya Red Cross Society | Building the knowledge infrastructure for African National Societies</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

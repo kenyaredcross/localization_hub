@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Members & Partners | Localisation Hub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: #ffffff;
+            color: #111827;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        :root {
+            --rc-red: #DC2626;
+            --rc-red-dark: #B91C1C;
+            --rc-red-light: #FEE2E2;
+            --neutral-50: #F9FAFB;
+            --neutral-100: #F3F4F6;
+            --neutral-200: #E5E7EB;
+            --neutral-600: #4B5563;
+            --neutral-900: #111827;
+        }
+
+        /* Navbar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 12px 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--neutral-200);
+        }
+
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--neutral-900);
+            text-decoration: none;
+        }
+
+        .logo i {
+            color: var(--rc-red);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--neutral-900);
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--rc-red);
+        }
+
+        .btn-primary {
+            background: var(--rc-red);
+            color: white;
+            font-weight: 600;
+            padding: 10px 24px;
+            border-radius: 40px;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .btn-primary:hover {
+            background: var(--rc-red-dark);
+            transform: translateY(-2px);
+        }
+
+        /* Page Header */
+        .page-header {
+            padding: 120px 0 60px;
+            background: linear-gradient(135deg, var(--rc-red-light) 0%, var(--neutral-50) 100%);
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .page-header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: var(--neutral-900);
+        }
+
+        .page-header p {
+            font-size: 1.25rem;
+            color: var(--neutral-600);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Tabs */
+        .tabs {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            padding: 40px 0;
+            border-bottom: 2px solid var(--neutral-200);
+        }
+
+        .tab {
+            padding: 12px 32px;
+            background: transparent;
+            border: none;
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--neutral-600);
+            cursor: pointer;
+            border-bottom: 3px solid transparent;
+            transition: all 0.2s;
+        }
+
+        .tab:hover {
+            color: var(--rc-red);
+        }
+
+        .tab.active {
+            color: var(--rc-red);
+            border-bottom-color: var(--rc-red);
+        }
+
+        /* Member Cards */
+        section {
+            padding: 60px 0;
+        }
+
+        .members-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 32px;
+            margin-top: 40px;
+        }
+
+        .member-card {
+            background: white;
+            border: 1px solid var(--neutral-200);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .member-card:hover {
+            border-color: var(--rc-red);
+            box-shadow: 0 8px 30px rgba(220, 38, 38, 0.15);
+            transform: translateY(-4px);
+        }
+
+        .member-header {
+            padding: 32px 24px 24px;
+            background: var(--neutral-50);
+            text-align: center;
+        }
+
+        .member-logo {
+            width: 80px;
+            height: 80px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 16px;
+            border: 2px solid var(--neutral-200);
+        }
+
+        .member-logo i {
+            font-size: 2rem;
+            color: var(--rc-red);
+        }
+
+        .member-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+            color: var(--neutral-900);
+        }
+
+        .member-type {
+            display: inline-block;
+            background: var(--rc-red);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .member-type.partner {
+            background: var(--neutral-600);
+        }
+
+        .member-content {
+            padding: 24px;
+        }
+
+        .member-content p {
+            color: var(--neutral-600);
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+
+        .member-footer {
+            padding: 16px 24px;
+            background: var(--neutral-50);
+            border-top: 1px solid var(--neutral-200);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .member-status {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.875rem;
+            color: var(--neutral-600);
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            background: #16A34A;
+            border-radius: 50%;
+        }
+
+        .view-more {
+            color: var(--rc-red);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.875rem;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: gap 0.2s;
+        }
+
+        .member-card:hover .view-more {
+            gap: 10px;
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 2000;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-content {
+            background: white;
+            border-radius: 16px;
+            max-width: 800px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+        }
+
+        .modal-header {
+            padding: 40px;
+            background: var(--neutral-50);
+            border-bottom: 1px solid var(--neutral-200);
+            text-align: center;
+        }
+
+        .modal-header .member-logo {
+            width: 100px;
+            height: 100px;
+        }
+
+        .modal-header .member-logo i {
+            font-size: 2.5rem;
+        }
+
+        .modal-header h2 {
+            font-size: 2rem;
+            margin: 16px 0 8px;
+        }
+
+        .modal-body {
+            padding: 40px;
+        }
+
+        .modal-body h3 {
+            font-size: 1.5rem;
+            margin: 24px 0 12px;
+            color: var(--neutral-900);
+        }
+
+        .modal-body p {
+            color: var(--neutral-600);
+            line-height: 1.8;
+            margin-bottom: 16px;
+        }
+
+        .modal-body ul {
+            list-style: none;
+            padding: 0;
+            margin: 16px 0;
+        }
+
+        .modal-body li {
+            padding: 8px 0 8px 24px;
+            position: relative;
+            color: var(--neutral-600);
+        }
+
+        .modal-body li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--rc-red);
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: white;
+            border: 1px solid var(--neutral-200);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .close-modal:hover {
+            background: var(--rc-red);
+            color: white;
+            border-color: var(--rc-red);
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 24px;
+            margin: 24px 0;
+        }
+
+        .info-item {
+            padding: 20px;
+            background: var(--neutral-50);
+            border-radius: 8px;
+        }
+
+        .info-label {
+            font-size: 0.875rem;
+            color: var(--neutral-600);
+            margin-bottom: 4px;
+        }
+
+        .info-value {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--neutral-900);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--neutral-900);
+            color: #9CA3AF;
+            padding: 60px 0 32px;
+            margin-top: 80px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 60px;
+            margin-bottom: 40px;
+        }
+
+        .footer h4 {
+            color: white;
+            margin-bottom: 16px;
+        }
+
+        .footer p {
+            margin-bottom: 12px;
+            font-size: 1rem;
+        }
+
+        .footer a {
+            color: #9CA3AF;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            padding-top: 32px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .page-header h1 {
+                font-size: 2.5rem;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .members-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="container">
+        <a href="/" class="logo">
+            <i class="fas fa-hand-holding-heart"></i>
+            <span>LOCALISATION HUB</span>
+        </a>
+        <div class="nav-links">
+            <a href="/Home">Home</a>
+            <a href="/About">About</a>
+            <a href="/Members">Members</a>
+            {% if frappe.session.user == "Guest" %}
+            <a href="/login" class="btn-primary">Sign In</a>
+            {% else %}
+            <a href="/app" class="btn-primary">Dashboard</a>
+            {% endif %}
+        </div>
+    </div>
+</nav>
+
+<div class="page-header">
+    <div class="container">
+        <h1>Members & Partners</h1>
+        <p>The Localisation Alliance brings together African National Societies and international partners committed to locally led humanitarian action.</p>
+    </div>
+</div>
+
+<section>
+    <div class="container">
+        <div class="tabs">
+            <button class="tab active" onclick="showTab('all')">All</button>
+            <button class="tab" onclick="showTab('members')">Member Societies</button>
+            <button class="tab" onclick="showTab('partners')">Consortium Partners</button>
+        </div>
+
+        <div id="members-container" class="members-grid">
+            <!-- Members will be loaded here -->
+        </div>
+    </div>
+</section>
+
+<!-- Modal -->
+<div id="member-modal" class="modal">
+    <div class="modal-content">
+        <div class="close-modal" onclick="closeModal()">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="modal-header">
+            <div class="member-logo">
+                <i class="fas fa-hand-holding-heart"></i>
+            </div>
+            <span id="modal-type" class="member-type">Member</span>
+            <h2 id="modal-title">National Society</h2>
+            <p id="modal-country" style="color: var(--neutral-600);"></p>
+        </div>
+        <div class="modal-body" id="modal-body">
+            <!-- Content will be loaded dynamically -->
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <a href="/" class="logo" style="color:white; margin-bottom:16px; display: inline-flex;">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <span>LOCALISATION HUB</span>
+                </a>
+                <p>The implementing arm of the Localisation Alliance — empowering African National Societies through locally led development.</p>
+            </div>
+            <div>
+                <h4>Platform</h4>
+                <p><a href="/app">Resources</a></p>
+                <p><a href="/peer-exchange">Peer Exchange</a></p>
+                <p><a href="/insights">Community Insights</a></p>
+            </div>
+            <div>
+                <h4>About</h4>
+                <p><a href="/about">Our Mission</a></p>
+                <p><a href="/members">Members</a></p>
+                <p><a href="/partners">Partners</a></p>
+            </div>
+            <div>
+                <h4>Connect</h4>
+                <p><a href="/contact">Contact</a></p>
+                <p><a href="/support">Support</a></p>
+                <p><a href="/feedback">Feedback</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Localisation Hub – Hosted by Kenya Red Cross Society | Building the knowledge infrastructure for African National Societies</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    let allMembers = [];
+    let currentFilter = 'all';
+
+    // Load members data
+    async function loadMembers() {
+        try {
+            const response = await frappe.call({
+                method: 'frappe.client.get_list',
+                args: {
+                    doctype: 'Alliance Members',
+                    fields: ['name', 'member_name', 'member_type', 'country', 'short_description', 'is_active', 'logo'],
+                    filters: { is_active: 1 },
+                    order_by: 'member_type asc, member_name asc'
+                }
+            });
+
+            allMembers = response.message || [];
+            renderMembers();
+        } catch (error) {
+            console.error('Error loading members:', error);
+            // Fallback to sample data
+            loadSampleData();
+        }
+    }
+
+    function loadSampleData() {
+        allMembers = [
+            {
+                name: 'uganda-rc',
+                member_name: 'Uganda Red Cross Society',
+                member_type: 'Member',
+                country: 'Uganda',
+                short_description: 'Leading National Society in Eastern Africa, serving communities through humanitarian action and development programs.',
+                is_active: 1
+            },
+            {
+                name: 'zambia-rc',
+                member_name: 'Zambia Red Cross Society',
+                member_type: 'Member',
+                country: 'Zambia',
+                short_description: 'Strengthening community resilience through health, disaster management, and social services.',
+                is_active: 1
+            },
+            {
+                name: 'ethiopia-rc',
+                member_name: 'Ethiopian Red Cross Society',
+                member_type: 'Member',
+                country: 'Ethiopia',
+                short_description: 'One of Africa\'s largest National Societies, reaching millions with humanitarian services.',
+                is_active: 1
+            },
+            {
+                name: 'ifrc',
+                member_name: 'International Federation of Red Cross and Red Crescent Societies',
+                member_type: 'Partner',
+                country: 'Global',
+                short_description: 'The world\'s largest humanitarian network, coordinating and supporting National Societies worldwide.',
+                is_active: 1
+            },
+            {
+                name: 'netherlands-rc',
+                member_name: 'Netherlands Red Cross Society',
+                member_type: 'Partner',
+                country: 'Netherlands',
+                short_description: 'Supporting African National Societies through technical assistance and partnership programs.',
+                is_active: 1
+            }
+        ];
+        renderMembers();
+    }
+
+    function renderMembers() {
+        const container = document.getElementById('members-container');
+        let filtered = allMembers;
+
+        if (currentFilter === 'members') {
+            filtered = allMembers.filter(m => m.member_type === 'Member');
+        } else if (currentFilter === 'partners') {
+            filtered = allMembers.filter(m => m.member_type === 'Partner');
+        }
+
+        if (filtered.length === 0) {
+            container.innerHTML = '<p style="text-align: center; color: var(--neutral-600); padding: 60px 0;">No members found.</p>';
+            return;
+        }
+
+        container.innerHTML = filtered.map(member => `
+            <div class="member-card" onclick="openModal('${member.name}')">
+                <div class="member-header">
+                    <div class="member-logo">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <h3>${member.member_name}</h3>
+                    <span class="member-type ${member.member_type === 'Partner' ? 'partner' : ''}">${member.member_type}</span>
+                </div>
+                <div class="member-content">
+                    <p>${member.short_description || 'No description available.'}</p>
+                </div>
+                <div class="member-footer">
+                    <div class="member-status">
+                        <span class="status-dot"></span>
+                        <span>Active</span>
+                    </div>
+                    <a class="view-more">
+                        Learn more <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        `).join('');
+    }
+
+    function showTab(filter) {
+        currentFilter = filter;
+        
+        // Update active tab
+        document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+        event.target.classList.add('active');
+        
+        renderMembers();
+    }
+
+    async function openModal(memberId) {
+        const modal = document.getElementById('member-modal');
+        const member = allMembers.find(m => m.name === memberId);
+        
+        if (!member) return;
+
+        // Set basic info
+        document.getElementById('modal-title').textContent = member.member_name;
+        document.getElementById('modal-country').textContent = member.country || '';
+        document.getElementById('modal-type').textContent = member.member_type;
+        document.getElementById('modal-type').className = `member-type ${member.member_type === 'Partner' ? 'partner' : ''}`;
+
+        // Try to fetch full details
+        try {
+            const response = await frappe.call({
+                method: 'frappe.client.get',
+                args: {
+                    doctype: 'Alliance Members',
+                    name: memberId
+                }
+            });
+
+            const fullMember = response.message;
+            renderModalContent(fullMember);
+        } catch (error) {
+            // Fallback to basic info
+            renderModalContent(member);
+        }
+
+        modal.classList.add('active');
+    }
+
+    function renderModalContent(member) {
+        const body = document.getElementById('modal-body');
+        
+        let html = '';
+
+        if (member.full_description || member.short_description) {
+            html += `<p>${member.full_description || member.short_description}</p>`;
+        }
+
+        if (member.focus_areas) {
+            html += `
+                <h3>Focus Areas</h3>
+                <p>${member.focus_areas}</p>
+            `;
+        }
+
+        if (member.key_achievements) {
+            html += `
+                <h3>Key Achievements</h3>
+                <p>${member.key_achievements}</p>
+            `;
+        }
+
+        if (member.contact_email || member.website) {
+            html += `
+                <h3>Contact Information</h3>
+                <div class="info-grid">
+            `;
+            
+            if (member.contact_email) {
+                html += `
+                    <div class="info-item">
+                        <div class="info-label">Email</div>
+                        <div class="info-value">${member.contact_email}</div>
+                    </div>
+                `;
+            }
+            
+            if (member.website) {
+                html += `
+                    <div class="info-item">
+                        <div class="info-label">Website</div>
+                        <div class="info-value"><a href="${member.website}" target="_blank" style="color: var(--rc-red);">Visit Site</a></div>
+                    </div>
+                `;
+            }
+            
+            html += `</div>`;
+        }
+
+        if (!html) {
+            html = '<p>Full details coming soon.</p>';
+        }
+
+        body.innerHTML = html;
+    }
+
+    function closeModal() {
+        document.getElementById('member-modal').classList.remove('active');
+    }
+
+    // Close modal on outside click
+    document.getElementById('member-modal').addEventListener('click', function(e) {
+        if (e.target === this) {
+            closeModal();
+        }
+    });
+
+    // Load members on page load
+    document.addEventListener('DOMContentLoaded', loadMembers);
+</script>
+
+</body>
+</html>

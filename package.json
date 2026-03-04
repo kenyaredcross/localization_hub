@@ -1,19 +1,21 @@
 {
-  "name": "localization_hub",
-  "version": "0.0.1",
-  "description": "Localization Hub with Vue.js Dashboard",
+  "name": "localization-hub-dashboard",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Vue dashboard for Localization Hub",
   "scripts": {
-    "build": "node rollup.config.js"
+    "build": "rollup -c",
+    "watch": "rollup -c -w",
+    "dev": "rollup -c -w"
   },
   "dependencies": {
     "vue": "^3.3.4"
   },
   "devDependencies": {
-    "@rollup/plugin-node-resolve": "^15.0.1",
-    "@rollup/plugin-commonjs": "^24.0.1",
-    "@rollup/plugin-replace": "^5.0.2",
-    "@vitejs/plugin-vue": "^4.0.0",
-    "rollup": "^3.20.0",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-replace": "^5.0.5",
+    "rollup": "^4.9.0",
     "rollup-plugin-vue": "^6.0.0",
     "rollup-plugin-postcss": "^4.0.2"
   }
